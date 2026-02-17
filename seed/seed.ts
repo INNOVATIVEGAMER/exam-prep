@@ -4,10 +4,10 @@ import * as path from 'path'
 
 // Load env — run with: npx tsx seed/seed.ts [--dry-run] [--subject IT301]
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const SERVICE_ROLE_KEY = process.env.SUPABASE_SECRET_KEY!
+const SERVICE_ROLE_KEY = process.env.SUPABASE_SVC_KEY!
 
 if (!SUPABASE_URL || !SERVICE_ROLE_KEY) {
-  console.error('Missing env: NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SECRET_KEY required')
+  console.error('Missing env: NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SVC_KEY required')
   process.exit(1)
 }
 

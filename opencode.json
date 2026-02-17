@@ -32,6 +32,7 @@
       "yarn build-storybook": "allow",
       "yarn chromatic*": "allow",
       "yarn playground": "allow",
+      "vercel *": "allow",
       "npx turbo *": "allow",
       "npx eslint *": "allow",
       "npx tsc *": "allow",
@@ -72,6 +73,7 @@
       "packages/test-utils/**": "allow",
       "apps/**": "allow",
       ".opencode/**": "allow",
+      ".env*.example": "allow",
       ".env*": "deny"
     },
     "edit": {
@@ -82,6 +84,7 @@
       "packages/test-utils/**": "allow",
       "apps/**": "allow",
       ".opencode/**": "allow",
+      ".env*.example": "allow",
       ".env*": "deny"
     },
     "read": {
@@ -122,6 +125,14 @@
       "headers": {
         "Authorization": "Bearer"
       }
+    },
+    "supabase": {
+      "type": "remote",
+      "url": "https://mcp.supabase.com/mcp"
+    },
+    "vercel": {
+      "type": "remote",
+      "url": "https://mcp.vercel.com"
     }
   },
   "agent": {
