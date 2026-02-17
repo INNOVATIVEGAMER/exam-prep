@@ -37,14 +37,9 @@ export function PaperHeader({ paper, subject }: PaperHeaderProps) {
   return (
     <div className="space-y-4">
       {/* Title row */}
-      <div className="flex flex-wrap items-start gap-3">
-        <div className="flex-1 min-w-0">
-          <h1 className="text-2xl font-bold leading-tight">{paper.title}</h1>
-          <p className="text-sm text-muted-foreground mt-1">
-            {subject.name} · {subject.code} · {subject.regulation}
-          </p>
-        </div>
-        <div className="flex items-center gap-2 shrink-0">
+      <div className="space-y-2 sm:space-y-0 sm:flex sm:flex-wrap sm:items-start sm:gap-3">
+        {/* Badges — shown above title on mobile, beside title on sm+ */}
+        <div className="flex items-center gap-2 sm:order-last sm:shrink-0">
           <Badge variant={PAPER_TYPE_VARIANTS[paper.type]}>
             {PAPER_TYPE_LABELS[paper.type]}
           </Badge>
@@ -54,6 +49,12 @@ export function PaperHeader({ paper, subject }: PaperHeaderProps) {
               FREE
             </Badge>
           )}
+        </div>
+        <div className="sm:flex-1 sm:min-w-0">
+          <h1 className="text-2xl font-bold leading-tight">{paper.title}</h1>
+          <p className="text-sm text-muted-foreground mt-1">
+            {subject.name} · {subject.code} · {subject.regulation}
+          </p>
         </div>
       </div>
 
@@ -91,7 +92,7 @@ export function PaperHeader({ paper, subject }: PaperHeaderProps) {
             <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">
               Exam Pattern
             </p>
-            <div className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
               {exam_pattern.groups.map((group) => (
                 <div
                   key={group.name}
