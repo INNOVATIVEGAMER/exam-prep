@@ -53,8 +53,6 @@ export async function POST(request: NextRequest) {
     }
 
     // 5. Create Razorpay order — price is already stored in paisa
-    const keyId = process.env.RAZORPAY_KEY_ID ?? process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID
-    console.log('[payment/create] razorpay key_id prefix:', keyId?.slice(0, 10), 'secret present:', !!process.env.RAZORPAY_KEY_SECRET)
     const order = await getRazorpay().orders.create({
       amount: paper.price,
       currency: 'INR',
@@ -89,22 +87,12 @@ export async function POST(request: NextRequest) {
   } catch (err) {
     // Razorpay SDK throws non-Error objects; JSON.stringify to capture full details
     let msg: string
-    let detail: unknown
     if (err instanceof Error) {
       msg = err.message
-      detail = { message: err.message, stack: err.stack }
     } else {
-      try {
-        msg = JSON.stringify(err)
-      } catch {
-        msg = String(err)
-      }
-      detail = err
+      try { msg = JSON.stringify(err) } catch { msg = String(err) }
     }
-    console.error('[payment/create] ERROR:', msg)
-    return NextResponse.json(
-      { error: 'Internal server error', detail: msg },
-      { status: 500 }
-    )
+    console.error('[payment/create] error:', msg)
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
 }
