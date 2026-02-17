@@ -58,37 +58,15 @@
       "mkdir *": "allow",
       "rm -rf *": "deny",
       "rm -r /": "deny",
-      "git push --force*": "deny",
-      "*credentials*": "deny",
-      "*secret*": "deny",
-      "*password*": "deny",
-      "*api_key*": "deny",
-      "*apikey*": "deny"
+      "git push --force*": "deny"
     },
     "write": {
-      "packages/react/**": "allow",
-      "packages/core/**": "allow",
-      "packages/tailwind/**": "allow",
-      "packages/context-engine/**": "allow",
-      "packages/test-utils/**": "allow",
-      "apps/**": "allow",
-      ".opencode/**": "allow",
-      ".env*.example": "allow",
-      ".env*": "deny"
+      "*": "allow"
     },
     "edit": {
-      "packages/react/**": "allow",
-      "packages/core/**": "allow",
-      "packages/tailwind/**": "allow",
-      "packages/context-engine/**": "allow",
-      "packages/test-utils/**": "allow",
-      "apps/**": "allow",
-      ".opencode/**": "allow",
-      ".env*.example": "allow",
-      ".env*": "deny"
+      "*": "allow"
     },
     "read": {
-      ".env.local": "deny",
       "*": "allow"
     },
     "skill": {
