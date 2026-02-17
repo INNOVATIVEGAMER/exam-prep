@@ -2,13 +2,15 @@ import Razorpay from 'razorpay'
 import crypto from 'crypto'
 
 /**
- * Server-side Razorpay client.
+ * Server-side Razorpay client — lazily instantiated on first call.
  * ONLY import in API Route Handlers — never in client components.
  */
-export const razorpay = new Razorpay({
-  key_id: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID!,
-  key_secret: process.env.RAZORPAY_KEY_SECRET!,
-})
+export function getRazorpay() {
+  return new Razorpay({
+    key_id: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID!,
+    key_secret: process.env.RAZORPAY_KEY_SECRET!,
+  })
+}
 
 /**
  * Verifies the Razorpay payment signature using HMAC-SHA256.
