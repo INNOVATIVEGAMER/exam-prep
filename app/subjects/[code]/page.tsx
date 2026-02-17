@@ -218,7 +218,7 @@ function PaperRow({
           </div>
           <div className="shrink-0 text-right space-y-1">
             <p className="text-lg font-bold">
-              {paper.is_free ? 'FREE' : `₹${paper.price}`}
+              {paper.is_free ? 'FREE' : `₹${(paper.price / 100).toFixed(0)}`}
             </p>
           </div>
         </div>
