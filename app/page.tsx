@@ -13,22 +13,6 @@ const PREVIEW_SUBJECTS = [
     semester: 3,
     department: 'IT',
   },
-  {
-    code: 'PH301',
-    name: 'Physics',
-    short_name: 'PHY',
-    regulation: 'MAKAUT 2019',
-    semester: 3,
-    department: 'Common',
-  },
-  {
-    code: 'MA301',
-    name: 'Mathematics III',
-    short_name: 'M3',
-    regulation: 'MAKAUT 2019',
-    semester: 3,
-    department: 'Common',
-  },
 ]
 
 const HOW_IT_WORKS = [
