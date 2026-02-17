@@ -6,10 +6,17 @@ import crypto from 'crypto'
  * ONLY import in API Route Handlers — never in client components.
  */
 export function getRazorpay() {
-  return new Razorpay({
-    key_id: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID!,
-    key_secret: process.env.RAZORPAY_KEY_SECRET!,
-  })
+  // Use RAZORPAY_KEY_ID server-side (not exposed to browser).
+  // Fall back to NEXT_PUBLIC_ variant for compatibility.
+  const key_id =
+    process.env.RAZORPAY_KEY_ID ?? process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID
+  const key_secret = process.env.RAZORPAY_KEY_SECRET
+  if (!key_id || !key_secret) {
+    throw new Error(
+      `Razorpay env vars missing: key_id=${!!key_id} key_secret=${!!key_secret}`
+    )
+  }
+  return new Razorpay({ key_id, key_secret })
 }
 
 /**

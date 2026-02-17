@@ -53,9 +53,8 @@ export async function POST(request: NextRequest) {
     }
 
     // 5. Create Razorpay order — price is already stored in paisa
-    const keyIdPresent = !!process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID
-    const keySecretPresent = !!process.env.RAZORPAY_KEY_SECRET
-    console.log('[payment/create] razorpay keys present:', { keyIdPresent, keySecretPresent })
+    const keyId = process.env.RAZORPAY_KEY_ID ?? process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID
+    console.log('[payment/create] razorpay key_id prefix:', keyId?.slice(0, 10), 'secret present:', !!process.env.RAZORPAY_KEY_SECRET)
     const order = await getRazorpay().orders.create({
       amount: paper.price,
       currency: 'INR',
