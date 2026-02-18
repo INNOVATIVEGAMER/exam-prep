@@ -51,6 +51,8 @@ export interface Question {
   bl?: string // Bloom's Level
   options?: McqOption[] // for MCQ
   sub_parts?: SubPart[] // for multi-part questions
+  is_question_free?: boolean // show question text to unpaid users (default: false)
+  is_answer_free?: boolean   // show answer to unpaid users (default: false)
 }
 
 export interface McqOption {

@@ -14,6 +14,8 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": true,
       "options": [
         { "key": "a", "text": "Storing program and data in separate memories" },
         {
@@ -190,7 +192,9 @@
       "text": "Explain the fetch-decode-execute cycle of a stored program computer with the help of a neat diagram.",
       "marks": 5,
       "co": "CO1",
-      "bl": "L2"
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": true
     },
     "B2": {
       "group": "B",
@@ -230,7 +234,9 @@
       "text": "(a) Explain the stored program concept and describe the basic organization of a Von Neumann computer with a block diagram. [5]\n(b) Discuss different types of instruction formats. Implement $X = (A+B) \\times (C-D)$ using zero, one, two, and three-address instructions. [6]\n(c) Explain at least five different addressing modes with suitable examples. [4]",
       "marks": 15,
       "co": "CO1",
-      "bl": "L2"
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": true
     },
     "C2": {
       "group": "C",
