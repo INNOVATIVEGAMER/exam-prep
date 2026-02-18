@@ -63,9 +63,9 @@ export default async function HomePage() {
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Access question papers with fully worked solutions — including
-            sample papers and past year papers. Mapped to course outcomes,
-            with step-by-step answers and inline math rendering, built for
-            MAKAUT students.
+            sample papers and past year papers. Mapped to course outcomes, with
+            step-by-step answers and inline math rendering, built for MAKAUT
+            students.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button asChild size="lg">
@@ -91,7 +91,9 @@ export default async function HomePage() {
               </span>
             </div>
 
-            <div className={`grid gap-4 ${featuredSubjects.length === 1 ? "" : "sm:grid-cols-2"}`}>
+            <div
+              className={`grid gap-4 ${featuredSubjects.length === 1 ? "" : "sm:grid-cols-2"}`}
+            >
               {featuredSubjects.map((subject) => (
                 <Link
                   key={subject.id}
@@ -104,7 +106,8 @@ export default async function HomePage() {
                   <div className="relative flex items-start justify-between gap-4">
                     <div className="space-y-1.5">
                       <p className="font-mono text-xs font-medium text-white/40 uppercase tracking-widest">
-                        {subject.code} · {subject.department} · Sem {subject.semester}
+                        {subject.code} · {subject.department} · Sem{" "}
+                        {subject.semester}
                       </p>
                       <h3 className="text-xl sm:text-2xl font-bold text-white leading-snug">
                         {subject.name}
