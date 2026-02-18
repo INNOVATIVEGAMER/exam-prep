@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { useSearchParams } from 'next/navigation'
+import { useSearchParams, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 import { writeDeviceToken } from '@/lib/device-token'
@@ -16,19 +16,12 @@ import {
 } from '@/components/ui/card'
 import { AlertTriangle } from 'lucide-react'
 
-function mapAuthError(message: string): string {
-  if (message.includes('Invalid login credentials')) {
-    return 'Incorrect email or password.'
-  }
-  if (message.includes('Email not confirmed')) {
-    return 'Please check your email to confirm your account first.'
-  }
-  return message
-}
-
 export function LoginForm() {
   const searchParams = useSearchParams()
+  const router = useRouter()
   const reason = searchParams.get('reason')
+  // Error passed via redirect from signup page (e.g. "already have an account")
+  const redirectError = searchParams.get('error')
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -56,7 +49,34 @@ export function LoginForm() {
     })
 
     if (authError) {
-      setError(mapAuthError(authError.message))
+      if (authError.message.includes('Invalid login credentials')) {
+        // Check server-side whether the account actually exists.
+        // Supabase gives the same "Invalid login credentials" for both wrong password
+        // and non-existent email, so we disambiguate via our own API route that
+        // queries auth.users with the service-role key.
+        const checkRes = await fetch('/api/auth/check-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: email.trim() }),
+        })
+        const { exists } = await checkRes.json()
+
+        if (exists === false) {
+          // No account with this email — redirect to signup with the email pre-filled
+          const params = new URLSearchParams({
+            error: 'No account found with this email. Please create one.',
+            email: email.trim(),
+          })
+          router.push(`/signup?${params.toString()}`)
+        } else {
+          // Account exists (exists=true) or check failed (exists=null) — show wrong password
+          setError('Incorrect password. Please try again.')
+        }
+      } else if (authError.message.includes('Email not confirmed')) {
+        setError('Please check your email to confirm your account first.')
+      } else {
+        setError(authError.message)
+      }
       setLoading(false)
       return
     }
@@ -78,6 +98,14 @@ export function LoginForm() {
             <p>You were signed in on another device. Please sign in again to continue.</p>
             <p className="mt-1 text-amber-700">Only one device per account is allowed at a time.</p>
           </div>
+        </div>
+      )}
+
+      {/* Error passed from signup redirect */}
+      {redirectError && !error && (
+        <div className="flex items-start gap-3 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+          <AlertTriangle className="size-4 mt-0.5 shrink-0" />
+          <p>{redirectError}</p>
         </div>
       )}
 

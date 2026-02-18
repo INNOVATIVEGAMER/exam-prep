@@ -35,7 +35,7 @@ export function BuyButton({ paperId, price, paperTitle, className }: BuyButtonPr
 
   const handleBuy = async () => {
     if (!user) {
-      router.push('/login')
+      router.push('/signup')
       return
     }
 
@@ -104,11 +104,11 @@ export function BuyButton({ paperId, price, paperTitle, className }: BuyButtonPr
     }
   }
 
-  // Unauthenticated state — prompt sign in
+  // Unauthenticated state — prompt sign up
   if (!user) {
     return (
-      <Button className={className} onClick={() => router.push('/login')}>
-        Sign in to unlock full paper — ₹{price / 100}
+      <Button className={className} onClick={() => router.push('/signup')}>
+        Sign up to unlock full paper — ₹{price / 100}
       </Button>
     )
   }
