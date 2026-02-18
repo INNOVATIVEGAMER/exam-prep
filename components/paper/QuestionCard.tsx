@@ -6,7 +6,6 @@ import { MarkdownContent } from '@/components/paper/MarkdownContent'
 import { useAuth } from '@/hooks/useAuth'
 
 interface QuestionCardProps {
-  questionKey: string
   question: Question
   /** Slot for the answer card rendered below the question */
   answerSlot?: React.ReactNode
@@ -15,7 +14,6 @@ interface QuestionCardProps {
 }
 
 export function QuestionCard({
-  questionKey,
   question,
   answerSlot,
   showWatermark = false,

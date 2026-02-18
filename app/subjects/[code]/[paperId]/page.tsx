@@ -123,7 +123,9 @@ export default async function PaperPage({ params }: PaperPageProps) {
 
   // True only when the user has purchased (or paper is free) — meaning ALL answers are available.
   // Used to enable content protection and hide the sticky unlock bar.
-  const fullyUnlocked = paper.is_free || paper.answers !== null && Object.keys(paper.answers).length === Object.keys(paper.questions).length
+  const fullyUnlocked =
+    paper.is_free ||
+    (paper.answers !== null && Object.keys(paper.answers).length === Object.keys(paper.questions).length)
 
   // Group questions by their group field, preserving insertion order
   const questionsByGroup = Object.entries(paper.questions).reduce<
@@ -192,7 +194,6 @@ export default async function PaperPage({ params }: PaperPageProps) {
                   return (
                     <QuestionCard
                       key={questionKey}
-                      questionKey={questionKey}
                       question={question}
                       showWatermark={fullyUnlocked}
                       answerSlot={

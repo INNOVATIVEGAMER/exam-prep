@@ -45,7 +45,7 @@ export interface Paper {
 export interface Question {
   group: string
   number: string
-  text: string
+  text?: string // undefined for server-gated locked questions (unpaid users)
   marks: number
   co?: string // Course Outcome
   bl?: string // Bloom's Level

@@ -7,7 +7,7 @@ import rehypeKatex from 'rehype-katex'
 import remarkGfm from 'remark-gfm'
 
 interface MarkdownContentProps {
-  content: string
+  content?: string
   /** Additional CSS classes on the wrapper div */
   className?: string
 }
@@ -22,7 +22,7 @@ interface MarkdownContentProps {
  * - Fenced code blocks with language highlighting
  * - Bold, italic, headings, lists, links
  */
-export function MarkdownContent({ content, className = '' }: MarkdownContentProps) {
+export function MarkdownContent({ content = '', className = '' }: MarkdownContentProps) {
   return (
     <div className={`markdown-content ${className}`}>
       <ReactMarkdown
