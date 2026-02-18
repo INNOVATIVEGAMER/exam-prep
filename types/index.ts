@@ -8,6 +8,7 @@ export interface Subject {
   department: string
   college: string
   exam_pattern: ExamPattern
+  featured_until: string | null
   created_at: string
 }
 

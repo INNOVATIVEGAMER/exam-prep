@@ -7,7 +7,7 @@ import { BookOpen, Clock, Users } from 'lucide-react'
 
 export const metadata = {
   title: 'Subjects — ExamPrep',
-  description: 'Browse exam papers by subject',
+  description: 'Browse question papers and solutions by subject',
 }
 
 async function fetchSubjects(): Promise<Subject[]> {
@@ -38,7 +38,7 @@ export default async function SubjectsPage() {
       <div className="mb-10 space-y-2">
         <h1 className="text-3xl font-bold">Subjects</h1>
         <p className="text-muted-foreground">
-          Browse exam papers and solutions organised by subject and semester.
+          Browse question papers and solutions organised by subject and semester.
         </p>
       </div>
 
