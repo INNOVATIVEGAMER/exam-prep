@@ -47,7 +47,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl">
           <Badge variant="secondary" className="mb-4">
             <BookOpen className="size-3 mr-1" />
-            JISCE Engineering Exam Papers
+            MAKAUT Engineering Exam Papers
           </Badge>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground mb-6">
             Ace Your Exams

@@ -1,10 +1,10 @@
-import { Suspense } from 'react'
-import { LoginForm } from './LoginForm'
-import { BookOpen } from 'lucide-react'
+import { Suspense } from "react";
+import { LoginForm } from "./LoginForm";
+import { BookOpen } from "lucide-react";
 
 export const metadata = {
-  title: 'Sign In — ExamPrep',
-}
+  title: "Sign In — ExamPrep",
+};
 
 export default function LoginPage() {
   return (
@@ -19,7 +19,7 @@ export default function LoginPage() {
           </div>
           <h1 className="text-2xl font-bold">Sign in to ExamPrep</h1>
           <p className="text-sm text-muted-foreground">
-            Access exam papers and solutions for JISCE students
+            Access exam papers and solutions for MAKAUT students
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export default function LoginPage() {
         </p>
       </div>
     </div>
-  )
+  );
 }
 
 function LoginFormSkeleton() {
@@ -45,5 +45,5 @@ function LoginFormSkeleton() {
       <div className="h-9 bg-muted rounded" />
       <div className="h-9 bg-muted rounded" />
     </div>
-  )
+  );
 }
