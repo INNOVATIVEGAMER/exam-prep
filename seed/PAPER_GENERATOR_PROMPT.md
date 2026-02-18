@@ -266,7 +266,7 @@ Before saving, validate **every** paper JSON against these rules. Fix any issues
 ### Structural validation:
 
 1. **Valid JSON** — parseable by `JSON.parse()` with no trailing commas, proper escaping (`\n`, `\\`, `\"`)
-2. **Required top-level fields**: `subject_code` (string), `title` (string), `type` (one of `"end_sem"`, `"mid_sem_1"`, `"mid_sem_2"`, `"practice"`), `year` (string), `is_free` (boolean), `price` (number, in paisa — e.g. 9900 = ₹49), `metadata` (object), `questions` (object), `answers` (object)
+2. **Required top-level fields**: `subject_code` (string), `title` (string), `type` (one of `"end_sem"`, `"mid_sem_1"`, `"mid_sem_2"`, `"practice"`), `year` (string), `is_free` (boolean), `price` (number, in paisa — e.g. 9900 = ₹99), `metadata` (object), `questions` (object), `answers` (object)
 3. **Every question key** in `questions` must have a matching key in `answers` (and vice versa)
 4. **Question numbering** must match: `questions.A1.number === "A1"` and `answers.A1.question_number === "A1"`
 
