@@ -9,9 +9,9 @@ export const metadata = {
 export default async function PaymentSuccessPage({
   searchParams,
 }: {
-  searchParams: Promise<{ paperId?: string }>
+  searchParams: Promise<{ paperId?: string; returnUrl?: string }>
 }) {
-  const { paperId } = await searchParams
+  const { paperId, returnUrl } = await searchParams
 
   return (
     <main className="min-h-screen flex items-center justify-center px-4">
@@ -30,9 +30,9 @@ export default async function PaymentSuccessPage({
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          {paperId && (
+          {paperId && returnUrl && (
             <Button asChild>
-              <Link href="/subjects">View Answers</Link>
+              <Link href={returnUrl}>View Answers</Link>
             </Button>
           )}
           <Button variant="outline" asChild>

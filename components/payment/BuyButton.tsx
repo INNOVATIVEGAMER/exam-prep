@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { useAuth } from '@/hooks/useAuth'
 import { Loader2 } from 'lucide-react'
@@ -16,6 +16,7 @@ interface BuyButtonProps {
 export function BuyButton({ paperId, price, paperTitle, className }: BuyButtonProps) {
   const { user } = useAuth()
   const router = useRouter()
+  const pathname = usePathname()
   const [loading, setLoading] = useState(false)
   const [scriptLoaded, setScriptLoaded] = useState(false)
 
@@ -85,7 +86,7 @@ export function BuyButton({ paperId, price, paperTitle, className }: BuyButtonPr
           })
 
           if (verifyRes.ok) {
-            router.push(`/payment/success?paperId=${paperId}`)
+            router.push(`/payment/success?paperId=${paperId}&returnUrl=${encodeURIComponent(pathname)}`)
           } else {
             alert('Payment verification failed. Please contact support.')
           }

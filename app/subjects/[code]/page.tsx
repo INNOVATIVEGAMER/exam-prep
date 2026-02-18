@@ -12,7 +12,7 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
-import { ArrowLeft, Clock, Award, BookOpen, FileText } from 'lucide-react'
+import { ArrowLeft, Clock, Award, BookOpen, FileText, CheckCircle } from 'lucide-react'
 
 interface SubjectPageProps {
   params: Promise<{ code: string }>
@@ -23,6 +23,12 @@ const PAPER_TYPE_LABELS: Record<Paper['type'], string> = {
   mid_sem_1: 'Mid Semester 1',
   mid_sem_2: 'Mid Semester 2',
   practice: 'Practice',
+}
+
+const QUESTION_TYPE_LABELS: Record<string, string> = {
+  mcq: 'MCQ',
+  short: 'Short Answer',
+  long: 'Long Answer',
 }
 
 async function fetchSubjectWithPapers(
@@ -74,6 +80,27 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
   const { subject, papers } = result
   const { exam_pattern } = subject
   const durationLabel = formatDuration(exam_pattern.duration_minutes)
+
+  // Check which papers the current user has purchased
+  const purchasedPaperIds = new Set<string>()
+  if (papers.length > 0) {
+    const supabase = await createClient()
+    const { data: { user } } = await supabase.auth.getUser()
+    if (user) {
+      const paperIds = papers.map((p) => p.id)
+      const { data: purchases } = await supabase
+        .from('purchases')
+        .select('paper_id')
+        .eq('user_id', user.id)
+        .eq('status', 'paid')
+        .in('paper_id', paperIds)
+      if (purchases) {
+        for (const p of purchases) {
+          purchasedPaperIds.add(p.paper_id)
+        }
+      }
+    }
+  }
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10 space-y-8">
@@ -139,8 +166,8 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
                     <p className="text-xs text-muted-foreground">
                       {group.instructions}
                     </p>
-                    <p className="text-xs text-muted-foreground capitalize">
-                      Type: {group.question_type.replace('_', ' ')}
+                    <p className="text-xs text-muted-foreground">
+                      Type: {QUESTION_TYPE_LABELS[group.question_type] ?? group.question_type}
                     </p>
                     <p className="text-xs font-medium text-foreground">
                       {group.attempt_count} × {group.marks_per_question}m ={' '}
@@ -180,6 +207,7 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
                 key={paper.id}
                 paper={paper}
                 subjectCode={subject.code}
+                purchased={purchasedPaperIds.has(paper.id)}
               />
             ))}
           </div>
@@ -192,9 +220,11 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
 function PaperRow({
   paper,
   subjectCode,
+  purchased,
 }: {
   paper: Paper
   subjectCode: string
+  purchased: boolean
 }) {
   return (
     <Card>
@@ -217,9 +247,16 @@ function PaperRow({
             <CardTitle className="text-base leading-snug">{paper.title}</CardTitle>
           </div>
           <div className="shrink-0 text-right space-y-1">
-            <p className="text-lg font-bold">
-              {paper.is_free ? 'FREE' : `₹${paper.price}`}
-            </p>
+            {purchased ? (
+              <span className="inline-flex items-center gap-1 text-sm font-medium text-green-700">
+                <CheckCircle className="size-4" />
+                Purchased
+              </span>
+            ) : (
+              <p className="text-lg font-bold">
+                {paper.is_free ? 'FREE' : `₹${(paper.price / 100).toFixed(0)}`}
+              </p>
+            )}
           </div>
         </div>
       </CardHeader>

@@ -9,7 +9,8 @@
     "lint": "eslint",
     "seed": "tsx --env-file=.env.local seed/seed.ts",
     "seed:dry": "tsx --env-file=.env.local seed/seed.ts --dry-run",
-    "seed:subject": "tsx --env-file=.env.local seed/seed.ts --subject"
+    "seed:subject": "tsx --env-file=.env.local seed/seed.ts --subject",
+    "db:reset": "tsx --env-file=.env.local seed/reset.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.8.0",
@@ -23,7 +24,10 @@
     "razorpay": "^2.9.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "react-katex": "^3.1.0",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0",
     "tailwind-merge": "^3.4.1"
   },
   "devDependencies": {

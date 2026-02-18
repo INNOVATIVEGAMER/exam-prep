@@ -32,6 +32,7 @@
       "yarn build-storybook": "allow",
       "yarn chromatic*": "allow",
       "yarn playground": "allow",
+      "vercel *": "allow",
       "npx turbo *": "allow",
       "npx eslint *": "allow",
       "npx tsc *": "allow",
@@ -57,35 +58,15 @@
       "mkdir *": "allow",
       "rm -rf *": "deny",
       "rm -r /": "deny",
-      "git push --force*": "deny",
-      "*credentials*": "deny",
-      "*secret*": "deny",
-      "*password*": "deny",
-      "*api_key*": "deny",
-      "*apikey*": "deny"
+      "git push --force*": "deny"
     },
     "write": {
-      "packages/react/**": "allow",
-      "packages/core/**": "allow",
-      "packages/tailwind/**": "allow",
-      "packages/context-engine/**": "allow",
-      "packages/test-utils/**": "allow",
-      "apps/**": "allow",
-      ".opencode/**": "allow",
-      ".env*": "deny"
+      "*": "allow"
     },
     "edit": {
-      "packages/react/**": "allow",
-      "packages/core/**": "allow",
-      "packages/tailwind/**": "allow",
-      "packages/context-engine/**": "allow",
-      "packages/test-utils/**": "allow",
-      "apps/**": "allow",
-      ".opencode/**": "allow",
-      ".env*": "deny"
+      "*": "allow"
     },
     "read": {
-      ".env.local": "deny",
       "*": "allow"
     },
     "skill": {
@@ -122,6 +103,14 @@
       "headers": {
         "Authorization": "Bearer"
       }
+    },
+    "supabase": {
+      "type": "remote",
+      "url": "https://mcp.supabase.com/mcp"
+    },
+    "vercel": {
+      "type": "remote",
+      "url": "https://mcp.vercel.com"
     }
   },
   "agent": {

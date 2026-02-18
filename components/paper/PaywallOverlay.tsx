@@ -11,13 +11,8 @@ interface PaywallOverlayProps {
 export function PaywallOverlay({ paperId, price, paperTitle }: PaywallOverlayProps) {
   return (
     <div className="relative overflow-hidden rounded-lg border border-dashed bg-muted/20">
-      {/* Blurred content placeholder */}
-      <div className="select-none blur-sm pointer-events-none px-4 py-6 text-sm text-muted-foreground space-y-1.5 aria-hidden">
-        <div className="h-3 bg-muted rounded w-3/4" />
-        <div className="h-3 bg-muted rounded w-full" />
-        <div className="h-3 bg-muted rounded w-5/6" />
-        <div className="h-3 bg-muted rounded w-2/3" />
-      </div>
+      {/* Invisible spacer — guarantees the container is tall enough for the overlay */}
+      <div className="px-4 py-24" aria-hidden="true" />
 
       {/* Lock overlay */}
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-background/80 backdrop-blur-[2px]">

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
-import { razorpay } from '@/lib/razorpay'
+import { getRazorpay } from '@/lib/razorpay'
 
 export async function POST(request: NextRequest) {
   try {
@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
     }
 
     // 5. Create Razorpay order — price is already stored in paisa
-    const order = await razorpay.orders.create({
+    const order = await getRazorpay().orders.create({
       amount: paper.price,
       currency: 'INR',
       receipt: `receipt_${user.id.slice(0, 8)}_${paperId.slice(0, 8)}`,
@@ -85,7 +85,14 @@ export async function POST(request: NextRequest) {
       paperTitle: paper.title,
     })
   } catch (err) {
-    console.error('[payment/create]', err)
+    // Razorpay SDK throws non-Error objects; JSON.stringify to capture full details
+    let msg: string
+    if (err instanceof Error) {
+      msg = err.message
+    } else {
+      try { msg = JSON.stringify(err) } catch { msg = String(err) }
+    }
+    console.error('[payment/create] error:', msg)
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
 }
