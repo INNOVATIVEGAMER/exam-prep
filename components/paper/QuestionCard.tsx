@@ -6,16 +6,14 @@ import { MarkdownContent } from '@/components/paper/MarkdownContent'
 import { useAuth } from '@/hooks/useAuth'
 
 interface QuestionCardProps {
-  questionKey: string
   question: Question
   /** Slot for the answer card rendered below the question */
   answerSlot?: React.ReactNode
-  /** Show user email watermark in the header — only for unlocked papers */
+  /** Show user email watermark in the header — only for fully unlocked papers */
   showWatermark?: boolean
 }
 
 export function QuestionCard({
-  questionKey,
   question,
   answerSlot,
   showWatermark = false,

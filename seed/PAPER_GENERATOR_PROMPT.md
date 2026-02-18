@@ -130,6 +130,24 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": true,
+      "options": [
+        { "key": "a", "text": "Option A" },
+        { "key": "b", "text": "Option B" },
+        { "key": "c", "text": "Option C" },
+        { "key": "d", "text": "Option D" }
+      ]
+    },
+    "A2": {
+      "group": "A",
+      "number": "A2",
+      "text": "Another MCQ question",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "is_question_free": false,
+      "is_answer_free": false,
       "options": [
         { "key": "a", "text": "Option A" },
         { "key": "b", "text": "Option B" },
@@ -143,7 +161,19 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
       "text": "Short answer question text",
       "marks": 5,
       "co": "CO2",
-      "bl": "L2"
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": true
+    },
+    "B2": {
+      "group": "B",
+      "number": "B2",
+      "text": "Another short answer question",
+      "marks": 5,
+      "co": "CO2",
+      "bl": "L2",
+      "is_question_free": false,
+      "is_answer_free": false
     },
     "C1": {
       "group": "C",
@@ -151,7 +181,19 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
       "text": "(a) First part of the question. [5]\n(b) Second part. [6]\n(c) Third part. [4]",
       "marks": 15,
       "co": "CO1",
-      "bl": "L2"
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": true
+    },
+    "C2": {
+      "group": "C",
+      "number": "C2",
+      "text": "(a) Another long answer question. [8]\n(b) Second part. [7]",
+      "marks": 15,
+      "co": "CO1",
+      "bl": "L2",
+      "is_question_free": false,
+      "is_answer_free": false
     }
   },
   "answers": {
@@ -186,6 +228,19 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
 - **Group B** = Short answer questions (5 marks each)
 - **Group C** = Long answer questions (15 marks each, typically multi-part)
 - Question numbering: `A1`–`A12`, `B1`–`B5`, `C1`–`C5` (adjust to match actual exam pattern)
+
+### Preview flags (`is_question_free` and `is_answer_free`):
+
+Every question **must** include both `is_question_free` and `is_answer_free` fields (boolean). These control what unpaid users can see:
+
+- `is_question_free: true` — the question text is visible to all users
+- `is_answer_free: true` — the answer is visible to all users (only meaningful if `is_question_free` is also `true`)
+- `is_question_free: false` — the question is hidden behind a paywall for unpaid users
+- Both fields **default to `false`** — locked unless explicitly set to `true`
+
+**Default rule:** Mark exactly **one question per group** as the free preview by setting both `is_question_free: true` and `is_answer_free: true`. All other questions must have both set to `false`. This gives unpaid users a sample of each question type.
+
+**Flexibility:** You may deviate from the default rule if instructed — for example, showing all questions but only one answer, or showing two free previews in a group. Always follow the instructions provided. When no specific instructions are given, use the default rule above.
 
 ---
 
@@ -272,21 +327,22 @@ Before saving, validate **every** paper JSON against these rules. Fix any issues
 
 ### Question validation:
 
-5. Every question must have: `group` (string), `number` (string), `text` (string), `marks` (number), `co` (string), `bl` (string)
+5. Every question must have: `group` (string), `number` (string), `text` (string), `marks` (number), `co` (string), `bl` (string), `is_question_free` (boolean), `is_answer_free` (boolean)
 6. **MCQ questions** (Group A) must have an `options` array with exactly 4 objects, each with `key` (`"a"`, `"b"`, `"c"`, `"d"`) and `text`
 7. Non-MCQ questions must NOT have `options`
+8. Each group must have **at least one** question with `is_question_free: true` and `is_answer_free: true` (the free preview). Unless specific instructions override this.
 
 ### Answer validation:
 
-8. Every answer must have: `question_number` (string), `solution` (non-empty string), `key_points` (array of strings, 2–5 items)
-9. **MCQ answers** must have `correct_option` (one of `"a"`, `"b"`, `"c"`, `"d"`)
-10. Non-MCQ answers must NOT have `correct_option`
+9. Every answer must have: `question_number` (string), `solution` (non-empty string), `key_points` (array of strings, 2–5 items)
+10. **MCQ answers** must have `correct_option` (one of `"a"`, `"b"`, `"c"`, `"d"`)
+11. Non-MCQ answers must NOT have `correct_option`
 
 ### Cross-validation with subject:
 
-11. Question groups must match the groups defined in the subject's `exam_pattern`
-12. Question counts per group must match `questions_count` in the exam pattern
-13. Marks per question must match `marks_per_question` in the exam pattern
+12. Question groups must match the groups defined in the subject's `exam_pattern`
+13. Question counts per group must match `questions_count` in the exam pattern
+14. Marks per question must match `marks_per_question` in the exam pattern
 
 ### Print a validation summary:
 
@@ -296,6 +352,8 @@ Before saving, validate **every** paper JSON against these rules. Fix any issues
   - Group B: 5 short answers ✓
   - Group C: 5 long answers ✓
   - All key_points present ✓
+  - Preview flags: 1 free question per group (A1, B1, C1) ✓
+  - All questions have is_question_free + is_answer_free fields ✓
   - Valid JSON ✓
 
 ✓ Paper 2: 22 questions, 22 answers, all keys match

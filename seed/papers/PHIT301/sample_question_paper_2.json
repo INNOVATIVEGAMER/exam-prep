@@ -17,6 +17,8 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": true,
       "options": [
         {
           "key": "a",
@@ -328,7 +330,9 @@
       "text": "The difference in energy between the ground state and the 1st excited state for a particle in a 1-D box is $6E_0$. Calculate the difference in energy between the 1st and 2nd excited states.",
       "marks": 5,
       "co": "CO3",
-      "bl": "L3"
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": true
     },
     "B2": {
       "group": "B",
@@ -368,7 +372,9 @@
       "text": "(a) Solve the Schrödinger equation for a particle confined in a 1-D infinite square well potential of width $a$. Derive the energy eigenvalues and normalized wave functions. [8]\n(b) What is meant by degenerate energy levels in a 3-D infinite square well? Calculate the degeneracy and energy eigenvalue of the 1st excited state in a 3-D cubic box of side $a$. [7]",
       "marks": 15,
       "co": "CO1",
-      "bl": "L3"
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": true
     },
     "C2": {
       "group": "C",

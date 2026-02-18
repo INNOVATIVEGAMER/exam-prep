@@ -14,6 +14,8 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": true,
       "options": [
         { "key": "a", "text": "Accumulator (AC)" },
         { "key": "b", "text": "Program Counter (PC)" },
@@ -181,7 +183,9 @@
       "text": "Explain the role of an operating system and compiler/assembler in the execution of a program on a stored program computer.",
       "marks": 5,
       "co": "CO1",
-      "bl": "L2"
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": true
     },
     "B2": {
       "group": "B",
@@ -221,7 +225,9 @@
       "text": "(a) Describe the design of an ALU. Explain how a 4-bit arithmetic unit performs addition and subtraction using full adders and control logic. [6]\n(b) Apply Booth's multiplication algorithm to multiply $(+9) \\times (-6)$. Use 5-bit signed representation. [5]\n(c) Explain overflow and underflow conditions in fixed-point arithmetic. How are they detected in 2's complement representation? [4]",
       "marks": 15,
       "co": "CO1",
-      "bl": "L2"
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": true
     },
     "C2": {
       "group": "C",

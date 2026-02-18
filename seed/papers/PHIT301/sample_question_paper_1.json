@@ -17,6 +17,8 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": true,
       "options": [
         {
           "key": "a",
@@ -328,7 +330,9 @@
       "text": "Calculate the normalization constant $A$ if the wave function of a quantum mechanical particle is given by:\n\n$\\psi_n(x) = A \\sin\\left(\\frac{n\\pi x}{a}\\right)$ for $0 < x < a$, and $\\psi_n(x) = 0$ otherwise.",
       "marks": 5,
       "co": "CO1",
-      "bl": "L3"
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": true
     },
     "B2": {
       "group": "B",
@@ -368,7 +372,9 @@
       "text": "(a) State the basic postulates of quantum mechanics. [4]\n(b) Derive the time-independent Schrödinger equation from the time-dependent Schrödinger equation using the method of separation of variables. [6]\n(c) A particle is confined in a 1-D infinite square well of width $a = 0.1$ nm. Calculate the energy of the ground state and the first excited state in eV. (Given: $m = 9.1 \\times 10^{-31}$ kg, $\\hbar = 1.055 \\times 10^{-34}$ J·s) [5]",
       "marks": 15,
       "co": "CO1",
-      "bl": "L3"
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": true
     },
     "C2": {
       "group": "C",

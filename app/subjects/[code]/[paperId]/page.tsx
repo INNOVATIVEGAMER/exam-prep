@@ -10,6 +10,7 @@ import { QuestionCard } from '@/components/paper/QuestionCard'
 import { AnswerCard } from '@/components/paper/AnswerCard'
 import { PaperAnswerWrapper } from '@/components/paper/PaperAnswerWrapper'
 import { StickyUnlockBar } from '@/components/paper/StickyUnlockBar'
+import { LockedQuestionsCard } from '@/components/paper/LockedQuestionsCard'
 
 interface PaperPageProps {
   params: Promise<{ code: string; paperId: string }>
@@ -61,7 +62,38 @@ async function fetchPaperData(
       }
 
       if (!hasPurchased) {
-        paperData.answers = null
+        // Gate answers — strip any answer where is_answer_free !== true
+        if (paperData.answers) {
+          const gatedAnswers: Record<string, unknown> = {}
+          for (const [key, answer] of Object.entries(paperData.answers)) {
+            const question = paperData.questions?.[key]
+            if (question?.is_answer_free === true) {
+              gatedAnswers[key] = answer
+            }
+          }
+          paperData.answers = Object.keys(gatedAnswers).length > 0 ? gatedAnswers : null
+        }
+
+        // Gate question content — strip text/options/sub_parts for locked questions
+        // so they never reach the browser. Only metadata (group, number, marks,
+        // flags) is kept so the collapsed locked card can be rendered correctly.
+        if (paperData.questions) {
+          for (const key of Object.keys(paperData.questions)) {
+            const q = paperData.questions[key]
+            if (!q.is_question_free) {
+              paperData.questions[key] = {
+                group: q.group,
+                number: q.number,
+                marks: q.marks,
+                co: q.co,
+                bl: q.bl,
+                is_question_free: false,
+                is_answer_free: q.is_answer_free,
+                // text, options, sub_parts intentionally omitted
+              } as typeof q
+            }
+          }
+        }
       }
     }
 
@@ -88,7 +120,12 @@ export default async function PaperPage({ params }: PaperPageProps) {
   if (!result) notFound()
 
   const { paper, subject } = result
-  const answersLocked = !paper.is_free && paper.answers === null
+
+  // True only when the user has purchased (or paper is free) — meaning ALL answers are available.
+  // Used to enable content protection and hide the sticky unlock bar.
+  const fullyUnlocked =
+    paper.is_free ||
+    (paper.answers !== null && Object.keys(paper.answers).length === Object.keys(paper.questions).length)
 
   // Group questions by their group field, preserving insertion order
   const questionsByGroup = Object.entries(paper.questions).reduce<
@@ -125,8 +162,8 @@ export default async function PaperPage({ params }: PaperPageProps) {
 
       <Separator />
 
-      {/* Questions grouped by group — wrapped for content protection when unlocked */}
-      <PaperAnswerWrapper locked={answersLocked}>
+      {/* Questions grouped by group — wrapped for content protection when fully unlocked */}
+      <PaperAnswerWrapper locked={!fullyUnlocked}>
         <div className="space-y-10">
           {Object.entries(questionsByGroup).map(([groupName, groupQuestions]) => {
             const config = groupConfig[groupName]
@@ -142,21 +179,27 @@ export default async function PaperPage({ params }: PaperPageProps) {
               question_type: 'short',
             }
 
+            // Split questions into free (visible) and locked (collapsed)
+            const freeQuestions = groupQuestions.filter(([, q]) => fullyUnlocked || q.is_question_free)
+            const lockedQuestions = fullyUnlocked ? [] : groupQuestions.filter(([, q]) => !q.is_question_free)
+            const lockedNumbers = lockedQuestions.map(([, q]) => q.number)
+
             return (
               <GroupSection key={groupName} group={groupDef}>
-                {groupQuestions.map(([questionKey, question]) => {
+                {/* Free / unlocked questions — render normally */}
+                {freeQuestions.map(([questionKey, question]) => {
                   const answer = paper.answers?.[questionKey] ?? null
+                  const answerLocked = !fullyUnlocked && !question.is_answer_free
 
                   return (
                     <QuestionCard
                       key={questionKey}
-                      questionKey={questionKey}
                       question={question}
-                      showWatermark={!answersLocked}
+                      showWatermark={fullyUnlocked}
                       answerSlot={
                         <AnswerCard
                           answer={answer}
-                          locked={answersLocked}
+                          locked={answerLocked}
                           price={paper.price}
                           paperId={paper.id}
                           paperTitle={paper.title}
@@ -165,18 +208,28 @@ export default async function PaperPage({ params }: PaperPageProps) {
                     />
                   )
                 })}
+
+                {/* Locked questions — single collapsed card for the whole group */}
+                {lockedNumbers.length > 0 && (
+                  <LockedQuestionsCard
+                    questionNumbers={lockedNumbers}
+                    price={paper.price}
+                    paperId={paper.id}
+                    paperTitle={paper.title}
+                  />
+                )}
               </GroupSection>
             )
           })}
         </div>
       </PaperAnswerWrapper>
 
-      {/* Sticky bottom unlock bar — mobile only, shown when paper is locked */}
+      {/* Sticky bottom unlock bar — mobile only, shown when paper is not fully unlocked */}
       <StickyUnlockBar
         paperId={paper.id}
         price={paper.price}
         paperTitle={paper.title}
-        locked={answersLocked}
+        locked={!fullyUnlocked}
       />
     </div>
   )
