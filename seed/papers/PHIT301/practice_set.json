@@ -1,0 +1,1315 @@
+{
+  "subject_code": "PHIT301",
+  "title": "Practice Set — SEE Engineering Physics II",
+  "type": "practice",
+  "year": "2025-26",
+  "is_free": false,
+  "price": 9900,
+  "metadata": {
+    "difficulty": "medium",
+    "modules_covered": ["Module 1", "Module 2", "Module 3", "Module 4"],
+    "source": "Practice_set_of_SEE_PH_IT_301_28_11_2025"
+  },
+  "questions": {
+    "A1": {
+      "group": "A",
+      "number": "A1",
+      "text": "If an operator $\\hat{A}$ on a wave function $\\psi$ is such that $\\hat{A}\\psi = a\\psi$, then $a$ is called:",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": true,
+      "options": [
+        {
+          "key": "a",
+          "text": "Expectation value"
+        },
+        {
+          "key": "b",
+          "text": "Eigenvalue"
+        },
+        {
+          "key": "c",
+          "text": "Commutator"
+        },
+        {
+          "key": "d",
+          "text": "Superposition coefficient"
+        }
+      ]
+    },
+    "A2": {
+      "group": "A",
+      "number": "A2",
+      "text": "Semiconductors possess which type of bonding?",
+      "marks": 1,
+      "co": "CO3",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "Metallic"
+        },
+        {
+          "key": "b",
+          "text": "Covalent"
+        },
+        {
+          "key": "c",
+          "text": "Magnetic"
+        },
+        {
+          "key": "d",
+          "text": "Ionic"
+        }
+      ]
+    },
+    "A3": {
+      "group": "A",
+      "number": "A3",
+      "text": "For a particle in a one-dimensional infinite square well of width $a$, the energy levels are given by:",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "$E_n = \\frac{n^2\\pi^2\\hbar^2}{4ma^2}$"
+        },
+        {
+          "key": "b",
+          "text": "$E_n = \\frac{n^2\\pi^2\\hbar^2}{8ma^2}$"
+        },
+        {
+          "key": "c",
+          "text": "$E_n = \\frac{n^2h^2}{8ma^2}$"
+        },
+        {
+          "key": "d",
+          "text": "$E_n = \\frac{n^2h^2}{2ma^2}$"
+        }
+      ]
+    },
+    "A4": {
+      "group": "A",
+      "number": "A4",
+      "text": "In a three-dimensional infinite potential well (box), energy levels can be degenerate because:",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "The potential is not well defined in 3D"
+        },
+        {
+          "key": "b",
+          "text": "The wavefunction cannot be normalized in 3D"
+        },
+        {
+          "key": "c",
+          "text": "Different combinations of quantum numbers $(n_x, n_y, n_z)$ can give the same energy"
+        },
+        {
+          "key": "d",
+          "text": "The Schrödinger equation doesn't apply to 3D"
+        }
+      ]
+    },
+    "A5": {
+      "group": "A",
+      "number": "A5",
+      "text": "The number of possible arrangements of two fermions in 3 cells is:",
+      "marks": 1,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "$9$"
+        },
+        {
+          "key": "b",
+          "text": "$6$"
+        },
+        {
+          "key": "c",
+          "text": "$3$"
+        },
+        {
+          "key": "d",
+          "text": "$1$"
+        }
+      ]
+    },
+    "A6": {
+      "group": "A",
+      "number": "A6",
+      "text": "Phase space is a:",
+      "marks": 1,
+      "co": "CO3",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "3-Dimensional Space"
+        },
+        {
+          "key": "b",
+          "text": "4-Dimensional Space"
+        },
+        {
+          "key": "c",
+          "text": "6-Dimensional Space"
+        },
+        {
+          "key": "d",
+          "text": "5-Dimensional Space"
+        }
+      ]
+    },
+    "A7": {
+      "group": "A",
+      "number": "A7",
+      "text": "In bra–ket notation, a ket $|\\psi\\rangle$ represents:",
+      "marks": 1,
+      "co": "CO2",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "A row vector in a classical vector space"
+        },
+        {
+          "key": "b",
+          "text": "A column vector in a (complex) vector space"
+        },
+        {
+          "key": "c",
+          "text": "A measurement result"
+        },
+        {
+          "key": "d",
+          "text": "A probability"
+        }
+      ]
+    },
+    "A8": {
+      "group": "A",
+      "number": "A8",
+      "text": "The Pauli matrices $\\sigma_x, \\sigma_y, \\sigma_z$ satisfy which of the following relations?",
+      "marks": 1,
+      "co": "CO2",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "They are all unitary but not Hermitian"
+        },
+        {
+          "key": "b",
+          "text": "$\\sigma_x^2 = \\sigma_y^2 = \\sigma_z^2 = I$"
+        },
+        {
+          "key": "c",
+          "text": "They all commute with each other"
+        },
+        {
+          "key": "d",
+          "text": "None of the above"
+        }
+      ]
+    },
+    "A9": {
+      "group": "A",
+      "number": "A9",
+      "text": "Which is a fundamental inadequacy of the classical free electron (Drude) theory?",
+      "marks": 1,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "It assumes electrons obey Fermi–Dirac statistics"
+        },
+        {
+          "key": "b",
+          "text": "It neglects the periodic potential of the ion cores in a crystal"
+        },
+        {
+          "key": "c",
+          "text": "It correctly predicts band gaps in insulators"
+        },
+        {
+          "key": "d",
+          "text": "It treats electrons as non-colliding particles"
+        }
+      ]
+    },
+    "A10": {
+      "group": "A",
+      "number": "A10",
+      "text": "Which of the following correctly classifies materials based on their energy band structure?",
+      "marks": 1,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "Metals have a large band gap; insulators have overlapping conduction and valence bands"
+        },
+        {
+          "key": "b",
+          "text": "Semiconductors have overlapping bands; metals and insulators have gaps"
+        },
+        {
+          "key": "c",
+          "text": "Metals have overlapping conduction and valence bands; semiconductors have a small gap; insulators have a large gap"
+        },
+        {
+          "key": "d",
+          "text": "All materials have the same band gap size"
+        }
+      ]
+    },
+    "A11": {
+      "group": "A",
+      "number": "A11",
+      "text": "An example of an indirect bandgap semiconductor would be:",
+      "marks": 1,
+      "co": "CO3",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "GaAs (Gallium Arsenide)"
+        },
+        {
+          "key": "b",
+          "text": "InAs (Indium Arsenide)"
+        },
+        {
+          "key": "c",
+          "text": "Silicon (Si)"
+        },
+        {
+          "key": "d",
+          "text": "Metals (e.g., copper)"
+        }
+      ]
+    },
+    "A12": {
+      "group": "A",
+      "number": "A12",
+      "text": "A direct bandgap semiconductor is one in which:",
+      "marks": 1,
+      "co": "CO3",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "The conduction band minimum and valence band maximum occur at the same $k$-vector"
+        },
+        {
+          "key": "b",
+          "text": "They occur at different $k$-vectors"
+        },
+        {
+          "key": "c",
+          "text": "There is no band gap"
+        },
+        {
+          "key": "d",
+          "text": "The band gap is extremely large (> 10 eV)"
+        }
+      ]
+    },
+    "A13": {
+      "group": "A",
+      "number": "A13",
+      "text": "The spin angular momentum of a photon is:",
+      "marks": 1,
+      "co": "CO3",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "$0$"
+        },
+        {
+          "key": "b",
+          "text": "$2\\hbar$"
+        },
+        {
+          "key": "c",
+          "text": "$\\hbar$"
+        },
+        {
+          "key": "d",
+          "text": "$3\\hbar$"
+        }
+      ]
+    },
+    "A14": {
+      "group": "A",
+      "number": "A14",
+      "text": "The commutator bracket $[\\hat{x}, \\hat{p}]$ is:",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "$+i\\hbar$"
+        },
+        {
+          "key": "b",
+          "text": "$-i\\hbar$"
+        },
+        {
+          "key": "c",
+          "text": "$-1$"
+        },
+        {
+          "key": "d",
+          "text": "$+1$"
+        }
+      ]
+    },
+    "A15": {
+      "group": "A",
+      "number": "A15",
+      "text": "What is the minimum value of energy possessed by a particle in a box?",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "$0$"
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{h^2}{8mL^2}$"
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{h^2}{2mL^2}$"
+        },
+        {
+          "key": "d",
+          "text": "$\\infty$"
+        }
+      ]
+    },
+    "A16": {
+      "group": "A",
+      "number": "A16",
+      "text": "Which of the following represents a valid physical observable in quantum mechanics?",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "Any operator"
+        },
+        {
+          "key": "b",
+          "text": "Hermitian operator"
+        },
+        {
+          "key": "c",
+          "text": "Anti-Hermitian operator"
+        },
+        {
+          "key": "d",
+          "text": "Arbitrary matrix"
+        }
+      ]
+    },
+    "A17": {
+      "group": "A",
+      "number": "A17",
+      "text": "The time-independent Schrödinger equation is obtained by:",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "Normalization"
+        },
+        {
+          "key": "b",
+          "text": "Expectation value method"
+        },
+        {
+          "key": "c",
+          "text": "Separation of variables"
+        },
+        {
+          "key": "d",
+          "text": "Fourier transform"
+        }
+      ]
+    },
+    "A18": {
+      "group": "A",
+      "number": "A18",
+      "text": "A quantum state $|\\psi\\rangle$ belongs to which mathematical structure?",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "Euclidean space"
+        },
+        {
+          "key": "b",
+          "text": "Hilbert space"
+        },
+        {
+          "key": "c",
+          "text": "Phase space"
+        },
+        {
+          "key": "d",
+          "text": "Vector field"
+        }
+      ]
+    },
+    "A19": {
+      "group": "A",
+      "number": "A19",
+      "text": "Which Pauli matrix flips the qubit state $|1\\rangle$ to $|0\\rangle$?",
+      "marks": 1,
+      "co": "CO2",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "$\\sigma_y$ (Y gate)"
+        },
+        {
+          "key": "b",
+          "text": "$\\sigma_z$ (Z gate)"
+        },
+        {
+          "key": "c",
+          "text": "$\\sigma_x$ (X gate)"
+        },
+        {
+          "key": "d",
+          "text": "$I$ (Identity)"
+        }
+      ]
+    },
+    "A20": {
+      "group": "A",
+      "number": "A20",
+      "text": "Phase space is:",
+      "marks": 1,
+      "co": "CO3",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "Space of temperature and pressure"
+        },
+        {
+          "key": "b",
+          "text": "Space of position and momentum coordinates"
+        },
+        {
+          "key": "c",
+          "text": "Space of spin states"
+        },
+        {
+          "key": "d",
+          "text": "Space of energy levels only"
+        }
+      ]
+    },
+    "A21": {
+      "group": "A",
+      "number": "A21",
+      "text": "Maxwell–Boltzmann statistics apply to:",
+      "marks": 1,
+      "co": "CO3",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false,
+      "options": [
+        {
+          "key": "a",
+          "text": "Bosons"
+        },
+        {
+          "key": "b",
+          "text": "Fermions"
+        },
+        {
+          "key": "c",
+          "text": "Classical distinguishable particles"
+        },
+        {
+          "key": "d",
+          "text": "Photons"
+        }
+      ]
+    },
+    "B1": {
+      "group": "B",
+      "number": "B1",
+      "text": "Find out the expectation value of position of a particle in a 1D box, where $\\psi(x) = \\sqrt{\\frac{2}{a}}\\sin\\left(\\frac{n\\pi x}{a}\\right)$ for $0 \\leq x \\leq a$; $\\psi = 0$ otherwise.",
+      "marks": 5,
+      "co": "CO1",
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": true
+    },
+    "B2": {
+      "group": "B",
+      "number": "B2",
+      "text": "Explain the role of band gap for optoelectronic devices. What kind of materials are used for LED?",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B3": {
+      "group": "B",
+      "number": "B3",
+      "text": "Analyze the effect of the Hadamard gate on a qubit, demonstrating how it transforms the computational basis ($|0\\rangle$, $|1\\rangle$) into the Hadamard basis ($|+\\rangle$, $|-\\rangle$). Explain the physical significance of this basis change in the context of quantum measurements.",
+      "marks": 5,
+      "co": "CO2",
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B4": {
+      "group": "B",
+      "number": "B4",
+      "text": "Explain the Kronig-Penney model for the formation of forbidden gap and energy band for a crystal with the help of the equation:\n$$P\\frac{\\sin(\\alpha a)}{\\alpha a} + \\cos(\\alpha a) = \\cos(ka)$$",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B5": {
+      "group": "B",
+      "number": "B5",
+      "text": "Consider three distinguishable particles (A, B, C) to be distributed into two energy levels ($E_1$, $E_2$). Calculate the Thermodynamic Probability ($W$) for the macrostate where 2 particles are in $E_1$ and 1 particle is in $E_2$.",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B6": {
+      "group": "B",
+      "number": "B6",
+      "text": "Calculate the normalization constant if the wave function of a quantum mechanical particle is given by $\\psi(x) = Ax(a - x)$ for $0 < x < a$; $\\psi = 0$ otherwise.",
+      "marks": 5,
+      "co": "CO1",
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B7": {
+      "group": "B",
+      "number": "B7",
+      "text": "For a particle of mass $m$ confined to a three-dimensional cubical potential box with side length $L$, calculate the degeneracy of the 1st excited state.",
+      "marks": 5,
+      "co": "CO1",
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B8": {
+      "group": "B",
+      "number": "B8",
+      "text": "Show that $[\\hat{x}, \\hat{p}_x] = i\\hbar$, where symbols have their usual meaning.",
+      "marks": 5,
+      "co": "CO1",
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B9": {
+      "group": "B",
+      "number": "B9",
+      "text": "Calculate the effective mass of the electron inside a field $E = Ak^2$, where $A = 10^{-39}$ J·m².",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B10": {
+      "group": "B",
+      "number": "B10",
+      "text": "Derive the expression of effective mass of charge carriers in the presence of an electric field.",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B11": {
+      "group": "B",
+      "number": "B11",
+      "text": "Classify the following as bosons and fermions: Electron, Photon, Phonon, $^4_2$He, Meson, Neutron.",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B12": {
+      "group": "B",
+      "number": "B12",
+      "text": "Differentiate between classical M-B statistics and Fermi-Dirac statistics.",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B13": {
+      "group": "B",
+      "number": "B13",
+      "text": "Draw the Fermi distribution function graphically at temperature $T = 0$ K and $T > 0$ K.",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B14": {
+      "group": "B",
+      "number": "B14",
+      "text": "Find out the possible arrangement of 3 particles in 3 shells according to: (a) MB statistics, (b) FD statistics, (c) BE statistics.",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B15": {
+      "group": "B",
+      "number": "B15",
+      "text": "Write down the 1D Schrödinger equation and make it time-independent.",
+      "marks": 5,
+      "co": "CO1",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B16": {
+      "group": "B",
+      "number": "B16",
+      "text": "Write down the Pauli matrices. Demonstrate the operation of the Pauli-X gate on the states $|0\\rangle$ and $|1\\rangle$.",
+      "marks": 5,
+      "co": "CO2",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B17": {
+      "group": "B",
+      "number": "B17",
+      "text": "Discuss the success and failure of the classical free electron theory.",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B18": {
+      "group": "B",
+      "number": "B18",
+      "text": "What do you mean by phase space?",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L1",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B19": {
+      "group": "B",
+      "number": "B19",
+      "text": "Why is silicon not used in optoelectronic devices?",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B20": {
+      "group": "B",
+      "number": "B20",
+      "text": "State the working principle of an LED. Give an example of a semiconductor used in LED.",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B21": {
+      "group": "B",
+      "number": "B21",
+      "text": "Define optical transition and its significance in optoelectronic materials.",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B22": {
+      "group": "B",
+      "number": "B22",
+      "text": "Why are GaAs and InP preferred materials for high-speed optoelectronic devices?",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B23": {
+      "group": "B",
+      "number": "B23",
+      "text": "Determine the value of the commutator $[\\hat{y}, \\hat{L}_x]$, where symbols have their usual meaning. Also, in a 3D cubical box, note the expression of energy and calculate the degeneracy of the 1st excited state.",
+      "marks": 5,
+      "co": "CO1",
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B24": {
+      "group": "B",
+      "number": "B24",
+      "text": "Evaluate $[\\hat{y}, \\hat{L}_y]$ and $[\\hat{x}, \\hat{L}_x]$.",
+      "marks": 5,
+      "co": "CO1",
+      "bl": "L3",
+      "is_question_free": true,
+      "is_answer_free": false
+    },
+    "B25": {
+      "group": "B",
+      "number": "B25",
+      "text": "What is thermodynamic probability? Calculate the thermodynamic probability of classical particles (MB statistics) where total number of particles $N$ are distributed among $E_i$ energy levels, each level occupying $N_i$ particles. Assume all particles are distinguishable.",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L2",
+      "is_question_free": true,
+      "is_answer_free": false
+    }
+  },
+  "answers": {
+    "A1": {
+      "question_number": "A1",
+      "correct_option": "b",
+      "solution": "The equation $\\hat{A}\\psi = a\\psi$ is the **eigenvalue equation**. Here $a$ is the **eigenvalue** and $\\psi$ is the eigenfunction of the operator $\\hat{A}$.\n\nThe eigenvalue represents a possible measurement outcome of the observable corresponding to $\\hat{A}$. It is not the expectation value (which is the average over many measurements), nor a commutator or superposition coefficient.",
+      "key_points": [
+        "$\\hat{A}\\psi = a\\psi$ defines eigenvalue $a$",
+        "Eigenvalues = possible measurement outcomes",
+        "For Hermitian operators, eigenvalues are real"
+      ]
+    },
+    "A2": {
+      "question_number": "A2",
+      "correct_option": "b",
+      "solution": "Semiconductors like Si and Ge possess **covalent bonding**, where atoms share valence electrons with their neighbors. In the diamond cubic structure, each Si atom forms 4 covalent bonds with neighbors.\n\nIII-V semiconductors (GaAs) have a mix of covalent and ionic character but are predominantly covalent. Metallic bonding is for metals, ionic is for salts like NaCl.",
+      "key_points": [
+        "Semiconductors: primarily covalent bonding",
+        "Si: 4 covalent bonds (diamond cubic)",
+        "III-V compounds: covalent with some ionic character"
+      ]
+    },
+    "A3": {
+      "question_number": "A3",
+      "correct_option": "c",
+      "solution": "For a 1D infinite square well of width $a$:\n\n$$E_n = \\frac{n^2 h^2}{8ma^2} = \\frac{n^2 \\pi^2 \\hbar^2}{2ma^2}, \\quad n = 1, 2, 3, ...$$\n\nNote: $h = 2\\pi\\hbar$, so $h^2/(8m) = \\pi^2\\hbar^2/(2m)$. Option (c) uses $h$ form correctly. Option (a) has wrong factor of 4. Option (d) has wrong factor of 2.",
+      "key_points": [
+        "$E_n = n^2 h^2/(8ma^2)$ in terms of $h$",
+        "Equivalently $E_n = n^2\\pi^2\\hbar^2/(2ma^2)$ in terms of $\\hbar$",
+        "$E_n \\propto n^2$: energy levels are not equally spaced"
+      ]
+    },
+    "A4": {
+      "question_number": "A4",
+      "correct_option": "c",
+      "solution": "In a cubic 3D box ($L_x = L_y = L_z = L$):\n\n$$E = \\frac{h^2}{8mL^2}(n_x^2 + n_y^2 + n_z^2)$$\n\nDifferent permutations of quantum numbers can yield the same sum. For example, $(2,1,1)$, $(1,2,1)$, and $(1,1,2)$ all give $n_x^2 + n_y^2 + n_z^2 = 6$, resulting in the same energy — **3-fold degeneracy**.",
+      "key_points": [
+        "Degeneracy: multiple states with same energy",
+        "In 3D: permutations of $(n_x, n_y, n_z)$ give same $E$",
+        "1D has no degeneracy; 3D can have it"
+      ]
+    },
+    "A5": {
+      "question_number": "A5",
+      "correct_option": "c",
+      "solution": "Fermions are **indistinguishable** and obey **Pauli exclusion** (max 1 per cell).\n\n$$W_{\\text{FD}} = \\binom{g}{N} = \\binom{3}{2} = \\frac{3!}{2! \\cdot 1!} = 3$$\n\nThe 3 arrangements: particles in cells $(1,2)$, $(1,3)$, $(2,3)$.\n\nFor comparison: MB would give $3^2 = 9$, BE would give $\\binom{4}{2} = 6$.",
+      "key_points": [
+        "FD: $\\binom{g}{N} = \\binom{3}{2} = 3$",
+        "Fermions: indistinguishable, max 1 per cell",
+        "MB: $g^N = 9$; BE: $\\binom{N+g-1}{N} = 6$"
+      ]
+    },
+    "A6": {
+      "question_number": "A6",
+      "correct_option": "c",
+      "solution": "Phase space for a single particle is **6-dimensional**: 3 position coordinates $(x, y, z)$ and 3 momentum coordinates $(p_x, p_y, p_z)$.\n\nFor a system of $N$ particles, phase space is $6N$-dimensional. Each point in phase space represents a unique microstate of the system.",
+      "key_points": [
+        "Phase space: 6D per particle (3 position + 3 momentum)",
+        "For $N$ particles: $6N$ dimensions",
+        "Each point = one microstate"
+      ]
+    },
+    "A7": {
+      "question_number": "A7",
+      "correct_option": "b",
+      "solution": "In Dirac notation, a **ket** $|\\psi\\rangle$ represents a **column vector** in a complex Hilbert space.\n\nFor a qubit: $|\\psi\\rangle = \\alpha|0\\rangle + \\beta|1\\rangle = \\begin{pmatrix} \\alpha \\\\ \\beta \\end{pmatrix}$\n\nThe corresponding **bra** $\\langle\\psi|$ is a row vector: $\\langle\\psi| = (\\alpha^* \\quad \\beta^*)$.",
+      "key_points": [
+        "Ket $|\\psi\\rangle$ = column vector in Hilbert space",
+        "Bra $\\langle\\psi|$ = row vector (conjugate transpose)",
+        "Lives in complex vector space"
+      ]
+    },
+    "A8": {
+      "question_number": "A8",
+      "correct_option": "b",
+      "solution": "The Pauli matrices satisfy $\\sigma_i^2 = I$ (identity matrix) for all $i = x, y, z$.\n\nThey are both **unitary AND Hermitian** (not just unitary), so (a) is wrong. They do **not** commute: $[\\sigma_i, \\sigma_j] = 2i\\epsilon_{ijk}\\sigma_k \\neq 0$, so (c) is wrong.",
+      "key_points": [
+        "$\\sigma_x^2 = \\sigma_y^2 = \\sigma_z^2 = I$",
+        "Pauli matrices are both Hermitian AND unitary",
+        "They do NOT commute: $[\\sigma_i, \\sigma_j] = 2i\\epsilon_{ijk}\\sigma_k$"
+      ]
+    },
+    "A9": {
+      "question_number": "A9",
+      "correct_option": "b",
+      "solution": "The Drude model treats conduction electrons as a classical gas moving through a uniform potential. It **neglects the periodic potential** of ion cores, which is essential for explaining band structure.\n\nOption (a) is wrong — Drude uses MB statistics, not FD. Option (c) is wrong — it cannot predict band gaps. Option (d) is wrong — it does include collisions (scattering).",
+      "key_points": [
+        "Drude model ignores periodic lattice potential",
+        "Cannot explain band gaps or material classification",
+        "Uses classical MB statistics (not FD)"
+      ]
+    },
+    "A10": {
+      "question_number": "A10",
+      "correct_option": "c",
+      "solution": "The correct classification:\n\n- **Metals**: CB and VB overlap or CB partially filled ($E_g = 0$)\n- **Semiconductors**: small band gap ($E_g \\approx 0.1-3.5$ eV)\n- **Insulators**: large band gap ($E_g > 3.5$ eV)\n\nOptions (a) and (b) reverse the definitions. Option (d) is clearly wrong.",
+      "key_points": [
+        "Metals: overlapping bands ($E_g = 0$)",
+        "Semiconductors: small gap (0.1–3.5 eV)",
+        "Insulators: large gap (> 3.5 eV)"
+      ]
+    },
+    "A11": {
+      "question_number": "A11",
+      "correct_option": "c",
+      "solution": "**Silicon** is the classic example of an **indirect bandgap** semiconductor. Its CB minimum and VB maximum occur at different $k$-vectors, requiring a phonon for optical transitions.\n\nGaAs and InAs are **direct** bandgap. Metals don't have band gaps at all.",
+      "key_points": [
+        "Si: indirect bandgap ($E_g = 1.1$ eV)",
+        "GaAs, InAs: direct bandgap",
+        "Indirect → inefficient for light emission"
+      ]
+    },
+    "A12": {
+      "question_number": "A12",
+      "correct_option": "a",
+      "solution": "In a **direct bandgap** semiconductor, the CB minimum and VB maximum are at the **same $k$-vector** (usually $\\Gamma$ point). This allows radiative transitions without phonon assistance.\n\nExamples: GaAs ($1.42$ eV), GaN ($3.4$ eV), InP ($1.35$ eV). These are efficient for light emission (LEDs, lasers).",
+      "key_points": [
+        "Direct: CB min and VB max at same $k$",
+        "Photon-only transitions (efficient light emission)",
+        "Examples: GaAs, GaN, InP"
+      ]
+    },
+    "A13": {
+      "question_number": "A13",
+      "correct_option": "c",
+      "solution": "The photon is a spin-1 boson. Its spin angular momentum magnitude is $s\\hbar = 1 \\cdot \\hbar = \\hbar$.\n\nThe spin quantum number $s = 1$, with projections $m_s = +1$ (right circular) and $m_s = -1$ (left circular). The $m_s = 0$ state is forbidden for massless particles due to the transversality condition.",
+      "key_points": [
+        "Photon: spin-1 boson, $S = \\hbar$",
+        "Helicity: $m_s = \\pm 1$ only (not 0)",
+        "$m_s = 0$ forbidden for massless particles"
+      ]
+    },
+    "A14": {
+      "question_number": "A14",
+      "correct_option": "a",
+      "solution": "The canonical commutation relation:\n\n$$[\\hat{x}, \\hat{p}] = \\hat{x}\\hat{p} - \\hat{p}\\hat{x} = i\\hbar$$\n\nThis is the fundamental relation underpinning the Heisenberg uncertainty principle: $\\Delta x \\cdot \\Delta p \\geq \\hbar/2$.",
+      "key_points": [
+        "$[\\hat{x}, \\hat{p}] = +i\\hbar$",
+        "Canonical commutation relation",
+        "Leads to uncertainty principle"
+      ]
+    },
+    "A15": {
+      "question_number": "A15",
+      "correct_option": "b",
+      "solution": "The minimum energy is the **ground state** ($n = 1$), called the **zero-point energy**:\n\n$$E_1 = \\frac{h^2}{8mL^2}$$\n\nIn quantum mechanics, a confined particle can **never** have zero energy. If $E = 0$, then $\\psi = 0$ everywhere (no particle). This is a direct consequence of the uncertainty principle: confinement ($\\Delta x \\sim L$) requires non-zero momentum ($\\Delta p \\geq \\hbar/(2L)$).",
+      "key_points": [
+        "Zero-point energy: $E_1 = h^2/(8mL^2) \\neq 0$",
+        "QM forbids $E = 0$ for confined particles",
+        "Consequence of Heisenberg uncertainty principle"
+      ]
+    },
+    "A16": {
+      "question_number": "A16",
+      "correct_option": "b",
+      "solution": "Physical observables are represented by **Hermitian operators** ($\\hat{A} = \\hat{A}^\\dagger$) because:\n\n1. **Real eigenvalues** — measurements yield real numbers\n2. **Orthogonal eigenstates** — distinct outcomes are distinguishable\n3. **Complete basis** — any state can be expanded in eigenstates\n\nAnti-Hermitian operators have purely imaginary eigenvalues and cannot represent observables.",
+      "key_points": [
+        "Observables ↔ Hermitian operators",
+        "Hermitian → real eigenvalues, orthogonal eigenstates",
+        "Anti-Hermitian → imaginary eigenvalues (not physical)"
+      ]
+    },
+    "A17": {
+      "question_number": "A17",
+      "correct_option": "c",
+      "solution": "The TISE is obtained from the TDSE using **separation of variables**: $\\Psi(x,t) = \\psi(x) \\cdot T(t)$.\n\nThis separates into a time part ($T = e^{-iEt/\\hbar}$) and a spatial part (TISE): $\\hat{H}\\psi = E\\psi$.",
+      "key_points": [
+        "Separation of variables: $\\Psi = \\psi(x) \\cdot T(t)$",
+        "Yields TISE as spatial part",
+        "Time part: $T = e^{-iEt/\\hbar}$"
+      ]
+    },
+    "A18": {
+      "question_number": "A18",
+      "correct_option": "b",
+      "solution": "Quantum states live in a **Hilbert space** — a complete, complex, inner-product vector space.\n\nKey features: inner product $\\langle\\phi|\\psi\\rangle$ defined, completeness (Cauchy sequences converge), infinite-dimensional (for continuous systems) or finite-dimensional (for qubits).",
+      "key_points": [
+        "Quantum states ∈ Hilbert space",
+        "Complete, complex inner-product space",
+        "Finite-dim for qubits, infinite-dim for continuous systems"
+      ]
+    },
+    "A19": {
+      "question_number": "A19",
+      "correct_option": "c",
+      "solution": "The **Pauli-X gate** (NOT gate) flips qubit states:\n\n$$\\sigma_x = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}: \\quad \\sigma_x|0\\rangle = |1\\rangle, \\quad \\sigma_x|1\\rangle = |0\\rangle$$\n\nThe Z gate adds a phase ($|1\\rangle \\to -|1\\rangle$) but doesn't flip. The Y gate both flips and adds a phase.",
+      "key_points": [
+        "Pauli-X (NOT gate) flips $|0\\rangle \\leftrightarrow |1\\rangle$",
+        "$\\sigma_x = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$",
+        "Analog of classical NOT gate"
+      ]
+    },
+    "A20": {
+      "question_number": "A20",
+      "correct_option": "b",
+      "solution": "**Phase space** is the space of all **position and momentum coordinates**. For a single particle in 3D: $(x, y, z, p_x, p_y, p_z)$ — a 6D space.\n\nEach point in phase space represents a complete microstate of the system. The trajectory traces the time evolution.",
+      "key_points": [
+        "Phase space: position + momentum coordinates",
+        "6D per particle",
+        "Each point = one microstate"
+      ]
+    },
+    "A21": {
+      "question_number": "A21",
+      "correct_option": "c",
+      "solution": "**Maxwell-Boltzmann statistics** applies to **classical distinguishable particles** with no restriction on occupancy.\n\nBosons → Bose-Einstein statistics. Fermions → Fermi-Dirac statistics. Photons are bosons (BE). MB is the classical (high-T, low-density) limit of both quantum statistics.",
+      "key_points": [
+        "MB: classical, distinguishable, no occupancy restriction",
+        "BE: bosons; FD: fermions",
+        "MB = high-T limit of quantum statistics"
+      ]
+    },
+    "B1": {
+      "question_number": "B1",
+      "solution": "The expectation value of position:\n\n$$\\langle x \\rangle = \\int_0^a \\psi^* \\, x \\, \\psi \\, dx = \\frac{2}{a} \\int_0^a x \\sin^2\\left(\\frac{n\\pi x}{a}\\right) dx$$\n\nUsing the identity $\\sin^2\\theta = \\frac{1}{2}(1 - \\cos 2\\theta)$:\n\n$$\\langle x \\rangle = \\frac{2}{a} \\int_0^a x \\cdot \\frac{1}{2}\\left[1 - \\cos\\left(\\frac{2n\\pi x}{a}\\right)\\right] dx$$\n\n$$= \\frac{1}{a}\\left[\\int_0^a x \\, dx - \\int_0^a x \\cos\\left(\\frac{2n\\pi x}{a}\\right) dx\\right]$$\n\nFirst integral: $\\int_0^a x \\, dx = a^2/2$\n\nSecond integral (integration by parts): $\\int_0^a x \\cos\\left(\\frac{2n\\pi x}{a}\\right) dx = 0$ (for integer $n$)\n\n$$\\langle x \\rangle = \\frac{1}{a} \\cdot \\frac{a^2}{2} = \\frac{a}{2}$$\n\n**Result: $\\langle x \\rangle = a/2$** — the particle is on average at the center of the box, regardless of quantum number $n$.",
+      "key_points": [
+        "$\\langle x \\rangle = a/2$ for all $n$",
+        "Particle found at center on average",
+        "Uses $\\sin^2\\theta = (1-\\cos 2\\theta)/2$",
+        "Cosine integral vanishes for integer $n$"
+      ]
+    },
+    "B2": {
+      "question_number": "B2",
+      "solution": "#### Role of Band Gap\n\nThe band gap $E_g$ determines the **wavelength of light** emitted or absorbed: $\\lambda = hc/E_g = 1240/E_g$(eV) nm.\n\n1. $E_g$ sets the **emission wavelength/color** of LEDs and lasers\n2. **Direct bandgap** required for efficient radiative recombination\n3. Band gap engineering (alloying) allows tuning of emission wavelength\n4. $E_g$ determines **absorption edge** for photodetectors and solar cells\n\n#### Materials for LEDs\n\n- **Red LEDs**: GaAsP, AlGaAs ($E_g \\approx 1.4-1.9$ eV)\n- **Green LEDs**: GaP:N, InGaN ($E_g \\approx 2.0-2.3$ eV)\n- **Blue LEDs**: GaN, InGaN ($E_g \\approx 2.6-3.4$ eV)\n- **White LEDs**: Blue GaN LED + yellow phosphor\n- **IR LEDs**: GaAs, InGaAsP ($E_g \\approx 0.8-1.4$ eV)\n\nAll LED materials must be **direct bandgap** semiconductors for efficient light emission.",
+      "key_points": [
+        "$\\lambda = 1240/E_g$ nm — gap determines color",
+        "Direct bandgap essential for efficient emission",
+        "GaN (blue), InGaN (green), GaAsP (red)",
+        "Band gap engineering enables wavelength tuning"
+      ]
+    },
+    "B3": {
+      "question_number": "B3",
+      "solution": "#### Hadamard Gate\n\n$$H = \\frac{1}{\\sqrt{2}}\\begin{pmatrix} 1 & 1 \\\\ 1 & -1 \\end{pmatrix}$$\n\n#### Action on Computational Basis\n\n$$H|0\\rangle = \\frac{1}{\\sqrt{2}}\\begin{pmatrix} 1 & 1 \\\\ 1 & -1 \\end{pmatrix}\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = \\frac{1}{\\sqrt{2}}\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} = \\frac{|0\\rangle + |1\\rangle}{\\sqrt{2}} = |+\\rangle$$\n\n$$H|1\\rangle = \\frac{1}{\\sqrt{2}}\\begin{pmatrix} 1 & 1 \\\\ 1 & -1 \\end{pmatrix}\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix} = \\frac{1}{\\sqrt{2}}\\begin{pmatrix} 1 \\\\ -1 \\end{pmatrix} = \\frac{|0\\rangle - |1\\rangle}{\\sqrt{2}} = |-\\rangle$$\n\n#### Physical Significance\n\n1. **Creates superposition**: Transforms definite states into equal superpositions — essential for quantum parallelism\n2. **Basis change**: Converts between $Z$-basis (computational) and $X$-basis (Hadamard). Measuring in $X$-basis = apply $H$ then measure in $Z$-basis\n3. **Self-inverse**: $H^2 = I$ — applying twice returns original state\n4. **Quantum algorithms**: Used at the start of many algorithms (Deutsch, Grover, Shor) to create uniform superposition over all inputs",
+      "key_points": [
+        "$H|0\\rangle = |+\\rangle$, $H|1\\rangle = |-\\rangle$",
+        "Creates equal superposition from definite states",
+        "$H^2 = I$ (self-inverse)",
+        "Essential for quantum parallelism and algorithms"
+      ]
+    },
+    "B4": {
+      "question_number": "B4",
+      "solution": "#### The Model\n\nThe Kronig-Penney model uses a **1D periodic rectangular potential** (barriers of height $V_0$ and width $b$, wells of width $a$) to model a crystal lattice.\n\n#### The Equation\n\n$$P\\frac{\\sin(\\alpha a)}{\\alpha a} + \\cos(\\alpha a) = \\cos(ka)$$\n\nwhere $\\alpha = \\sqrt{2mE}/\\hbar$, $P = mV_0 ba/\\hbar^2$ (barrier strength), and $k$ is the electron wave vector.\n\n#### Formation of Bands and Gaps\n\nThe **right side** $\\cos(ka)$ is bounded: $-1 \\leq \\cos(ka) \\leq 1$.\n\nThe **left side** is a function of energy $E$ (through $\\alpha$) that oscillates with varying amplitude.\n\n1. **Allowed bands**: Energy ranges where LHS falls within $[-1, +1]$ — solutions exist\n2. **Forbidden gaps**: Energy ranges where $|\\text{LHS}| > 1$ — no solutions, no electron states\n3. **Band edges**: At $\\cos(ka) = \\pm 1$ (i.e., $k = n\\pi/a$)\n\n#### Key Conclusions\n\n- $P \\to 0$: Free electron parabola (no gaps)\n- $P \\to \\infty$: Discrete levels (tightly bound)\n- Band width **increases** with energy; gap width **decreases**\n- Foundation for understanding metals, semiconductors, and insulators",
+      "key_points": [
+        "$P\\sin(\\alpha a)/(\\alpha a) + \\cos(\\alpha a) = \\cos(ka)$",
+        "Allowed bands where $|\\text{LHS}| \\leq 1$",
+        "Forbidden gaps where $|\\text{LHS}| > 1$",
+        "$P = 0$: free electron; $P \\to \\infty$: discrete levels"
+      ]
+    },
+    "B5": {
+      "question_number": "B5",
+      "solution": "#### Setup\n\nParticles: A, B, C (distinguishable → MB statistics)\nMacrostate: $N_1 = 2$ in $E_1$, $N_2 = 1$ in $E_2$, total $N = 3$\n\n#### Calculation\n\n$$W = \\frac{N!}{N_1! \\cdot N_2!} = \\frac{3!}{2! \\cdot 1!} = \\frac{6}{2} = 3$$\n\n#### Explicit Enumeration\n\nThe 3 microstates:\n\n| Microstate | $E_1$ | $E_2$ |\n|------------|-------|-------|\n| 1 | A, B | C |\n| 2 | A, C | B |\n| 3 | B, C | A |\n\n**Result: $W = 3$**\n\nThis is the number of ways to choose which 2 of 3 particles go into $E_1$ = $\\binom{3}{2} = 3$.",
+      "key_points": [
+        "$W = N!/(N_1! \\cdot N_2!) = 3!/2! = 3$",
+        "Distinguishable → order matters (MB)",
+        "Equivalent to $\\binom{3}{2} = 3$",
+        "3 distinct microstates for this macrostate"
+      ]
+    },
+    "B6": {
+      "question_number": "B6",
+      "solution": "Apply normalization condition:\n\n$$\\int_0^a |\\psi|^2 \\, dx = 1 \\implies |A|^2 \\int_0^a x^2(a-x)^2 \\, dx = 1$$\n\nExpand $x^2(a-x)^2 = x^2(a^2 - 2ax + x^2) = a^2x^2 - 2ax^3 + x^4$:\n\n$$\\int_0^a (a^2x^2 - 2ax^3 + x^4) \\, dx = \\left[\\frac{a^2x^3}{3} - \\frac{2ax^4}{4} + \\frac{x^5}{5}\\right]_0^a$$\n\n$$= \\frac{a^5}{3} - \\frac{a^5}{2} + \\frac{a^5}{5} = a^5\\left(\\frac{1}{3} - \\frac{1}{2} + \\frac{1}{5}\\right)$$\n\n$$= a^5 \\cdot \\frac{10 - 15 + 6}{30} = \\frac{a^5}{30}$$\n\nTherefore:\n\n$$|A|^2 \\cdot \\frac{a^5}{30} = 1 \\implies A = \\sqrt{\\frac{30}{a^5}}$$\n\n**Result: $A = \\sqrt{30/a^5}$**",
+      "key_points": [
+        "$\\int_0^a x^2(a-x)^2 dx = a^5/30$",
+        "$A = \\sqrt{30/a^5}$",
+        "Expand $(a-x)^2$, integrate term by term",
+        "Normalization ensures total probability = 1"
+      ]
+    },
+    "B7": {
+      "question_number": "B7",
+      "solution": "Energy for a 3D cubic box:\n\n$$E_{n_x,n_y,n_z} = \\frac{h^2}{8mL^2}(n_x^2 + n_y^2 + n_z^2)$$\n\n**Ground state**: $(1,1,1)$ → $n_x^2 + n_y^2 + n_z^2 = 3$ → $E_0 = 3E_1$\n(non-degenerate: only 1 combination)\n\n**1st excited state**: One quantum number becomes 2, others remain 1:\n\n| State | $(n_x, n_y, n_z)$ | Sum |\n|-------|--------------------|-----|\n| 1 | $(2, 1, 1)$ | 6 |\n| 2 | $(1, 2, 1)$ | 6 |\n| 3 | $(1, 1, 2)$ | 6 |\n\nAll give $E = 6h^2/(8mL^2) = 6E_1$.\n\n**Result: The 1st excited state has 3-fold degeneracy.**\n\nThese three states have identical energy but different spatial distributions — the wave function has a node along a different axis in each case.",
+      "key_points": [
+        "1st excited state: $(2,1,1)$, $(1,2,1)$, $(1,1,2)$",
+        "All give $E = 6h^2/(8mL^2)$",
+        "**3-fold degeneracy**",
+        "Degeneracy arises from cubic symmetry"
+      ]
+    },
+    "B8": {
+      "question_number": "B8",
+      "solution": "We evaluate $[\\hat{x}, \\hat{p}_x] = \\hat{x}\\hat{p}_x - \\hat{p}_x\\hat{x}$ where $\\hat{p}_x = -i\\hbar \\frac{\\partial}{\\partial x}$.\n\nOperate on arbitrary function $f(x)$:\n\n$$\\hat{x}\\hat{p}_x f = x \\cdot \\left(-i\\hbar \\frac{\\partial f}{\\partial x}\\right) = -i\\hbar x \\frac{\\partial f}{\\partial x}$$\n\n$$\\hat{p}_x\\hat{x} f = -i\\hbar \\frac{\\partial}{\\partial x}(xf) = -i\\hbar\\left(f + x\\frac{\\partial f}{\\partial x}\\right)$$\n\nSubtracting:\n\n$$[\\hat{x}, \\hat{p}_x]f = -i\\hbar x \\frac{\\partial f}{\\partial x} - \\left[-i\\hbar f - i\\hbar x \\frac{\\partial f}{\\partial x}\\right]$$\n\n$$= -i\\hbar x f' + i\\hbar f + i\\hbar x f' = i\\hbar f$$\n\nSince this holds for any $f(x)$:\n\n$$\\boxed{[\\hat{x}, \\hat{p}_x] = i\\hbar}$$",
+      "key_points": [
+        "Apply $[\\hat{x}, \\hat{p}]$ on arbitrary $f(x)$",
+        "Use product rule for $\\hat{p}(xf) = -i\\hbar(f + xf')$",
+        "Result: $[\\hat{x}, \\hat{p}] = i\\hbar$",
+        "Fundamental to uncertainty principle"
+      ]
+    },
+    "B9": {
+      "question_number": "B9",
+      "solution": "The effective mass is given by:\n\n$$m^* = \\frac{\\hbar^2}{d^2E/dk^2}$$\n\nGiven: $E = Ak^2$ where $A = 10^{-39}$ J·m²\n\n$$\\frac{dE}{dk} = 2Ak$$\n\n$$\\frac{d^2E}{dk^2} = 2A = 2 \\times 10^{-39} \\text{ J·m}^2$$\n\nTherefore:\n\n$$m^* = \\frac{\\hbar^2}{2A} = \\frac{(1.055 \\times 10^{-34})^2}{2 \\times 10^{-39}}$$\n\n$$= \\frac{1.113 \\times 10^{-68}}{2 \\times 10^{-39}} = 5.57 \\times 10^{-30} \\text{ kg}$$\n\nComparing with free electron mass $m_e = 9.1 \\times 10^{-31}$ kg:\n\n$$\\frac{m^*}{m_e} = \\frac{5.57 \\times 10^{-30}}{9.1 \\times 10^{-31}} \\approx 6.1$$\n\n**Result: $m^* \\approx 5.57 \\times 10^{-30}$ kg $\\approx 6.1 \\, m_e$**",
+      "key_points": [
+        "$m^* = \\hbar^2/(d^2E/dk^2)$",
+        "For $E = Ak^2$: $d^2E/dk^2 = 2A$",
+        "$m^* \\approx 5.57 \\times 10^{-30}$ kg $\\approx 6.1 \\, m_e$",
+        "Effective mass can differ significantly from free electron mass"
+      ]
+    },
+    "B10": {
+      "question_number": "B10",
+      "solution": "Consider an electron in an energy band under external electric field $\\mathcal{E}$.\n\n**Group velocity** of the electron wave packet:\n\n$$v_g = \\frac{1}{\\hbar}\\frac{dE}{dk}$$\n\n**Acceleration:**\n\n$$a = \\frac{dv_g}{dt} = \\frac{1}{\\hbar}\\frac{d^2E}{dk^2} \\cdot \\frac{dk}{dt}$$\n\nFrom the force equation, the external force $F = -e\\mathcal{E}$ changes the crystal momentum:\n\n$$F = \\hbar \\frac{dk}{dt} \\implies \\frac{dk}{dt} = \\frac{F}{\\hbar}$$\n\nSubstituting:\n\n$$a = \\frac{1}{\\hbar} \\cdot \\frac{d^2E}{dk^2} \\cdot \\frac{F}{\\hbar} = \\frac{F}{\\hbar^2} \\cdot \\frac{d^2E}{dk^2}$$\n\nComparing with Newton's second law $F = m^* a$:\n\n$$a = \\frac{F}{m^*}$$\n\nEquating the two expressions:\n\n$$\\frac{F}{m^*} = \\frac{F}{\\hbar^2} \\cdot \\frac{d^2E}{dk^2}$$\n\n$$\\boxed{m^* = \\frac{\\hbar^2}{d^2E/dk^2}}$$\n\nThe effective mass captures how the periodic potential modifies the electron's response to external forces.",
+      "key_points": [
+        "$v_g = (1/\\hbar)(dE/dk)$: group velocity",
+        "$F = \\hbar(dk/dt)$: force changes crystal momentum",
+        "$m^* = \\hbar^2/(d^2E/dk^2)$",
+        "Depends on band curvature: high curvature → small $m^*$"
+      ]
+    },
+    "B11": {
+      "question_number": "B11",
+      "solution": "#### Classification by Spin\n\n| Particle | Spin | Type | Statistics |\n|----------|------|------|------------|\n| **Electron** | $1/2$ | **Fermion** | Fermi-Dirac |\n| **Photon** | $1$ | **Boson** | Bose-Einstein |\n| **Phonon** | $0$ (or $1$) | **Boson** | Bose-Einstein |\n| **$^4_2$He** (alpha) | $0$ | **Boson** | Bose-Einstein |\n| **Meson** (e.g., $\\pi$) | $0$ | **Boson** | Bose-Einstein |\n| **Neutron** | $1/2$ | **Fermion** | Fermi-Dirac |\n\n#### Summary\n\n**Bosons** (integer spin): Photon, Phonon, $^4$He, Meson\n**Fermions** (half-integer spin): Electron, Neutron\n\n**Rule:** Integer spin → Boson (BE stats, no exclusion); Half-integer spin → Fermion (FD stats, Pauli exclusion).",
+      "key_points": [
+        "Bosons: Photon, Phonon, $^4$He, Meson (integer spin)",
+        "Fermions: Electron, Neutron (half-integer spin)",
+        "Spin-statistics theorem: integer → boson, half-integer → fermion",
+        "$^4$He: composite boson (2p + 2n + 2e → total spin 0)"
+      ]
+    },
+    "B12": {
+      "question_number": "B12",
+      "solution": "| Property | Maxwell-Boltzmann | Fermi-Dirac |\n|----------|------------------|-------------|\n| **Particles** | Classical, distinguishable | Quantum, indistinguishable |\n| **Spin** | Not applicable | Half-integer ($1/2, 3/2, ...$) |\n| **Pauli exclusion** | No | Yes (max 1 per state) |\n| **Distribution** | $f = Ae^{-E/k_BT}$ | $f = \\frac{1}{e^{(E-E_F)/k_BT} + 1}$ |\n| **Occupancy per state** | Unlimited ($0, 1, 2, ...$) | Only 0 or 1 |\n| **Examples** | Gas molecules at high $T$ | Electrons in metals |\n| **Low-$T$ behavior** | All in ground state | Fill up to Fermi level |\n| **Wave function** | No symmetry requirement | Antisymmetric |\n| **Validity** | High $T$, low density | All temperatures |\n\nMB statistics is the **classical limit** of FD statistics when $E - E_F \\gg k_BT$ (i.e., high temperature, low density).",
+      "key_points": [
+        "MB: distinguishable, no exclusion, $f = Ae^{-E/kT}$",
+        "FD: indistinguishable fermions, max 1/state",
+        "MB = classical limit of FD at high $T$",
+        "FD essential for electrons in metals"
+      ]
+    },
+    "B13": {
+      "question_number": "B13",
+      "solution": "The Fermi-Dirac distribution: $f(E) = \\frac{1}{e^{(E-E_F)/k_BT} + 1}$\n\n#### At $T = 0$ K (Step Function)\n\n$$f(E) = \\begin{cases} 1 & \\text{if } E < E_F \\\\ 0 & \\text{if } E > E_F \\end{cases}$$\n\nThis is a **sharp step function** at $E = E_F$: all states below $E_F$ are completely filled, all above are empty.\n\n#### At $T > 0$ K (Smooth Transition)\n\n- The sharp step **softens** around $E_F$\n- Some electrons near $E_F$ are thermally excited to states above $E_F$\n- $f(E_F) = 0.5$ at any temperature $T > 0$\n- The transition width is $\\sim 4k_BT$\n- States far below $E_F$ remain essentially full ($f \\approx 1$)\n- States far above $E_F$ remain essentially empty ($f \\approx 0$)\n\n#### Key Features of the Graph\n\n- At $T = 0$: vertical drop at $E_F$\n- At $T > 0$: gradual S-shaped curve through $f = 0.5$ at $E_F$\n- Higher $T$ → broader transition region\n- The curve is symmetric about the point $(E_F, 0.5)$",
+      "key_points": [
+        "$T = 0$: step function — full below $E_F$, empty above",
+        "$T > 0$: smooth curve, $f(E_F) = 0.5$",
+        "Transition width $\\sim 4k_BT$",
+        "Higher temperature → broader transition"
+      ]
+    },
+    "B14": {
+      "question_number": "B14",
+      "solution": "3 particles, 3 cells/shells ($N = 3$, $g = 3$):\n\n**(a) Maxwell-Boltzmann (distinguishable, no restriction):**\n\n$$W_{\\text{MB}} = g^N = 3^3 = 27$$\n\n**(b) Fermi-Dirac (indistinguishable, max 1 per cell):**\n\n$$W_{\\text{FD}} = \\binom{g}{N} = \\binom{3}{3} = 1$$\n\nOnly one way: one particle in each cell.\n\n**(c) Bose-Einstein (indistinguishable, no restriction):**\n\n$$W_{\\text{BE}} = \\binom{N + g - 1}{N} = \\binom{3 + 3 - 1}{3} = \\binom{5}{3} = 10$$\n\n#### Summary\n\n| Statistics | Formula | Result |\n|-----------|---------|--------|\n| MB | $g^N = 3^3$ | **27** |\n| FD | $\\binom{g}{N} = \\binom{3}{3}$ | **1** |\n| BE | $\\binom{N+g-1}{N} = \\binom{5}{3}$ | **10** |",
+      "key_points": [
+        "MB: $g^N = 27$",
+        "FD: $\\binom{g}{N} = 1$ (exactly one arrangement)",
+        "BE: $\\binom{N+g-1}{N} = 10$",
+        "Always: $W_{\\text{MB}} \\geq W_{\\text{BE}} \\geq W_{\\text{FD}}$"
+      ]
+    },
+    "B15": {
+      "question_number": "B15",
+      "solution": "#### 1D Time-Dependent Schrödinger Equation (TDSE)\n\n$$i\\hbar \\frac{\\partial \\Psi(x,t)}{\\partial t} = -\\frac{\\hbar^2}{2m}\\frac{\\partial^2 \\Psi(x,t)}{\\partial x^2} + V(x)\\Psi(x,t)$$\n\n#### Making it Time-Independent\n\nAssume separable solution: $\\Psi(x,t) = \\psi(x) \\cdot T(t)$\n\nSubstitute into TDSE and divide by $\\psi(x)T(t)$:\n\n$$\\frac{i\\hbar}{T}\\frac{dT}{dt} = \\frac{1}{\\psi}\\left[-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} + V\\psi\\right]$$\n\nLHS depends only on $t$, RHS only on $x$. Both must equal a constant $E$.\n\n**Time part:**\n$$i\\hbar \\frac{dT}{dt} = ET \\implies T(t) = e^{-iEt/\\hbar}$$\n\n**Spatial part (TISE):**\n$$-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} + V(x)\\psi = E\\psi$$\n\nOr equivalently: $\\hat{H}\\psi = E\\psi$. The separation constant $E$ is the energy eigenvalue.",
+      "key_points": [
+        "TDSE: $i\\hbar \\partial\\Psi/\\partial t = \\hat{H}\\Psi$",
+        "Separation: $\\Psi = \\psi(x) \\cdot T(t)$",
+        "TISE: $-\\frac{\\hbar^2}{2m}\\psi'' + V\\psi = E\\psi$",
+        "$T(t) = e^{-iEt/\\hbar}$"
+      ]
+    },
+    "B16": {
+      "question_number": "B16",
+      "solution": "#### Pauli Matrices\n\n$$\\sigma_x = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}, \\quad \\sigma_y = \\begin{pmatrix} 0 & -i \\\\ i & 0 \\end{pmatrix}, \\quad \\sigma_z = \\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}$$\n\n#### Pauli-X Gate Operation\n\nThe Pauli-X gate acts as a quantum NOT gate:\n\n$$\\sigma_x|0\\rangle = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix} = |1\\rangle$$\n\n$$\\sigma_x|1\\rangle = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = |0\\rangle$$\n\nThe X gate **flips** the computational basis states: $|0\\rangle \\leftrightarrow |1\\rangle$. It is the quantum analog of the classical NOT gate and is also called the bit-flip gate.",
+      "key_points": [
+        "$\\sigma_x|0\\rangle = |1\\rangle$, $\\sigma_x|1\\rangle = |0\\rangle$",
+        "X gate = quantum NOT gate (bit-flip)",
+        "All Pauli matrices: Hermitian, unitary, traceless",
+        "Eigenvalues of each Pauli matrix: $\\pm 1$"
+      ]
+    },
+    "B17": {
+      "question_number": "B17",
+      "solution": "#### Successes\n\n1. **Ohm's law**: Correctly derives $V = IR$ from electron drift\n2. **Wiedemann-Franz law**: Ratio $\\kappa/\\sigma \\propto T$ (thermal to electrical conductivity) — qualitatively correct\n3. **Electrical conductivity**: Explains why metals conduct electricity ($\\sigma = ne^2\\tau/m$)\n4. **Thermal conductivity**: Qualitative explanation of heat conduction by electrons\n\n#### Failures\n\n1. **Heat capacity**: Predicts $C_v = \\frac{3}{2}Nk_B$ — too large. Actual electronic $C_v \\propto T$ (only electrons near $E_F$ contribute)\n2. **Temperature dependence of $\\sigma$**: Predicts $\\sigma \\propto 1/\\sqrt{T}$; experiments show $\\sigma \\propto 1/T$\n3. **Cannot explain band gaps**: No mechanism for forbidden energy ranges\n4. **Cannot classify materials**: Cannot distinguish metals/semiconductors/insulators\n5. **Hall effect**: Wrong sign for some metals (Be, Zn, Al)\n6. **Mean free path**: Predicts unrealistically large values at low $T$\n7. **Paramagnetism**: Predicts larger susceptibility than observed",
+      "key_points": [
+        "Successes: Ohm's law, Wiedemann-Franz, qualitative conductivity",
+        "Fails on heat capacity ($3Nk_B/2$ vs actual $\\propto T$)",
+        "Wrong $\\sigma(T)$ dependence",
+        "Cannot explain bands, gaps, or material classification"
+      ]
+    },
+    "B18": {
+      "question_number": "B18",
+      "solution": "**Phase space** is an abstract mathematical space in which all possible states of a physical system are represented. Each point in phase space corresponds to a unique **microstate**.\n\nFor a single particle in 3D, phase space has **6 dimensions**: 3 position coordinates $(x, y, z)$ and 3 momentum coordinates $(p_x, p_y, p_z)$. For $N$ particles: $6N$ dimensions.\n\n#### Key Properties\n\n1. Each point = one microstate\n2. Trajectory in phase space = time evolution of the system\n3. Volume is **conserved** along trajectories (Liouville's theorem)\n4. Minimum cell size: $h^3$ per particle (from Heisenberg uncertainty)\n5. Number of quantum states = (Phase space volume) / $h^{3N}$\n\nPhase space is essential for statistical mechanics — it provides the framework for counting microstates and computing thermodynamic quantities.",
+      "key_points": [
+        "6D per particle: $(x,y,z,p_x,p_y,p_z)$",
+        "Each point = one microstate",
+        "Minimum cell volume = $h^3$ per particle",
+        "Volume conserved (Liouville's theorem)"
+      ]
+    },
+    "B19": {
+      "question_number": "B19",
+      "solution": "Silicon is an **indirect bandgap** semiconductor ($E_g = 1.1$ eV). The CB minimum and VB maximum are at **different $k$-values** in the Brillouin zone.\n\n#### Reasons Si is Unsuitable for Optoelectronics\n\n1. **Phonon requirement**: Optical transitions need both a photon AND a phonon for momentum conservation. This makes the process **much less probable**.\n\n2. **Low radiative efficiency**: The probability of radiative recombination in Si is extremely low ($\\sim 10^{-7}$). Most recombination is **non-radiative** (through defects, Auger process), releasing heat instead of light.\n\n3. **Long radiative lifetime**: $\\tau_r \\sim$ ms for Si vs $\\sim$ ns for GaAs — too slow for device applications.\n\n4. **Poor light emission**: Internal quantum efficiency for light emission is $\\ll 1\\%$.\n\nThis is why **direct bandgap** materials like GaAs ($1.42$ eV), GaN ($3.4$ eV), and InP ($1.35$ eV) are used for LEDs, laser diodes, and photodetectors instead.",
+      "key_points": [
+        "Si: indirect bandgap → needs phonon for transition",
+        "Radiative efficiency $\\sim 10^{-7}$ (extremely low)",
+        "Most recombination is non-radiative (heat)",
+        "Direct bandgap materials (GaAs, GaN) used instead"
+      ]
+    },
+    "B20": {
+      "question_number": "B20",
+      "solution": "#### Working Principle\n\nAn LED is a **forward-biased p-n junction** made from a **direct bandgap** semiconductor.\n\n1. **Forward bias** reduces the potential barrier at the junction\n2. **Electrons** from n-side are injected into p-side; **holes** from p-side into n-side\n3. Minority carriers **recombine** with majority carriers near the junction\n4. In direct bandgap materials, recombination releases energy as a **photon** (electroluminescence)\n5. Photon energy equals the band gap: $E_{\\text{photon}} = E_g = hc/\\lambda$\n6. Emitted wavelength: $\\lambda = 1240/E_g$(eV) nm\n\n#### Example\n\n**GaN (Gallium Nitride)**: $E_g \\approx 3.4$ eV → blue/UV LED ($\\lambda \\approx 365-450$ nm)\n\nOther examples: GaAs (IR LED, $\\lambda \\sim 870$ nm), InGaN (green LED), AlGaInP (red LED).",
+      "key_points": [
+        "Forward-biased p-n junction → electron-hole recombination",
+        "Direct bandgap required for photon emission",
+        "$\\lambda = 1240/E_g$ nm",
+        "GaN: blue/UV LED; GaAs: IR LED"
+      ]
+    },
+    "B21": {
+      "question_number": "B21",
+      "solution": "#### Definition\n\nAn **optical transition** is a process in which an electron transitions between energy levels by absorbing or emitting a photon, satisfying energy conservation: $E_{\\text{photon}} = h\\nu = E_2 - E_1$.\n\n#### Types\n\n1. **Absorption**: photon excites electron from lower to higher energy level\n2. **Spontaneous emission**: electron randomly drops to lower level, emitting photon\n3. **Stimulated emission**: incoming photon triggers emission of identical photon\n\n#### Significance for Optoelectronics\n\n1. **LEDs**: Rely on spontaneous emission from radiative recombination\n2. **Laser diodes**: Use stimulated emission for coherent light\n3. **Photodetectors/solar cells**: Exploit absorption to generate photocurrent\n4. **Optical fibers**: Require materials with specific absorption/emission wavelengths\n5. **Efficiency requirement**: Direct bandgap materials have strong optical transitions; indirect bandgap materials do not\n\nThe strength of optical transitions (characterized by the **optical matrix element**) determines device efficiency.",
+      "key_points": [
+        "Optical transition: electron changes level by photon absorption/emission",
+        "Three types: absorption, spontaneous emission, stimulated emission",
+        "Direct bandgap → strong transitions → efficient devices",
+        "Governs operation of LEDs, lasers, and photodetectors"
+      ]
+    },
+    "B22": {
+      "question_number": "B22",
+      "solution": "#### GaAs (Gallium Arsenide)\n\n1. **Direct bandgap** ($E_g = 1.42$ eV) → efficient radiative recombination\n2. **High electron mobility** ($\\mu_e \\approx 8500$ cm²/V·s, vs Si: $\\sim 1500$) → faster switching\n3. **Short radiative lifetime** ($\\sim$ ns) → high modulation bandwidth\n4. **Semi-insulating substrates** available → low parasitic capacitance\n5. Strong optical matrix element → efficient light emission\n\n#### InP (Indium Phosphide)\n\n1. **Direct bandgap** ($E_g = 1.35$ eV) → good for 1.3–1.55 μm (telecom window)\n2. **High electron mobility** ($\\mu_e \\approx 5400$ cm²/V·s)\n3. **Lattice-matched** to InGaAsP system → enables band gap engineering for 1.3–1.55 μm\n4. Lower defect density than GaAs for certain epitaxial layers\n5. **Superior for long-wavelength** fiber-optic communication\n\n#### Why Not Si?\n\nSilicon has indirect bandgap (poor light emission) and lower electron mobility — unsuitable for high-speed optical applications.",
+      "key_points": [
+        "Both have direct bandgap → efficient optical transitions",
+        "High electron mobility → fast switching speeds",
+        "GaAs: $\\mu_e \\approx 8500$ cm²/V·s (5× Si)",
+        "InP: lattice-matched to telecom wavelength materials"
+      ]
+    },
+    "B23": {
+      "question_number": "B23",
+      "solution": "#### Part 1: $[\\hat{y}, \\hat{L}_x]$\n\nThe angular momentum component: $\\hat{L}_x = \\hat{y}\\hat{p}_z - \\hat{z}\\hat{p}_y$\n\n$$[\\hat{y}, \\hat{L}_x] = [\\hat{y}, \\hat{y}\\hat{p}_z - \\hat{z}\\hat{p}_y]$$\n\n$$= [\\hat{y}, \\hat{y}\\hat{p}_z] - [\\hat{y}, \\hat{z}\\hat{p}_y]$$\n\nFirst term: $[\\hat{y}, \\hat{y}\\hat{p}_z] = \\hat{y}[\\hat{y}, \\hat{p}_z] + [\\hat{y}, \\hat{y}]\\hat{p}_z = 0 + 0 = 0$\n(since $[\\hat{y}, \\hat{p}_z] = 0$ for different coordinates, and $[\\hat{y}, \\hat{y}] = 0$)\n\nSecond term: $[\\hat{y}, \\hat{z}\\hat{p}_y] = \\hat{z}[\\hat{y}, \\hat{p}_y] + [\\hat{y}, \\hat{z}]\\hat{p}_y = \\hat{z}(i\\hbar) + 0 = i\\hbar\\hat{z}$\n\n$$\\boxed{[\\hat{y}, \\hat{L}_x] = -i\\hbar\\hat{z}}$$\n\n#### Part 2: 3D Cubical Box\n\n$$E_{n_x,n_y,n_z} = \\frac{h^2}{8mL^2}(n_x^2 + n_y^2 + n_z^2)$$\n\n1st excited state: $(2,1,1)$, $(1,2,1)$, $(1,1,2)$ → sum = 6\n\n**Degeneracy = 3**",
+      "key_points": [
+        "$[\\hat{y}, \\hat{L}_x] = -i\\hbar\\hat{z}$",
+        "Uses $\\hat{L}_x = \\hat{y}\\hat{p}_z - \\hat{z}\\hat{p}_y$",
+        "3D box: $E = h^2(n_x^2+n_y^2+n_z^2)/(8mL^2)$",
+        "1st excited state: 3-fold degenerate"
+      ]
+    },
+    "B24": {
+      "question_number": "B24",
+      "solution": "#### $[\\hat{y}, \\hat{L}_y]$\n\n$\\hat{L}_y = \\hat{z}\\hat{p}_x - \\hat{x}\\hat{p}_z$\n\n$$[\\hat{y}, \\hat{L}_y] = [\\hat{y}, \\hat{z}\\hat{p}_x - \\hat{x}\\hat{p}_z]$$\n\n$$= [\\hat{y}, \\hat{z}\\hat{p}_x] - [\\hat{y}, \\hat{x}\\hat{p}_z]$$\n\nFirst: $[\\hat{y}, \\hat{z}\\hat{p}_x] = \\hat{z}[\\hat{y}, \\hat{p}_x] + [\\hat{y}, \\hat{z}]\\hat{p}_x = 0 + 0 = 0$\n\nSecond: $[\\hat{y}, \\hat{x}\\hat{p}_z] = \\hat{x}[\\hat{y}, \\hat{p}_z] + [\\hat{y}, \\hat{x}]\\hat{p}_z = 0 + 0 = 0$\n\n$$\\boxed{[\\hat{y}, \\hat{L}_y] = 0}$$\n\n#### $[\\hat{x}, \\hat{L}_x]$\n\n$\\hat{L}_x = \\hat{y}\\hat{p}_z - \\hat{z}\\hat{p}_y$\n\n$$[\\hat{x}, \\hat{L}_x] = [\\hat{x}, \\hat{y}\\hat{p}_z - \\hat{z}\\hat{p}_y]$$\n\n$$= [\\hat{x}, \\hat{y}\\hat{p}_z] - [\\hat{x}, \\hat{z}\\hat{p}_y]$$\n\nFirst: $[\\hat{x}, \\hat{y}\\hat{p}_z] = \\hat{y}[\\hat{x}, \\hat{p}_z] + [\\hat{x}, \\hat{y}]\\hat{p}_z = 0 + 0 = 0$\n\nSecond: $[\\hat{x}, \\hat{z}\\hat{p}_y] = \\hat{z}[\\hat{x}, \\hat{p}_y] + [\\hat{x}, \\hat{z}]\\hat{p}_y = 0 + 0 = 0$\n\n$$\\boxed{[\\hat{x}, \\hat{L}_x] = 0}$$\n\n**Physical meaning:** A position coordinate commutes with the angular momentum component about the **same** axis. This means they can be simultaneously measured.",
+      "key_points": [
+        "$[\\hat{y}, \\hat{L}_y] = 0$",
+        "$[\\hat{x}, \\hat{L}_x] = 0$",
+        "Position commutes with angular momentum about same axis",
+        "Different axes: $[\\hat{y}, \\hat{L}_x] = -i\\hbar\\hat{z} \\neq 0$"
+      ]
+    },
+    "B25": {
+      "question_number": "B25",
+      "solution": "#### Definition\n\n**Thermodynamic probability** ($W$) is the total number of microstates corresponding to a given macrostate. Unlike ordinary probability ($0 \\leq P \\leq 1$), $W$ can be very large ($W \\geq 1$).\n\nThe equilibrium macrostate is the one with **maximum $W$**.\n\n#### MB Statistics Derivation\n\nFor $N$ distinguishable particles distributed among energy levels $E_1, E_2, ..., E_k$ with $N_i$ particles in level $E_i$ (where each level has $g_i$ degenerate states):\n\n**Step 1:** Choose which $N_i$ particles go into level $E_i$:\n$$\\text{Ways} = \\frac{N!}{N_1! \\, N_2! \\cdots N_k!}$$\n\n**Step 2:** Within level $E_i$, each of the $N_i$ particles can be in any of $g_i$ states: $g_i^{N_i}$ ways.\n\n**Total thermodynamic probability:**\n\n$$\\boxed{W_{\\text{MB}} = \\frac{N!}{\\prod_i N_i!} \\prod_i g_i^{N_i}}$$\n\nSubject to constraints: $\\sum_i N_i = N$ (particle conservation) and $\\sum_i N_i E_i = E$ (energy conservation).\n\nIf each energy level has single degeneracy ($g_i = 1$): $W = N! / \\prod_i N_i!$",
+      "key_points": [
+        "$W$ = number of microstates for a macrostate",
+        "$W_{\\text{MB}} = \\frac{N!}{\\prod N_i!} \\prod g_i^{N_i}$",
+        "Equilibrium: macrostate with maximum $W$",
+        "Subject to conservation of $N$ and $E$"
+      ]
+    }
+  }
+}

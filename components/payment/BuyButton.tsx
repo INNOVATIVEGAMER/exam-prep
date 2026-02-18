@@ -108,7 +108,7 @@ export function BuyButton({ paperId, price, paperTitle, className }: BuyButtonPr
   if (!user) {
     return (
       <Button className={className} onClick={() => router.push('/login')}>
-        Sign in to unlock — ₹{price / 100}
+        Sign in to unlock full paper — ₹{price / 100}
       </Button>
     )
   }
@@ -125,7 +125,7 @@ export function BuyButton({ paperId, price, paperTitle, className }: BuyButtonPr
           Opening payment…
         </>
       ) : (
-        `Unlock Answers — ₹${price / 100}`
+        `Unlock full paper — ₹${price / 100}`
       )}
     </Button>
   )
