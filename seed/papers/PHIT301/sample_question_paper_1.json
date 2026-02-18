@@ -1,0 +1,623 @@
+{
+  "subject_code": "PHIT301",
+  "title": "Sample Question Paper 1",
+  "type": "end_sem",
+  "year": "2025-26",
+  "is_free": false,
+  "price": 4900,
+  "metadata": {
+    "difficulty": "medium",
+    "modules_covered": [
+      "Module 1",
+      "Module 2",
+      "Module 3",
+      "Module 4"
+    ]
+  },
+  "questions": {
+    "A1": {
+      "group": "A",
+      "number": "A1",
+      "text": "The time-independent Schrödinger equation for a particle in a potential $V(x)$ is:",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "options": [
+        {
+          "key": "a",
+          "text": "$i\\hbar \\frac{\\partial \\psi}{\\partial t} = \\hat{H}\\psi$"
+        },
+        {
+          "key": "b",
+          "text": "$-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} + V(x)\\psi = E\\psi$"
+        },
+        {
+          "key": "c",
+          "text": "$\\hat{H}\\psi = i\\hbar\\psi$"
+        },
+        {
+          "key": "d",
+          "text": "$\\frac{d^2\\psi}{dx^2} + V(x)\\psi = 0$"
+        }
+      ]
+    },
+    "A2": {
+      "group": "A",
+      "number": "A2",
+      "text": "For a particle in a 1-D infinite square well of width $a$, the energy eigenvalues are given by:",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "options": [
+        {
+          "key": "a",
+          "text": "$E_n = \\frac{n^2 \\pi^2 \\hbar^2}{2ma^2}$"
+        },
+        {
+          "key": "b",
+          "text": "$E_n = \\frac{n \\pi \\hbar^2}{2ma^2}$"
+        },
+        {
+          "key": "c",
+          "text": "$E_n = \\frac{n^2 \\pi^2 \\hbar^2}{ma^2}$"
+        },
+        {
+          "key": "d",
+          "text": "$E_n = \\frac{n \\hbar^2}{2ma}$"
+        }
+      ]
+    },
+    "A3": {
+      "group": "A",
+      "number": "A3",
+      "text": "The Pauli-Z gate applied to $|1\\rangle$ gives:",
+      "marks": 1,
+      "co": "CO3",
+      "bl": "L2",
+      "options": [
+        {
+          "key": "a",
+          "text": "$|0\\rangle$"
+        },
+        {
+          "key": "b",
+          "text": "$|1\\rangle$"
+        },
+        {
+          "key": "c",
+          "text": "$-|1\\rangle$"
+        },
+        {
+          "key": "d",
+          "text": "$-|0\\rangle$"
+        }
+      ]
+    },
+    "A4": {
+      "group": "A",
+      "number": "A4",
+      "text": "In Maxwell-Boltzmann statistics, particles are:",
+      "marks": 1,
+      "co": "CO2",
+      "bl": "L2",
+      "options": [
+        {
+          "key": "a",
+          "text": "Indistinguishable and obey the Pauli exclusion principle"
+        },
+        {
+          "key": "b",
+          "text": "Indistinguishable but do not obey the Pauli exclusion principle"
+        },
+        {
+          "key": "c",
+          "text": "Distinguishable and do not obey the Pauli exclusion principle"
+        },
+        {
+          "key": "d",
+          "text": "Distinguishable and obey the Pauli exclusion principle"
+        }
+      ]
+    },
+    "A5": {
+      "group": "A",
+      "number": "A5",
+      "text": "The Fermi-Dirac distribution function at $T = 0$ K for energy $E < E_F$ is:",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "options": [
+        {
+          "key": "a",
+          "text": "0"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{1}{2}$"
+        },
+        {
+          "key": "d",
+          "text": "Undefined"
+        }
+      ]
+    },
+    "A6": {
+      "group": "A",
+      "number": "A6",
+      "text": "According to Bloch's theorem, the wave function of an electron in a periodic potential can be written as:",
+      "marks": 1,
+      "co": "CO2",
+      "bl": "L2",
+      "options": [
+        {
+          "key": "a",
+          "text": "$\\psi(x) = A e^{ikx}$"
+        },
+        {
+          "key": "b",
+          "text": "$\\psi(x) = e^{ikx} u_k(x)$ where $u_k(x)$ has the periodicity of the lattice"
+        },
+        {
+          "key": "c",
+          "text": "$\\psi(x) = A \\sin(kx)$"
+        },
+        {
+          "key": "d",
+          "text": "$\\psi(x) = A \\cos(kx) + B \\sin(kx)$"
+        }
+      ]
+    },
+    "A7": {
+      "group": "A",
+      "number": "A7",
+      "text": "Which of the following is a direct bandgap semiconductor?",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "options": [
+        {
+          "key": "a",
+          "text": "Silicon (Si)"
+        },
+        {
+          "key": "b",
+          "text": "Germanium (Ge)"
+        },
+        {
+          "key": "c",
+          "text": "Gallium Arsenide (GaAs)"
+        },
+        {
+          "key": "d",
+          "text": "Diamond"
+        }
+      ]
+    },
+    "A8": {
+      "group": "A",
+      "number": "A8",
+      "text": "Two operators $\\hat{A}$ and $\\hat{B}$ are said to commute if:",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "options": [
+        {
+          "key": "a",
+          "text": "$[\\hat{A}, \\hat{B}] = \\hat{A}\\hat{B}$"
+        },
+        {
+          "key": "b",
+          "text": "$[\\hat{A}, \\hat{B}] = 1$"
+        },
+        {
+          "key": "c",
+          "text": "$[\\hat{A}, \\hat{B}] = 0$"
+        },
+        {
+          "key": "d",
+          "text": "$[\\hat{A}, \\hat{B}] = \\hat{A} + \\hat{B}$"
+        }
+      ]
+    },
+    "A9": {
+      "group": "A",
+      "number": "A9",
+      "text": "The Hadamard gate transforms $|0\\rangle$ to:",
+      "marks": 1,
+      "co": "CO3",
+      "bl": "L3",
+      "options": [
+        {
+          "key": "a",
+          "text": "$|1\\rangle$"
+        },
+        {
+          "key": "b",
+          "text": "$\\frac{1}{\\sqrt{2}}(|0\\rangle + |1\\rangle)$"
+        },
+        {
+          "key": "c",
+          "text": "$\\frac{1}{\\sqrt{2}}(|0\\rangle - |1\\rangle)$"
+        },
+        {
+          "key": "d",
+          "text": "$|0\\rangle$"
+        }
+      ]
+    },
+    "A10": {
+      "group": "A",
+      "number": "A10",
+      "text": "Photons are classified as:",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "options": [
+        {
+          "key": "a",
+          "text": "Fermions with spin $\\frac{1}{2}\\hbar$"
+        },
+        {
+          "key": "b",
+          "text": "Bosons with spin $1\\hbar$"
+        },
+        {
+          "key": "c",
+          "text": "Fermions with spin $1\\hbar$"
+        },
+        {
+          "key": "d",
+          "text": "Bosons with spin $\\frac{1}{2}\\hbar$"
+        }
+      ]
+    },
+    "A11": {
+      "group": "A",
+      "number": "A11",
+      "text": "The effective mass of an electron in a crystal is defined as:",
+      "marks": 1,
+      "co": "CO1",
+      "bl": "L1",
+      "options": [
+        {
+          "key": "a",
+          "text": "$m^* = \\hbar^2 \\left(\\frac{d^2 E}{dk^2}\\right)$"
+        },
+        {
+          "key": "b",
+          "text": "$m^* = \\hbar^2 \\left(\\frac{d^2 E}{dk^2}\\right)^{-1}$"
+        },
+        {
+          "key": "c",
+          "text": "$m^* = \\frac{\\hbar}{k}$"
+        },
+        {
+          "key": "d",
+          "text": "$m^* = \\frac{E}{k^2}$"
+        }
+      ]
+    },
+    "A12": {
+      "group": "A",
+      "number": "A12",
+      "text": "For a qubit state $|\\psi\\rangle = \\alpha|0\\rangle + \\beta|1\\rangle$, the normalization condition requires:",
+      "marks": 1,
+      "co": "CO3",
+      "bl": "L2",
+      "options": [
+        {
+          "key": "a",
+          "text": "$\\alpha + \\beta = 1$"
+        },
+        {
+          "key": "b",
+          "text": "$|\\alpha|^2 + |\\beta|^2 = 1$"
+        },
+        {
+          "key": "c",
+          "text": "$\\alpha^2 - \\beta^2 = 1$"
+        },
+        {
+          "key": "d",
+          "text": "$|\\alpha| + |\\beta| = 1$"
+        }
+      ]
+    },
+    "B1": {
+      "group": "B",
+      "number": "B1",
+      "text": "Calculate the normalization constant $A$ if the wave function of a quantum mechanical particle is given by:\n\n$\\psi_n(x) = A \\sin\\left(\\frac{n\\pi x}{a}\\right)$ for $0 < x < a$, and $\\psi_n(x) = 0$ otherwise.",
+      "marks": 5,
+      "co": "CO1",
+      "bl": "L3"
+    },
+    "B2": {
+      "group": "B",
+      "number": "B2",
+      "text": "Consider a two-particle system, each of which can exist in states $E_1$, $E_2$, and $E_3$. What are the possible states if the particles are (i) Bosons (ii) Fermions?",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L3"
+    },
+    "B3": {
+      "group": "B",
+      "number": "B3",
+      "text": "Explain the Kronig-Penney model for the formation of energy bands and forbidden gaps in a crystal with a suitable diagram.",
+      "marks": 5,
+      "co": "CO2",
+      "bl": "L2"
+    },
+    "B4": {
+      "group": "B",
+      "number": "B4",
+      "text": "Explain the role of band gap for optoelectronic devices. What kind of materials are used for LEDs?",
+      "marks": 5,
+      "co": "CO2",
+      "bl": "L2"
+    },
+    "B5": {
+      "group": "B",
+      "number": "B5",
+      "text": "What is the Hadamard gate? Provide its matrix representation and demonstrate its effect on the basis states $|0\\rangle$ and $|1\\rangle$.",
+      "marks": 5,
+      "co": "CO3",
+      "bl": "L3"
+    },
+    "C1": {
+      "group": "C",
+      "number": "C1",
+      "text": "(a) State the basic postulates of quantum mechanics. [4]\n(b) Derive the time-independent Schrödinger equation from the time-dependent Schrödinger equation using the method of separation of variables. [6]\n(c) A particle is confined in a 1-D infinite square well of width $a = 0.1$ nm. Calculate the energy of the ground state and the first excited state in eV. (Given: $m = 9.1 \\times 10^{-31}$ kg, $\\hbar = 1.055 \\times 10^{-34}$ J·s) [5]",
+      "marks": 15,
+      "co": "CO1",
+      "bl": "L3"
+    },
+    "C2": {
+      "group": "C",
+      "number": "C2",
+      "text": "(a) What is the Fermi-Dirac distribution function? Explain how it changes from zero temperature to non-zero temperatures with suitable graphs. [6]\n(b) Find the probability of an electron to occupy an energy state of $6.5$ eV at temperature $1000$ K. The Fermi energy of the material is $5.5$ eV. [4]\n(c) Distinguish between Bose-Einstein and Fermi-Dirac statistics with examples. [5]",
+      "marks": 15,
+      "co": "CO3",
+      "bl": "L3"
+    },
+    "C3": {
+      "group": "C",
+      "number": "C3",
+      "text": "(a) Write down the Pauli spin matrices. Show the operation of the Pauli-X gate on $|0\\rangle$ and $|1\\rangle$. [5]\n(b) A qubit is in the state $|\\psi\\rangle = \\frac{3}{5}|0\\rangle + \\frac{4}{5}|1\\rangle$. Verify if this state is normalized. If the Hadamard gate is applied to $|0\\rangle$ and then a Pauli-Z gate is applied, find the final state. [5]\n(c) What is a Bloch sphere? Explain how single-qubit states are represented on it. [5]",
+      "marks": 15,
+      "co": "CO4",
+      "bl": "L4"
+    },
+    "C4": {
+      "group": "C",
+      "number": "C4",
+      "text": "(a) Explain the formation of energy bands and forbidden gaps for a crystal using the Kronig-Penney model with suitable diagrams. [6]\n(b) What is effective mass of an electron in a crystal? Explain its physical significance. [4]\n(c) What are Brillouin zones? Explain with the help of an E-k diagram. [5]",
+      "marks": 15,
+      "co": "CO2",
+      "bl": "L2"
+    },
+    "C5": {
+      "group": "C",
+      "number": "C5",
+      "text": "(a) Find the result of the following commutators: $[x, L_z]$ and $[L_x, L_y]$. [6]\n(b) Evaluate the expectation value of position $\\langle x \\rangle$ for a particle in a 1-D infinite square well, where $\\psi_n(x) = \\sqrt{\\frac{2}{a}}\\sin\\left(\\frac{n\\pi x}{a}\\right)$ for $0 < x < a$. [5]\n(c) Calculate the energy of the 2nd excited state in a 3-D cubic box potential problem and mention the degeneracy of that state. [4]",
+      "marks": 15,
+      "co": "CO3",
+      "bl": "L3"
+    }
+  },
+  "answers": {
+    "A1": {
+      "question_number": "A1",
+      "correct_option": "b",
+      "solution": "The **time-independent** Schrödinger equation is:\n\n$$-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} + V(x)\\psi = E\\psi$$\n\nThis is obtained by separating the time and space parts of the time-dependent Schrödinger equation. Option (a) is the time-dependent form. Options (c) and (d) are incorrect formulations.",
+      "key_points": [
+        "Time-independent form: $\\hat{H}\\psi = E\\psi$",
+        "Option (a) is the time-dependent Schrödinger equation"
+      ]
+    },
+    "A2": {
+      "question_number": "A2",
+      "correct_option": "a",
+      "solution": "For a particle in a 1-D infinite square well of width $a$, applying boundary conditions $\\psi(0) = \\psi(a) = 0$ to the Schrödinger equation gives quantized energy levels:\n\n$$E_n = \\frac{n^2 \\pi^2 \\hbar^2}{2ma^2}, \\quad n = 1, 2, 3, \\ldots$$\n\nThe energy is proportional to $n^2$, meaning the energy spacing increases with higher quantum numbers.",
+      "key_points": [
+        "Energy is quantized and proportional to $n^2$",
+        "Boundary conditions enforce $\\psi(0) = \\psi(a) = 0$"
+      ]
+    },
+    "A3": {
+      "question_number": "A3",
+      "correct_option": "c",
+      "solution": "The Pauli-Z gate matrix is:\n\n$$Z = \\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}$$\n\nApplying to $|1\\rangle = \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$:\n\n$$Z|1\\rangle = \\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ -1 \\end{pmatrix} = -|1\\rangle$$\n\nThe Z gate leaves $|0\\rangle$ unchanged but flips the sign of $|1\\rangle$.",
+      "key_points": [
+        "$Z|0\\rangle = |0\\rangle$ and $Z|1\\rangle = -|1\\rangle$",
+        "Pauli-Z is a phase flip gate"
+      ]
+    },
+    "A4": {
+      "question_number": "A4",
+      "correct_option": "c",
+      "solution": "In **Maxwell-Boltzmann (MB) statistics**, particles are treated as **distinguishable** and there is **no restriction** on the number of particles that can occupy the same energy state (no Pauli exclusion principle).\n\n- **BE statistics**: Indistinguishable, no exclusion principle (bosons)\n- **FD statistics**: Indistinguishable, obey exclusion principle (fermions)\n- **MB statistics**: Distinguishable, no exclusion principle (classical particles)",
+      "key_points": [
+        "MB: distinguishable, no exclusion principle",
+        "Applies to classical particles at high temperature"
+      ]
+    },
+    "A5": {
+      "question_number": "A5",
+      "correct_option": "b",
+      "solution": "The Fermi-Dirac distribution function is:\n\n$$f(E) = \\frac{1}{e^{(E - E_F)/k_BT} + 1}$$\n\nAt $T = 0$ K:\n- For $E < E_F$: $f(E) = 1$ (all states below $E_F$ are fully occupied)\n- For $E > E_F$: $f(E) = 0$ (all states above $E_F$ are completely empty)\n\nThis represents a sharp step function at absolute zero.",
+      "key_points": [
+        "At $T = 0$ K, $f(E) = 1$ for $E < E_F$",
+        "The distribution is a step function at absolute zero"
+      ]
+    },
+    "A6": {
+      "question_number": "A6",
+      "correct_option": "b",
+      "solution": "**Bloch's theorem** states that the wave function of an electron in a periodic potential can be written as:\n\n$$\\psi_k(x) = e^{ikx} u_k(x)$$\n\nwhere $u_k(x)$ is a function with the same periodicity as the crystal lattice, i.e., $u_k(x + a) = u_k(x)$. This is a plane wave $e^{ikx}$ modulated by a periodic function $u_k(x)$.",
+      "key_points": [
+        "Bloch function = plane wave × periodic function",
+        "$u_k(x)$ has the periodicity of the lattice"
+      ]
+    },
+    "A7": {
+      "question_number": "A7",
+      "correct_option": "c",
+      "solution": "**GaAs (Gallium Arsenide)** is a **direct bandgap** semiconductor where the conduction band minimum and valence band maximum occur at the same value of crystal momentum ($k$).\n\n- **Si and Ge** are **indirect** bandgap semiconductors\n- **Diamond** is an insulator\n- Direct bandgap materials are preferred for optoelectronic applications like LEDs and laser diodes",
+      "key_points": [
+        "GaAs is a direct bandgap semiconductor",
+        "Si and Ge are indirect bandgap materials"
+      ]
+    },
+    "A8": {
+      "question_number": "A8",
+      "correct_option": "c",
+      "solution": "Two operators $\\hat{A}$ and $\\hat{B}$ are said to **commute** if their commutator is zero:\n\n$$[\\hat{A}, \\hat{B}] = \\hat{A}\\hat{B} - \\hat{B}\\hat{A} = 0$$\n\nIf two operators commute, they share a common set of eigenfunctions and can be measured simultaneously without uncertainty. Non-commuting operators lead to the Heisenberg uncertainty principle.",
+      "key_points": [
+        "Commuting operators: $[\\hat{A}, \\hat{B}] = 0$",
+        "Commuting operators share common eigenfunctions"
+      ]
+    },
+    "A9": {
+      "question_number": "A9",
+      "correct_option": "b",
+      "solution": "The Hadamard gate matrix is:\n\n$$H = \\frac{1}{\\sqrt{2}}\\begin{pmatrix} 1 & 1 \\\\ 1 & -1 \\end{pmatrix}$$\n\nApplying to $|0\\rangle$:\n\n$$H|0\\rangle = \\frac{1}{\\sqrt{2}}\\begin{pmatrix} 1 & 1 \\\\ 1 & -1 \\end{pmatrix}\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = \\frac{1}{\\sqrt{2}}\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} = \\frac{1}{\\sqrt{2}}(|0\\rangle + |1\\rangle)$$\n\nThe Hadamard gate creates an equal superposition of $|0\\rangle$ and $|1\\rangle$.",
+      "key_points": [
+        "$H|0\\rangle = \\frac{1}{\\sqrt{2}}(|0\\rangle + |1\\rangle)$",
+        "Hadamard creates equal superposition"
+      ]
+    },
+    "A10": {
+      "question_number": "A10",
+      "correct_option": "b",
+      "solution": "Photons are **bosons** with integer spin. The spin angular momentum of a photon is $1\\hbar$.\n\n- **Bosons**: Integer spin (0, 1, 2, ...) — follow Bose-Einstein statistics (e.g., photons, phonons, gluons)\n- **Fermions**: Half-integer spin (1/2, 3/2, ...) — follow Fermi-Dirac statistics (e.g., electrons, protons, neutrons)",
+      "key_points": [
+        "Photons are bosons with spin $1\\hbar$",
+        "Bosons follow Bose-Einstein statistics"
+      ]
+    },
+    "A11": {
+      "question_number": "A11",
+      "correct_option": "b",
+      "solution": "The effective mass of an electron in a crystal is defined as:\n\n$$m^* = \\hbar^2 \\left(\\frac{d^2 E}{dk^2}\\right)^{-1}$$\n\nIt accounts for the interaction of the electron with the periodic crystal potential. The effective mass can be positive, negative, or even zero depending on the curvature of the $E$-$k$ relationship. Near the bottom of the conduction band, $m^* > 0$, while near the top of the valence band, $m^* < 0$ (hole behavior).",
+      "key_points": [
+        "$m^* = \\hbar^2 (d^2E/dk^2)^{-1}$",
+        "Effective mass depends on the curvature of the E-k diagram"
+      ]
+    },
+    "A12": {
+      "question_number": "A12",
+      "correct_option": "b",
+      "solution": "For a qubit state $|\\psi\\rangle = \\alpha|0\\rangle + \\beta|1\\rangle$, the normalization condition requires that the total probability of finding the qubit in either state must equal 1:\n\n$$|\\alpha|^2 + |\\beta|^2 = 1$$\n\nHere $|\\alpha|^2$ is the probability of measuring $|0\\rangle$ and $|\\beta|^2$ is the probability of measuring $|1\\rangle$. This follows from Born's rule in quantum mechanics.",
+      "key_points": [
+        "Normalization: $|\\alpha|^2 + |\\beta|^2 = 1$",
+        "$|\\alpha|^2$ and $|\\beta|^2$ are measurement probabilities"
+      ]
+    },
+    "B1": {
+      "question_number": "B1",
+      "solution": "**Given:** $\\psi_n(x) = A \\sin\\left(\\frac{n\\pi x}{a}\\right)$ for $0 < x < a$, and $\\psi_n(x) = 0$ otherwise.\n\n**Normalization condition:**\n\n$$\\int_{-\\infty}^{\\infty} |\\psi_n(x)|^2 dx = 1$$\n\n$$\\int_0^a A^2 \\sin^2\\left(\\frac{n\\pi x}{a}\\right) dx = 1$$\n\n**Using the identity** $\\sin^2\\theta = \\frac{1 - \\cos 2\\theta}{2}$:\n\n$$A^2 \\int_0^a \\frac{1}{2}\\left[1 - \\cos\\left(\\frac{2n\\pi x}{a}\\right)\\right] dx = 1$$\n\n$$A^2 \\cdot \\frac{1}{2}\\left[x - \\frac{a}{2n\\pi}\\sin\\left(\\frac{2n\\pi x}{a}\\right)\\right]_0^a = 1$$\n\nSince $\\sin(2n\\pi) = 0$ and $\\sin(0) = 0$:\n\n$$A^2 \\cdot \\frac{1}{2} \\cdot a = 1$$\n\n$$A^2 = \\frac{2}{a}$$\n\n$$\\boxed{A = \\sqrt{\\frac{2}{a}}}$$\n\nThe normalized wave function is $\\psi_n(x) = \\sqrt{\\frac{2}{a}}\\sin\\left(\\frac{n\\pi x}{a}\\right)$.",
+      "key_points": [
+        "Normalization condition: $\\int |\\psi|^2 dx = 1$",
+        "Use $\\sin^2\\theta = \\frac{1 - \\cos 2\\theta}{2}$",
+        "Result: $A = \\sqrt{2/a}$"
+      ]
+    },
+    "B2": {
+      "question_number": "B2",
+      "solution": "**Given:** Two particles, each can be in states $E_1$, $E_2$, $E_3$.\n\n**(i) Bosons** (indistinguishable, no exclusion principle):\n\nBosons can occupy the same state. The possible states are:\n\n**Both in same state (3 states):**\n$(E_1, E_1)$, $(E_2, E_2)$, $(E_3, E_3)$\n\n**In different states (3 states):**\n$(E_1, E_2)$, $(E_1, E_3)$, $(E_2, E_3)$\n\n**Total: 6 possible states for bosons.**\n\n**(ii) Fermions** (indistinguishable, obey Pauli exclusion principle):\n\nFermions cannot occupy the same state. The possible states are:\n\n$(E_1, E_2)$, $(E_1, E_3)$, $(E_2, E_3)$\n\n**Total: 3 possible states for fermions.**\n\n**Note:** For distinguishable particles (MB statistics), total states = $3^2 = 9$.",
+      "key_points": [
+        "Bosons: 6 states (same + different state combinations)",
+        "Fermions: 3 states (only different state combinations)",
+        "Pauli exclusion prevents fermions from sharing a state"
+      ]
+    },
+    "B3": {
+      "question_number": "B3",
+      "solution": "**Kronig-Penney Model:**\n\nThis is a simplified model to explain the formation of energy bands in crystalline solids. It considers an electron moving in a one-dimensional periodic potential consisting of rectangular barriers.\n\n**Assumptions:**\n- The crystal is modeled as a periodic array of rectangular potential barriers of height $V_0$ and width $b$, separated by wells of width $a$.\n- The potential is periodic: $V(x + a + b) = V(x)$.\n\n**Key result:** Solving the Schrödinger equation with periodic boundary conditions (Bloch's theorem) gives:\n\n$$\\frac{P \\sin(\\alpha a)}{\\alpha a} + \\cos(\\alpha a) = \\cos(ka)$$\n\nwhere $P = \\frac{m V_0 b a}{\\hbar^2}$ is the barrier strength parameter, and $\\alpha = \\sqrt{\\frac{2mE}{\\hbar^2}}$.\n\n**Key observations from the model:**\n\n1. **Allowed energy bands:** The equation has solutions only when the right-hand side lies between $-1$ and $+1$, since $|\\cos(ka)| \\leq 1$. These ranges of energy form **allowed bands**.\n\n2. **Forbidden gaps:** For energies where the left-hand side exceeds $\\pm 1$, no solutions exist. These regions are **forbidden energy gaps** (band gaps).\n\n3. **Band width increases** with increasing energy (higher bands are wider).\n\n4. **Band gap decreases** with increasing energy.\n\n5. As $P \\to 0$ (free electron), all energies are allowed (no gaps). As $P \\to \\infty$ (tightly bound), discrete energy levels result.",
+      "key_points": [
+        "Periodic rectangular potential model for crystals",
+        "Solutions exist only when $|\\cos(ka)| \\leq 1$",
+        "Allowed bands and forbidden gaps emerge naturally",
+        "Band width increases, gap decreases with energy"
+      ]
+    },
+    "B4": {
+      "question_number": "B4",
+      "solution": "**Role of Band Gap in Optoelectronic Devices:**\n\nThe **band gap** ($E_g$) of a semiconductor determines the wavelength of light that can be absorbed or emitted. The relationship between band gap energy and wavelength is:\n\n$$E_g = \\frac{hc}{\\lambda}$$\n\nor equivalently:\n\n$$\\lambda(\\mu m) = \\frac{1.24}{E_g(eV)}$$\n\n**Importance for optoelectronic devices:**\n\n1. **LEDs and Laser Diodes:** The emitted photon energy equals the band gap energy. By choosing materials with appropriate $E_g$, we can produce light of desired wavelength/color.\n\n2. **Photodetectors:** Only photons with energy $\\geq E_g$ can create electron-hole pairs. The band gap determines the detection wavelength range.\n\n3. **Solar Cells:** The band gap determines which portion of the solar spectrum can be absorbed.\n\n**Materials for LEDs:**\n\nLEDs require **direct bandgap** semiconductors (for efficient radiative recombination). Common materials include:\n\n- **GaAs** ($E_g \\approx 1.42$ eV) — Infrared LEDs\n- **GaP** ($E_g \\approx 2.26$ eV) — Green/Red LEDs\n- **GaN** ($E_g \\approx 3.4$ eV) — Blue/UV LEDs\n- **InGaN** — Blue and white LEDs\n- **AlGaInP** — Red, orange, yellow LEDs\n\nThese are primarily **III-V compound semiconductors** chosen because of their direct bandgap nature, which enables efficient light emission.",
+      "key_points": [
+        "Band gap determines emitted/absorbed photon wavelength: $\\lambda = hc/E_g$",
+        "LEDs require direct bandgap semiconductors",
+        "III-V compounds (GaAs, GaN, InGaN) are used for LEDs",
+        "Different $E_g$ values produce different colors of light"
+      ]
+    },
+    "B5": {
+      "question_number": "B5",
+      "solution": "**Hadamard Gate:**\n\nThe Hadamard gate is one of the most important single-qubit quantum gates. It creates an **equal superposition** of the basis states.\n\n**Matrix representation:**\n\n$$H = \\frac{1}{\\sqrt{2}}\\begin{pmatrix} 1 & 1 \\\\ 1 & -1 \\end{pmatrix}$$\n\n**Effect on $|0\\rangle$:**\n\n$$H|0\\rangle = \\frac{1}{\\sqrt{2}}\\begin{pmatrix} 1 & 1 \\\\ 1 & -1 \\end{pmatrix}\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = \\frac{1}{\\sqrt{2}}\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} = \\frac{1}{\\sqrt{2}}(|0\\rangle + |1\\rangle) = |+\\rangle$$\n\n**Effect on $|1\\rangle$:**\n\n$$H|1\\rangle = \\frac{1}{\\sqrt{2}}\\begin{pmatrix} 1 & 1 \\\\ 1 & -1 \\end{pmatrix}\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix} = \\frac{1}{\\sqrt{2}}\\begin{pmatrix} 1 \\\\ -1 \\end{pmatrix} = \\frac{1}{\\sqrt{2}}(|0\\rangle - |1\\rangle) = |-\\rangle$$\n\n**Key properties:**\n- The Hadamard gate is its own inverse: $H^2 = I$ (identity)\n- It maps computational basis states to superposition states\n- It is a **unitary** gate: $H^\\dagger H = I$\n- Applying $H$ twice returns the original state",
+      "key_points": [
+        "$H|0\\rangle = \\frac{1}{\\sqrt{2}}(|0\\rangle + |1\\rangle)$",
+        "$H|1\\rangle = \\frac{1}{\\sqrt{2}}(|0\\rangle - |1\\rangle)$",
+        "$H^2 = I$ (self-inverse)",
+        "Creates equal superposition of basis states"
+      ]
+    },
+    "C1": {
+      "question_number": "C1",
+      "solution": "**(a) Basic Postulates of Quantum Mechanics:** [4 marks]\n\n**Postulate 1 (State):** The state of a quantum mechanical system is completely described by a wave function $\\psi(x, t)$ that contains all measurable information about the system.\n\n**Postulate 2 (Operators):** Every observable physical quantity is represented by a linear Hermitian operator. For example:\n- Position: $\\hat{x} = x$\n- Momentum: $\\hat{p} = -i\\hbar\\frac{\\partial}{\\partial x}$\n- Energy: $\\hat{H} = -\\frac{\\hbar^2}{2m}\\frac{\\partial^2}{\\partial x^2} + V(x)$\n\n**Postulate 3 (Measurement):** When a measurement of an observable is made, the only values that can be obtained are the eigenvalues of the corresponding operator: $\\hat{A}\\psi_n = a_n\\psi_n$.\n\n**Postulate 4 (Expectation Value):** The expectation value of an operator $\\hat{A}$ in state $\\psi$ is:\n$$\\langle A \\rangle = \\int \\psi^* \\hat{A} \\psi \\, dx$$\n\n**Postulate 5 (Time Evolution):** The time evolution of the wave function is governed by the time-dependent Schrödinger equation:\n$$i\\hbar \\frac{\\partial \\psi}{\\partial t} = \\hat{H}\\psi$$\n\n---\n\n**(b) Derivation of Time-Independent Schrödinger Equation:** [6 marks]\n\nStarting with the **time-dependent Schrödinger equation**:\n\n$$i\\hbar \\frac{\\partial \\Psi(x,t)}{\\partial t} = -\\frac{\\hbar^2}{2m}\\frac{\\partial^2 \\Psi(x,t)}{\\partial x^2} + V(x)\\Psi(x,t)$$\n\n**Step 1:** Assume the solution is separable:\n$$\\Psi(x,t) = \\psi(x) \\cdot \\phi(t)$$\n\n**Step 2:** Substituting into the TDSE:\n$$i\\hbar \\psi(x) \\frac{d\\phi(t)}{dt} = -\\frac{\\hbar^2}{2m}\\phi(t)\\frac{d^2\\psi(x)}{dx^2} + V(x)\\psi(x)\\phi(t)$$\n\n**Step 3:** Dividing both sides by $\\psi(x)\\phi(t)$:\n$$i\\hbar \\frac{1}{\\phi(t)}\\frac{d\\phi}{dt} = -\\frac{\\hbar^2}{2m}\\frac{1}{\\psi(x)}\\frac{d^2\\psi}{dx^2} + V(x)$$\n\nThe left side depends only on $t$ and the right side only on $x$. Since they are equal, both must equal a constant $E$ (the energy).\n\n**Time part:**\n$$i\\hbar \\frac{d\\phi}{dt} = E\\phi \\implies \\phi(t) = e^{-iEt/\\hbar}$$\n\n**Space part (Time-Independent Schrödinger Equation):**\n\n$$-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} + V(x)\\psi = E\\psi$$\n\nor equivalently: $\\hat{H}\\psi = E\\psi$\n\nThis is the **energy eigenvalue equation**.\n\n---\n\n**(c) Energy Calculation for 1-D Infinite Square Well:** [5 marks]\n\n**Given:** $a = 0.1$ nm $= 10^{-10}$ m, $m = 9.1 \\times 10^{-31}$ kg, $\\hbar = 1.055 \\times 10^{-34}$ J·s\n\n**Energy eigenvalue formula:**\n$$E_n = \\frac{n^2 \\pi^2 \\hbar^2}{2ma^2}$$\n\n**Ground state** ($n = 1$):\n\n$$E_1 = \\frac{(1)^2 \\pi^2 (1.055 \\times 10^{-34})^2}{2 \\times 9.1 \\times 10^{-31} \\times (10^{-10})^2}$$\n\n$$E_1 = \\frac{9.87 \\times 1.113 \\times 10^{-68}}{1.82 \\times 10^{-50}}$$\n\n$$E_1 = \\frac{1.099 \\times 10^{-67}}{1.82 \\times 10^{-50}} = 6.038 \\times 10^{-18} \\text{ J}$$\n\nConverting to eV: $E_1 = \\frac{6.038 \\times 10^{-18}}{1.6 \\times 10^{-19}} \\approx 37.74$ eV\n\n**First excited state** ($n = 2$):\n\n$$E_2 = 4 \\times E_1 = 4 \\times 37.74 \\approx 150.96 \\text{ eV}$$\n\n**Result: $E_1 \\approx 37.74$ eV and $E_2 \\approx 150.96$ eV.**",
+      "key_points": [
+        "Five postulates: state, operators, measurement, expectation value, time evolution",
+        "Separation of variables: $\\Psi(x,t) = \\psi(x) \\cdot \\phi(t)$",
+        "TISE: $-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} + V\\psi = E\\psi$",
+        "Energy: $E_n = n^2\\pi^2\\hbar^2/(2ma^2)$",
+        "Ground state energy $\\approx 37.74$ eV for given well width"
+      ]
+    },
+    "C2": {
+      "question_number": "C2",
+      "solution": "**(a) Fermi-Dirac Distribution Function:** [6 marks]\n\nThe Fermi-Dirac distribution describes the probability of occupation of energy states by fermions (electrons):\n\n$$f(E) = \\frac{1}{e^{(E - E_F)/k_BT} + 1}$$\n\nwhere $E_F$ is the Fermi energy, $k_B = 1.38 \\times 10^{-23}$ J/K is Boltzmann's constant, and $T$ is the absolute temperature.\n\n**At $T = 0$ K (Absolute Zero):**\n\n- For $E < E_F$: The exponent $\\to -\\infty$, so $f(E) = 1$. All states below $E_F$ are **fully occupied**.\n- For $E > E_F$: The exponent $\\to +\\infty$, so $f(E) = 0$. All states above $E_F$ are **completely empty**.\n- The distribution is a **sharp step function** at $E = E_F$.\n\n**At $T > 0$ K (Non-zero Temperature):**\n\n- The sharp step softens into a smooth curve.\n- At $E = E_F$: $f(E_F) = \\frac{1}{2}$ (always, regardless of temperature).\n- States slightly above $E_F$ become partially occupied.\n- States slightly below $E_F$ become partially unoccupied.\n- The transition region has a width of approximately $\\pm 2k_BT$ around $E_F$.\n- As $T$ increases, the curve becomes smoother.\n\n**Physical significance:** The Fermi level is the energy at which the probability of occupation is exactly $\\frac{1}{2}$.\n\n---\n\n**(b) Probability Calculation:** [4 marks]\n\n**Given:** $E = 6.5$ eV, $T = 1000$ K, $E_F = 5.5$ eV\n\n$$f(E) = \\frac{1}{e^{(E - E_F)/k_BT} + 1}$$\n\nFirst, calculate the exponent:\n\n$$\\frac{E - E_F}{k_BT} = \\frac{(6.5 - 5.5) \\times 1.6 \\times 10^{-19}}{1.38 \\times 10^{-23} \\times 1000}$$\n\n$$= \\frac{1.0 \\times 1.6 \\times 10^{-19}}{1.38 \\times 10^{-20}} = \\frac{1.6 \\times 10^{-19}}{1.38 \\times 10^{-20}} = 11.594$$\n\n$$f(E) = \\frac{1}{e^{11.594} + 1} = \\frac{1}{108,755 + 1} \\approx 9.195 \\times 10^{-6}$$\n\n**Result: The probability of occupation is approximately $9.2 \\times 10^{-6}$ (nearly zero).**\n\nThis makes physical sense since the energy state is $1$ eV above the Fermi level, and at $T = 1000$ K, $k_BT \\approx 0.086$ eV, which is much smaller than the energy difference.\n\n---\n\n**(c) Comparison: Bose-Einstein vs Fermi-Dirac Statistics:** [5 marks]\n\n| Feature | Bose-Einstein (BE) | Fermi-Dirac (FD) |\n|---------|-------------------|------------------|\n| **Particles** | Bosons | Fermions |\n| **Spin** | Integer (0, 1, 2, ...) | Half-integer (1/2, 3/2, ...) |\n| **Pauli Exclusion** | Not obeyed | Obeyed |\n| **Distinguishability** | Indistinguishable | Indistinguishable |\n| **Occupation number** | Any number per state | Maximum 1 per state |\n| **Distribution function** | $f_{BE} = \\frac{1}{e^{(E-\\mu)/k_BT} - 1}$ | $f_{FD} = \\frac{1}{e^{(E-E_F)/k_BT} + 1}$ |\n| **Examples** | Photons, phonons, He-4 | Electrons, protons, neutrons, He-3 |\n| **Phenomena** | Bose-Einstein condensation, laser | Electron gas, white dwarfs |\n| **Classical limit** | Both reduce to MB statistics at high $T$ and low density | Both reduce to MB statistics at high $T$ and low density |",
+      "key_points": [
+        "$f(E) = 1/(e^{(E-E_F)/k_BT} + 1)$",
+        "At $T = 0$: step function; at $T > 0$: smoothed curve",
+        "At $E = E_F$: $f = 1/2$ always",
+        "Probability at 6.5 eV, 1000 K ≈ $9.2 \\times 10^{-6}$",
+        "BE: bosons, integer spin; FD: fermions, half-integer spin"
+      ]
+    },
+    "C3": {
+      "question_number": "C3",
+      "solution": "**(a) Pauli Spin Matrices and Pauli-X Gate Operation:** [5 marks]\n\n**Pauli Spin Matrices:**\n\n$$\\sigma_x = X = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}, \\quad \\sigma_y = Y = \\begin{pmatrix} 0 & -i \\\\ i & 0 \\end{pmatrix}, \\quad \\sigma_z = Z = \\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}$$\n\n**Pauli-X gate on $|0\\rangle$:**\n\n$$X|0\\rangle = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix} = |1\\rangle$$\n\n**Pauli-X gate on $|1\\rangle$:**\n\n$$X|1\\rangle = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = |0\\rangle$$\n\nThe Pauli-X gate acts as a **quantum NOT gate** (bit flip), swapping $|0\\rangle \\leftrightarrow |1\\rangle$.\n\n---\n\n**(b) Normalization Check and Gate Operations:** [5 marks]\n\n**Normalization check:** For $|\\psi\\rangle = \\frac{3}{5}|0\\rangle + \\frac{4}{5}|1\\rangle$:\n\n$$|\\alpha|^2 + |\\beta|^2 = \\left(\\frac{3}{5}\\right)^2 + \\left(\\frac{4}{5}\\right)^2 = \\frac{9}{25} + \\frac{16}{25} = \\frac{25}{25} = 1 \\checkmark$$\n\n**Yes, the state is normalized.**\n\n**Gate operations:**\n\n**Step 1 — Hadamard on $|0\\rangle$:**\n\n$$H|0\\rangle = \\frac{1}{\\sqrt{2}}(|0\\rangle + |1\\rangle)$$\n\n**Step 2 — Pauli-Z on the result:**\n\n$$Z\\left[\\frac{1}{\\sqrt{2}}(|0\\rangle + |1\\rangle)\\right] = \\frac{1}{\\sqrt{2}}(Z|0\\rangle + Z|1\\rangle)$$\n\n$$= \\frac{1}{\\sqrt{2}}(|0\\rangle + (-1)|1\\rangle) = \\frac{1}{\\sqrt{2}}(|0\\rangle - |1\\rangle) = |-\\rangle$$\n\n**Final state: $\\frac{1}{\\sqrt{2}}(|0\\rangle - |1\\rangle)$**\n\nThis is the same as applying $H$ to $|1\\rangle$ directly.\n\n---\n\n**(c) Bloch Sphere:** [5 marks]\n\nThe **Bloch sphere** is a geometric representation of the state of a single qubit. Any pure single-qubit state can be written as:\n\n$$|\\psi\\rangle = \\cos\\frac{\\theta}{2}|0\\rangle + e^{i\\phi}\\sin\\frac{\\theta}{2}|1\\rangle$$\n\nwhere $\\theta \\in [0, \\pi]$ and $\\phi \\in [0, 2\\pi)$ are spherical coordinates.\n\n**Key features:**\n\n- The **north pole** ($\\theta = 0$) represents $|0\\rangle$\n- The **south pole** ($\\theta = \\pi$) represents $|1\\rangle$\n- Points on the **equator** represent equal superpositions with different phases\n- $|+\\rangle = \\frac{1}{\\sqrt{2}}(|0\\rangle + |1\\rangle)$ lies on the positive $x$-axis\n- $|-\\rangle = \\frac{1}{\\sqrt{2}}(|0\\rangle - |1\\rangle)$ lies on the negative $x$-axis\n\n**Bloch vector:** The state is represented by a unit vector $\\vec{r} = (\\sin\\theta\\cos\\phi, \\sin\\theta\\sin\\phi, \\cos\\theta)$.\n\n**Quantum gate operations** correspond to rotations of the Bloch vector:\n- Pauli-X: rotation by $\\pi$ about the $x$-axis\n- Pauli-Y: rotation by $\\pi$ about the $y$-axis\n- Pauli-Z: rotation by $\\pi$ about the $z$-axis\n- Hadamard: rotation by $\\pi$ about the axis $(\\hat{x} + \\hat{z})/\\sqrt{2}$",
+      "key_points": [
+        "Pauli matrices: $\\sigma_x$, $\\sigma_y$, $\\sigma_z$",
+        "Pauli-X is a bit-flip gate: $X|0\\rangle = |1\\rangle$, $X|1\\rangle = |0\\rangle$",
+        "State $\\frac{3}{5}|0\\rangle + \\frac{4}{5}|1\\rangle$ is normalized",
+        "ZH|0\\rangle = $\\frac{1}{\\sqrt{2}}(|0\\rangle - |1\\rangle)$",
+        "Bloch sphere: $|\\psi\\rangle = \\cos(\\theta/2)|0\\rangle + e^{i\\phi}\\sin(\\theta/2)|1\\rangle$"
+      ]
+    },
+    "C4": {
+      "question_number": "C4",
+      "solution": "**(a) Kronig-Penney Model — Energy Bands and Forbidden Gaps:** [6 marks]\n\nThe Kronig-Penney model is a simplified quantum mechanical model that explains the formation of energy bands in crystalline solids.\n\n**Model Setup:**\n- An electron moves in a 1-D periodic potential consisting of rectangular barriers.\n- Barrier height: $V_0$, barrier width: $b$\n- Well width: $a$, lattice period: $d = a + b$\n- The potential satisfies $V(x + d) = V(x)$\n\n**Mathematical Treatment:**\n\nUsing Bloch's theorem and solving the Schrödinger equation in the well and barrier regions, then matching boundary conditions, we obtain:\n\n$$\\frac{P \\sin(\\alpha a)}{\\alpha a} + \\cos(\\alpha a) = \\cos(ka)$$\n\nwhere $P = \\frac{mV_0 ba}{\\hbar^2}$ is the scattering strength, $\\alpha = \\sqrt{2mE/\\hbar^2}$, and $k$ is the crystal momentum.\n\n**Physical interpretation:**\n\nSince $-1 \\leq \\cos(ka) \\leq 1$, solutions only exist when the left-hand side falls within $[-1, +1]$.\n\n**Consequences:**\n1. **Allowed bands:** Energy ranges where $|\\text{LHS}| \\leq 1$ — electrons can propagate through the crystal\n2. **Forbidden gaps (band gaps):** Energy ranges where $|\\text{LHS}| > 1$ — no propagating states exist\n3. Band widths **increase** with increasing energy\n4. Band gaps **decrease** with increasing energy\n5. As $P \\to 0$: Free electron behavior (continuous energy spectrum)\n6. As $P \\to \\infty$: Isolated atom behavior (discrete energy levels)\n\n---\n\n**(b) Effective Mass of an Electron:** [4 marks]\n\n**Definition:** The effective mass $m^*$ of an electron in a crystal is defined as:\n\n$$m^* = \\hbar^2 \\left(\\frac{d^2 E}{dk^2}\\right)^{-1}$$\n\n**Physical significance:**\n\n1. The effective mass accounts for the **interaction of the electron with the periodic crystal potential**. An electron in a crystal behaves as if it were a free particle with mass $m^*$ instead of the true mass $m$.\n\n2. **Newton's second law** in a crystal: $F = m^* a$, where $F$ is the external force.\n\n3. At the **bottom of the conduction band** (positive curvature of $E$-$k$): $m^* > 0$ — electrons behave normally.\n\n4. At the **top of the valence band** (negative curvature): $m^* < 0$ — this leads to the concept of **holes** as positive charge carriers.\n\n5. $m^*$ can be very different from the free electron mass $m_0$. For example, in GaAs, $m^* \\approx 0.067 m_0$.\n\n---\n\n**(c) Brillouin Zones and E-k Diagram:** [5 marks]\n\n**Brillouin zones** are regions in reciprocal space (k-space) that define the allowed ranges of crystal momentum $k$ for electrons in a periodic lattice.\n\n**Definition:** The $n$-th Brillouin zone is the set of points in k-space that can be reached from the origin by crossing exactly $(n-1)$ Bragg planes.\n\n**For a 1-D lattice with period $a$:**\n- **First Brillouin zone:** $-\\frac{\\pi}{a} \\leq k \\leq \\frac{\\pi}{a}$\n- **Second Brillouin zone:** $-\\frac{2\\pi}{a} \\leq k \\leq -\\frac{\\pi}{a}$ and $\\frac{\\pi}{a} \\leq k \\leq \\frac{2\\pi}{a}$\n\n**E-k Diagram Features:**\n\n1. In the **extended zone scheme**, the parabolic free-electron curve ($E = \\hbar^2 k^2/2m$) is modified at the Brillouin zone boundaries ($k = \\pm n\\pi/a$), where **energy gaps** appear.\n\n2. In the **reduced zone scheme**, all bands are folded back into the first Brillouin zone.\n\n3. At the zone boundaries, the electron wave undergoes **Bragg reflection**, creating standing waves that split the energy into upper and lower bands.\n\n4. The **energy gap** at the zone boundary is related to the Fourier component of the crystal potential.\n\n5. The **slope** $dE/dk$ determines the group velocity of the electron, and the **curvature** $d^2E/dk^2$ determines the effective mass.",
+      "key_points": [
+        "Kronig-Penney: periodic rectangular potential model",
+        "Allowed bands where $|\\cos(ka)| \\leq 1$, forbidden gaps otherwise",
+        "Effective mass: $m^* = \\hbar^2(d^2E/dk^2)^{-1}$",
+        "Brillouin zone boundaries: $k = \\pm n\\pi/a$",
+        "Energy gaps appear at zone boundaries due to Bragg reflection"
+      ]
+    },
+    "C5": {
+      "question_number": "C5",
+      "solution": "**(a) Commutator Calculations:** [6 marks]\n\n**Part 1: $[x, L_z]$**\n\nWe know $L_z = xp_y - yp_x$ where $p_x = -i\\hbar\\frac{\\partial}{\\partial x}$ and $p_y = -i\\hbar\\frac{\\partial}{\\partial y}$.\n\n$$[x, L_z] = [x, xp_y - yp_x] = [x, xp_y] - [x, yp_x]$$\n\n**First term:** $[x, xp_y] = x[x, p_y] + [x, x]p_y$\n\nSince $[x, p_y] = 0$ (different coordinates commute) and $[x, x] = 0$:\n$$[x, xp_y] = 0$$\n\n**Second term:** $[x, yp_x] = y[x, p_x] + [x, y]p_x$\n\nUsing the canonical commutation relation $[x, p_x] = i\\hbar$ and $[x, y] = 0$:\n$$[x, yp_x] = y \\cdot i\\hbar + 0 = i\\hbar y$$\n\n**Result:**\n$$[x, L_z] = 0 - i\\hbar y = -i\\hbar y$$\n\n$$\\boxed{[x, L_z] = -i\\hbar y}$$\n\n---\n\n**Part 2: $[L_x, L_y]$**\n\nUsing the fundamental angular momentum commutation relations:\n\n$L_x = yp_z - zp_y$, $L_y = zp_x - xp_z$\n\n$$[L_x, L_y] = [yp_z - zp_y, zp_x - xp_z]$$\n\nExpanding:\n$$= [yp_z, zp_x] - [yp_z, xp_z] - [zp_y, zp_x] + [zp_y, xp_z]$$\n\n**Term 1:** $[yp_z, zp_x] = y[p_z, z]p_x = y(-i\\hbar)p_x = -i\\hbar yp_x$\n\n**Term 2:** $[yp_z, xp_z] = 0$ (since $[y, x] = 0$ and $[p_z, p_z] = 0$)\n\n**Term 3:** $[zp_y, zp_x] = 0$ (since $[z, z] = 0$ and $[p_y, p_x] = 0$)\n\n**Term 4:** $[zp_y, xp_z] = x[z, p_z]p_y = x(i\\hbar)p_y = i\\hbar xp_y$\n\n**Result:**\n$$[L_x, L_y] = -i\\hbar yp_x + i\\hbar xp_y = i\\hbar(xp_y - yp_x) = i\\hbar L_z$$\n\n$$\\boxed{[L_x, L_y] = i\\hbar L_z}$$\n\n---\n\n**(b) Expectation Value of Position in 1-D Infinite Square Well:** [5 marks]\n\n**Given:** $\\psi_n(x) = \\sqrt{\\frac{2}{a}}\\sin\\left(\\frac{n\\pi x}{a}\\right)$ for $0 < x < a$.\n\n$$\\langle x \\rangle = \\int_0^a \\psi_n^*(x) \\cdot x \\cdot \\psi_n(x) \\, dx = \\frac{2}{a}\\int_0^a x \\sin^2\\left(\\frac{n\\pi x}{a}\\right) dx$$\n\nUsing $\\sin^2\\theta = \\frac{1 - \\cos 2\\theta}{2}$:\n\n$$\\langle x \\rangle = \\frac{2}{a} \\int_0^a x \\cdot \\frac{1}{2}\\left[1 - \\cos\\left(\\frac{2n\\pi x}{a}\\right)\\right] dx$$\n\n$$= \\frac{1}{a}\\left[\\int_0^a x \\, dx - \\int_0^a x \\cos\\left(\\frac{2n\\pi x}{a}\\right) dx\\right]$$\n\n**First integral:**\n$$\\int_0^a x \\, dx = \\frac{a^2}{2}$$\n\n**Second integral** (by parts, with $u = x$, $dv = \\cos\\left(\\frac{2n\\pi x}{a}\\right)dx$):\n\n$$\\int_0^a x \\cos\\left(\\frac{2n\\pi x}{a}\\right) dx = \\left[\\frac{xa}{2n\\pi}\\sin\\left(\\frac{2n\\pi x}{a}\\right)\\right]_0^a + \\frac{a^2}{(2n\\pi)^2}\\left[\\cos\\left(\\frac{2n\\pi x}{a}\\right)\\right]_0^a$$\n\nSince $\\sin(2n\\pi) = 0$ and $\\cos(2n\\pi) = \\cos(0) = 1$:\n\n$$= 0 + \\frac{a^2}{4n^2\\pi^2}(1 - 1) = 0$$\n\n**Therefore:**\n$$\\langle x \\rangle = \\frac{1}{a} \\cdot \\frac{a^2}{2} = \\frac{a}{2}$$\n\n$$\\boxed{\\langle x \\rangle = \\frac{a}{2}}$$\n\nThis result makes physical sense — the expectation value of position is at the center of the well, reflecting the symmetry of $|\\psi_n|^2$ about $x = a/2$.\n\n---\n\n**(c) Energy and Degeneracy of 2nd Excited State in 3-D Cubic Box:** [4 marks]\n\n**For a 3-D cubic box of side $a$, the energy eigenvalues are:**\n\n$$E_{n_x, n_y, n_z} = \\frac{\\pi^2\\hbar^2}{2ma^2}(n_x^2 + n_y^2 + n_z^2)$$\n\nLet $E_0 = \\frac{\\pi^2\\hbar^2}{2ma^2}$.\n\n**Ground state** ($n_x, n_y, n_z$) = (1,1,1): $E = 3E_0$, degeneracy = 1\n\n**1st excited state** ($n_x^2 + n_y^2 + n_z^2 = 6$):\nStates: (2,1,1), (1,2,1), (1,1,2) → $E = 6E_0$, degeneracy = 3\n\n**2nd excited state** ($n_x^2 + n_y^2 + n_z^2 = 9$):\nStates: (2,2,1), (2,1,2), (1,2,2) → $E = 9E_0$, degeneracy = 3\n\n$$\\boxed{E_{\\text{2nd excited}} = 9E_0 = \\frac{9\\pi^2\\hbar^2}{2ma^2}, \\quad \\text{Degeneracy} = 3}$$",
+      "key_points": [
+        "$[x, L_z] = -i\\hbar y$",
+        "$[L_x, L_y] = i\\hbar L_z$ (cyclic commutation relation)",
+        "$\\langle x \\rangle = a/2$ for particle in a box (symmetry)",
+        "2nd excited state in 3D box: $E = 9E_0$, degeneracy = 3"
+      ]
+    }
+  }
+}

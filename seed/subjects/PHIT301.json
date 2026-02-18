@@ -1,0 +1,42 @@
+{
+  "code": "PHIT301",
+  "name": "Engineering Physics - II",
+  "short_name": "Physics-II",
+  "regulation": "R23",
+  "semester": 3,
+  "department": "IT",
+  "college": "JISCE",
+  "exam_pattern": {
+    "total_marks": 70,
+    "duration_minutes": 180,
+    "groups": [
+      {
+        "name": "A",
+        "label": "Group A",
+        "instructions": "Answer any 10 out of 12 questions",
+        "questions_count": 12,
+        "attempt_count": 10,
+        "marks_per_question": 1,
+        "question_type": "mcq"
+      },
+      {
+        "name": "B",
+        "label": "Group B",
+        "instructions": "Answer any 3 out of 5 questions",
+        "questions_count": 5,
+        "attempt_count": 3,
+        "marks_per_question": 5,
+        "question_type": "short"
+      },
+      {
+        "name": "C",
+        "label": "Group C",
+        "instructions": "Answer any 3 out of 5 questions",
+        "questions_count": 5,
+        "attempt_count": 3,
+        "marks_per_question": 15,
+        "question_type": "long"
+      }
+    ]
+  }
+}
