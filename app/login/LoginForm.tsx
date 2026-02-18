@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 import { writeDeviceToken } from '@/lib/device-token'
@@ -27,7 +27,6 @@ function mapAuthError(message: string): string {
 }
 
 export function LoginForm() {
-  const router = useRouter()
   const searchParams = useSearchParams()
   const reason = searchParams.get('reason')
 
@@ -66,7 +65,7 @@ export function LoginForm() {
       await writeDeviceToken(data.user.id)
     }
 
-    router.push('/dashboard')
+    window.location.href = '/dashboard'
   }
 
   return (
@@ -75,10 +74,10 @@ export function LoginForm() {
       {reason === 'device' && (
         <div className="flex items-start gap-3 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
           <AlertTriangle className="size-4 mt-0.5 shrink-0" />
-          <p>
-            You were signed in on another device. Please sign in again to
-            continue.
-          </p>
+          <div>
+            <p>You were signed in on another device. Please sign in again to continue.</p>
+            <p className="mt-1 text-amber-700">Only one device per account is allowed at a time.</p>
+          </div>
         </div>
       )}
 
