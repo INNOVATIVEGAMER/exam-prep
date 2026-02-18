@@ -137,14 +137,37 @@ export default async function PaperPage({ params }: PaperPageProps) {
     return acc
   }, {})
 
-  // Build a map of group name → Group config from the exam pattern
-  const groupConfig = subject.exam_pattern.groups.reduce<Record<string, Group>>(
-    (acc, g) => {
-      acc[g.name] = g
-      return acc
-    },
-    {}
-  )
+  // Build a map of group name → Group config.
+  // For practice papers, derive from the questions themselves so counts/marks
+  // reflect the actual paper rather than the subject's exam pattern.
+  const groupConfig: Record<string, Group> = paper.type === 'practice'
+    ? Object.entries(
+        Object.values(paper.questions).reduce<
+          Record<string, { marks: number; count: number; hasMcq: boolean }>
+        >((acc, q) => {
+          if (!acc[q.group]) acc[q.group] = { marks: 0, count: 0, hasMcq: false }
+          acc[q.group].marks += q.marks
+          acc[q.group].count += 1
+          if (q.options && q.options.length > 0) acc[q.group].hasMcq = true
+          return acc
+        }, {})
+      ).reduce<Record<string, Group>>((acc, [name, { marks, count, hasMcq }]) => {
+        const marksPerQuestion = count > 0 ? marks / count : 0
+        acc[name] = {
+          name,
+          label: `Group ${name.toUpperCase()}`,
+          instructions: `Attempt all ${count} questions`,
+          questions_count: count,
+          attempt_count: count,
+          marks_per_question: marksPerQuestion,
+          question_type: hasMcq ? 'mcq' : marksPerQuestion >= 10 ? 'long' : 'short',
+        }
+        return acc
+      }, {})
+    : subject.exam_pattern.groups.reduce<Record<string, Group>>(
+        (acc, g) => { acc[g.name] = g; return acc },
+        {}
+      )
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10 space-y-8 pb-24 md:pb-10">
