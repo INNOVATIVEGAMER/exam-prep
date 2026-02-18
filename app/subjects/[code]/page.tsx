@@ -25,6 +25,12 @@ const PAPER_TYPE_LABELS: Record<Paper['type'], string> = {
   practice: 'Practice',
 }
 
+const QUESTION_TYPE_LABELS: Record<string, string> = {
+  mcq: 'MCQ',
+  short: 'Short Answer',
+  long: 'Long Answer',
+}
+
 async function fetchSubjectWithPapers(
   code: string
 ): Promise<{ subject: Subject; papers: Paper[] } | null> {
@@ -139,8 +145,8 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
                     <p className="text-xs text-muted-foreground">
                       {group.instructions}
                     </p>
-                    <p className="text-xs text-muted-foreground capitalize">
-                      Type: {group.question_type.replace('_', ' ')}
+                    <p className="text-xs text-muted-foreground">
+                      Type: {QUESTION_TYPE_LABELS[group.question_type] ?? group.question_type}
                     </p>
                     <p className="text-xs font-medium text-foreground">
                       {group.attempt_count} × {group.marks_per_question}m ={' '}

@@ -34,7 +34,7 @@
         "instructions": "Answer any 3 out of 5 questions",
         "questions_count": 5,
         "attempt_count": 3,
-        "marks_per_question": 10,
+        "marks_per_question": 15,
         "question_type": "long"
       }
     ]

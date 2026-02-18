@@ -33,12 +33,12 @@ export function QuestionCard({
           <div className="flex flex-wrap gap-1.5">
             {question.co && (
               <Badge variant="outline" className="text-xs">
-                CO{question.co}
+                {question.co}
               </Badge>
             )}
             {question.bl && (
               <Badge variant="secondary" className="text-xs">
-                BL{question.bl}
+                {question.bl}
               </Badge>
             )}
           </div>
