@@ -40,5 +40,3 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# seed PDFs — stored locally, never committed
-seed/pdfs/

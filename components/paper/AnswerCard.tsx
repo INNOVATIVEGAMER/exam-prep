@@ -1,7 +1,7 @@
 'use client'
 import { Answer } from '@/types'
 import { PaywallOverlay } from '@/components/paper/PaywallOverlay'
-import { renderMathText } from '@/lib/render-math-text'
+import { MarkdownContent } from '@/components/paper/MarkdownContent'
 import { Badge } from '@/components/ui/badge'
 import { CheckCircle2 } from 'lucide-react'
 
@@ -15,50 +15,6 @@ interface AnswerCardProps {
   paperId: string
   /** Paper title shown in Razorpay checkout description */
   paperTitle: string
-}
-
-/**
- * Renders a simple markdown-aware answer — handles **bold**, line breaks,
- * and $...$ / $$...$$ math blocks via renderMathText. No external markdown
- * library needed for the lightweight formatting used in answers.
- */
-function renderAnswerContent(solution: string): React.ReactNode {
-  // Split into lines to handle newline-based formatting
-  return solution.split('\n').map((line, lineIdx) => {
-    if (line.trim() === '') {
-      return <br key={lineIdx} />
-    }
-
-    // Process **bold** within the line, then math
-    const boldParts: React.ReactNode[] = []
-    const boldRe = /\*\*(.*?)\*\*/g
-    let lastBoldIdx = 0
-    let boldMatch: RegExpExecArray | null
-
-    while ((boldMatch = boldRe.exec(line)) !== null) {
-      if (boldMatch.index > lastBoldIdx) {
-        boldParts.push(
-          ...renderMathText(line.slice(lastBoldIdx, boldMatch.index))
-        )
-      }
-      boldParts.push(
-        <strong key={`bold-${lineIdx}-${boldMatch.index}`}>
-          {renderMathText(boldMatch[1])}
-        </strong>
-      )
-      lastBoldIdx = boldMatch.index + boldMatch[0].length
-    }
-
-    if (lastBoldIdx < line.length) {
-      boldParts.push(...renderMathText(line.slice(lastBoldIdx)))
-    }
-
-    return (
-      <p key={lineIdx} className="leading-relaxed">
-        {boldParts}
-      </p>
-    )
-  })
 }
 
 export function AnswerCard({ answer, locked, price, paperId, paperTitle }: AnswerCardProps) {
@@ -85,10 +41,8 @@ export function AnswerCard({ answer, locked, price, paperId, paperTitle }: Answe
         </div>
       )}
 
-      {/* Solution text */}
-      <div className="text-sm text-foreground space-y-1">
-        {renderAnswerContent(answer.solution)}
-      </div>
+      {/* Solution text — rendered as Markdown + KaTeX math */}
+      <MarkdownContent content={answer.solution} className="text-foreground" />
 
       {/* Key points */}
       {answer.key_points && answer.key_points.length > 0 && (
@@ -100,7 +54,10 @@ export function AnswerCard({ answer, locked, price, paperId, paperTitle }: Answe
             {answer.key_points.map((point, i) => (
               <li key={i} className="flex items-start gap-2 text-sm">
                 <span className="mt-1.5 size-1.5 rounded-full bg-primary shrink-0" />
-                <span>{renderMathText(point)}</span>
+                <MarkdownContent
+                  content={point}
+                  className="inline [&>p]:inline [&>p]:my-0"
+                />
               </li>
             ))}
           </ul>

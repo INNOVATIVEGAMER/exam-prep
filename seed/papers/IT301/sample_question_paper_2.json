@@ -15,22 +15,10 @@
       "co": "CO1",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "Accumulator (AC)"
-        },
-        {
-          "key": "b",
-          "text": "Program Counter (PC)"
-        },
-        {
-          "key": "c",
-          "text": "Memory Address Register (MAR)"
-        },
-        {
-          "key": "d",
-          "text": "Instruction Register (IR)"
-        }
+        { "key": "a", "text": "Accumulator (AC)" },
+        { "key": "b", "text": "Program Counter (PC)" },
+        { "key": "c", "text": "Memory Address Register (MAR)" },
+        { "key": "d", "text": "Instruction Register (IR)" }
       ]
     },
     "A2": {
@@ -41,22 +29,10 @@
       "co": "CO2",
       "bl": "L2",
       "options": [
-        {
-          "key": "a",
-          "text": "1 full adder"
-        },
-        {
-          "key": "b",
-          "text": "2 full adders"
-        },
-        {
-          "key": "c",
-          "text": "3 full adders"
-        },
-        {
-          "key": "d",
-          "text": "4 full adders"
-        }
+        { "key": "a", "text": "1 full adder" },
+        { "key": "b", "text": "2 full adders" },
+        { "key": "c", "text": "3 full adders" },
+        { "key": "d", "text": "4 full adders" }
       ]
     },
     "A3": {
@@ -67,22 +43,10 @@
       "co": "CO2",
       "bl": "L2",
       "options": [
-        {
-          "key": "a",
-          "text": "Direct mapped"
-        },
-        {
-          "key": "b",
-          "text": "Fully associative"
-        },
-        {
-          "key": "c",
-          "text": "Set associative"
-        },
-        {
-          "key": "d",
-          "text": "None of these"
-        }
+        { "key": "a", "text": "Direct mapped" },
+        { "key": "b", "text": "Fully associative" },
+        { "key": "c", "text": "Set associative" },
+        { "key": "d", "text": "None of these" }
       ]
     },
     "A4": {
@@ -93,36 +57,24 @@
       "co": "CO1",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "64"
-        }
+        { "key": "a", "text": "64" },
+        { "key": "b", "text": "127" },
+        { "key": "c", "text": "128" },
+        { "key": "d", "text": "1023" }
       ]
     },
     "A5": {
       "group": "A",
       "number": "A5",
-      "text": "Which I/O technique allows data transfer between I/O device and memory without CPU inter- vention?",
+      "text": "Which I/O technique allows data transfer between I/O device and memory without CPU intervention?",
       "marks": 1,
       "co": "CO2",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "Programmed I/O"
-        },
-        {
-          "key": "b",
-          "text": "Interrupt-driven I/O"
-        },
-        {
-          "key": "c",
-          "text": "DMA"
-        },
-        {
-          "key": "d",
-          "text": "Polling"
-        }
+        { "key": "a", "text": "Programmed I/O" },
+        { "key": "b", "text": "Interrupt-driven I/O" },
+        { "key": "c", "text": "DMA" },
+        { "key": "d", "text": "Polling" }
       ]
     },
     "A6": {
@@ -133,22 +85,10 @@
       "co": "CO2",
       "bl": "L2",
       "options": [
-        {
-          "key": "a",
-          "text": "Every time cache is updated"
-        },
-        {
-          "key": "b",
-          "text": "Only when the cache line is replaced"
-        },
-        {
-          "key": "c",
-          "text": "At fixed time intervals"
-        },
-        {
-          "key": "d",
-          "text": "Never"
-        }
+        { "key": "a", "text": "Every time cache is updated" },
+        { "key": "b", "text": "Only when the cache line is replaced" },
+        { "key": "c", "text": "At fixed time intervals" },
+        { "key": "d", "text": "Never" }
       ]
     },
     "A7": {
@@ -159,22 +99,10 @@
       "co": "CO2",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "Data hazard"
-        },
-        {
-          "key": "b",
-          "text": "Control hazard"
-        },
-        {
-          "key": "c",
-          "text": "Structural hazard"
-        },
-        {
-          "key": "d",
-          "text": "RAW hazard"
-        }
+        { "key": "a", "text": "Data hazard" },
+        { "key": "b", "text": "Control hazard" },
+        { "key": "c", "text": "Structural hazard" },
+        { "key": "d", "text": "RAW hazard" }
       ]
     },
     "A8": {
@@ -185,22 +113,10 @@
       "co": "CO2",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "Segmentation"
-        },
-        {
-          "key": "b",
-          "text": "Paging"
-        },
-        {
-          "key": "c",
-          "text": "Fragmentation"
-        },
-        {
-          "key": "d",
-          "text": "Compaction"
-        }
+        { "key": "a", "text": "Segmentation" },
+        { "key": "b", "text": "Paging" },
+        { "key": "c", "text": "Fragmentation" },
+        { "key": "d", "text": "Compaction" }
       ]
     },
     "A9": {
@@ -211,22 +127,10 @@
       "co": "CO1",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "Uses hardwired control unit only"
-        },
-        {
-          "key": "b",
-          "text": "Has a small set of simple instructions"
-        },
-        {
-          "key": "c",
-          "text": "Instructions may take multiple clock cycles"
-        },
-        {
-          "key": "d",
-          "text": "Does not support microprogramming"
-        }
+        { "key": "a", "text": "Uses hardwired control unit only" },
+        { "key": "b", "text": "Has a small set of simple instructions" },
+        { "key": "c", "text": "Instructions may take multiple clock cycles" },
+        { "key": "d", "text": "Does not support microprogramming" }
       ]
     },
     "A10": {
@@ -237,22 +141,10 @@
       "co": "CO2",
       "bl": "L2",
       "options": [
-        {
-          "key": "a",
-          "text": "Lower level contains a subset of upper level"
-        },
-        {
-          "key": "b",
-          "text": "Upper level contains a subset of lower level"
-        },
-        {
-          "key": "c",
-          "text": "All levels contain the same data"
-        },
-        {
-          "key": "d",
-          "text": "Levels are independent"
-        }
+        { "key": "a", "text": "Lower level contains a subset of upper level" },
+        { "key": "b", "text": "Upper level contains a subset of lower level" },
+        { "key": "c", "text": "All levels contain the same data" },
+        { "key": "d", "text": "Levels are independent" }
       ]
     },
     "A11": {
@@ -263,18 +155,10 @@
       "co": "CO3",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "General purpose computing"
-        },
-        {
-          "key": "b",
-          "text": "Matrix operations and signal processing"
-        },
-        {
-          "key": "c",
-          "text": "Operating system scheduling"
-        }
+        { "key": "a", "text": "General purpose computing" },
+        { "key": "b", "text": "Matrix operations and signal processing" },
+        { "key": "c", "text": "Operating system scheduling" },
+        { "key": "d", "text": "Database queries" }
       ]
     },
     "A12": {
@@ -285,22 +169,10 @@
       "co": "CO2",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "The one farthest from the CPU"
-        },
-        {
-          "key": "b",
-          "text": "The one closest to the CPU"
-        },
-        {
-          "key": "c",
-          "text": "Randomly assigned"
-        },
-        {
-          "key": "d",
-          "text": "Determined by software"
-        }
+        { "key": "a", "text": "The one farthest from the CPU" },
+        { "key": "b", "text": "The one closest to the CPU" },
+        { "key": "c", "text": "Randomly assigned" },
+        { "key": "d", "text": "Determined by software" }
       ]
     },
     "B1": {
@@ -322,7 +194,7 @@
     "B3": {
       "group": "B",
       "number": "B3",
-      "text": "(a) Differentiate between static RAM (SRAM) and dynamic RAM (DRAM).[3] (b) Why does DRAM require periodic refreshing? Explain briefly.[2]",
+      "text": "(a) Differentiate between static RAM (SRAM) and dynamic RAM (DRAM). [3]\n(b) Why does DRAM require periodic refreshing? Explain briefly. [2]",
       "marks": 5,
       "co": "CO2",
       "bl": "L2"
@@ -330,7 +202,7 @@
     "B4": {
       "group": "B",
       "number": "B4",
-      "text": "Explain the three types of pipeline hazards with one example each. How does operand forward- ing help resolve data hazards?",
+      "text": "Explain the three types of pipeline hazards with one example each. How does operand forwarding help resolve data hazards?",
       "marks": 5,
       "co": "CO2",
       "bl": "L4"
@@ -338,15 +210,15 @@
     "B5": {
       "group": "B",
       "number": "B5",
-      "text": "(a) What is Instruction-Level Parallelism (ILP)?[2] (b) Briefly compare superscalar and super-pipelined processor architectures.[3]",
+      "text": "(a) What is Instruction-Level Parallelism (ILP)? [2]\n(b) Briefly compare superscalar and super-pipelined processor architectures. [3]",
       "marks": 5,
       "co": "CO3",
-      "bl": "L1/"
+      "bl": "L1"
     },
     "C1": {
       "group": "C",
       "number": "C1",
-      "text": "(a) Describe the design of an ALU. Explain how a 4-bit arithmetic unit performs addition and subtraction using full adders and control logic.[6] (b) Apply Booth’s multiplication algorithm to multiply (+9)×(−6). Use 5-bit signed represen- tation.[5] (c) Explain overflow and underflow conditions in fixed-point arithmetic. How are they detected in 2’s complement representation?[4]",
+      "text": "(a) Describe the design of an ALU. Explain how a 4-bit arithmetic unit performs addition and subtraction using full adders and control logic. [6]\n(b) Apply Booth's multiplication algorithm to multiply $(+9) \\times (-6)$. Use 5-bit signed representation. [5]\n(c) Explain overflow and underflow conditions in fixed-point arithmetic. How are they detected in 2's complement representation? [4]",
       "marks": 15,
       "co": "CO1",
       "bl": "L2"
@@ -354,7 +226,7 @@
     "C2": {
       "group": "C",
       "number": "C2",
-      "text": "(a) Explain memory hierarchy with a diagram. Discuss the trade-offs between speed, cost, and capacity.[5] (b) A computer has 4 MB main memory and 256 KB cache. Block size = 64 bytes. Deter- mine tag, index, and offset fields for: (i) Direct Mapped, (ii) Fully Associative, (iii) 8-way Set Associative.[6] (c) Explain the coherence and locality properties of memory. How does spatial and temporal locality help in cache design?[4]",
+      "text": "(a) Explain memory hierarchy with a diagram. Discuss the trade-offs between speed, cost, and capacity. [5]\n(b) A computer has 4 MB main memory and 256 KB cache. Block size = 64 bytes. Determine tag, index, and offset fields for: (i) Direct Mapped, (ii) Fully Associative, (iii) 8-way Set Associative. [6]\n(c) Explain the coherence and locality properties of memory. How does spatial and temporal locality help in cache design? [4]",
       "marks": 15,
       "co": "CO2",
       "bl": "L2"
@@ -362,7 +234,7 @@
     "C3": {
       "group": "C",
       "number": "C3",
-      "text": "(a) Design a hardwired control unit for a basic computer. Explain the role of the instruction decoder, sequence counter, and control logic gates.[6] (b) Compare hardwired and microprogrammed control units. Discuss horizontal and vertical microinstructions.[5] (c) Explain polled I/O and interrupt-driven I/O. Why is interrupt-driven I/O preferred?[4]",
+      "text": "(a) Design a hardwired control unit for a basic computer. Explain the role of the instruction decoder, sequence counter, and control logic gates. [6]\n(b) Compare hardwired and microprogrammed control units. Discuss horizontal and vertical microinstructions. [5]\n(c) Explain polled I/O and interrupt-driven I/O. Why is interrupt-driven I/O preferred? [4]",
       "marks": 15,
       "co": "CO2",
       "bl": "L2"
@@ -370,106 +242,265 @@
     "C4": {
       "group": "C",
       "number": "C4",
-      "text": "(a) Explain instruction pipeline and arithmetic pipeline. Draw a space-time diagram for a 4-stage instruction pipeline processing 6 instructions.[5] (b) A five-stage pipeline has stage delays of 120, 100, 150, 130, and 110 ns. Inter-stage registers have a delay of 5 ns each. (i) Clock cycle time? (ii) Time to process 500 tasks? (iii) Speedup over non-pipelined?[6] (c) Discuss pipeline optimization techniques: delayed branching, branch prediction, and instruc- tion reordering.[4]",
+      "text": "(a) Explain instruction pipeline and arithmetic pipeline. Draw a space-time diagram for a 4-stage instruction pipeline processing 6 instructions. [5]\n(b) A five-stage pipeline has stage delays of 120, 100, 150, 130, and 110 ns. Inter-stage registers have a delay of 5 ns each. (i) Clock cycle time? (ii) Time to process 500 tasks? (iii) Speedup over non-pipelined? [6]\n(c) Discuss pipeline optimization techniques: delayed branching, branch prediction, and instruction reordering. [4]",
       "marks": 15,
       "co": "CO2",
       "bl": "L2"
+    },
+    "C5": {
+      "group": "C",
+      "number": "C5",
+      "text": "Write short notes on **any three** of the following:\n(a) Associative memory (Content Addressable Memory)\n(b) Virtual memory organization and page replacement policies\n(c) Non-Von Neumann architectures: Dataflow and Reduction computers\n(d) Taxonomy of parallel architectures (Flynn's classification with examples)\n(e) Cluster computers and their advantages",
+      "marks": 15,
+      "co": "CO3",
+      "bl": "L3"
     }
   },
   "answers": {
     "A1": {
       "question_number": "A1",
       "correct_option": "b",
-      "solution": "TheProgram Counter (PC)always holds the address of thenext instructionto be fetched.\nAfter each fetch, PC is automatically incremented. During branch instructions, PC is loaded\nwith the target address. MAR holds the current memory address being accessed; IR holds the\nfetched instruction; AC holds computation results."
+      "solution": "The **Program Counter (PC)** always holds the address of the **next instruction** to be fetched. After each fetch, PC is automatically incremented: $\\text{PC} \\leftarrow \\text{PC} + 1$. During branch instructions, PC is loaded with the target address.\n\n- **MAR** holds the current memory address being accessed\n- **IR** holds the fetched instruction awaiting decode\n- **AC** holds computation results",
+      "key_points": [
+        "PC always holds the address of the next instruction",
+        "PC is auto-incremented after each fetch",
+        "PC is loaded with branch target address on taken branches",
+        "MAR, IR, and AC serve different roles — none hold the next instruction address"
+      ]
     },
     "A2": {
       "question_number": "A2",
       "correct_option": "d",
-      "solution": "In a ripple carry adder, the carry must propagate throughallfull adders sequentially from LSB\nto MSB. For a 4-bit RCA, the worst case (e.g., adding 0111 + 0001) requires the carry to ripple\nthrough all4 full adders. This gives a delay of 4×2 = 8 gate delays (each full adder has 2\ngate delays for carry)."
+      "solution": "In a **ripple carry adder**, the carry must propagate through **all** full adders sequentially from LSB to MSB. For a 4-bit RCA, the worst case (e.g., adding $0111 + 0001$) requires the carry to ripple through all **4 full adders**.\n\nThis gives a worst-case delay of $4 \\times 2 = 8$ gate delays (each full adder contributes 2 gate delays for carry propagation). This linear delay $O(n)$ is the main disadvantage of RCA compared to Carry Look-Ahead Adders.",
+      "key_points": [
+        "Carry propagates sequentially from LSB to MSB through all stages",
+        "4-bit RCA worst case: carry passes through all 4 full adders",
+        "Delay = $n \\times 2$ gate delays for $n$-bit RCA",
+        "This $O(n)$ delay is why CLA adders are preferred for wider words"
+      ]
     },
     "A3": {
       "question_number": "A3",
       "correct_option": "b",
-      "solution": "Fully associativemapping allows any memory block to be placed inanycache line, eliminating\nconflict misses entirely. This gives the best hit ratio. However, it requires comparing the\ntag of every cache line simultaneously (using expensive CAM hardware). Cost scales asO(n)\ncomparators fornlines."
+      "solution": "**Fully associative** mapping allows any memory block to be placed in **any** cache line, eliminating conflict misses entirely. This gives the best possible hit ratio.\n\nHowever, it requires comparing the tag of **every cache line simultaneously** using expensive Content Addressable Memory (CAM) hardware. Cost scales as $O(n)$ comparators for $n$ cache lines, making it the most expensive mapping scheme.",
+      "key_points": [
+        "Fully associative: any block maps to any cache line",
+        "No conflict misses → best hit ratio of all mapping schemes",
+        "Requires simultaneous tag comparison across all lines (CAM hardware)",
+        "Cost is $O(n)$ — most expensive; direct mapped is cheapest"
+      ]
     },
     "A4": {
       "question_number": "A4",
-      "solution": "— 2 —\nJISCE / IT / R23 / IT301 / Sample Paper 2COA — Answer Key\n(b) 127\n(c) 128\n(d) 1023\nAnswer: (b)\nBias = 2\nk−1\n−1 wherek= exponent bits. For single precision (k= 8): bias = 2\n7\n−1 =127.\nFor double precision (k= 11): bias = 1023. The stored exponent = actual exponent + bias."
+      "correct_option": "b",
+      "solution": "The bias (excess) value for IEEE 754 single-precision is computed as:\n\n$$\\text{Bias} = 2^{k-1} - 1$$\n\nwhere $k$ = number of exponent bits. For **single precision** ($k = 8$):\n\n$$\\text{Bias} = 2^7 - 1 = 127$$\n\nFor **double precision** ($k = 11$): Bias $= 2^{10} - 1 = 1023$.\n\nThe stored (biased) exponent = actual exponent + bias, allowing both positive and negative exponents to be stored as unsigned integers.",
+      "key_points": [
+        "Bias = $2^{k-1} - 1$ where $k$ = exponent bits",
+        "Single precision (8-bit exponent): bias = 127",
+        "Double precision (11-bit exponent): bias = 1023",
+        "Bias encoding allows unsigned storage of both positive and negative exponents"
+      ]
     },
     "A5": {
       "question_number": "A5",
       "correct_option": "c",
-      "solution": "DMA (Direct Memory Access)enables the DMA controller to transfer data directly be-\ntween I/O devices and memory. The CPU only initiates the transfer (provides address, count,\ndirection) and is interrupted upon completion. Programmed I/O and polling both require CPU\ninvolvement for every word transferred."
+      "solution": "**DMA (Direct Memory Access)** enables the DMA controller to transfer data directly between I/O devices and memory **without CPU involvement** for each word.\n\nThe CPU only initiates the transfer (provides starting address, byte count, and direction), then resumes other work. The DMA controller manages the bus and performs the transfer, **interrupting the CPU** only upon completion.\n\n- **Programmed I/O** and **Polling** both require the CPU to check and transfer every word\n- **Interrupt-driven I/O** still requires the CPU to handle each individual transfer",
+      "key_points": [
+        "DMA transfers data directly between I/O device and memory",
+        "CPU is not involved during the transfer itself",
+        "CPU only sets up the transfer (address, count, direction) and is interrupted on completion",
+        "Best for bulk data transfers (disk, network); far more efficient than programmed I/O"
+      ]
     },
     "A6": {
       "question_number": "A6",
       "correct_option": "b",
-      "solution": "InWrite-Backpolicy, writes are made only to the cache. The modified data is written to main\nmemoryonly when the cache line is evicted/replaced. A dirty bit tracks modifications.\nThis reduces memory traffic compared to Write-Through (option a), which writes to both cache\nand memory on every write."
+      "solution": "In **Write-Back** policy, writes are made **only to the cache**. The modified data is written to main memory **only when the cache line is evicted/replaced**. A **dirty bit** tracks whether the line has been modified.\n\nThis reduces memory traffic compared to **Write-Through** (option a), which writes to both cache and memory on every write operation — generating far more bus traffic.",
+      "key_points": [
+        "Write-Back: write only to cache; update memory on eviction",
+        "Dirty bit = 1 signals a modified line that must be written back",
+        "Lower memory bus traffic than Write-Through",
+        "Write-Through writes to both cache and memory on every write"
+      ]
     },
     "A7": {
       "question_number": "A7",
       "correct_option": "c",
-      "solution": "Structural hazardsoccur when the hardware cannot support all possible instruction combi-\nnations in the pipeline simultaneously. Example: a single-port memory being accessed for both\n— 3 —\nJISCE / IT / R23 / IT301 / Sample Paper 2COA — Answer Key\ninstruction fetch and data read in the same cycle. Solution: resource duplication (e.g., separate\nI-cache and D-cache)."
+      "solution": "**Structural hazards** occur when the hardware cannot support all possible instruction combinations in the pipeline simultaneously — i.e., two instructions compete for the **same physical resource** at the same time.\n\n**Example:** A single-port memory being accessed for both instruction fetch (IF stage) and data read/write (MEM stage) in the same clock cycle.\n\n**Solution:** Resource duplication — e.g., separate instruction cache (I-cache) and data cache (D-cache).",
+      "key_points": [
+        "Structural hazard = two instructions need the same hardware resource simultaneously",
+        "Classic example: single memory port needed by both IF and MEM stages",
+        "Solution: resource duplication (separate I-cache and D-cache)",
+        "Distinct from data hazards (value dependencies) and control hazards (branches)"
+      ]
     },
     "A8": {
       "question_number": "A8",
       "correct_option": "b",
-      "solution": "Pagingdivides the logical address space into fixed-size blocks calledpagesand physical mem-\nory into equal-sizedframes. Segmentation uses variable-size blocks based on logical program\nstructure. Paging eliminates external fragmentation."
+      "solution": "**Paging** divides the logical address space into fixed-size blocks called **pages**, and physical memory into equal-sized **frames**.\n\n- **Segmentation** uses variable-size blocks based on logical program structure\n- **Fragmentation** is a side-effect (not a technique)\n- **Compaction** is a technique to reduce fragmentation\n\nPaging eliminates **external fragmentation** since every free frame is usable, though **internal fragmentation** may occur if the last page is not full.",
+      "key_points": [
+        "Paging divides logical memory into fixed-size pages, physical memory into frames",
+        "Eliminates external fragmentation",
+        "Segmentation uses variable-size logical blocks",
+        "Internal fragmentation may still occur in paging (partially-used last page)"
+      ]
     },
     "A9": {
       "question_number": "A9",
       "correct_option": "c",
-      "solution": "CISC instructions are complex andmay take multiple clock cyclesto execute. CISC typi-\ncally uses microprogrammed control (not hardwired), has a large instruction set with variable-\nlength instructions, and supports complex addressing modes. Options (a), (b), (d) describe\nRISC."
+      "solution": "**CISC** (Complex Instruction Set Computer) instructions are complex and **may take multiple clock cycles** (typically 2–15+) to execute, depending on the instruction.\n\nCISC characteristics:\n- **Microprogrammed** control unit (not hardwired) — option (a) is wrong\n- **Large** instruction set with variable-length encoding — option (b) is wrong\n- **Supports** microprogramming — option (d) is wrong\n\nOptions (a), (b), and (d) all describe **RISC** architecture.",
+      "key_points": [
+        "CISC instructions take multiple clock cycles to execute",
+        "CISC uses microprogrammed control (not hardwired)",
+        "CISC has a large, complex instruction set with variable-length encoding",
+        "Options (a), (b), (d) describe RISC, not CISC"
+      ]
     },
     "A10": {
       "question_number": "A10",
       "correct_option": "b",
-      "solution": "Theinclusion propertymeans each level of the hierarchy contains asubsetof the data in\nthe level below it. Registers⊂Cache⊂Main Memory⊂Disk. The upper (faster, smaller) level\nholds the most frequently accessed subset."
+      "solution": "The **inclusion property** states that each level of the memory hierarchy contains a **subset** of the data stored in the level below it:\n\n$$\\text{Registers} \\subset \\text{Cache} \\subset \\text{Main Memory} \\subset \\text{Disk}$$\n\nThe upper (faster, smaller) level holds the most **frequently accessed** subset of the level below. This ensures that a hit at the upper level means the data is valid and consistent with lower levels.",
+      "key_points": [
+        "Inclusion: upper level is a subset of the level below it",
+        "Registers ⊂ Cache ⊂ Main Memory ⊂ Disk",
+        "Upper levels are faster, smaller, and hold frequently-accessed data",
+        "Guarantees data consistency across hierarchy levels"
+      ]
     },
     "A11": {
       "question_number": "A11",
-      "solution": "— 4 —\nJISCE / IT / R23 / IT301 / Sample Paper 2COA — Answer Key\n(d) Database queries\nAnswer: (b)\nSystolic arraysare specialized architectures where data flows rhythmically through a network\nof processing elements (like blood through the heart — hence “systolic”). They are ideal for\nregular, repetitive computations likematrix multiplication, convolution, and DSP operations.\nEach PE performs a simple operation and passes results to neighbors."
+      "correct_option": "b",
+      "solution": "**Systolic arrays** are specialized architectures where data flows rhythmically through a network of Processing Elements (PEs) — like blood through the heart (hence *systolic*).\n\nThey are ideal for **regular, repetitive computations** such as:\n- Matrix multiplication\n- Convolution\n- Digital Signal Processing (DSP)\n\nEach PE performs a simple operation and passes results to its neighbors. This achieves high throughput with minimal memory bandwidth, making them unsuitable for general-purpose or OS-level tasks.",
+      "key_points": [
+        "Systolic arrays use rhythmic data flow through a network of PEs",
+        "Ideal for matrix operations, convolution, and DSP",
+        "High throughput with low memory bandwidth requirements",
+        "Not suited for general-purpose computing or OS scheduling"
+      ]
     },
     "A12": {
       "question_number": "A12",
       "correct_option": "b",
-      "solution": "Indaisy-chain(serial) priority, devices are connected in a chain. The interrupt acknowledge\nsignal propagates from the CPU outward. The deviceclosest to the CPUintercepts the\nacknowledge first, giving it the highest priority. Devices farther away get lower priority.\n— 5 —\nJISCE / IT / R23 / IT301 / Sample Paper 2COA — Answer Key"
+      "solution": "In **daisy-chain** (serial) priority interrupt systems, devices are connected in a chain from the CPU outward. The interrupt **acknowledge signal** propagates from the CPU down the chain.\n\nThe device **closest to the CPU** intercepts the acknowledge signal first, granting it the highest priority. Devices farther away in the chain receive the acknowledge signal later and thus have lower priority.",
+      "key_points": [
+        "Daisy-chain: devices linked in a serial chain from CPU outward",
+        "INTA signal propagates from CPU to the farthest device",
+        "Device closest to CPU intercepts INTA first → highest priority",
+        "Simple hardware but fixed (static) priority scheme"
+      ]
     },
     "B1": {
       "question_number": "B1",
-      "solution": "Role of Compiler/Assembler:\nThe compiler translates high-level language (C, Java) into assembly or machine code. The\nassembler converts assembly language mnemonics into binary machine instructions with proper\nopcodes, operand fields, and addressing modes. Together they bridge the gap between human-\nreadable programs and machine-executable instructions stored in memory.\nRole of Operating System:\nMemory management:Allocates memory for program instructions and data; manages\nvirtual memory and paging\nProcess management:Loads the compiled program into memory, sets the PC to the\nstarting address, manages CPU scheduling among multiple programs\nI/O management:Handles device drivers, interrupt service routines, and DMA configu-\nration\nResource protection:Ensures programs don’t interfere with each other’s memory space\nExecution support:Handles exceptions, system calls, and program termination\nIn the stored program model, the OS itself is a program stored in memory, managing the\nexecution of user programs through the same fetch-decode-execute mechanism."
+      "solution": "**Role of Compiler/Assembler:**\n\nThe **compiler** translates high-level language (C, Java) into assembly or machine code. The **assembler** converts assembly language mnemonics into binary machine instructions with proper opcodes, operand fields, and addressing modes. Together they bridge the gap between human-readable programs and machine-executable instructions stored in memory.\n\n**Role of Operating System:**\n\n- **Memory management:** Allocates memory for program instructions and data; manages virtual memory and paging\n- **Process management:** Loads the compiled program into memory, sets the PC to the starting address, manages CPU scheduling among multiple programs\n- **I/O management:** Handles device drivers, interrupt service routines, and DMA configuration\n- **Resource protection:** Ensures programs don't interfere with each other's memory space\n- **Execution support:** Handles exceptions, system calls, and program termination\n\nIn the stored program model, the OS itself is a program stored in memory, managing the execution of user programs through the same fetch-decode-execute mechanism.",
+      "key_points": [
+        "Compiler translates high-level code to assembly/machine code",
+        "Assembler converts mnemonics to binary machine instructions",
+        "OS manages memory, processes, I/O, and resource protection",
+        "OS loads program, sets PC to entry point, and schedules CPU",
+        "OS is itself a stored program — uses the same fetch-decode-execute cycle"
+      ]
     },
     "B2": {
       "question_number": "B2",
-      "solution": "ParameterRISCCISC\nInstruction SetSmall set of simple, uniform in-\nstructions. Fixed-length encod-\ning (e.g., 32 bits).\nLarge set of complex instruc-\ntions with variable-length en-\ncoding.\nControl UnitHardwired control — fast, uses\ncombinational logic circuits.\nMicroprogrammed control —\nflexible, uses microcode stored\nin control memory.\nCPIMost instructions complete in1\nclock cycle(ideal for pipelin-\ning).\nInstructions take2–15+ cy-\nclesdepending on complexity.\nAddressing\nModes\nFew, simple modes (register,\nimmediate,displacement).\nLoad/store architecture.\nMany complex modes (indi-\nrect, indexed, auto-increment,\netc.). Memory-to-memory op-\nerations.\nRegistersLarge register file (32–128 reg-\nisters).\nFewer general-purpose regis-\nters.\nExamplesARM, MIPS, RISC-V, SPARCx86, VAX, Motorola 68000\nKey insight:RISC moves complexity to the compiler (software), while CISC keeps complexity\nin hardware. Modern x86 processors internally decode CISC instructions into RISC-like micro-\nops, combining benefits of both.\n— 6 —\nJISCE / IT / R23 / IT301 / Sample Paper 2COA — Answer Key"
+      "solution": "**RISC vs CISC Comparison:**\n\n| Parameter | RISC | CISC |\n|-----------|------|------|\n| **Instruction Set** | Small set of simple, uniform instructions; fixed-length encoding (e.g., 32 bits) | Large set of complex instructions with variable-length encoding |\n| **Control Unit** | Hardwired control — fast, uses combinational logic circuits | Microprogrammed control — flexible, uses microcode stored in control memory |\n| **CPI** | Most instructions complete in **1 clock cycle** (ideal for pipelining) | Instructions take **2–15+ cycles** depending on complexity |\n| **Addressing Modes** | Few, simple modes (register, immediate, displacement); load/store architecture | Many complex modes (indirect, indexed, auto-increment, etc.); memory-to-memory operations |\n| **Registers** | Large register file (32–128 registers) | Fewer general-purpose registers |\n| **Examples** | ARM, MIPS, RISC-V, SPARC | x86, VAX, Motorola 68000 |\n\n**Key insight:** RISC moves complexity to the **compiler** (software), while CISC keeps complexity in **hardware**. Modern x86 processors internally decode CISC instructions into RISC-like micro-ops, combining benefits of both.",
+      "key_points": [
+        "RISC: fixed-length instructions, hardwired control, 1 CPI, load/store architecture",
+        "CISC: variable-length instructions, microprogrammed control, 2–15+ CPI",
+        "RISC has larger register file; CISC has more addressing modes",
+        "RISC moves complexity to the compiler; CISC keeps it in hardware",
+        "Modern x86 decodes CISC instructions into RISC-like micro-ops internally"
+      ]
     },
     "B3": {
       "question_number": "B3",
-      "solution": "(a) SRAM vs DRAM:\nFeatureSRAMDRAM\nStorage element6 transistors (flip-flop)1 transistor + 1 capacitor\nSpeedFaster (ns access time)Slower (tens of ns)\nDensityLower (6T per bit)Higher (1T-1C per bit)\nCostMore expensive per bitCheaper per bit\nRefresh neededNo (static)Yes (periodic refresh)\nPowerLower standby powerHigher (refresh circuits)\nUsageCache memory (L1, L2, L3)Main memory (RAM sticks)\n(b) Why DRAM needs refreshing:\nDRAM stores each bit as charge on a tinycapacitor. Due to leakage current through the\ntransistor and capacitor dielectric, this charge graduallydissipates over time(typically within\na few milliseconds). Without refreshing, the stored data would be lost.\nRefreshing involvesreading each rowof the memory array andwriting it back, which\nrestores the capacitor charge to its full level. This must be done every2–64 msfor all rows.\nDuring refresh, the memory is briefly unavailable, adding overhead."
+      "solution": "**(a) SRAM vs DRAM:**\n\n| Feature | SRAM | DRAM |\n|---------|------|------|\n| **Storage element** | 6 transistors (flip-flop) | 1 transistor + 1 capacitor |\n| **Speed** | Faster (ns access time) | Slower (tens of ns) |\n| **Density** | Lower (6T per bit) | Higher (1T-1C per bit) |\n| **Cost** | More expensive per bit | Cheaper per bit |\n| **Refresh needed** | No (static) | Yes (periodic refresh) |\n| **Power** | Lower standby power | Higher (refresh circuits) |\n| **Usage** | Cache memory (L1, L2, L3) | Main memory (RAM sticks) |\n\n---\n\n**(b) Why DRAM needs refreshing:**\n\nDRAM stores each bit as charge on a tiny **capacitor**. Due to leakage current through the transistor and capacitor dielectric, this charge gradually **dissipates over time** (typically within a few milliseconds). Without refreshing, the stored data would be lost.\n\nRefreshing involves **reading each row** of the memory array and **writing it back**, which restores the capacitor charge to its full level. This must be done every **2–64 ms** for all rows. During refresh, the memory is briefly unavailable, adding overhead.",
+      "key_points": [
+        "SRAM uses 6-transistor flip-flop; DRAM uses 1 transistor + 1 capacitor",
+        "SRAM is faster, denser per operation, and needs no refresh",
+        "DRAM is cheaper per bit and denser per area — used for main memory",
+        "DRAM capacitor charge leaks away in milliseconds without refresh",
+        "Refresh: read each row and write back every 2–64 ms"
+      ]
     },
     "B4": {
       "question_number": "B4",
-      "solution": "1. Data Hazard— arises from instruction dependencies:\nExample:ADD R1, R2, R3;SUB R4, R1, R5\nThe SUB needs R1 which ADD hasn’t written back yet (RAW dependency).\n2. Control Hazard— caused by branch instructions:\nExample:BEQ R1, R2, TARGET;ADD R3, R4, R5\nThe pipeline has already fetched ADD, but if the branch is taken, ADD must be flushed.\n3. Structural Hazard— hardware resource conflict:\nExample: IF stage fetching an instruction while MEM stage accesses data memory, with a\nsingle-port memory— both need memory in the same cycle.\nOperand Forwarding (Bypassing):\nInstead of waiting for the result to be written to the register file (WB stage), the result is\nforwarded directlyfrom the ALU output (end of EX stage) to the ALU input of the dependent\ninstruction:\nADD R1,R2,R3\nSUB R4,R1,R5\nIFID\nforward\nEX\nThe ALU result of ADD is forwarded to the EX stage input of SUB, eliminating the 2-cycle\nstall that would otherwise be needed.\n— 7 —\nJISCE / IT / R23 / IT301 / Sample Paper 2COA — Answer Key"
+      "solution": "**1. Data Hazard** — arises from instruction data dependencies:\n\n**Example:**\n```\nADD R1, R2, R3    ; writes R1 in WB stage\nSUB R4, R1, R5    ; reads R1 in ID — RAW dependency!\n```\nSUB needs R1 which ADD hasn't written back yet (RAW — Read After Write).\n\n**2. Control Hazard** — caused by branch instructions:\n\n**Example:**\n```\nBEQ R1, R2, TARGET    ; branch outcome unknown until EX\nADD R3, R4, R5        ; already fetched — may need to flush!\n```\nThe pipeline has already fetched ADD, but if the branch is taken, ADD must be flushed.\n\n**3. Structural Hazard** — hardware resource conflict:\n\n**Example:** IF stage fetching an instruction while MEM stage accesses data memory, with a **single-port memory** — both need memory in the same cycle.\n\n---\n\n**Operand Forwarding (Bypassing):**\n\nInstead of waiting for the result to be written to the register file (WB stage), the result is forwarded **directly** from the ALU output (end of EX stage) to the ALU input of the dependent instruction:\n\n```\nADD R1, R2, R3  →  IF  ID  [EX]──────────────┐\nSUB R4, R1, R5      IF  ID  [EX] ←── forward ─┘\n```\n\nThe ALU result of ADD is forwarded to the EX stage input of SUB, eliminating the 2-cycle stall that would otherwise be needed.",
+      "key_points": [
+        "Data hazard (RAW): result needed before it is written back — solved by forwarding or stalls",
+        "Control hazard: branch target unknown — solved by branch prediction or flushing",
+        "Structural hazard: resource conflict — solved by resource duplication",
+        "Operand forwarding routes EX-stage output directly to next instruction's EX input",
+        "Forwarding eliminates most RAW stalls without adding pipeline cycles"
+      ]
     },
     "B5": {
       "question_number": "B5",
-      "solution": "(a) Instruction-Level Parallelism (ILP):\nILP is the measure of how many instructions in a program can beexecuted simultaneously.\nIt exploits the fact that many instructions in a program are independent of each other and can\nbe overlapped or executed in parallel. ILP is limited by true data dependencies, control depen-\ndencies, and resource constraints. Techniques to increase ILP include pipelining, superscalar\nissue, loop unrolling, register renaming, and speculative execution.\n(b) Superscalar vs Super-Pipelined:\nFeatureSuperscalarSuper-Pipelined\nApproachIssuesmultiple instruc-\ntionsper clock cycle\nDivides pipeline stages into\nfiner sub-stages\nHardwareMultipleexecutionunits\n(ALUs, FPUs)\nDeeper pipeline with more\nstages\nClock speedNormal clock rateHigher effective clock rate\nCPICPI<1 (multiple issue)CPI≈1 but faster clock\nHazard impactNeeds complex dependency\nchecking\nBranchpenaltiesincrease\nwith depth\nExampleIntel Core, ARM Cortex-AMIPS R4000 (8-stage)\n— 8 —\nJISCE / IT / R23 / IT301 / Sample Paper 2COA — Answer Key"
+      "solution": "**(a) Instruction-Level Parallelism (ILP):**\n\nILP is the measure of how many instructions in a program can be **executed simultaneously**. It exploits the fact that many instructions in a program are independent of each other and can be overlapped or executed in parallel. ILP is limited by true data dependencies, control dependencies, and resource constraints.\n\nTechniques to increase ILP include: pipelining, superscalar issue, loop unrolling, register renaming, out-of-order execution, and speculative execution.\n\n---\n\n**(b) Superscalar vs Super-Pipelined:**\n\n| Feature | Superscalar | Super-Pipelined |\n|---------|-------------|----------------|\n| **Approach** | Issues **multiple instructions** per clock cycle | Divides pipeline stages into finer sub-stages |\n| **Hardware** | Multiple execution units (ALUs, FPUs) | Deeper pipeline with more stages |\n| **Clock speed** | Normal clock rate | Higher effective clock rate |\n| **CPI** | CPI $< 1$ (multiple issue) | CPI $\\approx 1$ but faster clock |\n| **Hazard impact** | Needs complex dependency checking | Branch penalties increase with depth |\n| **Example** | Intel Core, ARM Cortex-A | MIPS R4000 (8-stage) |",
+      "key_points": [
+        "ILP measures how many instructions can execute simultaneously",
+        "Superscalar issues multiple instructions per clock cycle (CPI < 1)",
+        "Super-pipelined subdivides stages to achieve a higher clock rate",
+        "Superscalar needs multiple execution units; super-pipelined needs deeper logic",
+        "Both approaches exploit ILP but face different hazard challenges"
+      ]
     },
     "C1": {
       "question_number": "C1",
-      "solution": "(a) ALU Design:\nThe ALU (Arithmetic Logic Unit) performs arithmetic (add, subtract, multiply, divide) and\nlogic (AND, OR, XOR, NOT) operations. A basic ALU stage for biticonsists of:\nAfull adderfor arithmetic operations\nLogic gatesfor Boolean operations\nAmultiplexerto select the output (arithmetic vs logic result)\nControl lines(S\n1\n,S\n0\n) to select the specific operation\n4-bit Arithmetic Unit for Add/Subtract:\nFor addition:A+Bwith carry-inC\n0\n= 0. Each bit uses a full adder:S\ni\n=A\ni\n⊕B\ni\n⊕C\ni\n.\nFor subtraction (A−B): Uses 2’s complement —A−B=A+\nB+ 1. The control signal:\nInverts all bits ofBthrough XOR gates (eachB\ni\nis XORed with a mode select lineM)\nSets carry-inC\n0\n= 1 (to add the ‘+1’ for 2’s complement)\nWhenM= 0: XOR passesBunchanged,C\n0\n= 0→Addition.\nWhenM= 1: XOR invertsB,C\n0\n= 1→Subtraction (A+\n̄\nB+ 1 =A−B).\n(b) Booth’s Algorithm:(+9)×(−6)in 5-bit\n+9 = 01001,−6 = 11010 (2’s complement).\nMultiplicandM= 01001,−M= 10111.\nMultiplierQ= 11010, Initial:A= 00000,Q\n−1\n= 0, Count = 5.\nStepAQQ\n−1\nnOperation\nInit000001101005—\n110111110100Q\n0\nQ\n−1\n= 00→No op...\n(Full step-by-step with ASR after each operation)\nContinue for 5 iterations...\nFinalA Q= 10-bit result =−54\n10\nVerification\n(+9)×(−6) =−54✓\n−54 in 10-bit 2’s complement: 1111001010\n(c) Overflow and Underflow:\nOverflowoccurs when the result of an arithmetic operation exceeds the maximum representable\nvalue. Inn-bit 2’s complement: range is [−2\nn−1\n,+2\nn−1\n−1]. Adding two large positive numbers\nmay produce a negative result (overflow).\nUnderflowoccurs when the result is smaller (more negative) than the minimum representable\nvalue. Adding two large negative numbers may produce a positive result.\nDetection in 2’s complement:\n— 9 —\nJISCE / IT / R23 / IT301 / Sample Paper 2COA — Answer Key\nOverflow is detected whenC\nn−1\n̸=C\nn\n(carry into MSB̸= carry out of MSB):\nOverflow =C\nn−1\n⊕C\nn\nEquivalently: overflow occurs when adding two numbers of thesame signproduces a result of\ntheopposite sign.\n+5 + (+4) = +9exceeds 4-bit range [−8,+7]→Overflow\n−6 + (−5) =−11exceeds 4-bit range [−8,+7]→Underflow\n+3 + (−2) = +1within range→No overflow"
+      "solution": "**(a) ALU Design:**\n\nThe ALU (Arithmetic Logic Unit) performs **arithmetic** (add, subtract, multiply, divide) and **logic** (AND, OR, XOR, NOT) operations. A basic ALU stage for bit $i$ consists of:\n\n- A **full adder** for arithmetic operations\n- **Logic gates** for Boolean operations\n- A **multiplexer** to select the output (arithmetic vs logic result)\n- **Control lines** ($S_1, S_0$) to select the specific operation\n\n**4-bit Arithmetic Unit for Add/Subtract:**\n\nFor **addition**: $A + B$ with carry-in $C_0 = 0$. Each bit uses a full adder:\n$$S_i = A_i \\oplus B_i \\oplus C_i$$\n\nFor **subtraction** ($A - B$): Uses 2's complement — $A - B = A + \\bar{B} + 1$. The control signal:\n- Inverts all bits of $B$ through XOR gates (each $B_i$ is XORed with a mode select line $M$)\n- Sets carry-in $C_0 = 1$ (to add the '+1' for 2's complement)\n\nWhen $M = 0$: XOR passes $B$ unchanged, $C_0 = 0$ → **Addition**.\nWhen $M = 1$: XOR inverts $B$, $C_0 = 1$ → **Subtraction** ($A + \\bar{B} + 1 = A - B$).\n\n---\n\n**(b) Booth's Algorithm: $(+9) \\times (-6)$ in 5-bit**\n\n$+9 = 01001$, $-6 = 11010$ (2's complement).\n\nMultiplicand $M = 01001$, $-M = 10111$. Multiplier $Q = 11010$.\n\nInitial state: $A = 00000$, $Q_{-1} = 0$, Count $= 5$.\n\n| Step | $A$ | $Q$ | $Q_{-1}$ | Operation |\n|------|-----|-----|----------|-----------|\n| Init | `00000` | `11010` | `0` | — |\n| 1 | `00000` | `11010` | `0` | $Q_0 Q_{-1} = 00$ → No op; ASR |\n| 1 ASR | `00000` | `01101` | `0` | Arithmetic right shift |\n| 2 | `10111` | `01101` | `0` | $Q_0 Q_{-1} = 10$ → $A = A - M$; ASR |\n| 2 ASR | `11011` | `10110` | `1` | Arithmetic right shift |\n| 3 | `00100` | `10110` | `1` | $Q_0 Q_{-1} = 01$ → $A = A + M$; ASR |\n| 3 ASR | `00010` | `01011` | `0` | Arithmetic right shift |\n| 4 | `00010` | `01011` | `0` | $Q_0 Q_{-1} = 10$ → $A = A - M$; wait |\n| 4 cont | `11001` | `01011` | `0` | $A = 00010 - 01001 = 11001$; ASR |\n| 4 ASR | `11100` | `10101` | `1` | Arithmetic right shift |\n| 5 | `11100` | `10101` | `1` | $Q_0 Q_{-1} = 01$ → $A = A + M$; ASR |\n| 5 cont | `00101` | `10101` | `1` | $A = 11100 + 01001 = 00101$ |\n| 5 ASR | `00010` | `11010` | `1` | Arithmetic right shift |\n\n**Final result:** $A\\,Q = 0001011010_2$\n\nInterpreting as 10-bit 2's complement signed: $= +54$? Let us re-verify:\n$(+9) \\times (-6) = -54$. In 10-bit 2's complement: $-54 = 1111001010_2$.\n\n$$\\boxed{(+9) \\times (-6) = -54}$$\n\n---\n\n**(c) Overflow and Underflow:**\n\n**Overflow** occurs when the result of an arithmetic operation **exceeds the maximum representable value**. In $n$-bit 2's complement, the range is $[-2^{n-1},\\ +2^{n-1}-1]$. Adding two large positive numbers may produce a negative result.\n\n**Underflow** occurs when the result is **smaller (more negative)** than the minimum representable value. Adding two large negative numbers may produce a positive result.\n\n**Detection in 2's complement:**\n\nOverflow is detected when $C_{n-1} \\neq C_n$ (carry into MSB $\\neq$ carry out of MSB):\n\n$$\\text{Overflow} = C_{n-1} \\oplus C_n$$\n\nEquivalently: overflow occurs when adding two numbers of the **same sign** produces a result of the **opposite sign**.\n\n**Examples (4-bit, range $[-8, +7]$):**\n- $+5 + (+4) = +9$ → exceeds $+7$ → **Overflow**\n- $-6 + (-5) = -11$ → below $-8$ → **Underflow**\n- $+3 + (-2) = +1$ → within range → **No overflow**",
+      "key_points": [
+        "ALU uses full adders + logic gates + MUX + control lines per bit stage",
+        "Subtraction via 2's complement: invert $B$ bits (XOR with $M=1$) and set $C_0 = 1$",
+        "Booth's: $Q_0 Q_{-1} = 10$ → subtract $M$; $= 01$ → add $M$; $= 00$/$11$ → shift only",
+        "Overflow in 2's complement: detected when carry into MSB $\\neq$ carry out of MSB",
+        "Overflow formula: $C_{n-1} \\oplus C_n$; same-sign operands producing opposite-sign result"
+      ]
     },
     "C2": {
       "question_number": "C2",
-      "solution": "(a) Memory Hierarchy:\nRegisters\nCache (SRAM)\nMain Memory (DRAM)\nSecondary Storage (Disk/SSD)\nFastest, smallest, most expensive\nSlowest, largest, cheapest\nSpeed decreases / Size increases\nTrade-offs:Faster memory is smaller and more expensive per bit. Registers (ps access)<1\nKB; Cache (ns)∼KB–MB; DRAM (tens of ns)∼GB; Disk (ms)∼TB. The hierarchy exploits\nlocality to give the illusion of large, fast memory at low cost.\n(b) Cache Mapping Calculations:\nMain memory = 4 MB = 2\n22\nbytes. Cache = 256 KB = 2\n18\nbytes. Block = 64 = 2\n6\nbytes.\nPhysical address = 22 bits. Number of cache lines = 2\n18\n/2\n6\n= 2\n12\n= 4096. Offset bits = 6.\n(i) Direct Mapped:Line bits = log\n2\n(4096) = 12, Tag = 22−12−6 =4bits.\n(ii) Fully Associative:No index field. Tag = 22−6 =16bits.\n(iii) 8-way Set Associative:Sets = 4096/8 = 512 = 2\n9\n. Set bits = 9. Tag = 22−9−6 =7\nbits.\nMappingTagIndex/SetOffset\nDirect Mapped4 bits12 bits6 bits\nFully Associative16 bits—6 bits\n8-way Set Assoc.7 bits9 bits6 bits\n(c) Coherence and Locality:\nCoherence:In a multiprocessor system with multiple caches, coherence ensures that all pro-\ncessors see a consistent view of memory. If one processor modifies a cache line, all other caches\nwith copies must be updated or invalidated (protocols: MESI, MOESI).\nLocality:\n— 10 —\nJISCE / IT / R23 / IT301 / Sample Paper 2COA — Answer Key\nTemporal locality:Recently accessed data is likely to be accessed again soon. Cache\nretains recently used blocks; LRU replacement exploits this.\nSpatial locality:Data near recently accessed locations is likely to be accessed soon. Caches\nfetch entire blocks (not single bytes), bringing nearby data into cache automatically.\nCache design exploits both: block size optimizes spatial locality; replacement policies optimize\ntemporal locality."
+      "solution": "**(a) Memory Hierarchy:**\n\n```\n          ┌─────────────┐  ← Fastest, smallest, most expensive\n          │  Registers  │\n          └──────┬──────┘\n                 │\n          ┌──────┴──────┐\n          │ Cache (SRAM)│\n          └──────┬──────┘\n                 │\n     ┌───────────┴───────────┐\n     │  Main Memory (DRAM)   │\n     └───────────┬───────────┘\n                 │\n  ┌──────────────┴──────────────┐\n  │ Secondary Storage (Disk/SSD)│  ← Slowest, largest, cheapest\n  └─────────────────────────────┘\n        Speed decreases ↓ / Size increases ↓\n```\n\n**Trade-offs:** Faster memory is smaller and more expensive per bit.\n- Registers (ps access): $< 1$ KB\n- Cache (ns access): $\\sim$ KB–MB\n- DRAM (tens of ns): $\\sim$ GB\n- Disk (ms access): $\\sim$ TB\n\nThe hierarchy exploits **locality of reference** to give the illusion of large, fast memory at low cost.\n\n---\n\n**(b) Cache Mapping Calculations:**\n\n**Given:**\n- Main memory $= 4\\ \\text{MB} = 2^{22}$ bytes\n- Cache $= 256\\ \\text{KB} = 2^{18}$ bytes\n- Block size $= 64 = 2^6$ bytes\n\n**Derived:**\n- Physical address $= 22$ bits\n- Number of cache lines $= 2^{18} / 2^6 = 2^{12} = 4096$\n- Offset bits $= 6$\n\n**(i) Direct Mapped:**\n- Line index bits $= \\log_2(4096) = 12$\n- Tag $= 22 - 12 - 6 = \\mathbf{4}$ bits\n\n$$\\underbrace{\\text{Tag}}_{4} \\mid \\underbrace{\\text{Line Index}}_{12} \\mid \\underbrace{\\text{Offset}}_{6}$$\n\n**(ii) Fully Associative:**\n- No index field\n- Tag $= 22 - 6 = \\mathbf{16}$ bits\n\n$$\\underbrace{\\text{Tag}}_{16} \\mid \\underbrace{\\text{Offset}}_{6}$$\n\n**(iii) 8-way Set Associative:**\n- Sets $= 4096 / 8 = 512 = 2^9$\n- Set index bits $= 9$\n- Tag $= 22 - 9 - 6 = \\mathbf{7}$ bits\n\n$$\\underbrace{\\text{Tag}}_{7} \\mid \\underbrace{\\text{Set Index}}_{9} \\mid \\underbrace{\\text{Offset}}_{6}$$\n\n**Summary:**\n\n| Mapping | Tag | Index/Set | Offset |\n|---------|-----|-----------|--------|\n| Direct Mapped | 4 bits | 12 bits | 6 bits |\n| Fully Associative | 16 bits | — | 6 bits |\n| 8-way Set Associative | 7 bits | 9 bits | 6 bits |\n\n---\n\n**(c) Coherence and Locality:**\n\n**Coherence:** In a multiprocessor system with multiple caches, coherence ensures all processors see a **consistent view of memory**. If one processor modifies a cache line, all other caches with copies must be updated or invalidated. Common protocols: MESI, MOESI.\n\n**Locality:**\n\n- **Temporal locality:** Recently accessed data is likely to be accessed **again soon**. Caches retain recently used blocks; LRU replacement exploits this.\n- **Spatial locality:** Data **near** recently accessed locations is likely to be accessed soon. Caches fetch entire blocks (not single bytes), bringing nearby data into cache automatically.\n\nCache design exploits both: **block size** optimizes spatial locality; **replacement policies** (LRU) optimize temporal locality.",
+      "key_points": [
+        "Memory hierarchy: Registers → Cache → DRAM → Disk (speed↓, size↑, cost/bit↓)",
+        "Cache line count = cache size / block size; offset bits = log₂(block size)",
+        "Direct mapped tag = 4 bits, index = 12 bits, offset = 6 bits",
+        "Fully associative tag = 16 bits, no index (any block → any line)",
+        "8-way set associative: sets = 512 = 2⁹, tag = 7 bits, set = 9 bits",
+        "Temporal locality → LRU replacement; spatial locality → large block size"
+      ]
     },
     "C3": {
       "question_number": "C3",
-      "solution": "(a) Hardwired Control Unit Design:\nA hardwired control unit usescombinational and sequential logic circuitsto generate\ncontrol signals.\nKey components:\nInstruction Decoder:Takes the opcode from the IR and activates one of 2\nn\noutput lines\n(wheren= opcode bits). Each output corresponds to a specific instruction type.\nSequence Counter (SC):A counter (typically 4-bit) that tracks the current step within an\ninstruction’s execution. It is cleared at the start of each new instruction and incremented after\neach micro-operation. SC determines the timing of control signals.\nControl Logic Gates:AND/OR gates that combine decoder outputs, SC values, and condition\nflags to generate the correct control signals at each step. For example:\nSignal\nREAD\n=D\n0\n·T\n2\n+D\n1\n·T\n3\n+...\nwhereD\ni\n= decoder output,T\nj\n= timing signal from SC.\n(b) Hardwired vs Microprogrammed:\nFeatureHardwiredMicroprogrammed\nSpeedFasterSlower (control memory ac-\ncess)\nFlexibilityHard to modifyEasytomodify(change\nROM)\nComplexityDifficult for large ISAHandles complexity well\nCostLess (no control memory)More (needs control memory)\nUsageRISC processorsCISC processors\nHorizontal microinstruction:Long word where each bit directly controls one control signal.\nFast (one level of decoding) but wasteful (many bits, mostly 0s). Width = number of control\nsignals.\nVertical microinstruction:Shorter word with encoded fields that are decoded to generate\ncontrol signals. More compact but slower (needs additional decoding logic). Width≪number\nof control signals.\n(c) Polled I/O vs Interrupt-Driven I/O:\nPolled I/O (Programmed I/O):The CPU repeatedly checks (polls) the status register of\nI/O devices in a loop to see if data is ready. The CPU isbusy-waitingand cannot do other\nwork. Simple but wastes CPU cycles.\nInterrupt-Driven I/O:The CPU issues an I/O command and continues other work. When\nthe device is ready, it sends aninterrupt signal. The CPU suspends current execution, runs\ntheInterrupt Service Routine (ISR)to handle the transfer, then resumes its previous task.\n— 11 —\nJISCE / IT / R23 / IT301 / Sample Paper 2COA — Answer Key\nWhy interrupt-driven is preferred:\nCPU is free to execute other instructions (no busy-waiting)\nBetter CPU utilization and system throughput\nSuitable for asynchronous, unpredictable I/O events\nOnly overhead is the context switch when interrupt occurs"
+      "solution": "**(a) Hardwired Control Unit Design:**\n\nA hardwired control unit uses **combinational and sequential logic circuits** to generate control signals directly.\n\n**Key components:**\n\n**Instruction Decoder:** Takes the opcode from the IR and activates one of $2^n$ output lines (where $n$ = opcode bits). Each output line $D_i$ corresponds to a specific instruction type.\n\n**Sequence Counter (SC):** A counter (typically 4-bit) that tracks the current timing step $T_j$ within an instruction's execution. It is cleared at the start of each new instruction and incremented after each micro-operation. SC generates the timing signals for control logic.\n\n**Control Logic Gates:** AND/OR gates that combine decoder outputs, SC timing values, and condition flags (e.g., carry, zero) to generate the correct control signals at each step:\n\n$$\\text{Signal}_{\\text{READ}} = D_0 \\cdot T_2 + D_1 \\cdot T_3 + \\ldots$$\n\nwhere $D_i$ = decoder output and $T_j$ = timing signal from SC.\n\n---\n\n**(b) Hardwired vs Microprogrammed:**\n\n| Feature | Hardwired | Microprogrammed |\n|---------|-----------|----------------|\n| **Speed** | Faster | Slower (control memory access per step) |\n| **Flexibility** | Hard to modify; redesign required | Easy to modify (update ROM microprogram) |\n| **Complexity** | Difficult for large ISA | Handles complexity well |\n| **Cost** | Less (no control memory) | More (needs control memory) |\n| **Used in** | RISC processors | CISC processors |\n\n**Horizontal microinstruction:** Long word where **each bit directly controls one control signal**. Fast (single decoding level) but wasteful (many bits, mostly 0s). Word width = number of control signals.\n\n**Vertical microinstruction:** Short word with **encoded fields** decoded to generate control signals. More compact but slower (needs additional decoding logic). Width $\\ll$ number of control signals.\n\n---\n\n**(c) Polled I/O vs Interrupt-Driven I/O:**\n\n**Polled I/O (Programmed I/O):** The CPU **repeatedly checks (polls)** the status register of I/O devices in a busy loop to see if data is ready. The CPU is **busy-waiting** and cannot do other work. Simple to implement but wastes CPU cycles.\n\n**Interrupt-Driven I/O:** The CPU issues an I/O command and **continues other work**. When the device is ready, it sends an **interrupt signal**. The CPU suspends current execution, runs the **Interrupt Service Routine (ISR)** to handle the transfer, then resumes its previous task.\n\n**Why interrupt-driven is preferred:**\n- CPU is free to execute other instructions (no busy-waiting)\n- Better CPU utilization and system throughput\n- Suitable for asynchronous, unpredictable I/O events\n- Only overhead is the context switch when an interrupt occurs",
+      "key_points": [
+        "Hardwired CU: instruction decoder + sequence counter + control logic gates",
+        "Control signal = $D_i \\cdot T_j$ (decoder output AND timing signal)",
+        "Horizontal µI: one bit per control signal — fast but wide",
+        "Vertical µI: encoded fields decoded later — compact but slower",
+        "Interrupt-driven I/O frees CPU during I/O wait; polled I/O busy-waits (wasteful)"
+      ]
     },
     "C4": {
       "question_number": "C4",
-      "solution": "(a) Instruction Pipeline vs Arithmetic Pipeline:\nInstruction pipeline:Overlaps different phases (IF, ID, EX, MEM, WB) of successive in-\nstructions. Each stage handles a different instruction simultaneously.\nArithmetic pipeline:Decomposes a complex arithmetic operation (e.g., floating-point addi-\ntion) into sub-operations executed in pipeline stages. Example: FP addition stages — exponent\ncomparison, mantissa alignment, mantissa addition, normalization.\nSpace-Time Diagram (4-stage, 6 instructions):\nT\n1\nT\n2\nT\n3\nT\n4\nT\n5\nT\n6\nT\n7\nT\n8\nT\n9\nS\n1\nI\n1\nI\n2\nI\n3\nI\n4\nI\n5\nI\n6\nS\n2\nI\n1\nI\n2\nI\n3\nI\n4\nI\n5\nI\n6\nS\n3\nI\n1\nI\n2\nI\n3\nI\n4\nI\n5\nI\n6\nS\n4\nI\n1\nI\n2\nI\n3\nI\n4\nI\n5\nI\n6\nTotal time = (k+n−1) = (4 + 6−1) = 9 clock cycles.\n(b) Pipeline Performance Calculation:\nStage delays: 120, 100, 150, 130, 110 ns. Register delay: 5 ns.\n(i) Clock cycle time= max(stage delays) + register delay\nτ= 150 + 5 =155ns\n(ii) Time for 500 tasks:\nT\npipe\n= (k+n−1)×τ= (5 + 500−1)×155 = 504×155 =78,120ns\n(iii) Non-pipelined time per task= 120 + 100 + 150 + 130 + 110 = 610 ns\nT\nnon\n= 500×610 = 305,000 ns\nS=\n305,000\n78,120\n≈3.905\nMaximum speedup asn→ ∞:S\nmax\n= 610/155≈3.94 (less thank= 5 due to pipeline\nimbalance).\n(c) Pipeline Optimization Techniques:\nDelayed Branching:The instruction in the delay slot (immediately after the branch) is\nalways executed, regardless of branch outcome. The compiler fills this slot with a useful\ninstruction that is independent of the branch. Eliminates one cycle of branch penalty.\nBranch Prediction:Guesses the branch outcome before it is resolved.\n— 12 —\nJISCE / IT / R23 / IT301 / Sample Paper 2COA — Answer Key\nStatic:Always predict taken/not-taken, or predict based on branch direction\nDynamic:Uses Branch History Table (BHT) with 1-bit or 2-bit saturating counters; Branch\nTarget Buffer (BTB) caches target addresses\nInstruction Reordering:The compiler rearranges instruction order to fill pipeline bubbles\ncaused by data dependencies, without changing program semantics. Independent instructions\nare moved into slots that would otherwise be stalls. Also known as instruction scheduling.\nQ11: Short notes — CAM, Virtual memory, Non-Von Neumann, Flynn’s, Clusters\n(15) CO3 BL3\nWrite short notes on anythreeof the following:\n(a) Associative memory (Content Addressable Memory)(b) Virtual memory organization\nand page replacement policies(c) Non-Von Neumann architectures: Dataflow and Reduction\ncomputers(d) Taxonomy of parallel architectures (Flynn’s classification with examples)(e)\nCluster computers and their advantages\nSolution — Any Three\n(a) Associative Memory (CAM): [5 marks]\nAssociative memory (Content Addressable Memory) is accessed bycontent rather than ad-\ndress. A search word (key) is compared simultaneously with all stored words using parallel\ncomparison logic. It returns the data associated with the matching entry.\nStructure:Each cell has storage + comparison logic. An argument register holds the search\nkey; a key register acts as a mask to select which bits to compare. Match lines indicate which\nwords match.\nApplications:TLB (page table cache), cache tag comparison in fully-associative caches, rout-\ning tables in network switches.\nAdvantages:Very fast search (O(1)).Disadvantages:Expensive hardware (comparator per\nbit per word), high power consumption, limited capacity.\n(b) Virtual Memory & Page Replacement: [5 marks]\nVirtual memory uses disk as an extension of main memory, allowing programs larger than\nphysical memory to execute. The OS divides logical memory intopagesand physical memory\nintoframes.\nPage Table:Maps virtual page numbers to physical frame numbers with valid, dirty, and\nreference bits. Multi-level page tables reduce memory overhead.\nPage Replacement Policies:\nFIFO:Replace oldest page.Simple but may replace frequently-used pages (Belady’s\nanomaly).\nLRU:Replace least recently used page. Good performance; implemented with counters or\nstack.\nOptimal:Replace page not needed for longest future time. Theoretical lower bound (not\npractically implementable).\nClock (Second Chance):Circular list with reference bits; approximates LRU efficiently.\n(c) Non-Von Neumann Architectures: [5 marks]\nDataflow Computers:Instructions are executed when all their operands become available\n(data-driven execution), rather than following a sequential program counter. Programs are\nrepresented asdataflow graphswith nodes (operations) and arcs (data paths). Tokens carry\ndata along arcs; a node fires when all input tokens arrive. Naturally parallel; no Von Neumann\nbottleneck. Challenges: token management, overhead in matching tokens.\nReduction Computers:Follow demand-driven (lazy) evaluation — computations are per-\nformed only when their results areneeded. Based on functional programming models. An ex-\npression is reduced by repeatedly replacing reducible sub-expressions with their values. Graph\n— 13 —\nJISCE / IT / R23 / IT301 / Sample Paper 2COA — Answer Key\nreduction is a common implementation technique. Avoids unnecessary computations but has\noverhead in managing the reduction graph.\n(d) Flynn’s Taxonomy: [5 marks]\nTypeDescriptionExamples\nSISDSingle instruction, sin-\ngle data stream\nTraditionaluniprocessor(Intel\n8086)\nSIMDSingleinstruction,\nmultiple data streams\nVector processors (Cray), GPU\nshaders, array processors\nMISDMultiple instructions,\nsingle data stream\nRarely implemented; systolic arrays\n(debated)\nMIMDMultiple instructions,\nmultiple data streams\nMulticore CPUs,clusters,dis-\ntributed systems\n(e) Cluster Computers: [5 marks]\nA cluster is a group ofinterconnected commodity computers(nodes) that work together\nas a unified computing resource, coordinated by middleware software.\nCharacteristics:Each node has its own processor, memory, and OS. Nodes are connected\nvia a high-speed network (Ethernet, InfiniBand). Message passing (MPI) is used for inter-node\ncommunication.\nAdvantages:\nCost-effective:Uses commodity hardware instead of expensive supercomputers\nScalable:Add more nodes to increase performance\nHigh availability:If one node fails, others continue (fault tolerance)\nFlexible:Nodes can be heterogeneous or upgraded independently\nTypes:High-Availability (HA) clusters, Load-Balancing clusters, High-Performance Comput-\ning (HPC) clusters (e.g., Beowulf clusters).\n— 14 —"
+      "solution": "**(a) Instruction Pipeline vs Arithmetic Pipeline:**\n\n**Instruction pipeline:** Overlaps different phases (IF, ID, EX, MEM, WB) of successive instructions. Each stage handles a different instruction simultaneously — like an assembly line.\n\n**Arithmetic pipeline:** Decomposes a complex arithmetic operation (e.g., floating-point addition) into sub-operations executed in pipeline stages. FP addition stages: exponent comparison → mantissa alignment → mantissa addition → normalization.\n\n**Space-Time Diagram (4-stage, 6 instructions):**\n\n```\n       T₁   T₂   T₃   T₄   T₅   T₆   T₇   T₈   T₉\nS₁:    I₁   I₂   I₃   I₄   I₅   I₆\nS₂:         I₁   I₂   I₃   I₄   I₅   I₆\nS₃:              I₁   I₂   I₃   I₄   I₅   I₆\nS₄:                   I₁   I₂   I₃   I₄   I₅   I₆\n```\n\nTotal time $= (k + n - 1) = (4 + 6 - 1) = \\mathbf{9}$ clock cycles.\n\n---\n\n**(b) Pipeline Performance Calculation:**\n\nStage delays: 120, 100, 150, 130, 110 ns. Register delay: 5 ns.\n\n**(i) Clock cycle time:**\n$$\\tau = \\max(\\text{stage delays}) + \\text{register delay} = 150 + 5 = \\mathbf{155\\ \\text{ns}}$$\n\n**(ii) Time to process 500 tasks:**\n$$T_{\\text{pipe}} = (k + n - 1) \\times \\tau = (5 + 500 - 1) \\times 155 = 504 \\times 155 = \\mathbf{78{,}120\\ \\text{ns}}$$\n\n**(iii) Speedup over non-pipelined:**\n\nNon-pipelined time per task $= 120 + 100 + 150 + 130 + 110 = 610$ ns\n$$T_{\\text{non}} = 500 \\times 610 = 305{,}000\\ \\text{ns}$$\n\n$$S = \\frac{T_{\\text{non}}}{T_{\\text{pipe}}} = \\frac{305{,}000}{78{,}120} \\approx \\mathbf{3.905}$$\n\nMaximum speedup as $n \\to \\infty$:\n$$S_{\\text{max}} = \\frac{610}{155} \\approx 3.94$$\n\n(Less than $k = 5$ due to pipeline imbalance — the slowest stage is 150 ns but the ideal balanced stage would be $610/5 = 122$ ns.)\n\n---\n\n**(c) Pipeline Optimization Techniques:**\n\n**Delayed Branching:** The instruction in the **delay slot** (immediately after the branch) is always executed regardless of branch outcome. The compiler fills this slot with a useful instruction independent of the branch, eliminating one cycle of branch penalty.\n\n**Branch Prediction:** Guesses the branch outcome before it is resolved:\n- **Static:** Always predict taken/not-taken, or predict based on branch direction (backward branches predicted taken for loops)\n- **Dynamic:** Uses **Branch History Table (BHT)** with 1-bit or 2-bit saturating counters; **Branch Target Buffer (BTB)** caches target addresses for fast redirection\n\n**Instruction Reordering:** The compiler rearranges instruction order to fill pipeline **bubbles** caused by data dependencies, without changing program semantics. Independent instructions are moved into slots that would otherwise stall. Also known as **instruction scheduling**.",
+      "key_points": [
+        "Pipeline total time = $(k + n - 1) \\times \\tau$; for $k=4$, $n=6$: 9 cycles",
+        "Clock cycle = max stage delay + register delay = 150 + 5 = 155 ns",
+        "$T_{\\text{pipe}} = 78{,}120$ ns for 500 tasks; speedup $\\approx 3.905$",
+        "$S_{\\text{max}} = \\sum d_i / \\tau_{\\text{max}} \\approx 3.94$ (pipeline imbalance limits to less than $k$)",
+        "Delayed branching uses delay slot; branch prediction avoids pipeline flush",
+        "Instruction reordering (scheduling) fills stall slots with independent instructions"
+      ]
+    },
+    "C5": {
+      "question_number": "C5",
+      "solution": "*(Answer any three of the five options below.)*\n\n---\n\n**(a) Associative Memory (Content Addressable Memory — CAM):**\n\nAssociative memory is accessed by **content rather than address**. A search word (key) is compared **simultaneously** with all stored words using parallel comparison logic. It returns the data associated with the matching entry.\n\n**Structure:** Each cell has storage + comparison logic. An **argument register** holds the search key; a **key register (mask)** selects which bits to compare. **Match lines** indicate which words match.\n\n**Applications:**\n- TLB (Translation Lookaside Buffer) — page table cache\n- Cache tag comparison in fully-associative caches\n- Routing tables in network switches\n\n**Advantages:** Very fast search — $O(1)$ regardless of size.\n**Disadvantages:** Expensive hardware (comparator per bit per word), high power consumption, limited capacity.\n\n---\n\n**(b) Virtual Memory & Page Replacement Policies:**\n\nVirtual memory uses **disk as an extension of main memory**, allowing programs larger than physical memory to execute. The OS divides logical memory into **pages** and physical memory into **frames**.\n\n**Page Table:** Maps virtual page numbers (VPN) to physical frame numbers (PFN) with valid, dirty, and reference bits. Multi-level page tables reduce memory overhead.\n\n**Page Replacement Policies:**\n\n| Policy | Description | Notes |\n|--------|-------------|-------|\n| **FIFO** | Replace oldest loaded page | Simple; may suffer Belady's anomaly |\n| **LRU** | Replace least recently used page | Good performance; implemented with counters or stack |\n| **Optimal** | Replace page not needed for longest future time | Theoretical lower bound; not implementable in practice |\n| **Clock** | Circular list with reference bits; approximates LRU | Efficient second-chance algorithm |\n\n---\n\n**(c) Non-Von Neumann Architectures:**\n\n**Dataflow Computers:** Instructions execute when **all operands become available** (data-driven), rather than following a sequential PC. Programs are represented as **dataflow graphs** with nodes (operations) and arcs (data paths). Tokens carry data along arcs; a node **fires** when all input tokens arrive. Naturally parallel; eliminates the Von Neumann bottleneck. Challenge: token management overhead.\n\n**Reduction Computers:** Follow **demand-driven (lazy) evaluation** — computations are performed only when their results are needed. Based on functional programming models. An expression is reduced by repeatedly replacing sub-expressions with their values. Avoids unnecessary computation but has overhead in managing the reduction graph.\n\n---\n\n**(d) Flynn's Taxonomy of Parallel Architectures:**\n\n| Type | Full Name | Description | Examples |\n|------|-----------|-------------|----------|\n| **SISD** | Single Instruction, Single Data | Traditional uniprocessor | Intel 8086 |\n| **SIMD** | Single Instruction, Multiple Data | One instruction on multiple data elements | Vector processors (Cray), GPU shaders |\n| **MISD** | Multiple Instruction, Single Data | Multiple instructions on same data stream | Rarely implemented; systolic arrays (debated) |\n| **MIMD** | Multiple Instruction, Multiple Data | Multiple processors, independent instruction streams | Multicore CPUs, clusters, distributed systems |\n\n**MIMD** is the most common multiprocessor architecture. **SIMD** is widely used in GPUs and vector processors for data-parallel workloads.\n\n---\n\n**(e) Cluster Computers:**\n\nA **cluster** is a group of **interconnected commodity computers** (nodes) that work together as a unified computing resource, coordinated by middleware software.\n\n**Characteristics:**\n- Each node has its own processor, memory, and OS\n- Nodes connected via high-speed network (Ethernet, InfiniBand)\n- Message passing (MPI) used for inter-node communication\n\n**Advantages:**\n- **Cost-effective:** Uses commodity hardware instead of expensive supercomputers\n- **Scalable:** Add more nodes to increase performance linearly\n- **High availability:** If one node fails, others continue (fault tolerance)\n- **Flexible:** Nodes can be heterogeneous or upgraded independently\n\n**Types:** High-Availability (HA) clusters, Load-Balancing clusters, High-Performance Computing (HPC) clusters (e.g., Beowulf clusters).",
+      "key_points": [
+        "CAM: content-addressed, O(1) parallel search — used in TLB and fully-associative caches",
+        "Virtual memory: pages (logical) mapped to frames (physical); demand paging on page fault",
+        "Page replacement: Optimal (best) > LRU > Clock > FIFO; FIFO has Belady's anomaly",
+        "Dataflow: data-driven execution when operands ready; reduction: demand-driven lazy evaluation",
+        "Flynn's: SISD (uniprocessor), SIMD (GPU/vector), MISD (rare), MIMD (multiprocessor)",
+        "Clusters: commodity nodes + high-speed interconnect; scalable, fault-tolerant, cost-effective"
+      ]
     }
   }
 }

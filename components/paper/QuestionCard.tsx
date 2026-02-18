@@ -2,7 +2,7 @@
 import { Question } from '@/types'
 import { Badge } from '@/components/ui/badge'
 import { McqOptions } from '@/components/paper/McqOptions'
-import { renderMathText } from '@/lib/render-math-text'
+import { MarkdownContent } from '@/components/paper/MarkdownContent'
 import { useAuth } from '@/hooks/useAuth'
 
 interface QuestionCardProps {
@@ -60,8 +60,8 @@ export function QuestionCard({
       </div>
 
       {/* Question text */}
-      <div className="text-sm leading-relaxed text-foreground pl-9">
-        {renderMathText(question.text)}
+      <div className="pl-9">
+        <MarkdownContent content={question.text} />
       </div>
 
       {/* MCQ options */}
@@ -80,7 +80,7 @@ export function QuestionCard({
                 ({part.part})
               </span>
               <div className="flex-1 space-y-0.5">
-                <div>{renderMathText(part.text)}</div>
+                <MarkdownContent content={part.text} />
                 <Badge variant="outline" className="text-xs">
                   {part.marks} {part.marks === 1 ? 'mark' : 'marks'}
                 </Badge>

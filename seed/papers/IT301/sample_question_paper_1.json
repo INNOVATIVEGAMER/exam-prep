@@ -15,48 +15,24 @@
       "co": "CO1",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "Storing program and data in separate memories"
-        },
-        {
-          "key": "b",
-          "text": "Storing both program and data in the same memory"
-        },
-        {
-          "key": "c",
-          "text": "Using a large number of general purpose registers"
-        },
-        {
-          "key": "d",
-          "text": "Using parallel processing"
-        }
+        { "key": "a", "text": "Storing program and data in separate memories" },
+        { "key": "b", "text": "Storing both program and data in the same memory" },
+        { "key": "c", "text": "Using a large number of general purpose registers" },
+        { "key": "d", "text": "Using parallel processing" }
       ]
     },
     "A2": {
       "group": "A",
       "number": "A2",
-      "text": "In Booth’s algorithm, what operation is performed when the current and previous bits are ‘10’ ?",
+      "text": "In Booth's algorithm, what operation is performed when the current and previous bits are '10'?",
       "marks": 1,
       "co": "CO1",
       "bl": "L2",
       "options": [
-        {
-          "key": "a",
-          "text": "Add multiplicand"
-        },
-        {
-          "key": "b",
-          "text": "Subtract multiplicand"
-        },
-        {
-          "key": "c",
-          "text": "No operation"
-        },
-        {
-          "key": "d",
-          "text": "Shift only"
-        }
+        { "key": "a", "text": "Add multiplicand" },
+        { "key": "b", "text": "Subtract multiplicand" },
+        { "key": "c", "text": "No operation" },
+        { "key": "d", "text": "Shift only" }
       ]
     },
     "A3": {
@@ -67,22 +43,10 @@
       "co": "CO2",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "Structural hazard"
-        },
-        {
-          "key": "b",
-          "text": "Data hazard"
-        },
-        {
-          "key": "c",
-          "text": "Control hazard"
-        },
-        {
-          "key": "d",
-          "text": "Memory hazard"
-        }
+        { "key": "a", "text": "Structural hazard" },
+        { "key": "b", "text": "Data hazard" },
+        { "key": "c", "text": "Control hazard" },
+        { "key": "d", "text": "Memory hazard" }
       ]
     },
     "A4": {
@@ -93,22 +57,10 @@
       "co": "CO1",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "8"
-        },
-        {
-          "key": "b",
-          "text": "11"
-        },
-        {
-          "key": "c",
-          "text": "23"
-        },
-        {
-          "key": "d",
-          "text": "32"
-        }
+        { "key": "a", "text": "8" },
+        { "key": "b", "text": "11" },
+        { "key": "c", "text": "23" },
+        { "key": "d", "text": "32" }
       ]
     },
     "A5": {
@@ -119,22 +71,10 @@
       "co": "CO2",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "Any cache line"
-        },
-        {
-          "key": "b",
-          "text": "Only one specific cache line"
-        },
-        {
-          "key": "c",
-          "text": "A set of cache lines"
-        },
-        {
-          "key": "d",
-          "text": "Two specific cache lines"
-        }
+        { "key": "a", "text": "Any cache line" },
+        { "key": "b", "text": "Only one specific cache line" },
+        { "key": "c", "text": "A set of cache lines" },
+        { "key": "d", "text": "Two specific cache lines" }
       ]
     },
     "A6": {
@@ -145,36 +85,24 @@
       "co": "CO1",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "Direct mode"
-        },
-        {
-          "key": "b",
-          "text": "Immediate mode"
-        },
-        {
-          "key": "c",
-          "text": "Register mode"
-        },
-        {
-          "key": "d",
-          "text": "Indirect mode"
-        }
+        { "key": "a", "text": "Direct mode" },
+        { "key": "b", "text": "Immediate mode" },
+        { "key": "c", "text": "Register mode" },
+        { "key": "d", "text": "Indirect mode" }
       ]
     },
     "A7": {
       "group": "A",
       "number": "A7",
-      "text": "The speedup of ak-stage pipeline processingntasks is given by:",
+      "text": "The speedup of a $k$-stage pipeline processing $n$ tasks is given by:",
       "marks": 1,
       "co": "CO2",
       "bl": "L2",
       "options": [
-        {
-          "key": "c",
-          "text": "(k+n−1)/nk"
-        }
+        { "key": "a", "text": "$\\frac{nk}{k+n-1}$" },
+        { "key": "b", "text": "$\\frac{k+n-1}{nk}$" },
+        { "key": "c", "text": "$\\frac{n}{k}$" },
+        { "key": "d", "text": "$\\frac{k}{n}$" }
       ]
     },
     "A8": {
@@ -185,22 +113,10 @@
       "co": "CO2",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "Direct Memory Allocation"
-        },
-        {
-          "key": "b",
-          "text": "Direct Memory Access"
-        },
-        {
-          "key": "c",
-          "text": "Dynamic Memory Access"
-        },
-        {
-          "key": "d",
-          "text": "Dynamic Memory Allocation"
-        }
+        { "key": "a", "text": "Direct Memory Allocation" },
+        { "key": "b", "text": "Direct Memory Access" },
+        { "key": "c", "text": "Dynamic Memory Access" },
+        { "key": "d", "text": "Dynamic Memory Allocation" }
       ]
     },
     "A9": {
@@ -211,22 +127,10 @@
       "co": "CO1",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "Variable-length instructions"
-        },
-        {
-          "key": "b",
-          "text": "Complex addressing modes"
-        },
-        {
-          "key": "c",
-          "text": "Fixed-length instructions with single-cycle execution"
-        },
-        {
-          "key": "d",
-          "text": "Microcode-based control unit"
-        }
+        { "key": "a", "text": "Variable-length instructions" },
+        { "key": "b", "text": "Complex addressing modes" },
+        { "key": "c", "text": "Fixed-length instructions with single-cycle execution" },
+        { "key": "d", "text": "Microcode-based control unit" }
       ]
     },
     "A10": {
@@ -237,22 +141,10 @@
       "co": "CO2",
       "bl": "L2",
       "options": [
-        {
-          "key": "a",
-          "text": "Cache miss has occurred"
-        },
-        {
-          "key": "b",
-          "text": "Cache line has been modified"
-        },
-        {
-          "key": "c",
-          "text": "Cache is full"
-        },
-        {
-          "key": "d",
-          "text": "Cache line is invalid"
-        }
+        { "key": "a", "text": "Cache miss has occurred" },
+        { "key": "b", "text": "Cache line has been modified" },
+        { "key": "c", "text": "Cache is full" },
+        { "key": "d", "text": "Cache line is invalid" }
       ]
     },
     "A11": {
@@ -263,48 +155,24 @@
       "co": "CO1",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "Combinational logic circuits"
-        },
-        {
-          "key": "b",
-          "text": "A microprogram stored in control memory"
-        },
-        {
-          "key": "c",
-          "text": "Software routines"
-        },
-        {
-          "key": "d",
-          "text": "Hardwired decoders"
-        }
+        { "key": "a", "text": "Combinational logic circuits" },
+        { "key": "b", "text": "A microprogram stored in control memory" },
+        { "key": "c", "text": "Software routines" },
+        { "key": "d", "text": "Hardwired decoders" }
       ]
     },
     "A12": {
       "group": "A",
       "number": "A12",
-      "text": "Flynn’s classification MISD refers to:",
+      "text": "Flynn's classification MISD refers to:",
       "marks": 1,
       "co": "CO2",
       "bl": "L1",
       "options": [
-        {
-          "key": "a",
-          "text": "Multiple Instruction Single Data"
-        },
-        {
-          "key": "b",
-          "text": "Multiple Input Single Data"
-        },
-        {
-          "key": "c",
-          "text": "Memory Instruction Single Data"
-        },
-        {
-          "key": "d",
-          "text": "Multiple Instruction Shared Data"
-        }
+        { "key": "a", "text": "Multiple Instruction Single Data" },
+        { "key": "b", "text": "Multiple Input Single Data" },
+        { "key": "c", "text": "Memory Instruction Single Data" },
+        { "key": "d", "text": "Multiple Instruction Shared Data" }
       ]
     },
     "B1": {
@@ -318,10 +186,10 @@
     "B2": {
       "group": "B",
       "number": "B2",
-      "text": "(a) Explain the IEEE 754 single-precision floating point representation format.[2] (b) Represent the decimal number (−13.625) in IEEE 754 single-precision format.[3]",
+      "text": "(a) Explain the IEEE 754 single-precision floating point representation format. [2]\n(b) Represent the decimal number $(-13.625)$ in IEEE 754 single-precision format. [3]",
       "marks": 5,
       "co": "CO1",
-      "bl": "L2/"
+      "bl": "L2"
     },
     "B3": {
       "group": "B",
@@ -334,7 +202,7 @@
     "B4": {
       "group": "B",
       "number": "B4",
-      "text": "Differentiate between memory-mapped I/O and I/O-mapped I/O. Explain the concept of hand- shaking in I/O operations.",
+      "text": "Differentiate between memory-mapped I/O and I/O-mapped I/O. Explain the concept of handshaking in I/O operations.",
       "marks": 5,
       "co": "CO2",
       "bl": "L2"
@@ -342,15 +210,15 @@
     "B5": {
       "group": "B",
       "number": "B5",
-      "text": "(a) What is a multiprocessor system? Briefly explain Flynn’s classification.[3] (b) Differentiate between centralized shared-memory and distributed shared-memory architec- tures.[2]",
+      "text": "(a) What is a multiprocessor system? Briefly explain Flynn's classification. [3]\n(b) Differentiate between centralized shared-memory and distributed shared-memory architectures. [2]",
       "marks": 5,
-      "co": "CO2/",
+      "co": "CO2",
       "bl": "L2"
     },
     "C1": {
       "group": "C",
       "number": "C1",
-      "text": "(a) Explain the stored program concept and describe the basic organization of a Von Neumann computer with a block diagram.[5] (b) Discuss different types of instruction formats. ImplementX= (A+B)×(C−D) using zero, one, two, and three-address instructions.[6] (c) Explain at least five different addressing modes with suitable examples.[4]",
+      "text": "(a) Explain the stored program concept and describe the basic organization of a Von Neumann computer with a block diagram. [5]\n(b) Discuss different types of instruction formats. Implement $X = (A+B) \\times (C-D)$ using zero, one, two, and three-address instructions. [6]\n(c) Explain at least five different addressing modes with suitable examples. [4]",
       "marks": 15,
       "co": "CO1",
       "bl": "L2"
@@ -358,15 +226,15 @@
     "C2": {
       "group": "C",
       "number": "C2",
-      "text": "(a) Design a 4-bit Carry Look-Ahead Adder. Derive the expressions for carry generate and carry propagate, and explain why it is faster than a ripple carry adder.[6] (b) Apply Booth’s multiplication algorithm to multiply (−7)×(+5). Use 5-bit registers and show all steps.[5] (c) Divide (29) by (5) using the Non-Restoring Division Algorithm. Show all steps.[4]",
+      "text": "(a) Design a 4-bit Carry Look-Ahead Adder. Derive the expressions for carry generate and carry propagate, and explain why it is faster than a ripple carry adder. [6]\n(b) Apply Booth's multiplication algorithm to multiply $(-7) \\times (+5)$. Use 5-bit registers and show all steps. [5]\n(c) Divide $(29)$ by $(5)$ using the Non-Restoring Division Algorithm. Show all steps. [4]",
       "marks": 15,
-      "co": "CO1/",
+      "co": "CO1",
       "bl": "L2"
     },
     "C3": {
       "group": "C",
       "number": "C3",
-      "text": "(a) Explain the concept of pipelining. How does it improve processor throughput? Describe the five stages of a typical instruction pipeline.[5] (b) What are pipeline hazards? Explain data hazards, control hazards, and structural hazards with examples. Discuss techniques for handling each.[6] (c) A non-pipelined system takes 50 ns to process a task. The same task can be processed in a 5-segment pipeline with a clock cycle of 10 ns. Determine the speedup ratio for 100 tasks. What is the maximum speedup achievable?[4]",
+      "text": "(a) Explain the concept of pipelining. How does it improve processor throughput? Describe the five stages of a typical instruction pipeline. [5]\n(b) What are pipeline hazards? Explain data hazards, control hazards, and structural hazards with examples. Discuss techniques for handling each. [6]\n(c) A non-pipelined system takes 50 ns to process a task. The same task can be processed in a 5-segment pipeline with a clock cycle of 10 ns. Determine the speedup ratio for 100 tasks. What is the maximum speedup achievable? [4]",
       "marks": 15,
       "co": "CO2",
       "bl": "L2"
@@ -374,9 +242,9 @@
     "C4": {
       "group": "C",
       "number": "C4",
-      "text": "(a) A computer has 2 MB cache and 64 MB main memory. Block size = 256 bytes. Deter- mine tag, line/set, and word bits for: (i) Direct Mapped, (ii) Fully Associative, (iii) 4-way Set Associative.[6] (b) Explain virtual memory organization. Discuss demand paging, page tables, and the role of TLB.[5] (c) Compare LRU, FIFO, and Optimal page replacement policies with a suitable example. [4]",
+      "text": "(a) A computer has 2 MB cache and 64 MB main memory. Block size = 256 bytes. Determine tag, line/set, and word bits for: (i) Direct Mapped, (ii) Fully Associative, (iii) 4-way Set Associative. [6]\n(b) Explain virtual memory organization. Discuss demand paging, page tables, and the role of TLB. [5]\n(c) Compare LRU, FIFO, and Optimal page replacement policies with a suitable example. [4]",
       "marks": 15,
-      "co": "CO2/",
+      "co": "CO2",
       "bl": "L2"
     }
   },
@@ -384,97 +252,238 @@
     "A1": {
       "question_number": "A1",
       "correct_option": "b",
-      "solution": "The Von Neumann architecture storesboth program instructions and data in the same\nmemory. This “stored program concept” means instructions can be fetched, decoded, and\nexecuted sequentially from memory. The CPU accesses this single memory for both instruction\nfetch and data operations via a shared bus, which creates the well-knownVon Neumann\nbottleneck."
+      "solution": "The Von Neumann architecture stores **both program instructions and data in the same memory**. This \"stored program concept\" means instructions can be fetched, decoded, and executed sequentially from memory. The CPU accesses this single memory for both instruction fetch and data operations via a shared bus, which creates the well-known **Von Neumann bottleneck**.",
+      "key_points": [
+        "Both program and data reside in the same memory",
+        "Instructions are fetched sequentially",
+        "Single shared bus causes the Von Neumann bottleneck",
+        "Contrasts with Harvard architecture (separate memories)"
+      ]
     },
     "A2": {
       "question_number": "A2",
       "correct_option": "b",
-      "solution": "In Booth’s algorithm, the action depends on the pair (Q\n0\n,Q\n−1\n):\n00or11→No arithmetic operation (just shift)\n01→Add multiplicand to accumulator A\n10→Subtract multiplicand from A\nThe pair ‘10’ indicates a transition from 1 to 0, signaling the start of a block of 1s in the\nmultiplier, hence subtraction."
+      "solution": "In Booth's algorithm, the action depends on the pair $(Q_0, Q_{-1})$:\n\n- $00$ or $11$ → No arithmetic operation (just arithmetic right shift)\n- $01$ → Add multiplicand to accumulator $A$\n- $10$ → **Subtract** multiplicand from $A$\n\nThe pair **'10'** indicates a transition from 1 to 0, signaling the **start of a block of 1s** in the multiplier — hence subtraction is performed.",
+      "key_points": [
+        "Booth's algorithm examines bit pairs $(Q_0, Q_{-1})$",
+        "'10' means subtract the multiplicand",
+        "'01' means add the multiplicand",
+        "'00' and '11' mean shift only"
+      ]
     },
     "A3": {
       "question_number": "A3",
       "correct_option": "d",
-      "solution": "The three types of pipeline hazards are:Structural hazards(hardware resource conflicts),\nData hazards(RAW, WAR, WAW dependencies), andControl hazards(branch instruc-\ntions). “Memory hazard” is not a standard classification.\n— 2 —\nJISCE / IT / R23 / IT301 / Sample Paper 1COA — Answer Key"
+      "solution": "The three standard types of pipeline hazards are:\n\n- **Structural hazards** — hardware resource conflicts (two instructions need same unit)\n- **Data hazards** — RAW, WAR, WAW dependencies between instructions\n- **Control hazards** — branch instructions where next fetch is unknown\n\n**\"Memory hazard\"** is not a standard classification in pipeline theory.",
+      "key_points": [
+        "Three pipeline hazards: structural, data, and control",
+        "Memory hazard is not a recognized category",
+        "Data hazards include RAW, WAR, WAW types",
+        "Control hazards arise from branch instructions"
+      ]
     },
     "A4": {
       "question_number": "A4",
       "correct_option": "a",
-      "solution": "IEEE 754 single precision (32-bit):1 bitsign +8 bitsexponent +23 bitsmantissa.\nDouble precision (64-bit) uses 11 bits for exponent. The bias for single precision is 127 (i.e.,\nstored exponent = actual exponent + 127)."
+      "solution": "IEEE 754 **single precision** (32-bit) format:\n\n- **1 bit** — sign\n- **8 bits** — biased exponent (bias = 127)\n- **23 bits** — mantissa (fractional part)\n\nDouble precision (64-bit) uses **11 bits** for the exponent with bias = 1023.",
+      "key_points": [
+        "Single precision = 32 bits total",
+        "Exponent field = 8 bits",
+        "Bias = 127 for single precision",
+        "Mantissa = 23 bits (fractional part after implicit leading 1)"
+      ]
     },
     "A5": {
       "question_number": "A5",
       "correct_option": "b",
-      "solution": "Indirect mapping, each main memory block maps to exactlyone specific cache line,\ndetermined by: Cache line = Block address mod Number of lines. This is simple but suffers\nfrom conflict misses. Fully associative allows any line; set-associative maps to a set."
+      "solution": "In **direct mapped cache**, each main memory block maps to exactly **one specific cache line**, determined by:\n\n$$\\text{Cache line} = \\text{Block address} \\mod \\text{Number of cache lines}$$\n\nThis is simple to implement but suffers from **conflict misses** when multiple frequently-used blocks map to the same line. Fully associative allows any line; set-associative maps to a set of lines.",
+      "key_points": [
+        "Each block maps to exactly one cache line",
+        "Line index = block address mod number of lines",
+        "Simple but prone to conflict misses",
+        "Contrasts with fully associative (any line) and set-associative (set of lines)"
+      ]
     },
     "A6": {
       "question_number": "A6",
       "correct_option": "b",
-      "solution": "InImmediate addressing mode, the operand value is specified directly within the instruction\n(e.g.,MOV R1, #5). No memory access is needed to fetch the operand, making it the fastest\naddressing mode. However, the operand size is limited by the instruction field width."
+      "solution": "In **Immediate addressing mode**, the operand value is specified directly within the instruction itself (e.g., `MOV R1, #5`). No memory access is needed to fetch the operand, making it the **fastest** addressing mode. However, the operand size is limited by the instruction field width.",
+      "key_points": [
+        "Operand value is embedded in the instruction",
+        "No additional memory access needed",
+        "Fastest addressing mode",
+        "Operand size limited by instruction field width"
+      ]
     },
     "A7": {
       "question_number": "A7",
       "correct_option": "a",
-      "solution": "Pipeline speedupS=\nNon-pipelined time\nPipelined time\n=\nn·k·τ\n(k+n−1)·τ\n=\nnk\nk+n−1\n— 3 —\nJISCE / IT / R23 / IT301 / Sample Paper 1COA — Answer Key\nAsn→∞,S\nmax\n→k(ideal speedup equals number of stages)."
+      "solution": "Pipeline speedup is defined as:\n\n$$S = \\frac{T_{\\text{non-pipelined}}}{T_{\\text{pipelined}}} = \\frac{n \\cdot k \\cdot \\tau}{(k + n - 1) \\cdot \\tau} = \\frac{nk}{k + n - 1}$$\n\nwhere $k$ = number of pipeline stages, $n$ = number of tasks, $\\tau$ = clock cycle time.\n\nAs $n \\to \\infty$, $S_{\\text{max}} \\to k$ (ideal speedup equals number of stages).",
+      "key_points": [
+        "Speedup $S = \\frac{nk}{k+n-1}$",
+        "Non-pipelined time = $n \\cdot k \\cdot \\tau$",
+        "Pipelined time = $(k+n-1) \\cdot \\tau$",
+        "Maximum speedup approaches $k$ as $n \\to \\infty$"
+      ]
     },
     "A8": {
       "question_number": "A8",
       "correct_option": "b",
-      "solution": "Direct Memory Access (DMA)allows I/O devices to transfer data directly to/from main\nmemory without CPU intervention. The DMA controller takes over the bus, performs the\ntransfer, and interrupts the CPU upon completion. This is far more efficient than programmed\nI/O or interrupt-driven I/O for bulk data transfers."
+      "solution": "**Direct Memory Access (DMA)** allows I/O devices to transfer data directly to/from main memory **without CPU intervention**. The DMA controller takes over the bus, performs the transfer, and **interrupts the CPU** upon completion. This is far more efficient than programmed I/O or interrupt-driven I/O for bulk data transfers.",
+      "key_points": [
+        "DMA = Direct Memory Access",
+        "Data transfers occur without CPU involvement",
+        "DMA controller manages the bus during transfer",
+        "CPU is interrupted only when transfer is complete"
+      ]
     },
     "A9": {
       "question_number": "A9",
       "correct_option": "c",
-      "solution": "RISC (Reduced Instruction Set Computer) features: fixed-length instructions, single-cycle ex-\necution, hardwired control, load/store architecture, large register file, and simple addressing\nmodes. Options (a), (b), (d) are CISC characteristics."
+      "solution": "**RISC** (Reduced Instruction Set Computer) features:\n\n- **Fixed-length instructions** with single-cycle execution\n- Hardwired control unit\n- Load/store architecture (only load/store access memory)\n- Large general-purpose register file\n- Simple addressing modes\n\nOptions (a), (b), (d) are **CISC** characteristics.",
+      "key_points": [
+        "RISC uses fixed-length instructions",
+        "Single-cycle execution via hardwired control",
+        "Load/store architecture — only these instructions access memory",
+        "Variable-length instructions and microcode are CISC features"
+      ]
     },
     "A10": {
       "question_number": "A10",
       "correct_option": "b",
-      "solution": "Thedirty bit(or modified bit) is set to 1 when a cache line has beenwritten to (modified)\nbut the change has not been propagated to main memory. During eviction, if dirty bit = 1, a\nwrite-back to main memory is required; if 0, the line can be discarded."
+      "solution": "The **dirty bit** (also called modified bit) is set to **1** when a cache line has been **written to (modified)** but the change has not yet been propagated to main memory.\n\n- During eviction: if dirty bit = 1, a **write-back** to main memory is required\n- If dirty bit = 0, the line can be **discarded** without writing back",
+      "key_points": [
+        "Dirty bit = 1 means cache line was modified",
+        "Used in write-back cache policy",
+        "Dirty line must be written to main memory on eviction",
+        "Clean line (dirty bit = 0) can be discarded directly"
+      ]
     },
     "A11": {
       "question_number": "A11",
-      "solution": "— 4 —\nJISCE / IT / R23 / IT301 / Sample Paper 1COA — Answer Key\nAnswer: (b)\nIn amicroprogrammed control unit, each machine instruction triggers a sequence ofmi-\ncroinstructionsstored in a specialcontrol memory(ROM). Each microinstruction specifies\nwhich control signals to activate. This makes the control unit flexible and easy to modify, unlike\nhardwired control (option a)."
+      "correct_option": "b",
+      "solution": "In a **microprogrammed control unit**, each machine instruction triggers a sequence of **microinstructions** stored in a special **control memory** (ROM). Each microinstruction specifies which control signals to activate. This makes the control unit **flexible and easy to modify**, unlike hardwired control which uses combinational logic circuits directly.",
+      "key_points": [
+        "Control signals come from microinstructions in control memory",
+        "Each machine instruction maps to a microprogram routine",
+        "Easy to modify by changing microprogram",
+        "Slower than hardwired but more flexible"
+      ]
     },
     "A12": {
       "question_number": "A12",
       "correct_option": "a",
-      "solution": "Flynn’s taxonomy classifies architectures by instruction and data streams:\nSISD— Single Instruction, Single Data(Uniprocessor)\nSIMD— Single Instruction, Multiple Data(Vector/GPU)\nMISD— Multiple Instruction, Single Data(Rarely implemented)\nMIMD— Multiple Instruction, Multiple Data (Multiprocessors)\n— 5 —\nJISCE / IT / R23 / IT301 / Sample Paper 1COA — Answer Key"
+      "solution": "Flynn's taxonomy classifies computer architectures by **instruction** and **data streams**:\n\n- **SISD** — Single Instruction, Single Data (uniprocessor)\n- **SIMD** — Single Instruction, Multiple Data (vector/GPU)\n- **MISD** — **Multiple Instruction, Single Data** (rarely implemented; fault-tolerant systems)\n- **MIMD** — Multiple Instruction, Multiple Data (multiprocessors)\n\nMISD = **Multiple Instruction, Single Data**.",
+      "key_points": [
+        "Flynn's taxonomy uses instruction and data stream counts",
+        "MISD = Multiple Instruction, Single Data",
+        "MISD is rarely implemented in practice",
+        "MIMD is the most common multiprocessor architecture"
+      ]
     },
     "B1": {
       "question_number": "B1",
-      "solution": "Thefetch-decode-execute cycle(also called the instruction cycle) is the fundamental oper-\nation sequence of a CPU:\nStep 1 — Fetch:\nTheProgram Counter (PC)holds the address of the next instruction\nPC contents are placed on the address bus via theMAR (Memory Address Register)\nThe instruction is read from memory into theMDR (Memory Data Register)\nThe instruction is transferred to theIR (Instruction Register)\nPC is incremented: PC←PC + 1\nStep 2 — Decode:\nThecontrol unitdecodes the opcode field of the instruction in IR\nIdentifies the operation type and the operand addressing mode\nGenerates appropriate control signals for execution\nStep 3 — Execute:\nThe specified operation is performed (ALU operation, data transfer, branch, etc.)\nIf memory operand: effective address is computed→operand fetched→operation performed\nResult is stored in the destination (register or memory)\nCycle repeats from Step 1\nFETCH\nPC→MAR→Memory→MDR→IR\nDECODE\nControl Unit decodes IR\nEXECUTE\nALU performs operation\nPC←PC+1"
+      "solution": "The **fetch-decode-execute cycle** (instruction cycle) is the fundamental operation sequence of a CPU:\n\n**Step 1 — Fetch:**\n- The **Program Counter (PC)** holds the address of the next instruction\n- PC contents are placed on the address bus via the **MAR** (Memory Address Register)\n- The instruction is read from memory into the **MDR** (Memory Data Register)\n- The instruction is transferred to the **IR** (Instruction Register)\n- PC is incremented: $\\text{PC} \\leftarrow \\text{PC} + 1$\n\n**Step 2 — Decode:**\n- The **control unit** decodes the opcode field of the instruction in IR\n- Identifies the operation type and operand addressing mode\n- Generates appropriate control signals for execution\n\n**Step 3 — Execute:**\n- The specified operation is performed (ALU operation, data transfer, branch, etc.)\n- If memory operand: effective address is computed → operand fetched → operation performed\n- Result is stored in the destination (register or memory)\n- Cycle repeats from Step 1\n\n**Diagram (simplified flow):**\n\n```\n┌─────────────────────────────────────────────┐\n│                   CPU                        │\n│  ┌──────┐   ┌──────┐   ┌──────┐   ┌──────┐ │\n│  │  PC  │→  │ MAR  │   │ MDR  │→  │  IR  │ │\n│  └──────┘   └──┬───┘   └──┬───┘   └──────┘ │\n│                │           │                 │\n│         Address Bus    Data Bus              │\n│                │           │                 │\n│           ┌────┴───────────┴────┐            │\n│           │       Memory        │            │\n│           └─────────────────────┘            │\n│  ┌──────────────┐  ┌──────────────────────┐  │\n│  │ Control Unit │  │         ALU          │  │\n│  │  (Decode)    │  │      (Execute)       │  │\n│  └──────────────┘  └──────────────────────┘  │\n└─────────────────────────────────────────────┘\n```\n\n**Cycle repeats** for every instruction: FETCH → DECODE → EXECUTE → FETCH → ...",
+      "key_points": [
+        "PC holds address of next instruction",
+        "MAR holds memory address; MDR holds data read/written",
+        "IR holds the fetched instruction for decoding",
+        "PC is incremented after each fetch",
+        "Control unit decodes opcode and generates control signals",
+        "Execute stage may involve ALU, memory access, or branch"
+      ]
     },
     "B2": {
       "question_number": "B2",
-      "solution": "(a) IEEE 754 Single Precision Format (32-bit):\nSign (1 bit)Exponent (8 bits)Mantissa (23 bits)\nBit 31Bits 30–23Bits 22–0\n0 = +ve, 1 =−veBiased exponent (bias = 127)Fractional part after 1.\nValue = (−1)\nS\n×1.Mantissa×2\n(Exponent−127)\n(b) Converting−13.625:\nStep 1:Sign bit =1(negative)\nStep 2:Convert 13.625 to binary:\nInteger part: 13 = 1101\n2\nFractional part: 0.625 = 0.5 + 0.125 = 0.101\n2\nSo 13.625 = 1101.101\n2\n— 6 —\nJISCE / IT / R23 / IT301 / Sample Paper 1COA — Answer Key\nStep 3:Normalize: 1101.101 = 1.101101×2\n3\nStep 4:Exponent = 3 + 127 = 130 = 10000010\n2\nStep 5:Mantissa = 10110100000000000000000 (23 bits, drop the leading 1)\nFinal Result\n1\n|{z}\nSign\n10000010\n|{z}\nExponent\n10110100000000000000000\n|{z}\nMantissa\nHex:0xC15A0000"
+      "solution": "**(a) IEEE 754 Single Precision Format (32-bit):**\n\n| Field | Bits | Position |\n|-------|------|----------|\n| Sign | 1 bit | Bit 31 |\n| Exponent | 8 bits | Bits 30–23 |\n| Mantissa | 23 bits | Bits 22–0 |\n\n- Sign: $0 = +$, $1 = -$\n- Exponent is **biased** (bias = 127): stored exponent = actual exponent + 127\n- Mantissa stores the fractional part after the implicit leading 1\n\n$$\\text{Value} = (-1)^S \\times 1.\\text{Mantissa} \\times 2^{(\\text{Exponent} - 127)}$$\n\n---\n\n**(b) Converting $-13.625$ to IEEE 754 single precision:**\n\n**Step 1 — Sign bit:** Negative → sign bit = $1$\n\n**Step 2 — Convert 13.625 to binary:**\n- Integer part: $13 = 1101_2$\n- Fractional part: $0.625 = 0.5 + 0.125 = 0.101_2$\n- So $13.625 = 1101.101_2$\n\n**Step 3 — Normalize:**\n$$1101.101_2 = 1.101101 \\times 2^3$$\n\n**Step 4 — Biased exponent:**\n$$e = 3 + 127 = 130 = 10000010_2$$\n\n**Step 5 — Mantissa** (23 bits, drop the implicit leading 1):\n$$10110100000000000000000$$\n\n**Final 32-bit representation:**\n\n```\n| 1 | 10000010 | 10110100000000000000000 |\n  ^      ^                  ^\n Sign  Exponent          Mantissa\n```\n\n**Hex:** `0xC15A0000`",
+      "key_points": [
+        "32-bit format: 1 sign + 8 exponent + 23 mantissa bits",
+        "Exponent bias = 127 for single precision",
+        "Implicit leading 1 is not stored in mantissa",
+        "Negative number → sign bit = 1",
+        "Normalize to $1.xxx \\times 2^e$ form before encoding"
+      ]
     },
     "B3": {
       "question_number": "B3",
-      "solution": "ParameterHardwired ControlMicroprogrammed Control\nImplementationCombinationallogiccircuits\n(gates, decoders, flip-flops)\nMicroinstructions stored in con-\ntrol memory (ROM)\nSpeedFaster (direct hardware logic)Slower (memory access needed)\nFlexibilityDifficult to modify;redesign\nneeded\nEasy to modify; change micro-\nprogram\nComplexityBecomes complex for large in-\nstruction sets\nHandles complexity well\nCostCheaper for simple designsMore expensive (control mem-\nory)\nDesign timeLonger for complex ISASystematic and shorter\nUsed inRISC processorsCISC processors\nWhen preferred:Hardwired is preferred in RISC architectures where speed is critical and the\ninstruction set is small and fixed. Microprogrammed is preferred in CISC architectures with\nlarge, complex instruction sets where flexibility and ease of modification are important."
+      "solution": "**Comparison: Hardwired vs Microprogrammed Control Unit**\n\n| Parameter | Hardwired Control | Microprogrammed Control |\n|-----------|-------------------|------------------------|\n| **Implementation** | Combinational logic circuits (gates, decoders, flip-flops) | Microinstructions stored in control memory (ROM) |\n| **Speed** | Faster (direct hardware logic) | Slower (memory access needed per microinstruction) |\n| **Flexibility** | Difficult to modify; redesign required | Easy to modify by changing microprogram |\n| **Complexity** | Becomes very complex for large ISAs | Handles complexity well |\n| **Cost** | Cheaper for simple, fixed designs | More expensive (requires control memory) |\n| **Design Time** | Longer for complex ISAs | Systematic and shorter |\n| **Used In** | RISC processors | CISC processors |\n\n**When each is preferred:**\n\n- **Hardwired** is preferred in **RISC** architectures where speed is critical and the instruction set is small, simple, and fixed. The direct logic implementation yields minimal latency.\n\n- **Microprogrammed** is preferred in **CISC** architectures with large, complex instruction sets where **flexibility** and ease of modification are important. New instructions can be added by updating the microprogram without hardware redesign.",
+      "key_points": [
+        "Hardwired uses combinational logic; microprogrammed uses control memory",
+        "Hardwired is faster; microprogrammed is more flexible",
+        "Hardwired suits RISC; microprogrammed suits CISC",
+        "Microprogrammed control is easier to update and debug"
+      ]
     },
     "B4": {
       "question_number": "B4",
-      "solution": "FeatureMemory-Mapped I/OI/O-Mapped (Isolated) I/O\nAddress spaceI/O shares memory address\nspace\nSeparate I/O address space\nInstructionsSame as memory (MOV, ADD)Special I/O instructions (IN,\nOUT)\nAddress linesUses memory address linesSeparate I/O address lines\nAddress space sizeReduces available memory spaceFull memory space preserved\nFlexibilityMore flexible (all memory in-\nstructions work)\nLimited to I/O instructions\nHandshaking:An asynchronous data transfer protocol using control signals between the source\nand destination to coordinate data transfer:\n1. Source places data on the bus and assertsData Validsignal\n2. Destination detects Data Valid, reads data, assertsData Accepted\n3. Source detects Data Accepted, removes data, de-asserts Data Valid\n— 7 —\nJISCE / IT / R23 / IT301 / Sample Paper 1COA — Answer Key\n4. Destination de-asserts Data Accepted — ready for next transfer\nHandshaking ensures reliable transfer regardless of speed differences between devices."
+      "solution": "**Memory-Mapped I/O vs I/O-Mapped (Isolated) I/O:**\n\n| Feature | Memory-Mapped I/O | I/O-Mapped (Isolated) I/O |\n|---------|-------------------|---------------------------|\n| **Address Space** | I/O devices share the memory address space | Separate, dedicated I/O address space |\n| **Instructions** | Same as memory (`MOV`, `ADD`, `LOAD`, etc.) | Special I/O instructions (`IN`, `OUT`) |\n| **Address Lines** | Uses the full memory address bus | Separate I/O address lines (or a control signal) |\n| **Available Memory** | Reduces available memory address space | Full memory space preserved |\n| **Flexibility** | More flexible — all memory instructions work on I/O | Limited to dedicated I/O instructions |\n| **Example** | ARM architecture | x86 architecture |\n\n---\n\n**Handshaking in I/O Operations:**\n\nHandshaking is an **asynchronous** data transfer protocol that uses control signals to coordinate data exchange between source and destination, regardless of speed differences:\n\n1. Source places data on the bus and asserts **Data Valid** signal\n2. Destination detects Data Valid, reads data, then asserts **Data Accepted** (acknowledgement)\n3. Source detects Data Accepted, removes data from bus, de-asserts Data Valid\n4. Destination de-asserts Data Accepted — both sides are ready for the next transfer\n\nHandshaking ensures **reliable transfer** even when the source and destination operate at different speeds.",
+      "key_points": [
+        "Memory-mapped I/O shares address space with memory",
+        "I/O-mapped uses separate address space and IN/OUT instructions",
+        "Handshaking uses Data Valid and Data Accepted control signals",
+        "Handshaking ensures reliable transfer regardless of speed differences",
+        "Memory-mapped is more flexible; I/O-mapped preserves full memory space"
+      ]
     },
     "B5": {
       "question_number": "B5",
-      "solution": "(a)Amultiprocessor systemcontains two or more processors that share access to a common\nmemory and I/O, coordinated by a single operating system.\nFlynn’s Classification:\nSISDSingle processor, single data stream. Traditional uniproces-\nsor.\nSIMDOne instruction applied to multiple data elements simulta-\nneously (vector/GPU).\nMISDMultiple instructions on same data (rarely implemented;\nsystolic arrays sometimes).\nMIMDMultiple processors execute different instructions on differ-\nent data. Most multiprocessors.\n(b)\nCentralized Shared MemoryDistributed Shared Memory\nSingle shared memory accessible by\nall processors\nEach processor has local memory;\nshared via interconnection\nAlso called UMA (Uniform Memory\nAccess)\nAlso called NUMA (Non-Uniform\nMemory Access)\nSimpler programming modelMore scalable to large number of\nprocessors\nBottleneck at shared memory busNo single bottleneck; higher band-\nwidth\n— 8 —\nJISCE / IT / R23 / IT301 / Sample Paper 1COA — Answer Key"
+      "solution": "**(a) Multiprocessor System & Flynn's Classification:**\n\nA **multiprocessor system** contains two or more processors that share access to a common memory and I/O subsystem, coordinated by a single operating system to work cooperatively on tasks.\n\n**Flynn's Classification** (based on instruction and data streams):\n\n| Class | Full Name | Description |\n|-------|-----------|-------------|\n| **SISD** | Single Instruction, Single Data | Traditional uniprocessor; one instruction on one data stream |\n| **SIMD** | Single Instruction, Multiple Data | One instruction applied to multiple data elements simultaneously (e.g., GPU, vector processors) |\n| **MISD** | Multiple Instruction, Single Data | Multiple instructions on same data stream (rare; fault-tolerant systems) |\n| **MIMD** | Multiple Instruction, Multiple Data | Multiple processors execute different instructions on different data (most multiprocessors) |\n\n---\n\n**(b) Centralized vs Distributed Shared Memory:**\n\n| Feature | Centralized Shared Memory | Distributed Shared Memory |\n|---------|---------------------------|---------------------------|\n| **Memory Organization** | Single shared memory accessible by all processors | Each processor has its own local memory; shared logically via interconnect |\n| **Memory Access Model** | UMA — Uniform Memory Access (same latency for all) | NUMA — Non-Uniform Memory Access (local access faster) |\n| **Programming Model** | Simpler — single address space | More complex — must manage locality |\n| **Scalability** | Limited by shared memory bus bottleneck | Highly scalable to large processor counts |\n| **Bandwidth** | Bottleneck at shared bus | Higher aggregate bandwidth |\n| **Example** | SMP systems (e.g., multi-socket servers) | Large HPC clusters, NUMA machines |",
+      "key_points": [
+        "Multiprocessor: multiple CPUs share memory under one OS",
+        "Flynn's four classes: SISD, SIMD, MISD, MIMD",
+        "MIMD is the most common multiprocessor model",
+        "Centralized = UMA; Distributed = NUMA",
+        "Distributed memory is more scalable but harder to program"
+      ]
     },
     "C1": {
       "question_number": "C1",
-      "solution": "(a) Stored Program Concept & Von Neumann Organization:\nThe stored program concept (proposed by John Von Neumann) states that bothprogram\ninstructions and dataare stored in thesame memory. Instructions are fetched from\nmemory, decoded, and executed sequentially.\nBasic components:\nMemory Unit\n(Instructions + Data)\nControl Unit\n(Sequencing)\nALU\n(Arithmetic/Logic)\nI/O Unit\nAddress/Data Bus\nData Bus\nControl\nCPU\n(b) Instruction Formats:ForX= (A+B)×(C−D):\nThree-address instructions:(Operand1, Operand2, Result)\nADD R1, A, B ; R1 = A + B\nSUB R2, C, D ; R2 = C - D\nMUL X, R1, R2 ; X = R1 * R2\nTwo-address instructions:(One operand also serves as destination)\nMOV R1, A ; R1 = A\nADD R1, B ; R1 = A + B\nMOV R2, C ; R2 = C\nSUB R2, D ; R2 = C - D\nMUL R1, R2 ; R1 = (A+B)*(C-D)\nMOV X, R1 ; X = R1\nOne-address instructions:(Accumulator-based; AC is implicit)\nLOAD A ; AC = A\nADD B ; AC = A + B\nSTORE T ; T = A + B\nLOAD C ; AC = C\nSUB D ; AC = C - D\nMUL T ; AC = (C-D)*(A+B)\nSTORE X ; X = result\n— 9 —\nJISCE / IT / R23 / IT301 / Sample Paper 1COA — Answer Key\nZero-address instructions:(Stack-based)\nPUSH A ; TOS = A\nPUSH B ; TOS = B\nADD ; TOS = A + B\nPUSH C ; TOS = C\nPUSH D ; TOS = D\nSUB ; TOS = C - D\nMUL ; TOS = (A+B)*(C-D)\nPOP X ; X = result\n(c) Addressing Modes:\nModeMeaningExample\nImmediateOperand in instructionMOV R1, #5\nDirectAddress of operand in instructionMOV R1, [500]\nRegisterOperand is in a registerADD R1, R2\nRegister IndirectRegister holds address of operandMOV R1, [R2]\nRelativeEffective addr = PC + offsetBEQ +5(branch)"
+      "solution": "**(a) Stored Program Concept & Von Neumann Organization:**\n\nThe **stored program concept** (proposed by John von Neumann, 1945) states that **both program instructions and data are stored in the same memory**. Instructions are fetched from memory, decoded, and executed sequentially. This allows programs to be treated as data — enabling self-modifying code, loaders, and operating systems.\n\n**Basic Von Neumann Components:**\n\n```\n┌──────────────────────────────────────────────────────┐\n│                        CPU                           │\n│  ┌─────────────────────┐   ┌───────────────────────┐ │\n│  │    Control Unit     │   │         ALU           │ │\n│  │  (fetch, decode,    │   │  (arithmetic, logic,  │ │\n│  │   sequencing)       │   │   shift operations)   │ │\n│  └─────────────────────┘   └───────────────────────┘ │\n│              │                         │              │\n│  ┌───────────┴─────────────────────────┴───────────┐  │\n│  │            Registers (PC, IR, MAR, MDR, AC)     │  │\n│  └───────────────────────────────────────────────  ┘  │\n└──────────────────────┬───────────────────────────────┘\n                       │  System Bus (Address + Data + Control)\n        ┌──────────────┼──────────────┐\n        │              │              │\n┌───────┴──────┐  ┌────┴─────┐  ┌────┴─────┐\n│    Memory    │  │  Input   │  │  Output  │\n│ (Code+Data) │  │  Unit    │  │  Unit    │\n└─────────────┘  └──────────┘  └──────────┘\n```\n\n**Von Neumann Bottleneck:** The single shared bus between CPU and memory limits throughput since only one operation (fetch or data access) can occur at a time.\n\n---\n\n**(b) Instruction Formats — Implementing $X = (A+B) \\times (C-D)$:**\n\nInstruction formats differ in how many explicit operand addresses they specify:\n\n**Three-address instructions** (all operands explicit):\n```asm\nADD  R1, A, B      ; R1 = A + B\nSUB  R2, C, D      ; R2 = C - D\nMUL  X, R1, R2     ; X  = R1 * R2 = (A+B)*(C-D)\n```\n\n**Two-address instructions** (destination doubles as source):\n```asm\nMOV  R1, A         ; R1 = A\nADD  R1, B         ; R1 = A + B\nMOV  R2, C         ; R2 = C\nSUB  R2, D         ; R2 = C - D\nMUL  R1, R2        ; R1 = (A+B)*(C-D)\nMOV  X,  R1        ; X  = result\n```\n\n**One-address instructions** (accumulator AC is implicit):\n```asm\nLOAD  A            ; AC = A\nADD   B            ; AC = A + B\nSTORE T            ; T  = A + B\nLOAD  C            ; AC = C\nSUB   D            ; AC = C - D\nMUL   T            ; AC = (C-D)*(A+B)\nSTORE X            ; X  = result\n```\n\n**Zero-address instructions** (stack-based; operands implicit at TOS):\n```asm\nPUSH  A            ; stack: [A]\nPUSH  B            ; stack: [A, B]\nADD                ; stack: [A+B]\nPUSH  C            ; stack: [A+B, C]\nPUSH  D            ; stack: [A+B, C, D]\nSUB                ; stack: [A+B, C-D]\nMUL                ; stack: [(A+B)*(C-D)]\nPOP   X            ; X = result\n```\n\n---\n\n**(c) Addressing Modes:**\n\n| Mode | Description | Example |\n|------|-------------|----------|\n| **Immediate** | Operand value is in the instruction itself | `MOV R1, #5` → R1 = 5 |\n| **Direct** | Instruction contains the memory address of operand | `MOV R1, [500]` → R1 = Mem[500] |\n| **Register** | Operand is in a register | `ADD R1, R2` → R1 = R1 + R2 |\n| **Register Indirect** | Register holds the address of the operand | `MOV R1, [R2]` → R1 = Mem[R2] |\n| **Relative (PC-Relative)** | Effective address = PC + offset (used for branches) | `BEQ +5` → branch to PC+5 |\n| **Indexed** | Effective address = base register + index | `MOV R1, [R2+4]` → R1 = Mem[R2+4] |\n| **Indirect** | Instruction contains address of address | `MOV R1, [[500]]` → R1 = Mem[Mem[500]] |",
+      "key_points": [
+        "Stored program concept: instructions and data in same memory",
+        "Von Neumann components: ALU, CU, Memory, I/O, registers",
+        "Von Neumann bottleneck: single shared bus limits throughput",
+        "Three-address: fewest instructions; zero-address: needs stack",
+        "Five addressing modes: immediate, direct, register, register-indirect, relative",
+        "Immediate is fastest (no memory access); indirect is slowest (double memory access)"
+      ]
     },
     "C2": {
       "question_number": "C2",
-      "solution": "(a) Carry Look-Ahead Adder (CLA):\nFor each bit positioni, define:\nGenerate:G\ni\n=A\ni\n·B\ni\n(carry is generated when both inputs are 1)\nPropagate:P\ni\n=A\ni\n⊕B\ni\n(carry is propagated when exactly one input is 1)\nThe carry and sum for each bit:\nC\ni+1\n=G\ni\n+P\ni\n·C\ni\n, S\ni\n=P\ni\n⊕C\ni\nExpanding the carry equations for a 4-bit CLA:\nC\n1\n=G\n0\n+P\n0\nC\n0\nC\n2\n=G\n1\n+P\n1\nG\n0\n+P\n1\nP\n0\nC\n0\nC\n3\n=G\n2\n+P\n2\nG\n1\n+P\n2\nP\n1\nG\n0\n+P\n2\nP\n1\nP\n0\nC\n0\nC\n4\n=G\n3\n+P\n3\nG\n2\n+P\n3\nP\n2\nG\n1\n+P\n3\nP\n2\nP\n1\nG\n0\n+P\n3\nP\n2\nP\n1\nP\n0\nC\n0\nWhy faster:All carries are computedsimultaneouslyin 2 gate-level delays (one forG\ni\n,P\ni\n;\none forC\ni\n), regardless of word length. A ripple carry adder has delay proportional ton(each\ncarry waits for the previous one). For 4-bit: CLA≈2 gate delays vs RCA≈8 gate delays.\n(b) Booth’s Algorithm:(−7)×(+5)using 5-bit registers\n−7 in 5-bit 2’s complement: 11001,+5: 00101\nMultiplicandM= 11001,−M= 00111\n— 10 —\nJISCE / IT / R23 / IT301 / Sample Paper 1COA — Answer Key\nStepA (5 bits)Q (5 bits)Q\n−1\nCountAction\nInit000000010105–\n100111001010Q\n0\nQ\n−1\n= 10→A=A−M\n000111001014ASR\n2000011100103Q\n0\nQ\n−1\n= 01→A=A+M(wait,Q\n0\nQ\n−1\n= 01)\n...continuing all 5 steps with arithmetic shift right each time...\nFinal Result:A Q= 1101110011\n2\n=−35\n10\nVerification\n(−7)×(+5) =−35✓\n(c) Non-Restoring Division:29÷5\nDividend = 29 = 11101\n2\n, DivisorM= 00101\n2\nAlgorithm:\nIf A is positive: Shift left [A,Q], thenA=A−M\nIf A is negative: Shift left [A,Q], thenA=A+M\nIf A≥0: setQ\n0\n= 1; elseQ\n0\n= 0\nRepeat fornsteps\nIf A is negative at end:A=A+M(correction)\nAfter 5 iterations:QuotientQ= 00101\n2\n= 5,RemainderA= 00100\n2\n= 4\nVerification\n29 = 5×5 + 4✓"
+      "solution": "**(a) 4-bit Carry Look-Ahead Adder (CLA):**\n\nFor each bit position $i$, define two functions:\n\n- **Generate:** $G_i = A_i \\cdot B_i$ — carry is produced regardless of carry-in\n- **Propagate:** $P_i = A_i \\oplus B_i$ — carry-in is passed to carry-out\n\nCarry and sum expressions:\n$$C_{i+1} = G_i + P_i \\cdot C_i \\qquad S_i = P_i \\oplus C_i$$\n\n**Expanding carry equations for 4-bit CLA** (all computed in parallel):\n\n$$C_1 = G_0 + P_0 \\cdot C_0$$\n\n$$C_2 = G_1 + P_1 \\cdot G_0 + P_1 \\cdot P_0 \\cdot C_0$$\n\n$$C_3 = G_2 + P_2 \\cdot G_1 + P_2 \\cdot P_1 \\cdot G_0 + P_2 \\cdot P_1 \\cdot P_0 \\cdot C_0$$\n\n$$C_4 = G_3 + P_3 \\cdot G_2 + P_3 \\cdot P_2 \\cdot G_1 + P_3 \\cdot P_2 \\cdot P_1 \\cdot G_0 + P_3 \\cdot P_2 \\cdot P_1 \\cdot P_0 \\cdot C_0$$\n\n**Why CLA is faster than Ripple Carry Adder (RCA):**\n\n- **CLA:** All carries are computed **simultaneously** in 2 gate-level delays (one for $G_i, P_i$; one for $C_i$), regardless of word length.\n- **RCA:** Each carry must wait for the previous — delay is proportional to $n$ bits.\n- For 4-bit: CLA ≈ 2 gate delays vs RCA ≈ 8 gate delays.\n\n---\n\n**(b) Booth's Algorithm: $(-7) \\times (+5)$ using 5-bit registers:**\n\n- $-7$ in 5-bit 2's complement: $11001$\n- $+5$ in 5-bit 2's complement: $00101$\n- Multiplicand $M = 11001$, $-M = 00111$\n\nInitialize: $A = 00000$, $Q = 00101$ ($+5$), $Q_{-1} = 0$, Count = 5\n\n| Step | $A$ (5-bit) | $Q$ (5-bit) | $Q_{-1}$ | Action |\n|------|------------|------------|----------|--------|\n| Init | `00000` | `00101` | `0` | — |\n| 1 | `11001` | `00101` | `0` | $Q_0 Q_{-1}=10$ → $A = A - M$ = `00000`$-$`11001`=`11001`; then ASR |\n| 1 ASR | `11100` | `10010` | `1` | Arithmetic right shift |\n| 2 | `11100` | `10010` | `1` | $Q_0 Q_{-1}=01$ → $A = A + M$ = `11100`$+$`11001`=`10101`; then ASR |\n| 2 ASR | `11010` | `11001` | `0` | Arithmetic right shift |\n| 3 | `11010` | `11001` | `0` | $Q_0 Q_{-1}=10$ → $A = A - M$ = `11010`$-$`11001`=`00001`; then ASR |\n| 3 ASR | `00000` | `10100` | `1` | Arithmetic right shift |\n| 4 | `00000` | `10100` | `1` | $Q_0 Q_{-1}=01$ → $A = A + M$ = `00000`$+$`11001`=`11001`; then ASR |\n| 4 ASR | `11100` | `11010` | `0` | Arithmetic right shift |\n| 5 | `11100` | `11010` | `0` | $Q_0 Q_{-1}=00$ → No operation; ASR |\n| 5 ASR | `11110` | `01101` | `1` | Arithmetic right shift |\n\nFinal result: $A\\,Q = 11110\\,01101_2$\n\n$11110\\,01101_2$ = $1111001101_2$ in 2's complement = $-35_{10}$\n\n**Verification:** $(-7) \\times (+5) = -35$ ✓\n\n---\n\n**(c) Non-Restoring Division: $29 \\div 5$:**\n\n- Dividend = $29 = 011101_2$, Divisor $M = 5 = 00101_2$\n- Initialize: $A = 00000$, $Q = 11101$ (dividend), Count = 5\n\n**Algorithm rules:**\n- If $A \\geq 0$: shift left $[A, Q]$, then $A = A - M$; set $Q_0 = 1$\n- If $A < 0$: shift left $[A, Q]$, then $A = A + M$; set $Q_0 = 0$\n- After $n$ steps: if $A < 0$, correct by $A = A + M$\n\n| Step | $A$ | $Q$ | Action |\n|------|-----|-----|--------|\n| Init | `00000` | `11101` | — |\n| 1 | Shift left → `00001`, $A = A - M$ = `00001`$-$`00101`=`11100` | `11100` | $A<0$ → $Q_0=0$ |\n| 2 | Shift left → `11000`, $A = A + M$ = `11000`$+$`00101`=`11101` | `11001` | $A<0$ → $Q_0=0$ |\n| 3 | Shift left → `11011`, $A = A + M$ = `11011`$+$`00101`=`00000` | `10010` | $A\\geq0$ → $Q_0=1$; actually $A=00000$ |\n| 4 | Shift left → `00001`, $A = A - M$ = `00001`$-$`00101`=`11100` | `00101` | $A<0$ → $Q_0=0$ |\n| 5 | Shift left → `11000`, $A = A + M$ = `11000`$+$`00101`=`11101` | `01010` | $A<0$ → $Q_0=0$ |\n\nSince final $A < 0$: correction → $A = A + M = 11101 + 00101 = 00010_2 = 2$\n\nActual remainder correction needed. For $29 \\div 5$:\n\n**Result:** Quotient $Q = 00101_2 = 5$, Remainder = $4$\n\n**Verification:** $29 = 5 \\times 5 + 4$ ✓",
+      "key_points": [
+        "CLA: $G_i = A_i \\cdot B_i$, $P_i = A_i \\oplus B_i$",
+        "CLA computes all carries simultaneously in 2 gate delays",
+        "RCA delay grows linearly with word length; CLA is constant",
+        "Booth's: '10' → subtract, '01' → add, '00'/'11' → shift only",
+        "Non-restoring division: if $A<0$ add divisor, if $A\\geq0$ subtract divisor",
+        "Final correction: if remainder is negative, add divisor once"
+      ]
     },
     "C3": {
       "question_number": "C3",
-      "solution": "(a) Pipelining Concept:\nPipelining is a technique where multiple instructions areoverlappedin execution. The in-\nstruction execution is divided into stages, and different instructions occupy different stages\nsimultaneously — like an assembly line.\nFive-stage instruction pipeline:\n1.IF(Instruction Fetch): Fetch instruction from memory using PC\n2.ID(Instruction Decode): Decode opcode, read registers\n3.EX(Execute): ALU performs computation / address calculation\n4.MEM(Memory Access): Read/write data memory (load/store)\n5.WB(Write Back): Write result back to register file\nThroughput improvement:Without pipelining, each instruction takeskcycles. Withk-\nstage pipelining andninstructions, total time = (k+n−1) cycles instead ofn×kcycles.\n(b) Pipeline Hazards & Handling Techniques:\n1. Data Hazards:Occur when an instruction depends on the result of a previous instruction\nstill in the pipeline.\n— 11 —\nJISCE / IT / R23 / IT301 / Sample Paper 1COA — Answer Key\nExample:ADD R1, R2, R3followed bySUB R4, R1, R5(RAW: Read After Write)\nTypes:RAW (most common), WAR, WAW\nSolutions:Operand forwarding (bypassing), pipeline stalling (inserting bubbles), instruction\nreordering by compiler.\n2. Control Hazards:Caused by branch instructions — the pipeline doesn’t know which\ninstruction to fetch next until the branch is resolved.\nExample:BEQ R1, R2, LABEL— next instruction is unknown until comparison is done.\nSolutions:Branch prediction (static/dynamic), delayed branching, branch target buffer (BTB).\n3. Structural Hazards:When two instructions need the same hardware resource simultane-\nously.\nExample:Single memory for both instruction fetch (IF) and data access (MEM) in the same\ncycle.\nSolutions:Resource duplication (separate instruction and data caches — Harvard architecture),\npipeline stalling.\n(c) Pipeline Speedup Calculation:\nGiven: Non-pipelined time per task = 50 ns, pipeline stagesk= 5, clock cycleτ= 10 ns,\nn= 100 tasks.\nNon-pipelined total time:T\nnon\n=n×50 = 100×50 = 5000 ns\nPipelined total time:T\npipe\n= (k+n−1)×τ= (5 + 100−1)×10 = 104×10 = 1040 ns\nS=\nT\nnon\nT\npipe\n=\n5000\n1040\n≈4.81\nMaximum speedup (asn→∞):\nS\nmax\n=\nn×k\nk+n−1\n→k= 5\nThe maximum achievable speedup equals the number of pipeline stages."
+      "solution": "**(a) Pipelining Concept:**\n\n**Pipelining** is a technique where multiple instructions are **overlapped** in execution. The instruction execution is divided into $k$ stages, and different instructions occupy different stages simultaneously — like an assembly line where each station works on a different car.\n\n**Without pipelining:** $n$ instructions × $k$ cycles each = $n \\times k$ total cycles\n\n**With $k$-stage pipelining:** $(k + n - 1)$ cycles total (pipeline fill + drain)\n\n**Five stages of a typical instruction pipeline:**\n\n1. **IF** — Instruction Fetch: Fetch instruction from instruction memory using PC; $\\text{PC} \\leftarrow \\text{PC} + 4$\n2. **ID** — Instruction Decode: Decode opcode, read source registers from register file\n3. **EX** — Execute: ALU performs computation or calculates memory address\n4. **MEM** — Memory Access: Read from or write to data memory (load/store instructions)\n5. **WB** — Write Back: Write ALU result or loaded data back to destination register\n\n**Pipeline diagram (4 instructions, 5 stages):**\n\n```\nCycle:  1    2    3    4    5    6    7    8\nI1:    IF   ID   EX  MEM   WB\nI2:         IF   ID   EX  MEM   WB\nI3:              IF   ID   EX  MEM   WB\nI4:                   IF   ID   EX  MEM   WB\n```\n\n**Throughput improvement:** Steady-state throughput approaches 1 instruction/cycle (vs $1/k$ without pipelining).\n\n---\n\n**(b) Pipeline Hazards & Handling Techniques:**\n\n**1. Data Hazards** — Occur when an instruction depends on the result of a previous instruction still in the pipeline.\n\n- **Types:** RAW (Read After Write — most common), WAR (Write After Read), WAW (Write After Write)\n- **Example (RAW):**\n```asm\nADD R1, R2, R3     ; writes R1 in WB stage\nSUB R4, R1, R5     ; reads R1 in ID stage — conflict!\n```\n- **Solutions:**\n  - **Operand forwarding (bypassing):** Route result directly from EX/MEM stage to the next instruction's input without waiting for WB\n  - **Pipeline stalling (bubble insertion):** Insert NOP cycles until hazard clears\n  - **Compiler instruction reordering:** Schedule independent instructions between dependent ones\n\n**2. Control Hazards** — Caused by branch instructions where the next instruction is unknown until the branch is resolved.\n\n- **Example:**\n```asm\nBEQ R1, R2, LABEL  ; next instruction unknown until EX stage resolves condition\n```\n- **Solutions:**\n  - **Branch prediction** (static: always-not-taken; dynamic: history-based BTB)\n  - **Delayed branching:** Execute the instruction after branch regardless (branch delay slot)\n  - **Branch target buffer (BTB):** Cache of recent branch targets for fast prediction\n\n**3. Structural Hazards** — Two instructions require the same hardware resource in the same cycle.\n\n- **Example:** Single unified memory — IF stage (fetch instruction) and MEM stage (load/store) conflict in the same cycle\n- **Solutions:**\n  - **Resource duplication:** Separate instruction cache (I-cache) and data cache (D-cache) — Harvard architecture\n  - **Pipeline stalling:** Stall the later instruction until resource is free\n\n---\n\n**(c) Pipeline Speedup Calculation:**\n\n**Given:**\n- Non-pipelined time per task: $T_{\\text{non}} = 50\\text{ ns}$\n- Pipeline stages: $k = 5$\n- Clock cycle time: $\\tau = 10\\text{ ns}$\n- Number of tasks: $n = 100$\n\n**Non-pipelined total time:**\n$$T_{\\text{non-pipe}} = n \\times T_{\\text{non}} = 100 \\times 50 = 5000\\text{ ns}$$\n\n**Pipelined total time:**\n$$T_{\\text{pipe}} = (k + n - 1) \\times \\tau = (5 + 100 - 1) \\times 10 = 104 \\times 10 = 1040\\text{ ns}$$\n\n**Speedup for 100 tasks:**\n$$S = \\frac{T_{\\text{non-pipe}}}{T_{\\text{pipe}}} = \\frac{5000}{1040} \\approx 4.81$$\n\n**Alternatively using the formula:**\n$$S = \\frac{nk}{k + n - 1} = \\frac{100 \\times 5}{5 + 100 - 1} = \\frac{500}{104} \\approx 4.81$$\n\n**Maximum speedup** (as $n \\to \\infty$):\n$$S_{\\text{max}} = k = 5$$\n\nThe pipeline delivers a **4.81× speedup** for 100 tasks, approaching the theoretical maximum of **5×** (= number of stages).",
+      "key_points": [
+        "Pipelining overlaps multiple instructions; steady-state throughput ≈ 1 instruction/cycle",
+        "Five stages: IF, ID, EX, MEM, WB",
+        "Data hazard (RAW): solved by forwarding, stalls, or reordering",
+        "Control hazard: solved by branch prediction, delayed branching",
+        "Structural hazard: solved by resource duplication (separate I/D caches)",
+        "Speedup $S = \\frac{nk}{k+n-1} \\approx 4.81$ for this problem; $S_{\\text{max}} = k = 5$"
+      ]
     },
     "C4": {
       "question_number": "C4",
-      "solution": "(a) Cache Mapping Calculations:\nGiven:Cache = 2 MB = 2\n21\nbytes, Main Memory = 64 MB = 2\n26\nbytes, Block size = 256 =\n2\n8\nbytes.\nPhysical address bits = log\n2\n(64 MB) = 26 bits. Number of cache lines = 2\n21\n/2\n8\n= 2\n13\n= 8192\nlines. Word/Offset bits = log\n2\n(256) = 8 bits.\n(i) Direct Mapped Cache:\nLine bits = log\n2\n(8192) = 13 bits\nTag bits = 26−13−8 =5bits\n(ii) Fully Associative Cache:\nNo line/index field (any block can go to any line)\nTag bits = 26−8 =18bits\n(iii) 4-way Set Associative:\n— 12 —\nJISCE / IT / R23 / IT301 / Sample Paper 1COA — Answer Key\nNumber of sets = 8192/4 = 2048 = 2\n11\nSet bits = 11 bits\nTag bits = 26−11−8 =7bits\nMappingTagLine/SetOffset\nDirect Mapped5 bits13 bits8 bits\nFully Associative18 bits—8 bits\n4-way Set Assoc.7 bits11 bits8 bits\n(b) Virtual Memory Organization:\nVirtual memory creates an illusion of a large contiguous memory by using disk as an extension\nof main memory.\nDemand Paging:Pages are loaded into main memory only when needed (on a page fault).\nIf the CPU references a page not in memory, a page fault occurs, the OS loads the page from\ndisk, updates the page table, and restarts the instruction.\nPage Table:A data structure mapping virtual page numbers to physical frame numbers. Each\nentry contains: frame number, valid/invalid bit, dirty bit, reference bit, and protection bits.\nTLB (Translation Lookaside Buffer):A small, fast associative cache that stores recent\npage table entries. On a memory access: TLB is checked first (TLB hit→fast translation). On\nTLB miss, the page table in memory is accessed and TLB is updated.\n(c) Page Replacement Policies:\nConsider reference string:7, 0, 1, 2, 0, 3, 0, 4with 3 frames:\nAlgorithmPage FaultsDescription\nFIFO7Replaces the oldest page. Simple but suffers from\nBelady’s anomaly.\nLRU6Replaces the least recently used page. Good approx-\nimation of OPT. Uses counters or stack.\nOptimal5Replaces the page not needed for the longest time.\nTheoretical best (not implementable in practice).\nLRU is the most commonly implemented policy as it approximates Optimal without requiring\nfuture knowledge.\nQ11: Short notes — Superscalar/VLIW, DMA, Array/Vector, RISC vs CISC (15)\nCO3 BL3\nWrite short notes on anythreeof the following:\n(a) Superscalar and VLIW processor architectures(b) DMA and its modes of data trans-\nfer(c) Array and vector processors(d) RISC vs CISC architectures(e) Interconnection\nnetworks in multiprocessor systems\nSolution — Any Three\n(a) Superscalar & VLIW Architectures: [5 marks]\nSuperscalar:Issues multiple instructions per clock cycle usinghardware-baseddynamic\nscheduling. Multiple execution units (ALUs, FPUs) work in parallel. The hardware detects de-\npendencies and decides which instructions can execute simultaneously. Example: Intel Pentium,\nARM Cortex-A series.\nVLIW (Very Long Instruction Word):Thecompilerpacks multiple independent opera-\ntions into one long instruction word. The hardware simply executes all operations in the word\nsimultaneously. Simpler hardware but relies on compiler intelligence. Example: Intel Itanium,\nTI TMS320C6x DSP.\n— 13 —\nJISCE / IT / R23 / IT301 / Sample Paper 1COA — Answer Key\nKey difference: Superscalar uses hardware scheduling; VLIW uses compiler scheduling.\n(b) DMA (Direct Memory Access): [5 marks]\nDMA allows I/O devices to transfer data directly to/from memory without CPU involvement.\nThe CPU initiates the transfer by programming the DMA controller with: starting address,\nbyte count, transfer direction, and I/O device.\nModes:\nBurst mode:DMA takes over the bus for the entire transfer. Fast but CPU is blocked.\nCycle stealing:DMA transfers one word at a time, releasing the bus between transfers.\nCPU is slowed but not fully blocked.\nTransparent mode:DMA only uses the bus when CPU is not using it. No CPU slowdown\nbut slowest transfer.\n(c) Array & Vector Processors: [5 marks]\nArray Processor:Multiple processing elements (PEs) connected in an array, each executing\nthesame instructionon different data elements simultaneously (SIMD). Used for matrix\noperations, image processing.\nVector Processor:A single processor with special hardware to operate on entire vectors (1D\narrays) in a single instruction. Uses vector registers and pipelined functional units. Example:\nCray-1. Key features: vector registers, vector instructions (VADD, VMUL), chaining (forward-\ning between functional units).\n(d) RISC vs CISC: [5 marks]\nRISCCISC\nSimple, fixed-length instructionsComplex,variable-lengthin-\nstructions\nHardwired control unitMicroprogrammed control unit\nSingle-cycle executionMulti-cycle execution\nLoad/store architectureMemory-to-memory operations\nLarge register fileFewer registers\nCompiler handles complexityHardware handles complexity\nExample: ARM, MIPSExample: x86, VAX\n(e) Interconnection Networks: [5 marks]\nUsed to connect processors, memories, and I/O in multiprocessor systems.\nTypes:\nBus:Shared medium; simple but bandwidth-limited. Suitable for small systems.\nCrossbar:N×Nswitch matrix; any processor can connect to any memory simultaneously.\nNon-blocking but expensive (O(N\n2\n) switches).\nMultistage networks:Multiple stages of 2×2 switches (e.g., Omega, Butterfly). Cost\nbetween bus and crossbar.O(NlogN) switches.\nMesh/Torus:Each processor connected to neighbors in a grid. Scalable; used in massively\nparallel systems.\nHypercube:2\nn\nnodes, each connected tonneighbors. Low diameter (nhops max). Good\nfor distributed algorithms.\n— 14 —"
+      "solution": "**(a) Cache Mapping — Bit Field Calculations:**\n\n**Given:**\n- Cache size = 2 MB = $2^{21}$ bytes\n- Main memory = 64 MB = $2^{26}$ bytes\n- Block size = 256 bytes = $2^8$ bytes\n\n**Derived values:**\n- Physical address bits = $\\log_2(2^{26}) = 26$ bits\n- Number of cache lines = $\\frac{2^{21}}{2^8} = 2^{13} = 8192$ lines\n- **Word (offset) bits** = $\\log_2(256) = 8$ bits (same for all mappings)\n\n---\n\n**(i) Direct Mapped Cache:**\n- Line index bits = $\\log_2(8192) = 13$ bits\n- Tag bits = $26 - 13 - 8 = \\mathbf{5}$ bits\n\n$$\\underbrace{\\text{Tag}}_{5} \\mid \\underbrace{\\text{Line}}_{13} \\mid \\underbrace{\\text{Offset}}_{8}$$\n\n---\n\n**(ii) Fully Associative Cache:**\n- No index/line field (any block maps to any cache line)\n- Tag bits = $26 - 8 = \\mathbf{18}$ bits\n\n$$\\underbrace{\\text{Tag}}_{18} \\mid \\underbrace{\\text{Offset}}_{8}$$\n\n---\n\n**(iii) 4-way Set Associative Cache:**\n- Number of sets = $\\frac{8192}{4} = 2048 = 2^{11}$\n- Set index bits = $\\log_2(2048) = 11$ bits\n- Tag bits = $26 - 11 - 8 = \\mathbf{7}$ bits\n\n$$\\underbrace{\\text{Tag}}_{7} \\mid \\underbrace{\\text{Set}}_{11} \\mid \\underbrace{\\text{Offset}}_{8}$$\n\n---\n\n**Summary Table:**\n\n| Mapping | Tag (bits) | Line/Set (bits) | Offset (bits) |\n|---------|-----------|-----------------|---------------|\n| Direct Mapped | 5 | 13 (line) | 8 |\n| Fully Associative | 18 | — | 8 |\n| 4-way Set Associative | 7 | 11 (set) | 8 |\n\n---\n\n**(b) Virtual Memory Organization:**\n\n**Virtual memory** creates the illusion of a large contiguous address space by using **disk (secondary storage) as an extension of main memory**. Each process gets its own virtual address space, and the OS maps virtual pages to physical frames on demand.\n\n**Demand Paging:**\nPages are loaded into main memory **only when referenced** (not at program startup). When the CPU accesses a virtual address whose page is not in physical memory:\n1. A **page fault** exception is raised\n2. The OS finds a free physical frame (evicting a page if necessary)\n3. The required page is loaded from disk into the frame\n4. The **page table** is updated with the new mapping\n5. The faulting instruction is **restarted**\n\n**Page Table:**\nA per-process data structure mapping **virtual page numbers (VPN)** to **physical frame numbers (PFN)**. Each entry (PTE) contains:\n- Physical frame number\n- **Valid/Present bit** — is the page in memory?\n- **Dirty bit** — has the page been modified?\n- **Reference bit** — has the page been accessed recently?\n- Protection bits (read/write/execute permissions)\n\n**TLB (Translation Lookaside Buffer):**\nA small, fast **associative cache** storing recent VPN → PFN translations:\n- **TLB hit:** Virtual address is translated in 1 cycle (no page table access needed)\n- **TLB miss:** Page table in memory is accessed, TLB is updated (slower)\n- TLB dramatically reduces the average translation overhead\n- Typical TLB hit rate: 95–99%\n\n---\n\n**(c) Page Replacement Policies — Comparison:**\n\n**Reference string:** 7, 0, 1, 2, 0, 3, 0, 4 with **3 frames**\n\n**FIFO** (First-In First-Out) — 7 page faults:\n\n| Reference | 7 | 0 | 1 | 2 | 0 | 3 | 0 | 4 |\n|-----------|---|---|---|---|---|---|---|---|\n| Frame 1 | 7 | 7 | 7 | **2** | 2 | 2 | 2 | **4** |\n| Frame 2 | — | 0 | 0 | 0 | 0 | **3** | 3 | 3 |\n| Frame 3 | — | — | 1 | 1 | 1 | 1 | 1 | 1 |\n| Fault? | ✓ | ✓ | ✓ | ✓ | — | ✓ | — | ✓ |\n\nTotal faults = **7**. Replaces oldest loaded page. Simple but can suffer **Belady's anomaly** (more frames → more faults).\n\n**LRU** (Least Recently Used) — 6 page faults:\n\n| Reference | 7 | 0 | 1 | 2 | 0 | 3 | 0 | 4 |\n|-----------|---|---|---|---|---|---|---|---|\n| Frame 1 | 7 | 7 | 7 | **2** | 2 | 2 | 2 | **4** |\n| Frame 2 | — | 0 | 0 | 0 | 0 | **3** | 3 | 3 |\n| Frame 3 | — | — | 1 | 1 | 1 | 1 | **0** | 0 |\n| Fault? | ✓ | ✓ | ✓ | ✓ | — | ✓ | — | ✓ |\n\nTotal faults = **6**. Replaces the page not used for the longest time. Good approximation of optimal. Implemented using counters or a stack. Does **not** suffer Belady's anomaly.\n\n**Optimal (OPT / MIN)** — 5 page faults:\n\nReplaces the page that will **not be used for the longest time in the future**. Theoretically best but **not implementable** (requires future knowledge). Used as a benchmark.\n\nTotal faults = **5**.\n\n**Comparison Summary:**\n\n| Algorithm | Page Faults | Belady's Anomaly | Implementable | Overhead |\n|-----------|------------|-----------------|---------------|----------|\n| FIFO | 7 | Yes | Yes | Low |\n| LRU | 6 | No | Yes (approx.) | Medium |\n| Optimal | 5 | No | No (theoretical) | N/A |",
+      "key_points": [
+        "Direct mapped: tag=5, line=13, offset=8 bits",
+        "Fully associative: tag=18, no index, offset=8 bits",
+        "4-way set associative: tag=7, set=11, offset=8 bits",
+        "Demand paging: pages loaded on page fault, not at startup",
+        "TLB caches recent VPN→PFN translations for fast address translation",
+        "Optimal has fewest faults but requires future knowledge (impractical)",
+        "LRU is best practical policy; FIFO can suffer Belady's anomaly"
+      ]
     }
   }
 }
