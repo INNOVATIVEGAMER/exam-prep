@@ -1,13 +1,13 @@
 'use client'
 import { useContentProtection } from '@/hooks/useContentProtection'
-
 interface ContentProtectionProps {
   children: React.ReactNode
   enabled?: boolean
 }
 
 export function ContentProtection({ children, enabled = true }: ContentProtectionProps) {
-  useContentProtection(enabled)
+  // Returns a ref to attach to the content div — hook hides it on blur/visibilitychange
+  const contentRef = useContentProtection(enabled)
 
   return (
     <div
@@ -22,7 +22,12 @@ export function ContentProtection({ children, enabled = true }: ContentProtectio
           </p>
         </div>
       )}
-      <div className={enabled ? 'content-protected' : undefined}>
+      {/* ref attached here — hides this div on blur/visibility loss */}
+      <div
+        ref={contentRef}
+        className={enabled ? 'content-protected' : undefined}
+        style={enabled ? { transition: 'opacity 0.15s ease' } : undefined}
+      >
         {children}
       </div>
     </div>
