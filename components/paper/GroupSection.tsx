@@ -19,9 +19,13 @@ export function GroupSection({ group, children }: GroupSectionProps) {
           </p>
         </div>
         <div className="shrink-0 text-right text-xs text-muted-foreground space-y-0.5">
-          <p>
-            {group.attempt_count} of {group.questions_count} questions
-          </p>
+          {group.attempt_count < group.questions_count ? (
+            <p>
+              {group.attempt_count} of {group.questions_count} questions
+            </p>
+          ) : (
+            <p>{group.questions_count} questions</p>
+          )}
           <p className="font-medium text-foreground">
             {group.marks_per_question} mark{group.marks_per_question !== 1 ? 's' : ''} each
           </p>
