@@ -19,7 +19,7 @@ export default function LoginPage() {
           </div>
           <h1 className="text-2xl font-bold">Sign in to ExamPrep</h1>
           <p className="text-sm text-muted-foreground">
-            Access exam papers and solutions for MAKAUT students
+            Access question papers and solutions for MAKAUT students
           </p>
         </div>
 
