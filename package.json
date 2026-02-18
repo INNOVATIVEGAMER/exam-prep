@@ -10,7 +10,11 @@
     "seed": "tsx --env-file=.env.local seed/seed.ts",
     "seed:dry": "tsx --env-file=.env.local seed/seed.ts --dry-run",
     "seed:subject": "tsx --env-file=.env.local seed/seed.ts --subject",
-    "db:reset": "tsx --env-file=.env.local seed/reset.ts"
+    "db:reset": "tsx --env-file=.env.local seed/reset.ts",
+    "prod:seed": "tsx --env-file=.env.prod seed/seed.ts",
+    "prod:seed:dry": "tsx --env-file=.env.prod seed/seed.ts --dry-run",
+    "prod:seed:subject": "tsx --env-file=.env.prod seed/seed.ts --subject",
+    "prod:db:reset": "tsx --env-file=.env.prod seed/reset.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.8.0",

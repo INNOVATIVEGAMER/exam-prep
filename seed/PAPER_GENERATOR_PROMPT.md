@@ -91,6 +91,7 @@ Check if `seed/subjects/{SUBJECT_CODE}.json` already exists.
 ```
 
 **Subject file rules:**
+
 - `question_type` must be one of: `"mcq"`, `"short"`, `"long"`
 - `exam_pattern.groups` must match the actual exam pattern from the reference papers
 - Save to: `seed/subjects/{SUBJECT_CODE}.json`
@@ -110,10 +111,16 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
   "type": "end_sem",
   "year": "2025-26",
   "is_free": false,
-  "price": 4900,
+  "price": 9900,
   "metadata": {
     "difficulty": "medium",
-    "modules_covered": ["Module 1", "Module 2", "Module 3", "Module 4", "Module 5"]
+    "modules_covered": [
+      "Module 1",
+      "Module 2",
+      "Module 3",
+      "Module 4",
+      "Module 5"
+    ]
   },
   "questions": {
     "A1": {
@@ -259,7 +266,7 @@ Before saving, validate **every** paper JSON against these rules. Fix any issues
 ### Structural validation:
 
 1. **Valid JSON** — parseable by `JSON.parse()` with no trailing commas, proper escaping (`\n`, `\\`, `\"`)
-2. **Required top-level fields**: `subject_code` (string), `title` (string), `type` (one of `"end_sem"`, `"mid_sem_1"`, `"mid_sem_2"`, `"practice"`), `year` (string), `is_free` (boolean), `price` (number, in paisa — e.g. 4900 = ₹49), `metadata` (object), `questions` (object), `answers` (object)
+2. **Required top-level fields**: `subject_code` (string), `title` (string), `type` (one of `"end_sem"`, `"mid_sem_1"`, `"mid_sem_2"`, `"practice"`), `year` (string), `is_free` (boolean), `price` (number, in paisa — e.g. 9900 = ₹49), `metadata` (object), `questions` (object), `answers` (object)
 3. **Every question key** in `questions` must have a matching key in `answers` (and vice versa)
 4. **Question numbering** must match: `questions.A1.number === "A1"` and `answers.A1.question_number === "A1"`
 

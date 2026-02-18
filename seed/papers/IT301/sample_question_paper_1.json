@@ -4,7 +4,7 @@
   "type": "end_sem",
   "year": "2025-26",
   "is_free": false,
-  "price": 4900,
+  "price": 9900,
   "metadata": {},
   "questions": {
     "A1": {
@@ -16,8 +16,14 @@
       "bl": "L1",
       "options": [
         { "key": "a", "text": "Storing program and data in separate memories" },
-        { "key": "b", "text": "Storing both program and data in the same memory" },
-        { "key": "c", "text": "Using a large number of general purpose registers" },
+        {
+          "key": "b",
+          "text": "Storing both program and data in the same memory"
+        },
+        {
+          "key": "c",
+          "text": "Using a large number of general purpose registers"
+        },
         { "key": "d", "text": "Using parallel processing" }
       ]
     },
@@ -129,7 +135,10 @@
       "options": [
         { "key": "a", "text": "Variable-length instructions" },
         { "key": "b", "text": "Complex addressing modes" },
-        { "key": "c", "text": "Fixed-length instructions with single-cycle execution" },
+        {
+          "key": "c",
+          "text": "Fixed-length instructions with single-cycle execution"
+        },
         { "key": "d", "text": "Microcode-based control unit" }
       ]
     },

@@ -12,16 +12,16 @@
 
 ## 2. Tech Stack
 
-| Layer | Technology | Rationale |
-|-------|-----------|-----------|
-| **Frontend** | Next.js 14+ (App Router, CSR) + TypeScript | Familiar stack, great DX |
-| **UI** | shadcn/ui + Tailwind CSS | Production-grade components, consistent design |
-| **Math Rendering** | KaTeX | Lighter than MathJax, fast client-side rendering |
-| **Backend + Auth + DB** | Supabase (Auth + Postgres + RLS) | Single platform — auth, database, and access control |
-| **Payments** | Razorpay | UPI + cards + netbanking, ideal for Indian students |
-| **Payment API** | Next.js API Routes (2 files) | Only needed for Razorpay server-side secrets |
-| **Hosting** | Vercel | Single platform for frontend + API routes |
-| **Content Seeding** | CLI scripts (JSON → Supabase Postgres) | Fast content addition without admin panel |
+| Layer                   | Technology                                 | Rationale                                            |
+| ----------------------- | ------------------------------------------ | ---------------------------------------------------- |
+| **Frontend**            | Next.js 14+ (App Router, CSR) + TypeScript | Familiar stack, great DX                             |
+| **UI**                  | shadcn/ui + Tailwind CSS                   | Production-grade components, consistent design       |
+| **Math Rendering**      | KaTeX                                      | Lighter than MathJax, fast client-side rendering     |
+| **Backend + Auth + DB** | Supabase (Auth + Postgres + RLS)           | Single platform — auth, database, and access control |
+| **Payments**            | Razorpay                                   | UPI + cards + netbanking, ideal for Indian students  |
+| **Payment API**         | Next.js API Routes (2 files)               | Only needed for Razorpay server-side secrets         |
+| **Hosting**             | Vercel                                     | Single platform for frontend + API routes            |
+| **Content Seeding**     | CLI scripts (JSON → Supabase Postgres)     | Fast content addition without admin panel            |
 
 ---
 
@@ -73,18 +73,18 @@
 
 ### `subjects` table
 
-| Column | Type | Description |
-|--------|------|-------------|
-| id | uuid (PK) | Auto-generated |
-| code | text (unique) | `"IT301"`, `"PH301"` |
-| name | text | `"Computer Organization & Architecture"` |
-| short_name | text | `"COA"` |
-| regulation | text | `"R23"` |
-| semester | int | `3` |
-| department | text | `"IT"` |
-| college | text | `"JISCE"` |
-| exam_pattern | jsonb | Group structure, marks, attempt rules — varies per subject |
-| created_at | timestamptz | Auto |
+| Column       | Type          | Description                                                |
+| ------------ | ------------- | ---------------------------------------------------------- |
+| id           | uuid (PK)     | Auto-generated                                             |
+| code         | text (unique) | `"IT301"`, `"PH301"`                                       |
+| name         | text          | `"Computer Organization & Architecture"`                   |
+| short_name   | text          | `"COA"`                                                    |
+| regulation   | text          | `"R23"`                                                    |
+| semester     | int           | `3`                                                        |
+| department   | text          | `"IT"`                                                     |
+| college      | text          | `"JISCE"`                                                  |
+| exam_pattern | jsonb         | Group structure, marks, attempt rules — varies per subject |
+| created_at   | timestamptz   | Auto                                                       |
 
 The `exam_pattern` jsonb stores the group definitions (Group A: 12 MCQ/attempt 10/1 mark; Group B: 5 short/attempt 3/5 marks; etc.). Since exam structure varies by subject, jsonb avoids rigid columns.
 
@@ -92,19 +92,19 @@ The `exam_pattern` jsonb stores the group definitions (Group A: 12 MCQ/attempt 1
 
 ### `papers` table
 
-| Column | Type | Description |
-|--------|------|-------------|
-| id | uuid (PK) | Auto-generated |
-| subject_id | uuid (FK → subjects) | Parent subject |
-| title | text | `"Sample Paper 1"` |
-| type | text | `"end_sem"` / `"mid_sem_1"` / `"mid_sem_2"` |
-| year | text | `"2025-26"` |
-| is_free | boolean | Whether answers are freely visible |
-| price | int | Price in paisa (4900 = ₹49), 0 if free |
-| questions | jsonb | All question data (text, options, sub-parts, marks, CO/BL) |
-| answers | jsonb | All answer data (solutions, correct options, key points) |
-| metadata | jsonb | Difficulty, modules covered |
-| created_at | timestamptz | Auto |
+| Column     | Type                 | Description                                                |
+| ---------- | -------------------- | ---------------------------------------------------------- |
+| id         | uuid (PK)            | Auto-generated                                             |
+| subject_id | uuid (FK → subjects) | Parent subject                                             |
+| title      | text                 | `"Sample Paper 1"`                                         |
+| type       | text                 | `"end_sem"` / `"mid_sem_1"` / `"mid_sem_2"`                |
+| year       | text                 | `"2025-26"`                                                |
+| is_free    | boolean              | Whether answers are freely visible                         |
+| price      | int                  | Price in paisa (9900 = ₹49), 0 if free                     |
+| questions  | jsonb                | All question data (text, options, sub-parts, marks, CO/BL) |
+| answers    | jsonb                | All answer data (solutions, correct options, key points)   |
+| metadata   | jsonb                | Difficulty, modules covered                                |
+| created_at | timestamptz          | Auto                                                       |
 
 **Critical design decision:** Questions and answers live in **separate jsonb columns**. Questions are always publicly readable — they're the hook. Answers are gated by RLS — only returned if the user has paid or the paper is free. This separation is what makes the entire paywall work at the database level.
 
@@ -114,15 +114,15 @@ Both jsonb columns use matching keys (question number as key) so the frontend ca
 
 ### `users` table
 
-| Column | Type | Description |
-|--------|------|-------------|
-| id | uuid (PK, FK → auth.users) | Matches Supabase Auth UID |
-| email | text | From auth provider |
-| name | text | Display name |
-| college | text (nullable) | Optional |
-| semester | int (nullable) | Optional |
-| active_device_token | text (nullable) | Single-device enforcement |
-| created_at | timestamptz | Auto |
+| Column              | Type                       | Description               |
+| ------------------- | -------------------------- | ------------------------- |
+| id                  | uuid (PK, FK → auth.users) | Matches Supabase Auth UID |
+| email               | text                       | From auth provider        |
+| name                | text                       | Display name              |
+| college             | text (nullable)            | Optional                  |
+| semester            | int (nullable)             | Optional                  |
+| active_device_token | text (nullable)            | Single-device enforcement |
+| created_at          | timestamptz                | Auto                      |
 
 Created automatically via a Supabase database trigger when a new user signs up in `auth.users`.
 
@@ -130,16 +130,16 @@ Created automatically via a Supabase database trigger when a new user signs up i
 
 ### `purchases` table
 
-| Column | Type | Description |
-|--------|------|-------------|
-| id | uuid (PK) | Auto-generated |
-| user_id | uuid (FK → users) | Purchaser |
-| paper_id | uuid (FK → papers) | Purchased paper |
-| amount | int | Paisa |
-| razorpay_order_id | text | Order reference |
-| razorpay_payment_id | text (nullable) | Filled after payment |
-| status | text | `"created"` / `"paid"` / `"failed"` |
-| created_at | timestamptz | Auto |
+| Column              | Type               | Description                         |
+| ------------------- | ------------------ | ----------------------------------- |
+| id                  | uuid (PK)          | Auto-generated                      |
+| user_id             | uuid (FK → users)  | Purchaser                           |
+| paper_id            | uuid (FK → papers) | Purchased paper                     |
+| amount              | int                | Paisa                               |
+| razorpay_order_id   | text               | Order reference                     |
+| razorpay_payment_id | text (nullable)    | Filled after payment                |
+| status              | text               | `"created"` / `"paid"` / `"failed"` |
+| created_at          | timestamptz        | Auto                                |
 
 Unique constraint on `(user_id, paper_id)` — no duplicate purchases.
 
@@ -147,14 +147,14 @@ Unique constraint on `(user_id, paper_id)` — no duplicate purchases.
 
 ### Row Level Security Policies
 
-| Table | Policy | Rule |
-|-------|--------|------|
-| `subjects` | Public read | Anyone can browse subjects, no auth needed |
-| `papers.questions` | Public read | Questions are always visible — the preview hook |
-| `papers.answers` | Conditional read | Only if `is_free = true` OR a matching paid purchase exists for the current user |
-| `purchases` | Own reads only | Users see only their own purchases (`user_id = auth.uid()`) |
-| `purchases` | Service role insert | Only the payment API route (using service role key) can insert/update |
-| `users` | Own row only | Users can read/update only their own row |
+| Table              | Policy              | Rule                                                                             |
+| ------------------ | ------------------- | -------------------------------------------------------------------------------- |
+| `subjects`         | Public read         | Anyone can browse subjects, no auth needed                                       |
+| `papers.questions` | Public read         | Questions are always visible — the preview hook                                  |
+| `papers.answers`   | Conditional read    | Only if `is_free = true` OR a matching paid purchase exists for the current user |
+| `purchases`        | Own reads only      | Users see only their own purchases (`user_id = auth.uid()`)                      |
+| `purchases`        | Service role insert | Only the payment API route (using service role key) can insert/update            |
+| `users`            | Own row only        | Users can read/update only their own row                                         |
 
 The answers RLS policy is the most important one — it runs a subquery against `purchases` to check if the authenticated user has a paid record for the requested paper. If not, the column returns null regardless of how the request is made.
 
@@ -261,6 +261,7 @@ Answers in a separate column, gated by RLS. Unpaid users cannot access answer da
 ### Tier 2 — Client-Side Deterrents
 
 Applied on the paper view page for unlocked content:
+
 - Disable right-click context menu
 - Block Ctrl+P, Ctrl+S, Ctrl+C, Ctrl+U, F12
 - Disable text selection via CSS and JS
@@ -273,15 +274,15 @@ For paid content, overlay the user's email as a repeated semi-transparent waterm
 
 ### Threat Coverage
 
-| Threat | Prevented? | How |
-|--------|-----------|-----|
-| Accessing answers without paying | ✅ Fully | RLS at database level |
-| Copy-paste content | ✅ Yes | CSS + JS |
-| Print to PDF | ✅ Yes | CSS media query |
-| Sharing credentials | ✅ Yes | Single-device lock |
-| Dev tools inspection | ⚠️ Partial | Content was legitimately fetched; can warn |
-| OS screenshots | ⚠️ Deterred | Watermark makes traceable |
-| Phone camera | ❌ No | Watermark only deterrent |
+| Threat                           | Prevented?  | How                                        |
+| -------------------------------- | ----------- | ------------------------------------------ |
+| Accessing answers without paying | ✅ Fully    | RLS at database level                      |
+| Copy-paste content               | ✅ Yes      | CSS + JS                                   |
+| Print to PDF                     | ✅ Yes      | CSS media query                            |
+| Sharing credentials              | ✅ Yes      | Single-device lock                         |
+| Dev tools inspection             | ⚠️ Partial  | Content was legitimately fetched; can warn |
+| OS screenshots                   | ⚠️ Deterred | Watermark makes traceable                  |
+| Phone camera                     | ❌ No       | Watermark only deterrent                   |
 
 ---
 
@@ -378,12 +379,12 @@ components/
 
 ### Per-Paper (MVP)
 
-| Paper Type | Price |
-|-----------|-------|
-| End Sem Sample Paper | ₹49 |
-| Mid Sem Sample Paper | ₹29 |
-| Practice Set (Solutions) | ₹39 |
-| Free Demo | ₹0 (1 per subject) |
+| Paper Type               | Price              |
+| ------------------------ | ------------------ |
+| End Sem Sample Paper     | ₹49                |
+| Mid Sem Sample Paper     | ₹29                |
+| Practice Set (Solutions) | ₹39                |
+| Free Demo                | ₹0 (1 per subject) |
 
 ### Why Per-Paper, Not Subscription
 
@@ -472,6 +473,7 @@ Two private secrets, both only accessed in the 2 API route files. Everything els
 ## 14. MVP Milestones
 
 ### Phase 1 — Foundation
+
 - Initialize Next.js + shadcn + Tailwind
 - Create Supabase project
 - Write and run SQL migrations (tables, RLS, triggers)
@@ -479,6 +481,7 @@ Two private secrets, both only accessed in the 2 API route files. Everything els
 - Build seed CLI, test with one subject
 
 ### Phase 2 — Core
+
 - Auth: Google login, auth provider, device guard hook
 - Data: subject listing, paper listing, paper view with RLS-gated answers
 - Paper view page with KaTeX rendering
@@ -486,12 +489,14 @@ Two private secrets, both only accessed in the 2 API route files. Everything els
 - Free paper visible as demo
 
 ### Phase 3 — Payments
+
 - Razorpay API routes (create order + verify)
 - Purchase flow: buy → checkout → verify → unlock
 - Dashboard: purchased papers
 - Payment success page
 
 ### Phase 4 — Polish
+
 - Content protection (disable select, print, copy, right-click)
 - Watermark overlay
 - Single-device enforcement on protected pages
@@ -499,6 +504,7 @@ Two private secrets, both only accessed in the 2 API route files. Everything els
 - Loading/error/empty states
 
 ### Phase 5 — Launch
+
 - Seed COA papers + Physics practice set
 - Mark one free paper per subject
 - End-to-end test: signup → browse → buy → view → device lock
