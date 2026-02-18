@@ -4,15 +4,10 @@
   "type": "end_sem",
   "year": "2025-26",
   "is_free": false,
-  "price": 4900,
+  "price": 9900,
   "metadata": {
     "difficulty": "medium",
-    "modules_covered": [
-      "Module 1",
-      "Module 2",
-      "Module 3",
-      "Module 4"
-    ]
+    "modules_covered": ["Module 1", "Module 2", "Module 3", "Module 4"]
   },
   "questions": {
     "A1": {

@@ -3,6 +3,7 @@ import './globals.css'
 import { AuthProvider } from '@/components/auth/AuthProvider'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import { OfflineBanner } from '@/components/layout/OfflineBanner'
 
 export const metadata: Metadata = {
   title: 'ExamPrep',
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased flex flex-col min-h-screen">
         <AuthProvider>
+          <OfflineBanner />
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />

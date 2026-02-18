@@ -38,9 +38,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setLoading(false)
 
       if (event === 'SIGNED_OUT') {
-        // Redirect to homepage and bust the server component cache so
-        // protected pages don't show stale data on back-navigation.
-        router.push('/')
+        // Check if kicked by device guard — redirect to login with reason
+        const reason = sessionStorage.getItem('logout_reason')
+        sessionStorage.removeItem('logout_reason')
+        if (reason === 'device') {
+          router.push('/login?reason=device')
+        } else {
+          router.push('/')
+        }
         router.refresh()
       }
     })

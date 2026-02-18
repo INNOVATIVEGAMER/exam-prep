@@ -1,43 +1,43 @@
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { BookOpen, Search, Lock, TrendingUp } from 'lucide-react'
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { BookOpen, Search, Lock, TrendingUp } from "lucide-react";
 
 const PREVIEW_SUBJECTS = [
   {
-    code: 'IT301',
-    name: 'Computer Organization & Architecture',
-    short_name: 'COA',
-    regulation: 'MAKAUT 2019',
+    code: "IT301",
+    name: "Computer Organization & Architecture",
+    short_name: "COA",
+    regulation: "MAKAUT 2019",
     semester: 3,
-    department: 'IT',
+    department: "IT",
   },
-]
+];
 
 const HOW_IT_WORKS = [
   {
     icon: Search,
-    step: '01',
-    title: 'Browse Papers',
+    step: "01",
+    title: "Browse Papers",
     description:
-      'Find past exam papers for your subject and semester — organised by year and exam type.',
+      "Find past exam papers for your subject and semester — organised by year and exam type.",
   },
   {
     icon: Lock,
-    step: '02',
-    title: 'Unlock Answers',
+    step: "02",
+    title: "Unlock Answers",
     description:
-      'Purchase a paper once for ₹49 and get lifetime access to detailed solutions with step-by-step working.',
+      "Purchase a paper once for ₹99 and get lifetime access to detailed solutions with step-by-step working.",
   },
   {
     icon: TrendingUp,
-    step: '03',
-    title: 'Study Smart',
+    step: "03",
+    title: "Study Smart",
     description:
-      'Understand concepts through worked examples, key points, and course-outcome-mapped explanations.',
+      "Understand concepts through worked examples, key points, and course-outcome-mapped explanations.",
   },
-]
+];
 
 export default function HomePage() {
   return (
@@ -47,15 +47,15 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl">
           <Badge variant="secondary" className="mb-4">
             <BookOpen className="size-3 mr-1" />
-            JISCE Engineering Exam Papers
+            MAKAUT Engineering Exam Papers
           </Badge>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground mb-6">
             Ace Your Exams
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Access past exam papers with fully worked solutions. Mapped to
-            course outcomes, with step-by-step answers and inline math
-            rendering — built for MAKAUT students.
+            course outcomes, with step-by-step answers and inline math rendering
+            — built for MAKAUT students.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button asChild size="lg">
@@ -76,7 +76,10 @@ export default function HomePage() {
           </h2>
           <div className="grid gap-8 sm:grid-cols-3">
             {HOW_IT_WORKS.map(({ icon: Icon, step, title, description }) => (
-              <div key={step} className="flex flex-col items-center text-center gap-4">
+              <div
+                key={step}
+                className="flex flex-col items-center text-center gap-4"
+              >
                 <div className="relative flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary">
                   <Icon className="size-6" />
                   <span className="absolute -top-1 -right-1 text-[10px] font-bold bg-primary text-primary-foreground rounded-full size-5 flex items-center justify-center">
@@ -138,5 +141,5 @@ export default function HomePage() {
         </div>
       </section>
     </div>
-  )
+  );
 }

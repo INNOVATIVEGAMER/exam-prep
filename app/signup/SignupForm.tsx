@@ -1,6 +1,5 @@
 'use client'
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 import { writeDeviceToken } from '@/lib/device-token'
@@ -23,12 +22,13 @@ function mapSignupError(message: string): string {
   if (message.includes('Password should be at least')) {
     return 'Password must be at least 8 characters.'
   }
+  if (message.includes('email rate limit') || message.includes('rate limit')) {
+    return 'Too many sign-up attempts. Please wait a moment and try again.'
+  }
   return message
 }
 
 export function SignupForm() {
-  const router = useRouter()
-
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -67,11 +67,24 @@ export function SignupForm() {
       return
     }
 
-    if (data.user) {
-      await writeDeviceToken(data.user.id)
+    // Sign in immediately after signup to establish a cookie-based session.
+    // signUp with PKCE flow doesn't set cookies directly — signInWithPassword does.
+    const { data: signInData, error: signInError } = await supabase.auth.signInWithPassword({
+      email: email.trim(),
+      password,
+    })
+
+    if (signInError) {
+      setError(`Account created but sign-in failed: ${signInError.message}`)
+      setLoading(false)
+      return
     }
 
-    router.push('/dashboard')
+    if (signInData.user) {
+      await writeDeviceToken(signInData.user.id)
+    }
+
+    window.location.href = '/dashboard'
   }
 
   return (
