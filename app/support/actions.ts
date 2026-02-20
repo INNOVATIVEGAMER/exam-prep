@@ -1,7 +1,7 @@
 'use server'
 import { createClient } from '@/lib/supabase/server'
 
-export type IssueType = 'payment' | 'access' | 'account' | 'content' | 'other'
+export type IssueType = 'access' | 'account' | 'content' | 'other'
 
 export interface SubmitTicketState {
   success: boolean

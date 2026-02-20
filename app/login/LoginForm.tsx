@@ -20,6 +20,7 @@ export function LoginForm() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const reason = searchParams.get('reason')
+  const next = searchParams.get('next') ?? '/dashboard'
   // Error passed via redirect from signup page (e.g. "already have an account")
   const redirectError = searchParams.get('error')
 
@@ -66,6 +67,7 @@ export function LoginForm() {
           const params = new URLSearchParams({
             error: 'No account found with this email. Please create one.',
             email: email.trim(),
+            ...(next !== '/dashboard' ? { next } : {}),
           })
           router.push(`/signup?${params.toString()}`)
         } else {
@@ -85,7 +87,7 @@ export function LoginForm() {
       await writeDeviceToken(data.user.id)
     }
 
-    window.location.href = '/dashboard'
+    window.location.href = next
   }
 
   return (
@@ -171,10 +173,10 @@ export function LoginForm() {
           <p className="mt-4 text-center text-sm text-muted-foreground">
             Don&apos;t have an account?{' '}
             <Link
-              href="/signup"
+              href={next !== '/dashboard' ? `/signup?next=${encodeURIComponent(next)}` : '/signup'}
               className="font-medium text-foreground hover:underline"
             >
-              Sign up
+              Sign up free
             </Link>
           </p>
         </CardContent>

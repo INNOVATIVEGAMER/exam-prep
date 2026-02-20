@@ -3,8 +3,6 @@
   "title": "Sample Question Paper 2",
   "type": "end_sem",
   "year": "2025-26",
-  "is_free": false,
-  "price": 9900,
   "metadata": {
     "difficulty": "medium",
     "modules_covered": ["Module 1", "Module 2", "Module 3", "Module 4"]
@@ -17,8 +15,7 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": true,
+      "is_preview": true,
       "options": [
         {
           "key": "a",
@@ -331,8 +328,7 @@
       "marks": 5,
       "co": "CO3",
       "bl": "L3",
-      "is_question_free": true,
-      "is_answer_free": true
+      "is_preview": true
     },
     "B2": {
       "group": "B",
@@ -373,8 +369,7 @@
       "marks": 15,
       "co": "CO1",
       "bl": "L3",
-      "is_question_free": true,
-      "is_answer_free": true
+      "is_preview": true
     },
     "C2": {
       "group": "C",

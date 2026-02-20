@@ -3,7 +3,7 @@ import { LoginForm } from "./LoginForm";
 import { BookOpen } from "lucide-react";
 
 export const metadata = {
-  title: "Sign In — ExamPrep",
+  title: "Sign In — NehaNotes",
 };
 
 export default function LoginPage() {
@@ -17,7 +17,7 @@ export default function LoginPage() {
               <BookOpen className="size-6" />
             </div>
           </div>
-          <h1 className="text-2xl font-bold">Sign in to ExamPrep</h1>
+          <h1 className="text-2xl font-bold">Sign in to NehaNotes</h1>
           <p className="text-sm text-muted-foreground">
             Access question papers and solutions for MAKAUT students
           </p>

@@ -21,7 +21,7 @@ export function Navbar() {
             className="flex items-center gap-2 font-bold text-lg text-primary"
           >
             <BookOpen className="size-5" />
-            ExamPrep
+            NehaNotes
           </Link>
 
           {/* Desktop nav */}

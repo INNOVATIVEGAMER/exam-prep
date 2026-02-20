@@ -12,7 +12,7 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
-import { ArrowLeft, Clock, Award, BookOpen, FileText, CheckCircle } from 'lucide-react'
+import { ArrowLeft, Clock, Award, BookOpen, FileText } from 'lucide-react'
 
 interface SubjectPageProps {
   params: Promise<{ code: string }>
@@ -48,14 +48,14 @@ async function fetchSubjectWithPapers(
     const { data: papersData } = await supabase
       .from('papers')
       .select(
-        'id, subject_id, title, type, year, is_free, price, metadata, created_at'
+        'id, subject_id, title, type, year, metadata, created_at'
       )
       .eq('subject_id', subjectData.id)
       .order('year', { ascending: false })
 
     return {
       subject: subjectData as Subject,
-      papers: (papersData as Paper[]) ?? [],
+      papers: (papersData as unknown as Paper[]) ?? [],
     }
   } catch {
     return null
@@ -67,7 +67,7 @@ export async function generateMetadata({
 }: SubjectPageProps) {
   const { code } = await params
   return {
-    title: `${code.toUpperCase()} — ExamPrep`,
+    title: `${code.toUpperCase()} — NehaNotes`,
   }
 }
 
@@ -80,27 +80,6 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
   const { subject, papers } = result
   const { exam_pattern } = subject
   const durationLabel = formatDuration(exam_pattern.duration_minutes)
-
-  // Check which papers the current user has purchased
-  const purchasedPaperIds = new Set<string>()
-  if (papers.length > 0) {
-    const supabase = await createClient()
-    const { data: { user } } = await supabase.auth.getUser()
-    if (user) {
-      const paperIds = papers.map((p) => p.id)
-      const { data: purchases } = await supabase
-        .from('purchases')
-        .select('paper_id')
-        .eq('user_id', user.id)
-        .eq('status', 'paid')
-        .in('paper_id', paperIds)
-      if (purchases) {
-        for (const p of purchases) {
-          purchasedPaperIds.add(p.paper_id)
-        }
-      }
-    }
-  }
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10 space-y-8">
@@ -207,7 +186,6 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
                 key={paper.id}
                 paper={paper}
                 subjectCode={subject.code}
-                purchased={purchasedPaperIds.has(paper.id)}
               />
             ))}
           </div>
@@ -220,11 +198,9 @@ export default async function SubjectPage({ params }: SubjectPageProps) {
 function PaperRow({
   paper,
   subjectCode,
-  purchased,
 }: {
   paper: Paper
   subjectCode: string
-  purchased: boolean
 }) {
   return (
     <Card>
@@ -238,25 +214,11 @@ function PaperRow({
               <Badge variant="outline" className="text-xs">
                 {paper.year}
               </Badge>
-              {paper.is_free && (
-                <Badge className="text-xs bg-green-100 text-green-800 border-green-200">
-                  FREE
-                </Badge>
-              )}
+              <Badge className="text-xs bg-green-100 text-green-800 border-green-200">
+                FREE
+              </Badge>
             </div>
             <CardTitle className="text-base leading-snug">{paper.title}</CardTitle>
-          </div>
-          <div className="shrink-0 text-right space-y-1">
-            {purchased ? (
-              <span className="inline-flex items-center gap-1 text-sm font-medium text-green-700">
-                <CheckCircle className="size-4" />
-                Purchased
-              </span>
-            ) : (
-              <p className="text-lg font-bold">
-                {paper.is_free ? 'FREE' : `₹${(paper.price / 100).toFixed(0)}`}
-              </p>
-            )}
           </div>
         </div>
       </CardHeader>

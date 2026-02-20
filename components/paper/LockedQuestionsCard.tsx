@@ -1,22 +1,17 @@
 'use client'
-import { Lock } from 'lucide-react'
-import { BuyButton } from '@/components/payment/BuyButton'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { Sparkles } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 interface LockedQuestionsCardProps {
   /** Question numbers that are locked e.g. ["A2", "A3", ..., "A12"] */
   questionNumbers: string[]
-  /** Price in paisa */
-  price: number
-  paperId: string
-  paperTitle: string
 }
 
-export function LockedQuestionsCard({
-  questionNumbers,
-  price,
-  paperId,
-  paperTitle,
-}: LockedQuestionsCardProps) {
+export function LockedQuestionsCard({ questionNumbers }: LockedQuestionsCardProps) {
+  const pathname = usePathname()
+  const next = encodeURIComponent(pathname)
   const count = questionNumbers.length
   if (count === 0) return null
 
@@ -25,17 +20,16 @@ export function LockedQuestionsCard({
       {/* Header row */}
       <div className="flex items-start gap-3">
         <div className="flex items-center justify-center size-8 rounded-full bg-primary/10 text-primary shrink-0 mt-0.5">
-          <Lock className="size-4" />
+          <Sparkles className="size-4" />
         </div>
         <div className="space-y-0.5">
           <p className="text-sm font-semibold">
-            {count} more {count === 1 ? 'question' : 'questions'} locked
+            {count} more {count === 1 ? 'question' : 'questions'} + answers inside
           </p>
           <p className="text-xs text-muted-foreground">
-            Unlock once for lifetime access — includes full solutions &amp; key points
+            Create a free account to unlock — full solutions &amp; key points included
           </p>
         </div>
-        <p className="ml-auto text-base font-bold shrink-0">₹{price / 100}</p>
       </div>
 
       {/* Question number chips */}
@@ -45,20 +39,19 @@ export function LockedQuestionsCard({
             key={num}
             className="inline-flex items-center gap-1 rounded-full border bg-background px-2 py-0.5 text-xs text-muted-foreground"
           >
-            <Lock className="size-2.5" />
             {num}
           </span>
         ))}
       </div>
 
-      {/* CTA */}
-      <div className="pl-11">
-        <BuyButton
-          paperId={paperId}
-          price={price}
-          paperTitle={paperTitle}
-          className="h-8 px-5 text-sm"
-        />
+      {/* CTAs */}
+      <div className="pl-11 flex gap-2">
+        <Button asChild size="sm">
+          <Link href={`/signup?next=${next}`}>Sign Up Free</Link>
+        </Button>
+        <Button asChild variant="outline" size="sm">
+          <Link href={`/login?next=${next}`}>Sign In</Link>
+        </Button>
       </div>
     </div>
   )

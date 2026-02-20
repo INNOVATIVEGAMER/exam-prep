@@ -1,12 +1,10 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const POLICY_LINKS = [
-  { href: '/contact', label: 'Contact Us' },
-  { href: '/terms', label: 'Terms & Conditions' },
-  { href: '/privacy', label: 'Privacy Policy' },
-  { href: '/shipping', label: 'Shipping Policy' },
-  { href: '/refunds', label: 'Cancellation & Refunds' },
-]
+  { href: "/contact", label: "Contact Us" },
+  { href: "/terms", label: "Terms & Conditions" },
+  { href: "/privacy", label: "Privacy Policy" },
+];
 
 export function Footer() {
   return (
@@ -25,7 +23,12 @@ export function Footer() {
         </nav>
         <div className="flex flex-col items-center gap-1">
           <p className="text-center text-xs text-zinc-600">
-            © 2026 ExamPrep. For MAKAUT students.
+            © 2026 NehaNotes · Free resources for MAKAUT students.
+          </p>
+          <p className="text-center text-xs text-zinc-600">
+            Made with love by{" "}
+            <span className="text-zinc-400 font-medium">Neha Tanti</span> ·
+            JISCE
           </p>
           <Link
             href="/support"
@@ -36,5 +39,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

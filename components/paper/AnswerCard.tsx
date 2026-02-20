@@ -7,19 +7,13 @@ import { CheckCircle2 } from 'lucide-react'
 
 interface AnswerCardProps {
   answer: Answer | null
-  /** Whether the paper/answer set is locked (not purchased) */
+  /** Whether this answer is behind the auth gate (user not logged in) */
   locked: boolean
-  /** Price shown in paywall — in paisa */
-  price: number
-  /** Paper ID passed to BuyButton for order creation */
-  paperId: string
-  /** Paper title shown in Razorpay checkout description */
-  paperTitle: string
 }
 
-export function AnswerCard({ answer, locked, price, paperId, paperTitle }: AnswerCardProps) {
+export function AnswerCard({ answer, locked }: AnswerCardProps) {
   if (locked || answer === null) {
-    return <PaywallOverlay paperId={paperId} price={price} paperTitle={paperTitle} />
+    return <PaywallOverlay />
   }
 
   return (

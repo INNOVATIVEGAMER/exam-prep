@@ -10,7 +10,7 @@ Before doing anything else, ask me:
 
 > **What type of paper do you want to generate?**
 > 1. **Practice Set** — A large pool of questions (MCQs + short answers) compiled from a professor's practice sheet or important topics list. Not constrained by the exam pattern. All questions visible to students.
-> 2. **End Sem** — A full end-semester exam paper following the exact exam pattern from previous year papers (Group A MCQs + Group B short + Group C long answers). Paywall preview flags apply.
+> 2. **End Sem** — A full end-semester exam paper following the exact exam pattern from previous year papers (Group A MCQs + Group B short + Group C long answers). Preview flags apply.
 > 3. **Mid Sem** — Same as End Sem but for a mid-semester exam (may have a different pattern — ask me to provide previous mid-sem papers).
 
 Wait for my answer. Then follow **only** the section below that matches my choice:
@@ -107,8 +107,6 @@ A practice set is **not** constrained by the exam pattern. It is a **large pool*
   "title": "Practice Set — SEE Engineering Physics II",
   "type": "practice",
   "year": "2025-26",
-  "is_free": false,
-  "price": 9900,
   "metadata": {
     "difficulty": "medium",
     "modules_covered": ["Module 1", "Module 2", "Module 3", "Module 4"],
@@ -126,8 +124,7 @@ A practice set is **not** constrained by the exam pattern. It is a **large pool*
 | `type` | `"practice"` | `"end_sem"` |
 | Question count | As many as in the sheet (e.g. A1–A21, B1–B25) | Fixed by exam pattern (e.g. 12+5+5) |
 | Groups | Only A (MCQ) and B (short) — no Group C long answers | A + B + C |
-| `is_question_free` | **`true` for ALL questions** | Only 1 per group (default) |
-| `is_answer_free` | **`true` for A1/B1 only** (first free preview), `false` for rest | Same |
+| `is_preview` | **`true` for A1/B1 only** (first free preview), omit for rest | Same |
 | Source | From professor's practice sheet | From previous year exam papers |
 | metadata.source | Name/ref of the practice sheet | Omit |
 
@@ -137,11 +134,12 @@ A practice set is **not** constrained by the exam pattern. It is a **large pool*
 - Short answers: `B1`, `B2`, ... `BN` (as many as in the sheet)
 - No Group C in practice sets (long answers are not part of practice sheets typically)
 
-### Free preview flags for practice sets:
+### Preview flags for practice sets:
 
-- **All questions**: `is_question_free: true` (students can see all questions)
-- **A1 and B1**: `is_answer_free: true` (first question of each group has free answer)
-- **All others**: `is_answer_free: false` (answers require payment)
+The `is_preview` flag controls what **logged-out** users can see. Logged-in users always see everything.
+
+- **A1 and B1**: set `is_preview: true` (logged-out users see question + answer as a sample)
+- **All other questions**: omit `is_preview` entirely (login required to see question + answer)
 
 ---
 
@@ -157,15 +155,14 @@ Run the same validations as Section B Step 7, with these adjustments:
 
 - `type` must be `"practice"`
 - No cross-validation against `questions_count` in exam pattern (practice sets are not constrained)
-- All questions must have `is_question_free: true`
-- Only A1 and B1 may have `is_answer_free: true`; all others must be `false`
+- Only A1 and B1 may have `is_preview: true`; all others must omit `is_preview`
 
 Print a validation summary:
 
 ```
 ✓ Practice Set: 21 MCQs (A1–A21), 25 short answers (B1–B25), 46 total answers
-  - All questions: is_question_free: true ✓
-  - Free answers: A1, B1 only ✓
+  - Preview questions (logged-out visible): A1, B1 only ✓
+  - All other questions: no is_preview flag (login required) ✓
   - All key_points present ✓
   - Valid JSON ✓
 ```
@@ -289,8 +286,6 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
   "title": "Sample Question Paper 1",
   "type": "end_sem",
   "year": "2025-26",
-  "is_free": false,
-  "price": 9900,
   "metadata": {
     "difficulty": "medium",
     "modules_covered": [
@@ -309,8 +304,7 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": true,
+      "is_preview": true,
       "options": [
         { "key": "a", "text": "Option A" },
         { "key": "b", "text": "Option B" },
@@ -325,8 +319,6 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
-      "is_question_free": false,
-      "is_answer_free": false,
       "options": [
         { "key": "a", "text": "Option A" },
         { "key": "b", "text": "Option B" },
@@ -341,8 +333,7 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
       "marks": 5,
       "co": "CO2",
       "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": true
+      "is_preview": true
     },
     "B2": {
       "group": "B",
@@ -350,9 +341,7 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
       "text": "Another short answer question",
       "marks": 5,
       "co": "CO2",
-      "bl": "L2",
-      "is_question_free": false,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "C1": {
       "group": "C",
@@ -361,8 +350,7 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
       "marks": 15,
       "co": "CO1",
       "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": true
+      "is_preview": true
     },
     "C2": {
       "group": "C",
@@ -370,9 +358,7 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
       "text": "(a) Another long answer question. [8]\n(b) Second part. [7]",
       "marks": 15,
       "co": "CO1",
-      "bl": "L2",
-      "is_question_free": false,
-      "is_answer_free": false
+      "bl": "L2"
     }
   },
   "answers": {
@@ -409,16 +395,14 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
 - **Group C** = Long answer questions (15 marks each, typically multi-part)
 - Question numbering: `A1`–`A12`, `B1`–`B5`, `C1`–`C5` (adjust to match actual exam pattern)
 
-### Preview flags (`is_question_free` and `is_answer_free`):
+### Preview flag (`is_preview`):
 
-Every question **must** include both `is_question_free` and `is_answer_free` fields (boolean). These control what unpaid users can see:
+The `is_preview` flag controls what **logged-out** users can see. Logged-in users always see everything for free.
 
-- `is_question_free: true` — the question text is visible to all users
-- `is_answer_free: true` — the answer is visible to all users (only meaningful if `is_question_free` is also `true`)
-- `is_question_free: false` — the question is hidden behind a paywall for unpaid users
-- Both fields **default to `false`** — locked unless explicitly set to `true`
+- `is_preview: true` — the question text **and** answer are visible to logged-out users
+- Omit `is_preview` (or set to `false`) — the question and answer require login to view
 
-**Default rule:** Mark exactly **one question per group** as the free preview by setting both `is_question_free: true` and `is_answer_free: true`. All other questions must have both set to `false`. This gives unpaid users a sample of each question type.
+**Default rule:** Mark exactly **one question per group** as the preview by setting `is_preview: true`. All other questions must omit the flag (or set it to `false`). This gives logged-out users a sample of each question type to encourage sign-up.
 
 **Flexibility:** You may deviate from the default rule if instructed. Always follow the instructions provided. When no specific instructions are given, use the default rule above.
 
@@ -501,16 +485,16 @@ Before saving, validate **every** paper JSON against these rules. Fix any issues
 ### Structural validation:
 
 1. **Valid JSON** — parseable by `JSON.parse()` with no trailing commas, proper escaping (`\n`, `\\`, `\"`)
-2. **Required top-level fields**: `subject_code` (string), `title` (string), `type` (one of `"end_sem"`, `"mid_sem_1"`, `"mid_sem_2"`, `"practice"`), `year` (string), `is_free` (boolean), `price` (number, in paisa — e.g. 9900 = ₹99), `metadata` (object), `questions` (object), `answers` (object)
+2. **Required top-level fields**: `subject_code` (string), `title` (string), `type` (one of `"end_sem"`, `"mid_sem_1"`, `"mid_sem_2"`, `"practice"`), `year` (string), `metadata` (object), `questions` (object), `answers` (object)
 3. **Every question key** in `questions` must have a matching key in `answers` (and vice versa)
 4. **Question numbering** must match: `questions.A1.number === "A1"` and `answers.A1.question_number === "A1"`
 
 ### Question validation:
 
-5. Every question must have: `group` (string), `number` (string), `text` (string), `marks` (number), `co` (string), `bl` (string), `is_question_free` (boolean), `is_answer_free` (boolean)
+5. Every question must have: `group` (string), `number` (string), `text` (string), `marks` (number), `co` (string), `bl` (string)
 6. **MCQ questions** (Group A) must have an `options` array with exactly 4 objects, each with `key` (`"a"`, `"b"`, `"c"`, `"d"`) and `text`
 7. Non-MCQ questions must NOT have `options`
-8. Each group must have **at least one** question with `is_question_free: true` and `is_answer_free: true` (the free preview). Unless specific instructions override this.
+8. Each group must have **at least one** question with `is_preview: true` (the logged-out preview). Unless specific instructions override this.
 
 ### Answer validation:
 
@@ -532,8 +516,7 @@ Before saving, validate **every** paper JSON against these rules. Fix any issues
   - Group B: 5 short answers ✓
   - Group C: 5 long answers ✓
   - All key_points present ✓
-  - Preview flags: 1 free question per group (A1, B1, C1) ✓
-  - All questions have is_question_free + is_answer_free fields ✓
+  - Preview questions (logged-out visible): A1, B1, C1 ✓
   - Valid JSON ✓
 
 ✓ Paper 2: 22 questions, 22 answers, all keys match
@@ -571,6 +554,7 @@ seed/papers/{SUBJECT_CODE}/sample_question_paper_2.json
 - **DO NOT** use `\underbrace` or `\overset` — these don't render well in KaTeX on web
 - **DO NOT** skip validation — every file must pass all checks before saving
 - **DO NOT** use placeholder content — every solution must be complete and exam-worthy
+- **DO NOT** include `is_free`, `price`, `is_question_free`, or `is_answer_free` fields — these are removed. Use only `is_preview` (boolean, optional).
 
 ---
 

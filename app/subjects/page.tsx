@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { BookOpen, Clock, Users } from 'lucide-react'
 
 export const metadata = {
-  title: 'Subjects — ExamPrep',
+  title: 'Subjects — NehaNotes',
   description: 'Browse question papers and solutions by subject',
 }
 

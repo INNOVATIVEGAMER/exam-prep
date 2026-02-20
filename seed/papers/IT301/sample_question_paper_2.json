@@ -3,8 +3,6 @@
   "title": "Sample Question Paper 2",
   "type": "end_sem",
   "year": "2025-26",
-  "is_free": false,
-  "price": 9900,
   "metadata": {},
   "questions": {
     "A1": {
@@ -14,8 +12,7 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": true,
+      "is_preview": true,
       "options": [
         { "key": "a", "text": "Accumulator (AC)" },
         { "key": "b", "text": "Program Counter (PC)" },
@@ -184,8 +181,7 @@
       "marks": 5,
       "co": "CO1",
       "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": true
+      "is_preview": true
     },
     "B2": {
       "group": "B",
@@ -226,8 +222,7 @@
       "marks": 15,
       "co": "CO1",
       "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": true
+      "is_preview": true
     },
     "C2": {
       "group": "C",

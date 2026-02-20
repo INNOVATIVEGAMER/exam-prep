@@ -3,7 +3,7 @@ import { SupportForm } from './SupportForm'
 import { LifeBuoy } from 'lucide-react'
 
 export const metadata = {
-  title: 'Support | ExamPrep',
+  title: 'Support | NehaNotes',
   description: 'Raise a support ticket and we\'ll get back to you.',
 }
 

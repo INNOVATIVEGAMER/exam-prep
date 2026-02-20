@@ -33,6 +33,7 @@ export function SignupForm() {
   const redirectError = searchParams.get('error')
   // Email pre-filled when redirected from login
   const prefillEmail = searchParams.get('email') ?? ''
+  const next = searchParams.get('next') ?? '/dashboard'
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState(prefillEmail)
@@ -73,6 +74,7 @@ export function SignupForm() {
       const params = new URLSearchParams({
         error: 'An account with this email already exists. Please sign in.',
         email: email.trim(),
+        ...(next !== '/dashboard' ? { next } : {}),
       })
       router.push(`/login?${params.toString()}`)
       return
@@ -94,6 +96,7 @@ export function SignupForm() {
         const params = new URLSearchParams({
           error: 'An account with this email already exists. Please sign in.',
           email: email.trim(),
+          ...(next !== '/dashboard' ? { next } : {}),
         })
         router.push(`/login?${params.toString()}`)
         return
@@ -120,7 +123,7 @@ export function SignupForm() {
       await writeDeviceToken(signInData.user.id)
     }
 
-    window.location.href = '/dashboard'
+    window.location.href = next
   }
 
   return (
@@ -219,7 +222,7 @@ export function SignupForm() {
           <p className="mt-4 text-center text-sm text-muted-foreground">
             Already have an account?{' '}
             <Link
-              href="/login"
+              href={next !== '/dashboard' ? `/login?next=${encodeURIComponent(next)}` : '/login'}
               className="font-medium text-foreground hover:underline"
             >
               Sign in

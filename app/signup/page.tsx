@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import { SignupForm } from './SignupForm'
 
 export const metadata = {
-  title: 'Sign Up — ExamPrep',
+  title: 'Sign Up — NehaNotes',
 }
 
 export default function SignupPage() {
@@ -13,7 +13,7 @@ export default function SignupPage() {
           Create your account
         </h1>
         <p className="text-center text-sm text-muted-foreground mb-8">
-          Join ExamPrep and start studying smarter
+          Join NehaNotes and start studying smarter
         </p>
         <Suspense fallback={null}>
           <SignupForm />

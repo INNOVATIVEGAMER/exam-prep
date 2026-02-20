@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import { ForgotPasswordForm } from './ForgotPasswordForm'
 
 export const metadata = {
-  title: 'Reset Password — ExamPrep',
+  title: 'Reset Password — NehaNotes',
 }
 
 export default function ForgotPasswordPage() {

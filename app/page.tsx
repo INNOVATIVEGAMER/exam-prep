@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, Search, Lock, TrendingUp, ArrowRight } from "lucide-react";
+import { BookOpen, Search, TrendingUp, ArrowRight } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
 import { Subject } from "@/types";
 
@@ -11,14 +11,14 @@ const HOW_IT_WORKS = [
     step: "01",
     title: "Browse Papers",
     description:
-      "Find question papers for your subject and semester — sample papers, past year papers, organised by exam type.",
+      "Find question papers for your subject and semester — sample papers and past year papers, organised by exam type.",
   },
   {
-    icon: Lock,
+    icon: BookOpen,
     step: "02",
-    title: "Unlock Answers",
+    title: "Sign Up Free",
     description:
-      "Purchase a paper once for ₹99 and get lifetime access to detailed solutions with step-by-step working.",
+      "Create a free account to unlock all answers and full solutions — no payment, ever.",
   },
   {
     icon: TrendingUp,
@@ -56,23 +56,28 @@ export default async function HomePage() {
         <div className="mx-auto max-w-3xl">
           <Badge variant="secondary" className="mb-4">
             <BookOpen className="size-3 mr-1" />
-            MAKAUT Engineering Question Papers
+            MAKAUT Engineering · Free Question Papers
           </Badge>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground mb-6">
             Ace Your Exams
           </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Access question papers with fully worked solutions — including
-            sample papers and past year papers. Mapped to course outcomes, with
-            step-by-step answers and inline math rendering, built for MAKAUT
-            students.
+          <p className="text-lg sm:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
+            Free question papers with fully worked solutions — sample papers and
+            past year papers, mapped to course outcomes with step-by-step
+            answers and inline math rendering. Built for MAKAUT students, by a
+            JISCE student.
+          </p>
+          <p className="text-sm text-muted-foreground mb-8">
+            Made by{" "}
+            <span className="font-medium text-foreground">Neha Tanti</span> ·
+            JISCE
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button asChild size="lg">
-              <Link href="/subjects">Browse Subjects</Link>
+              <Link href="/signup">Sign Up Free</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="/login">Sign In</Link>
+              <Link href="/subjects">Browse Subjects</Link>
             </Button>
           </div>
         </div>
@@ -128,8 +133,8 @@ export default async function HomePage() {
                     <span className="inline-flex items-center rounded-full border border-white/20 px-2.5 py-0.5 text-xs text-white/60">
                       Worked solutions
                     </span>
-                    <span className="inline-flex items-center rounded-full border border-white/20 px-2.5 py-0.5 text-xs text-white/60">
-                      ₹99
+                    <span className="inline-flex items-center rounded-full border border-green-400/40 bg-green-400/10 px-2.5 py-0.5 text-xs text-green-300 font-medium">
+                      FREE
                     </span>
                   </div>
                 </Link>

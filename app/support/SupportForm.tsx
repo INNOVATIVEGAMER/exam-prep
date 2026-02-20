@@ -1,60 +1,65 @@
-'use client'
-import { useActionState, useEffect } from 'react'
-import { submitTicket, type SubmitTicketState } from './actions'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
-import { Textarea } from '@/components/ui/textarea'
+"use client";
+import { useActionState, useEffect } from "react";
+import { submitTicket, type SubmitTicketState } from "./actions";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select'
-import { CheckCircle2, AlertCircle } from 'lucide-react'
+} from "@/components/ui/select";
+import { CheckCircle2, AlertCircle } from "lucide-react";
 
 const ISSUE_TYPES = [
-  { value: 'payment',  label: 'Payment / Purchase issue' },
-  { value: 'access',   label: 'Cannot access a paper I bought' },
-  { value: 'account',  label: 'Account / login problem' },
-  { value: 'content',  label: 'Wrong or missing content' },
-  { value: 'other',    label: 'Other' },
-]
+  { value: "access", label: "Cannot access a paper" },
+  { value: "account", label: "Account / login problem" },
+  { value: "content", label: "Wrong or missing content" },
+  { value: "other", label: "Other" },
+];
 
-const initialState: SubmitTicketState = { success: false }
+const initialState: SubmitTicketState = { success: false };
 
 interface Props {
-  defaultName?: string
-  defaultEmail?: string
+  defaultName?: string;
+  defaultEmail?: string;
 }
 
-export function SupportForm({ defaultName = '', defaultEmail = '' }: Props) {
-  const [state, formAction, pending] = useActionState(submitTicket, initialState)
+export function SupportForm({ defaultName = "", defaultEmail = "" }: Props) {
+  const [state, formAction, pending] = useActionState(
+    submitTicket,
+    initialState,
+  );
 
   // Scroll to top on success so the success message is visible
   useEffect(() => {
-    if (state.success) window.scrollTo({ top: 0, behavior: 'smooth' })
-  }, [state.success])
+    if (state.success) window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [state.success]);
 
   if (state.success) {
     return (
       <div className="flex flex-col items-center gap-4 rounded-lg border border-green-200 bg-green-50 px-6 py-10 text-center">
         <CheckCircle2 className="size-10 text-green-600" />
         <div>
-          <p className="font-semibold text-green-800 text-lg">Ticket submitted!</p>
+          <p className="font-semibold text-green-800 text-lg">
+            Ticket submitted!
+          </p>
           <p className="mt-1 text-sm text-green-700">
-            We&apos;ll get back to you at the email you provided. Usually within 24 hours.
+            We&apos;ll get back to you at the email you provided. Usually within
+            24 hours.
           </p>
         </div>
         <a
-          href="mailto:prasadpatewar.pro@gmail.com"
+          href="mailto:nehatanti59@gmail.com"
           className="text-xs text-green-600 underline underline-offset-2"
         >
-          Or email us directly: prasadpatewar.pro@gmail.com
+          Or email us directly: nehatanti59@gmail.com
         </a>
       </div>
-    )
+    );
   }
 
   return (
@@ -120,18 +125,18 @@ export function SupportForm({ defaultName = '', defaultEmail = '' }: Props) {
       </div>
 
       <Button type="submit" className="w-full" disabled={pending}>
-        {pending ? 'Submitting…' : 'Submit ticket'}
+        {pending ? "Submitting…" : "Submit ticket"}
       </Button>
 
       <p className="text-center text-xs text-muted-foreground">
-        You can also email us directly at{' '}
+        You can also email us directly at{" "}
         <a
-          href="mailto:prasadpatewar.pro@gmail.com"
+          href="mailto:nehatanti59@gmail.com"
           className="underline underline-offset-2 hover:text-foreground"
         >
-          prasadpatewar.pro@gmail.com
+          nehatanti59@gmail.com
         </a>
       </p>
     </form>
-  )
+  );
 }

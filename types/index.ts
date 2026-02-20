@@ -34,10 +34,8 @@ export interface Paper {
   title: string
   type: 'end_sem' | 'mid_sem_1' | 'mid_sem_2' | 'practice'
   year: string
-  is_free: boolean
-  price: number
   questions: Record<string, Question>
-  answers: Record<string, Answer> | null // null if not purchased and not free
+  answers: Record<string, Answer> | null // null if user is not logged in
   metadata: PaperMetadata
   created_at: string
 }
@@ -45,14 +43,13 @@ export interface Paper {
 export interface Question {
   group: string
   number: string
-  text?: string // undefined for server-gated locked questions (unpaid users)
+  text?: string // undefined for server-gated locked questions (logged-out users)
   marks: number
   co?: string // Course Outcome
   bl?: string // Bloom's Level
   options?: McqOption[] // for MCQ
   sub_parts?: SubPart[] // for multi-part questions
-  is_question_free?: boolean // show question text to unpaid users (default: false)
-  is_answer_free?: boolean   // show answer to unpaid users (default: false)
+  is_preview?: boolean // show question + answer to logged-out users (default: false)
 }
 
 export interface McqOption {
@@ -76,17 +73,6 @@ export interface Answer {
 export interface PaperMetadata {
   difficulty?: 'easy' | 'medium' | 'hard'
   modules_covered?: string[]
-}
-
-export interface Purchase {
-  id: string
-  user_id: string
-  paper_id: string
-  amount: number
-  razorpay_order_id: string
-  razorpay_payment_id?: string
-  status: 'created' | 'paid' | 'failed'
-  created_at: string
 }
 
 export interface User {

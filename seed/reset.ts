@@ -13,7 +13,7 @@ const args = process.argv.slice(2)
 const confirmed = args.includes('--confirm')
 
 if (!confirmed) {
-  console.error('\nSafety check: this will DELETE all subjects, papers, and purchases.')
+  console.error('\nSafety check: this will DELETE all subjects and papers.')
   console.error('Re-run with --confirm to proceed:\n')
   console.error('  yarn db:reset --confirm\n')
   process.exit(1)
@@ -22,14 +22,13 @@ if (!confirmed) {
 const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY)
 
 async function reset() {
-  console.log('\nExamPrep DB Reset')
+  console.log('\nNehaNotes DB Reset')
   console.log('='.repeat(40))
 
   // Order matters — delete dependents first to avoid FK violations
   const steps: { table: string; label: string }[] = [
-    { table: 'purchases', label: 'Purchases' },
-    { table: 'papers',    label: 'Papers'    },
-    { table: 'subjects',  label: 'Subjects'  },
+    { table: 'papers',   label: 'Papers'   },
+    { table: 'subjects', label: 'Subjects' },
   ]
 
   for (const { table, label } of steps) {

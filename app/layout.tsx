@@ -6,7 +6,7 @@ import { Footer } from '@/components/layout/Footer'
 import { OfflineBanner } from '@/components/layout/OfflineBanner'
 
 export const metadata: Metadata = {
-  title: 'ExamPrep',
+  title: 'NehaNotes',
   description: 'Exam papers and solutions for engineering students',
 }
 

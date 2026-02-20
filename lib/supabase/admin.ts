@@ -8,8 +8,6 @@ import { createClient } from '@supabase/supabase-js'
  * NEVER import in Client Components or expose to the browser.
  *
  * Used for:
- * - Creating Razorpay orders (inserting purchase rows)
- * - Verifying payments and updating purchase status
  * - Seeding data
  */
 export function createAdminClient() {

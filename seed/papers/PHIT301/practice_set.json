@@ -3,8 +3,6 @@
   "title": "Practice Set — SEE Engineering Physics II",
   "type": "practice",
   "year": "2025-26",
-  "is_free": false,
-  "price": 9900,
   "metadata": {
     "difficulty": "medium",
     "modules_covered": ["Module 1", "Module 2", "Module 3", "Module 4"],
@@ -18,8 +16,7 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": true,
+      "is_preview": true,
       "options": [
         {
           "key": "a",
@@ -46,8 +43,6 @@
       "marks": 1,
       "co": "CO3",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -74,8 +69,6 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -102,8 +95,6 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -130,8 +121,6 @@
       "marks": 1,
       "co": "CO3",
       "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -158,8 +147,6 @@
       "marks": 1,
       "co": "CO3",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -186,8 +173,6 @@
       "marks": 1,
       "co": "CO2",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -214,8 +199,6 @@
       "marks": 1,
       "co": "CO2",
       "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -242,8 +225,6 @@
       "marks": 1,
       "co": "CO3",
       "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -270,8 +251,6 @@
       "marks": 1,
       "co": "CO3",
       "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -298,8 +277,6 @@
       "marks": 1,
       "co": "CO3",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -326,8 +303,6 @@
       "marks": 1,
       "co": "CO3",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -354,8 +329,6 @@
       "marks": 1,
       "co": "CO3",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -382,8 +355,6 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -410,8 +381,6 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -438,8 +407,6 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -466,8 +433,6 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -494,8 +459,6 @@
       "marks": 1,
       "co": "CO1",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -522,8 +485,6 @@
       "marks": 1,
       "co": "CO2",
       "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -550,8 +511,6 @@
       "marks": 1,
       "co": "CO3",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -578,8 +537,6 @@
       "marks": 1,
       "co": "CO3",
       "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false,
       "options": [
         {
           "key": "a",
@@ -606,8 +563,7 @@
       "marks": 5,
       "co": "CO1",
       "bl": "L3",
-      "is_question_free": true,
-      "is_answer_free": true
+      "is_preview": true
     },
     "B2": {
       "group": "B",
@@ -615,9 +571,7 @@
       "text": "Explain the role of band gap for optoelectronic devices. What kind of materials are used for LED?",
       "marks": 5,
       "co": "CO3",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "B3": {
       "group": "B",
@@ -625,9 +579,7 @@
       "text": "Analyze the effect of the Hadamard gate on a qubit, demonstrating how it transforms the computational basis ($|0\\rangle$, $|1\\rangle$) into the Hadamard basis ($|+\\rangle$, $|-\\rangle$). Explain the physical significance of this basis change in the context of quantum measurements.",
       "marks": 5,
       "co": "CO2",
-      "bl": "L3",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L3"
     },
     "B4": {
       "group": "B",
@@ -635,9 +587,7 @@
       "text": "Explain the Kronig-Penney model for the formation of forbidden gap and energy band for a crystal with the help of the equation:\n$$P\\frac{\\sin(\\alpha a)}{\\alpha a} + \\cos(\\alpha a) = \\cos(ka)$$",
       "marks": 5,
       "co": "CO3",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "B5": {
       "group": "B",
@@ -645,9 +595,7 @@
       "text": "Consider three distinguishable particles (A, B, C) to be distributed into two energy levels ($E_1$, $E_2$). Calculate the Thermodynamic Probability ($W$) for the macrostate where 2 particles are in $E_1$ and 1 particle is in $E_2$.",
       "marks": 5,
       "co": "CO3",
-      "bl": "L3",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L3"
     },
     "B6": {
       "group": "B",
@@ -655,9 +603,7 @@
       "text": "Calculate the normalization constant if the wave function of a quantum mechanical particle is given by $\\psi(x) = Ax(a - x)$ for $0 < x < a$; $\\psi = 0$ otherwise.",
       "marks": 5,
       "co": "CO1",
-      "bl": "L3",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L3"
     },
     "B7": {
       "group": "B",
@@ -665,9 +611,7 @@
       "text": "For a particle of mass $m$ confined to a three-dimensional cubical potential box with side length $L$, calculate the degeneracy of the 1st excited state.",
       "marks": 5,
       "co": "CO1",
-      "bl": "L3",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L3"
     },
     "B8": {
       "group": "B",
@@ -675,9 +619,7 @@
       "text": "Show that $[\\hat{x}, \\hat{p}_x] = i\\hbar$, where symbols have their usual meaning.",
       "marks": 5,
       "co": "CO1",
-      "bl": "L3",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L3"
     },
     "B9": {
       "group": "B",
@@ -685,9 +627,7 @@
       "text": "Calculate the effective mass of the electron inside a field $E = Ak^2$, where $A = 10^{-39}$ J·m².",
       "marks": 5,
       "co": "CO3",
-      "bl": "L3",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L3"
     },
     "B10": {
       "group": "B",
@@ -695,9 +635,7 @@
       "text": "Derive the expression of effective mass of charge carriers in the presence of an electric field.",
       "marks": 5,
       "co": "CO3",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "B11": {
       "group": "B",
@@ -705,9 +643,7 @@
       "text": "Classify the following as bosons and fermions: Electron, Photon, Phonon, $^4_2$He, Meson, Neutron.",
       "marks": 5,
       "co": "CO3",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "B12": {
       "group": "B",
@@ -715,9 +651,7 @@
       "text": "Differentiate between classical M-B statistics and Fermi-Dirac statistics.",
       "marks": 5,
       "co": "CO3",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "B13": {
       "group": "B",
@@ -725,9 +659,7 @@
       "text": "Draw the Fermi distribution function graphically at temperature $T = 0$ K and $T > 0$ K.",
       "marks": 5,
       "co": "CO3",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "B14": {
       "group": "B",
@@ -735,9 +667,7 @@
       "text": "Find out the possible arrangement of 3 particles in 3 shells according to: (a) MB statistics, (b) FD statistics, (c) BE statistics.",
       "marks": 5,
       "co": "CO3",
-      "bl": "L3",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L3"
     },
     "B15": {
       "group": "B",
@@ -745,9 +675,7 @@
       "text": "Write down the 1D Schrödinger equation and make it time-independent.",
       "marks": 5,
       "co": "CO1",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "B16": {
       "group": "B",
@@ -755,9 +683,7 @@
       "text": "Write down the Pauli matrices. Demonstrate the operation of the Pauli-X gate on the states $|0\\rangle$ and $|1\\rangle$.",
       "marks": 5,
       "co": "CO2",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "B17": {
       "group": "B",
@@ -765,9 +691,7 @@
       "text": "Discuss the success and failure of the classical free electron theory.",
       "marks": 5,
       "co": "CO3",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "B18": {
       "group": "B",
@@ -775,9 +699,7 @@
       "text": "What do you mean by phase space?",
       "marks": 5,
       "co": "CO3",
-      "bl": "L1",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L1"
     },
     "B19": {
       "group": "B",
@@ -785,9 +707,7 @@
       "text": "Why is silicon not used in optoelectronic devices?",
       "marks": 5,
       "co": "CO3",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "B20": {
       "group": "B",
@@ -795,9 +715,7 @@
       "text": "State the working principle of an LED. Give an example of a semiconductor used in LED.",
       "marks": 5,
       "co": "CO3",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "B21": {
       "group": "B",
@@ -805,9 +723,7 @@
       "text": "Define optical transition and its significance in optoelectronic materials.",
       "marks": 5,
       "co": "CO3",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "B22": {
       "group": "B",
@@ -815,9 +731,7 @@
       "text": "Why are GaAs and InP preferred materials for high-speed optoelectronic devices?",
       "marks": 5,
       "co": "CO3",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     },
     "B23": {
       "group": "B",
@@ -825,9 +739,7 @@
       "text": "Determine the value of the commutator $[\\hat{y}, \\hat{L}_x]$, where symbols have their usual meaning. Also, in a 3D cubical box, note the expression of energy and calculate the degeneracy of the 1st excited state.",
       "marks": 5,
       "co": "CO1",
-      "bl": "L3",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L3"
     },
     "B24": {
       "group": "B",
@@ -835,9 +747,7 @@
       "text": "Evaluate $[\\hat{y}, \\hat{L}_y]$ and $[\\hat{x}, \\hat{L}_x]$.",
       "marks": 5,
       "co": "CO1",
-      "bl": "L3",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L3"
     },
     "B25": {
       "group": "B",
@@ -845,9 +755,7 @@
       "text": "What is thermodynamic probability? Calculate the thermodynamic probability of classical particles (MB statistics) where total number of particles $N$ are distributed among $E_i$ energy levels, each level occupying $N_i$ particles. Assume all particles are distinguishable.",
       "marks": 5,
       "co": "CO3",
-      "bl": "L2",
-      "is_question_free": true,
-      "is_answer_free": false
+      "bl": "L2"
     }
   },
   "answers": {

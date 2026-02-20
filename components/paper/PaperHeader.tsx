@@ -89,11 +89,6 @@ export function PaperHeader({ paper, subject }: PaperHeaderProps) {
             {PAPER_TYPE_LABELS[paper.type]}
           </Badge>
           <Badge variant="outline">{paper.year}</Badge>
-          {paper.is_free && (
-            <Badge className="bg-green-100 text-green-800 border-green-200">
-              FREE
-            </Badge>
-          )}
         </div>
         <div className="sm:flex-1 sm:min-w-0">
           <h1 className="text-2xl font-bold leading-tight">{paper.title}</h1>
