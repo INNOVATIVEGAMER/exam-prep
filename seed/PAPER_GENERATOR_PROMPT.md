@@ -1,16 +1,195 @@
-# ExamPrep — Paper Generator Prompt
-
-> **Usage:** Paste this entire prompt into a Claude conversation along with your syllabus, previous year papers, and any other reference material. Claude will generate the papers, validate them, create the subject if needed, and save everything to the correct seed paths. After that, you just run `npm run seed`.
-
----
-
 ## What I Need You To Do
 
-Generate **sample question papers with detailed answer keys** as validated JSON files, saved directly into my project's `seed/` directory. Follow this exact workflow:
+Generate **question papers with detailed answer keys** as validated JSON files, saved directly into my project's `seed/` directory. Follow this exact workflow:
 
 ---
 
-## Step 1 — Analyze My Inputs
+## Step 0 — Ask Me What Type of Paper to Generate
+
+Before doing anything else, ask me:
+
+> **What type of paper do you want to generate?**
+> 1. **Practice Set** — A large pool of questions (MCQs + short answers) compiled from a professor's practice sheet or important topics list. Not constrained by the exam pattern. All questions visible to students.
+> 2. **End Sem** — A full end-semester exam paper following the exact exam pattern from previous year papers (Group A MCQs + Group B short + Group C long answers). Paywall preview flags apply.
+> 3. **Mid Sem** — Same as End Sem but for a mid-semester exam (may have a different pattern — ask me to provide previous mid-sem papers).
+
+Wait for my answer. Then follow **only** the section below that matches my choice:
+- [Section A] for Practice Set
+- [Section B] for End Sem / Mid Sem
+
+---
+
+---
+
+# [Section A] — Practice Set Workflow
+
+---
+
+## A1 — Analyze My Inputs
+
+I'm attaching:
+
+- **Syllabus** (modules, COs, BLs, topic breakdown)
+- **Professor's practice sheet / important topics list** (the main source — digitize this exactly)
+- **[Optional] Any other reference material**
+
+Study these carefully. Extract:
+
+- Every question from the practice sheet verbatim (don't paraphrase or alter)
+- The CO and BL mapping for each question (infer from syllabus if not stated)
+- Which modules each question belongs to
+
+---
+
+## A2 — Create / Verify the Subject File
+
+Check if `seed/subjects/{SUBJECT_CODE}.json` already exists.
+
+- **If it exists** — read it, confirm it matches the syllabus, and move on.
+- **If it doesn't exist** — create it following this exact schema:
+
+```json
+{
+  "code": "PHIT301",
+  "name": "Engineering Physics - II",
+  "short_name": "Physics-II",
+  "regulation": "R23",
+  "semester": 3,
+  "department": "IT",
+  "college": "JISCE",
+  "exam_pattern": {
+    "total_marks": 70,
+    "duration_minutes": 180,
+    "groups": [
+      {
+        "name": "A",
+        "label": "Group A",
+        "instructions": "Answer any 10 out of 12 questions",
+        "questions_count": 12,
+        "attempt_count": 10,
+        "marks_per_question": 1,
+        "question_type": "mcq"
+      },
+      {
+        "name": "B",
+        "label": "Group B",
+        "instructions": "Answer any 3 out of 5 questions",
+        "questions_count": 5,
+        "attempt_count": 3,
+        "marks_per_question": 5,
+        "question_type": "short"
+      },
+      {
+        "name": "C",
+        "label": "Group C",
+        "instructions": "Answer any 3 out of 5 questions",
+        "questions_count": 5,
+        "attempt_count": 3,
+        "marks_per_question": 15,
+        "question_type": "long"
+      }
+    ]
+  }
+}
+```
+
+Also ensure `seed/papers/{SUBJECT_CODE}/` directory exists.
+
+---
+
+## A3 — Generate the Practice Set JSON
+
+A practice set is **not** constrained by the exam pattern. It is a **large pool** of questions from the professor's sheet. Follow this schema:
+
+```json
+{
+  "subject_code": "PHIT301",
+  "title": "Practice Set — SEE Engineering Physics II",
+  "type": "practice",
+  "year": "2025-26",
+  "is_free": false,
+  "price": 9900,
+  "metadata": {
+    "difficulty": "medium",
+    "modules_covered": ["Module 1", "Module 2", "Module 3", "Module 4"],
+    "source": "Practice_set_provided_by_professor"
+  },
+  "questions": { ... },
+  "answers": { ... }
+}
+```
+
+### Key differences from an end-sem paper:
+
+| Property | Practice Set | End Sem |
+|---|---|---|
+| `type` | `"practice"` | `"end_sem"` |
+| Question count | As many as in the sheet (e.g. A1–A21, B1–B25) | Fixed by exam pattern (e.g. 12+5+5) |
+| Groups | Only A (MCQ) and B (short) — no Group C long answers | A + B + C |
+| `is_question_free` | **`true` for ALL questions** | Only 1 per group (default) |
+| `is_answer_free` | **`true` for A1/B1 only** (first free preview), `false` for rest | Same |
+| Source | From professor's practice sheet | From previous year exam papers |
+| metadata.source | Name/ref of the practice sheet | Omit |
+
+### Question numbering for practice sets:
+
+- MCQs: `A1`, `A2`, ... `AN` (as many as in the sheet)
+- Short answers: `B1`, `B2`, ... `BN` (as many as in the sheet)
+- No Group C in practice sets (long answers are not part of practice sheets typically)
+
+### Free preview flags for practice sets:
+
+- **All questions**: `is_question_free: true` (students can see all questions)
+- **A1 and B1**: `is_answer_free: true` (first question of each group has free answer)
+- **All others**: `is_answer_free: false` (answers require payment)
+
+---
+
+## A4 — Write Solutions with Proper Formatting
+
+Follow the same formatting rules as Section B Step 5 (Markdown + KaTeX). Solutions must be complete and exam-worthy.
+
+---
+
+## A5 — Validate JSON Structure
+
+Run the same validations as Section B Step 7, with these adjustments:
+
+- `type` must be `"practice"`
+- No cross-validation against `questions_count` in exam pattern (practice sets are not constrained)
+- All questions must have `is_question_free: true`
+- Only A1 and B1 may have `is_answer_free: true`; all others must be `false`
+
+Print a validation summary:
+
+```
+✓ Practice Set: 21 MCQs (A1–A21), 25 short answers (B1–B25), 46 total answers
+  - All questions: is_question_free: true ✓
+  - Free answers: A1, B1 only ✓
+  - All key_points present ✓
+  - Valid JSON ✓
+```
+
+---
+
+## A6 — Save File
+
+Save to:
+
+```
+seed/subjects/{SUBJECT_CODE}.json          ← create only if new
+seed/papers/{SUBJECT_CODE}/practice_set.json
+```
+
+---
+
+---
+
+# [Section B] — End Sem / Mid Sem Workflow
+
+---
+
+## B1 — Analyze My Inputs
 
 I'm attaching:
 
@@ -28,7 +207,7 @@ Study these carefully. Extract:
 
 ---
 
-## Step 2 — Research & Plan
+## B2 — Research & Plan
 
 - Identify the most important/frequently asked topics per module
 - Ensure all modules get fair coverage across papers
@@ -38,7 +217,7 @@ Study these carefully. Extract:
 
 ---
 
-## Step 3 — Create / Verify the Subject File
+## B3 — Create / Verify the Subject File
 
 Check if `seed/subjects/{SUBJECT_CODE}.json` already exists.
 
@@ -100,7 +279,7 @@ Also ensure `seed/papers/{SUBJECT_CODE}/` directory exists (create it if not).
 
 ---
 
-## Step 4 — Generate Question Papers as JSON
+## B4 — Generate Question Papers as JSON
 
 Create **2 sample question papers** (unless I specify otherwise). Each paper must follow this **exact JSON schema**:
 
@@ -220,6 +399,7 @@ Create **2 sample question papers** (unless I specify otherwise). Each paper mus
 ### Rules for each paper:
 
 - Follow the **exact exam pattern** from the previous year papers (same groups, same marks, same attempt rules)
+- `type` must be `"end_sem"` or `"mid_sem_1"` / `"mid_sem_2"` as applicable
 - Include **CO and BL mapping** for every question
 - Cover **all modules** with balanced distribution
 - Have **no overlap** between Paper 1 and Paper 2 — different questions, different numericals
@@ -240,11 +420,11 @@ Every question **must** include both `is_question_free` and `is_answer_free` fie
 
 **Default rule:** Mark exactly **one question per group** as the free preview by setting both `is_question_free: true` and `is_answer_free: true`. All other questions must have both set to `false`. This gives unpaid users a sample of each question type.
 
-**Flexibility:** You may deviate from the default rule if instructed — for example, showing all questions but only one answer, or showing two free previews in a group. Always follow the instructions provided. When no specific instructions are given, use the default rule above.
+**Flexibility:** You may deviate from the default rule if instructed. Always follow the instructions provided. When no specific instructions are given, use the default rule above.
 
 ---
 
-## Step 5 — Write Solutions with Proper Formatting
+## B5 — Write Solutions with Proper Formatting
 
 This is the most important part. Solutions are rendered on a web app using **Markdown + KaTeX math**. You MUST follow these formatting rules:
 
@@ -297,7 +477,7 @@ Use standard Markdown tables for comparisons, truth tables, algorithm steps:
 
 ---
 
-## Step 6 — Solution Quality Requirements
+## B6 — Solution Quality Requirements
 
 For each answer:
 
@@ -314,7 +494,7 @@ For each answer:
 
 ---
 
-## Step 7 — Validate JSON Structure
+## B7 — Validate JSON Structure
 
 Before saving, validate **every** paper JSON against these rules. Fix any issues before writing files.
 
@@ -362,7 +542,7 @@ Before saving, validate **every** paper JSON against these rules. Fix any issues
 
 ---
 
-## Step 8 — Save Files
+## B8 — Save Files
 
 Save the validated files to these exact paths:
 
@@ -377,7 +557,9 @@ seed/papers/{SUBJECT_CODE}/sample_question_paper_2.json
 
 ---
 
-## CRITICAL — What NOT to do
+---
+
+# CRITICAL — What NOT to do (applies to both types)
 
 - **DO NOT** use LaTeX document commands (`\begin{document}`, `\usepackage`, `\section`, etc.)
 - **DO NOT** use LaTeX environments (`\begin{itemize}`, `\begin{tabular}`, `\begin{align}`, etc.)
@@ -451,6 +633,7 @@ npm run seed:subject {SUBJECT_CODE}
 **Department:** [FILL IN — e.g., IT]
 **Semester:** [FILL IN — e.g., 3]
 
-**Number of papers to generate:** [FILL IN — default 2]
+**Paper type:** [Leave blank — the AI will ask you]
+**Number of papers to generate:** [FILL IN — default 2, only for end_sem/mid_sem]
 **Any specific topics to prioritize:** [FILL IN or remove]
 **Any other instructions:** [FILL IN or remove]
