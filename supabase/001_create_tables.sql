@@ -22,8 +22,6 @@ create table public.papers (
   title text not null,
   type text not null check (type in ('end_sem', 'mid_sem_1', 'mid_sem_2', 'practice')),
   year text not null,
-  is_free boolean not null default false,
-  price int not null default 0,
   questions jsonb not null default '{}',
   answers jsonb not null default '{}',
   metadata jsonb not null default '{}',
@@ -42,20 +40,5 @@ create table public.users (
   created_at timestamptz default now()
 );
 
--- purchases table
-create table public.purchases (
-  id uuid primary key default uuid_generate_v4(),
-  user_id uuid not null references public.users(id) on delete cascade,
-  paper_id uuid not null references public.papers(id) on delete cascade,
-  amount int not null,
-  razorpay_order_id text not null,
-  razorpay_payment_id text,
-  status text not null default 'created' check (status in ('created', 'paid', 'failed')),
-  created_at timestamptz default now(),
-  unique(user_id, paper_id)
-);
-
 -- Indexes
 create index on public.papers(subject_id);
-create index on public.purchases(user_id);
-create index on public.purchases(paper_id);
